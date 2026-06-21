@@ -13,6 +13,9 @@ const materialStandings = (s: StandingsFile) => JSON.stringify({
   standings: s.standings.map(({ rank, name, points, exact, partial, played }) =>
     ({ rank, name, points, exact, partial, played })),
   recentResults: s.recentResults,
+  nextMatch: s.nextMatch,
+  upcomingMatches: s.upcomingMatches,
+  metrics: s.metrics,
 });
 
 export function calculateStandings(): void {

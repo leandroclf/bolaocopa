@@ -2,6 +2,9 @@ import Scoreboard from "@/components/Scoreboard";
 import StandingsTable from "@/components/StandingsTable";
 import RecentMatches from "@/components/RecentMatches";
 import RulesCard from "@/components/RulesCard";
+import InsightsPanel from "@/components/InsightsPanel";
+import NextMatchPanel from "@/components/NextMatchPanel";
+import UpcomingMatches from "@/components/UpcomingMatches";
 import { getStandings } from "@/lib/data";
 
 export default function Page() {
@@ -15,6 +18,9 @@ export default function Page() {
         countedMatches={s.countedMatches}
         leader={leader}
       />
+      <InsightsPanel metrics={s.metrics} />
+      <NextMatchPanel match={s.nextMatch} />
+      <UpcomingMatches matches={s.upcomingMatches} />
       <StandingsTable standings={s.standings} />
       <RecentMatches results={s.recentResults} />
       <RulesCard />

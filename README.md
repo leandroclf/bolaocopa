@@ -1,8 +1,9 @@
 # Bolão Copa 2026 — Classificação
 
 Site público com a classificação ao vivo do **Bolão da Copa do Mundo 2026**
-(fase de grupos, 72 jogos, 38 apostadores). A classificação é recomputada a
-cada apuração de resultado e republicada automaticamente.
+(fase de grupos, 72 jogos, 38 apostadores). A classificação, os próximos jogos,
+os palpites públicos e as métricas do bolão são recomputados a cada apuração de
+resultado e republicados automaticamente.
 
 - **Stack:** Next.js 14 (App Router) · TypeScript · Tailwind CSS · Vitest
 - **Dados:** JSON estático em `data/` (sem planilha, sem banco, sem PII)
@@ -13,7 +14,7 @@ cada apuração de resultado e republicada automaticamente.
 ```
 Excel (uma vez)  ──import:excel──►  predictions.json + fixtures.json + team-map.json
 openfootball ────fetch:results──►  results.json  (indexado por jogo 1..72)
-                  calc:standings─►  standings.json  ◄── o site lê este arquivo
+                  calc:standings─►  standings.json  ◄── classificação + análises
 ```
 
 O cálculo é uma **função pura** (`src/lib/scoring.ts`), portada 1:1 da fórmula
@@ -25,6 +26,12 @@ da própria planilha e validada por testes. Pontuação:
 | 5 | vencedor certo **e** um dos placares exato (jogos decisivos) |
 | 3 | resultado certo (vitória ou empate), sem placar exato |
 | 0 | resultado errado, sem palpite, ou jogo não apurado |
+
+Além da tabela, o `standings.json` inclui:
+
+- próximo jogo com todos os palpites dos competidores;
+- mapa dos jogos pendentes com consenso, médias e placares mais apostados;
+- métricas como maior consenso, jogo mais dividido e maior média de gols prevista.
 
 ## Rodar localmente
 
@@ -39,14 +46,15 @@ momento, então `npm run dev` funciona direto.
 
 ## Reimportar os palpites do Excel
 
-O `.xlsx` **não** fica no repositório (contém telefone e Pix). Para reimportar:
+O `.xlsx` oficial **não** fica no repositório (contém telefone e Pix). Para reimportar:
 
 ```bash
 npm run import:excel -- /caminho/para/Bolao_Copa_2026_preenchida.xlsx
 ```
 
 Regenera `predictions.json`, `fixtures.json` e `team-map.json`. Telefone/Pix são
-ignorados de propósito. Em seguida rode `npm run calc:standings`.
+ignorados de propósito. Em seguida rode `npm run update` para manter resultados,
+classificação e análises sincronizados.
 
 ## Fontes de resultado
 

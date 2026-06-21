@@ -52,6 +52,71 @@ export type RecentResult = {
   awayGoals: number;
 };
 
+export type PickOutcome = "home" | "draw" | "away";
+
+export type MatchPick = {
+  name: string;
+  homeGoals: number;
+  awayGoals: number;
+  outcome: PickOutcome;
+};
+
+export type PopularScore = {
+  homeGoals: number;
+  awayGoals: number;
+  score: string;
+  count: number;
+  percentage: number;
+  names: string[];
+};
+
+export type OutcomeBreakdown = {
+  homeWin: number;
+  draw: number;
+  awayWin: number;
+};
+
+export type OutcomeLeader = {
+  outcome: PickOutcome;
+  label: string;
+  count: number;
+  percentage: number;
+};
+
+export type UpcomingMatchInsight = Match & {
+  totalPicks: number;
+  missingPicks: number;
+  picks: MatchPick[];
+  outcomeBreakdown: OutcomeBreakdown;
+  topOutcome: OutcomeLeader;
+  averageHomeGoals: number;
+  averageAwayGoals: number;
+  averageTotalGoals: number;
+  mostCommonScores: PopularScore[];
+};
+
+export type MatchMetric = {
+  id: number;
+  date: string;
+  time: string;
+  group: string;
+  home: string;
+  away: string;
+  label: string;
+  value: string;
+};
+
+export type StandingsMetrics = {
+  totalMatches: number;
+  finishedMatches: number;
+  remainingMatches: number;
+  totalValidPicks: number;
+  averageUpcomingGoals: number;
+  highestConsensus: MatchMetric | null;
+  mostDivisive: MatchMetric | null;
+  highestExpectedGoals: MatchMetric | null;
+};
+
 export type StandingsFile = {
   lastUpdated: string;
   source: string;
@@ -59,4 +124,7 @@ export type StandingsFile = {
   countedMatches: number; // # of finished matches scored
   standings: StandingEntry[];
   recentResults: RecentResult[];
+  nextMatch: UpcomingMatchInsight | null;
+  upcomingMatches: UpcomingMatchInsight[];
+  metrics: StandingsMetrics;
 };
