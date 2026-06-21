@@ -9,9 +9,11 @@ const fmtDay = (d: string) =>
 export default function UpcomingMatches({
   matches,
   selectedParticipant,
+  compactMode,
 }: {
   matches: UpcomingMatchInsight[];
   selectedParticipant: string;
+  compactMode: boolean;
 }) {
   const [selectedId, setSelectedId] = useState(matches[0]?.id ?? null);
   const selected = useMemo(
@@ -22,7 +24,7 @@ export default function UpcomingMatches({
   if (matches.length === 0) return null;
 
   return (
-    <section className="mx-auto max-w-5xl px-5 py-8">
+    <section className={`mx-auto max-w-5xl px-5 ${compactMode ? "py-5" : "py-8"}`}>
       <div className="mb-4 flex items-end justify-between gap-4">
         <div>
           <p className="font-mono text-[10px] uppercase tracking-[0.28em] text-lime">mapa de palpites</p>
@@ -39,7 +41,7 @@ export default function UpcomingMatches({
         </div>
       )}
 
-      <div className="grid gap-3 lg:grid-cols-[0.9fr_1.1fr]">
+      <div className={`grid gap-3 ${compactMode ? "lg:grid-cols-[0.85fr_1.15fr]" : "lg:grid-cols-[0.9fr_1.1fr]"}`}>
         <div className="grid max-h-[42rem] gap-2 overflow-auto pr-1 sm:grid-cols-2 lg:grid-cols-1">
           {matches.map((match) => (
             <button

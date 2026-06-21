@@ -22,6 +22,7 @@ const tabs: Array<{ key: TabKey; label: string }> = [
 export default function DashboardTabs({ standings }: { standings: StandingsFile }) {
   const [active, setActive] = useState<TabKey>("classification");
   const [selectedParticipant, setSelectedParticipant] = useState<string>("todos");
+  const [compactMode, setCompactMode] = useState(true);
   const activeLabel = useMemo(() => tabs.find((tab) => tab.key === active)?.label, [active]);
   const nextDayMatches = useMemo(
     () => standings.nextMatch
@@ -120,6 +121,20 @@ export default function DashboardTabs({ standings }: { standings: StandingsFile 
                 : "Ainda não há líder definido."}
             </p>
           )}
+          <div className="flex items-center gap-2 lg:col-span-2">
+            <button
+              type="button"
+              onClick={() => setCompactMode((value) => !value)}
+              className={`rounded-full px-3 py-1 font-mono text-[10px] uppercase tracking-wider ${
+                compactMode ? "bg-lime text-pitch" : "bg-pitch text-slatey"
+              }`}
+            >
+              {compactMode ? "modo compacto ligado" : "modo compacto desligado"}
+            </button>
+            <p className="font-mono text-[10px] uppercase tracking-wider text-slatey">
+              visão ultra compacta para celular
+            </p>
+          </div>
         </div>
       </div>
 
@@ -131,12 +146,20 @@ export default function DashboardTabs({ standings }: { standings: StandingsFile 
               metrics={standings.metrics}
               selectedParticipant={selectedParticipant}
               onSelectParticipant={setSelectedParticipant}
+              compactMode={compactMode}
             />
             <RulesCard />
           </>
         )}
         {active === "insights" && (
-          <InsightsPanel metrics={standings.metrics} selectedParticipant={selectedParticipant} selectedStanding={selectedStanding} />
+          <InsightsPanel
+            metrics={standings.metrics}
+            selectedParticipant={selectedParticipant}
+            selectedStanding={selectedStanding}
+            recentResults={standings.recentResults}
+            upcomingMatches={standings.upcomingMatches}
+            compactMode={compactMode}
+          />
         )}
         {active === "next" && (
           <NextMatchPanel
@@ -145,13 +168,14 @@ export default function DashboardTabs({ standings }: { standings: StandingsFile 
             selectedParticipant={selectedParticipant}
             participantOptions={participantOptions}
             onParticipantChange={setSelectedParticipant}
+            compactMode={compactMode}
           />
         )}
         {active === "map" && (
-          <UpcomingMatches matches={standings.upcomingMatches} selectedParticipant={selectedParticipant} />
+          <UpcomingMatches matches={standings.upcomingMatches} selectedParticipant={selectedParticipant} compactMode={compactMode} />
         )}
         {active === "recent" && (
-          <RecentMatches results={standings.recentResults} selectedParticipant={selectedParticipant} />
+          <RecentMatches results={standings.recentResults} selectedParticipant={selectedParticipant} compactMode={compactMode} />
         )}
       </div>
 

@@ -18,11 +18,13 @@ export default function StandingsTable({
   metrics,
   selectedParticipant,
   onSelectParticipant,
+  compactMode,
 }: {
   standings: StandingEntry[];
   metrics: StandingsMetrics;
   selectedParticipant: string;
   onSelectParticipant: (name: string) => void;
+  compactMode: boolean;
 }) {
   const [query, setQuery] = useState("");
   const [sortKey, setSortKey] = useState<SortKey>("rank");
@@ -62,8 +64,8 @@ export default function StandingsTable({
   );
 
   return (
-    <section className="mx-auto max-w-5xl px-5 py-6">
-      <div className="mb-4">
+    <section className={`mx-auto max-w-5xl px-5 ${compactMode ? "py-4" : "py-6"}`}>
+      <div className={compactMode ? "mb-3" : "mb-4"}>
         <div className="flex items-center justify-between gap-3">
           <div>
             <p className="font-mono text-[10px] uppercase tracking-[0.26em] text-lime">aba principal</p>
@@ -71,7 +73,7 @@ export default function StandingsTable({
           </div>
           <span className="font-mono text-[10px] uppercase tracking-wider text-slatey">{rows.length} nomes</span>
         </div>
-        <div className="mt-3 grid gap-2 sm:grid-cols-2 lg:grid-cols-4">
+        <div className={`mt-3 grid gap-2 ${compactMode ? "sm:grid-cols-2" : "sm:grid-cols-2 lg:grid-cols-4"}`}>
           <div className="rounded-lg border border-gold/30 bg-gold/10 px-4 py-3">
             <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-slatey">líder</p>
             <p className="mt-1 truncate font-display text-lg uppercase tracking-wide text-chalk">
@@ -198,9 +200,9 @@ export default function StandingsTable({
           return (
             <li
               key={e.name}
-              className={`grid grid-cols-[2rem_1fr_2.8rem_3.3rem] items-center gap-2 rounded-lg border px-3 py-2.5 sm:grid-cols-[2rem_1fr_4rem_3.3rem] ${
-                focused ? "border-lime/50 bg-lime/10" : leader ? "border-gold/40 bg-gold/10" : "border-transparent bg-pitch-2"
-              }`}
+            className={`grid grid-cols-[2rem_1fr_2.8rem_3.3rem] items-center gap-2 rounded-lg border ${compactMode ? "px-3 py-2" : "px-3 py-2.5"} sm:grid-cols-[2rem_1fr_4rem_3.3rem] ${
+              focused ? "border-lime/50 bg-lime/10" : leader ? "border-gold/40 bg-gold/10" : "border-transparent bg-pitch-2"
+            }`}
               onClick={() => onSelectParticipant(e.name)}
             >
               <div className={`text-center font-mono text-sm ${leader ? "text-gold" : focused ? "text-lime" : "text-slatey"}`}>

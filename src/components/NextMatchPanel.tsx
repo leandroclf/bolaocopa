@@ -173,12 +173,14 @@ export default function NextMatchPanel({
   participantOptions,
   selectedParticipant,
   onParticipantChange,
+  compactMode,
 }: {
   match: UpcomingMatchInsight | null;
   dayMatches: UpcomingMatchInsight[];
   participantOptions: string[];
   selectedParticipant: string;
   onParticipantChange: (value: string) => void;
+  compactMode: boolean;
 }) {
   if (!match) return null;
   const matchesOfDay = dayMatches.length > 0 ? dayMatches : [match];
@@ -193,7 +195,7 @@ export default function NextMatchPanel({
     : Math.round((visibleMatch.totalPicks / match.totalPicks) * 1000) / 10;
 
   return (
-    <section className="mx-auto max-w-5xl px-5 py-8">
+    <section className={`mx-auto max-w-5xl px-5 ${compactMode ? "py-5" : "py-8"}`}>
       <div className="mb-4 flex items-end justify-between gap-4">
         <div>
           <p className="font-mono text-[10px] uppercase tracking-[0.28em] text-lime">próxima apuração</p>
@@ -202,7 +204,7 @@ export default function NextMatchPanel({
         <p className="font-mono text-xs text-slatey">G{match.group} · {fmtDay(match.date)} · {match.time}</p>
       </div>
 
-      <div className="mb-4 grid gap-3 lg:grid-cols-[1fr_18rem]">
+      <div className={`mb-4 grid gap-3 ${compactMode ? "lg:grid-cols-[1fr_17rem]" : "lg:grid-cols-[1fr_18rem]"}`}>
         <div className="rounded-lg border border-pitch-line bg-pitch-2 p-4">
           <ParticipantFilter options={participantOptions} value={selectedParticipant} onChange={onParticipantChange} />
           <div className="mt-3 rounded-lg border border-gold/40 bg-gold/10 p-4">
@@ -237,6 +239,11 @@ export default function NextMatchPanel({
             {selectedShare != null && (
               <p className="mt-3 font-mono text-[10px] uppercase tracking-wider text-slatey">
                 {selectedParticipant} representa {selectedShare}% dos palpites do jogo
+              </p>
+            )}
+            {selectedParticipant !== "todos" && (
+              <p className="mt-2 text-sm text-slatey">
+                Seu palpite fica em destaque ao lado da média do grupo, para comparar rapidamente se você está mais conservador ou mais agressivo.
               </p>
             )}
             {selectedParticipant !== "todos" && <ParticipantSummary selectedParticipant={selectedParticipant} match={match} />}

@@ -6,13 +6,15 @@ const fmtDay = (d: string) =>
 export default function RecentMatches({
   results,
   selectedParticipant,
+  compactMode,
 }: {
   results: RecentResult[];
   selectedParticipant: string;
+  compactMode: boolean;
 }) {
   if (results.length === 0) return null;
   return (
-    <section className="mx-auto max-w-3xl px-5 py-8">
+    <section className={`mx-auto max-w-3xl px-5 ${compactMode ? "py-5" : "py-8"}`}>
       <h2 className="mb-4 font-display text-lg uppercase tracking-widest text-chalk">Jogos apurados</h2>
       {selectedParticipant !== "todos" && (
         <div className="mb-4 rounded-lg border border-lime/20 bg-lime/10 px-4 py-3">

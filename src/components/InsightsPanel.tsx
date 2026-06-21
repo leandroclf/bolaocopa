@@ -1,4 +1,5 @@
 import type { MatchMetric, StandingEntry, StandingsMetrics } from "@/lib/types";
+import type { RecentResult, UpcomingMatchInsight } from "@/lib/types";
 
 function MetricMatch({ metric }: { metric: MatchMetric | null }) {
   if (!metric) return <span className="text-slatey">Sem jogos pendentes</span>;
@@ -17,10 +18,16 @@ export default function InsightsPanel({
   metrics,
   selectedParticipant,
   selectedStanding,
+  recentResults,
+  upcomingMatches,
+  compactMode,
 }: {
   metrics: StandingsMetrics;
   selectedParticipant: string;
   selectedStanding: StandingEntry | null;
+  recentResults: RecentResult[];
+  upcomingMatches: UpcomingMatchInsight[];
+  compactMode: boolean;
 }) {
   const primaryStories = metrics.storyMetrics.slice(0, 5);
   const secondaryStories = metrics.storyMetrics.slice(5);
@@ -38,9 +45,23 @@ export default function InsightsPanel({
   ];
   const roundSummary = [metrics.highestConsensus, metrics.mostDivisive, metrics.highestDrawShare, metrics.topUpcomingScore];
   const focusDelta = selectedStanding ? selectedStanding.points - metrics.averagePoints : null;
+  const riskyPicks = upcomingMatches
+    .flatMap((match) =>
+      match.picks
+        .map((pick) => ({
+          match,
+          pick,
+          diff: Math.abs(pick.homeGoals - match.averageHomeGoals) + Math.abs(pick.awayGoals - match.averageAwayGoals),
+        }))
+        .sort((a, b) => b.diff - a.diff)
+        .slice(0, 2)
+    )
+    .sort((a, b) => b.diff - a.diff)
+    .slice(0, 4);
+  const lastRound = recentResults.slice(0, 4);
 
   return (
-    <section className="mx-auto max-w-5xl px-5 py-8">
+    <section className={`mx-auto max-w-5xl px-5 ${compactMode ? "py-5" : "py-8"}`}>
       <div className="mb-4 flex items-end justify-between gap-4">
         <div>
           <p className="font-mono text-[10px] uppercase tracking-[0.28em] text-lime">leitura do bolão</p>
@@ -94,7 +115,42 @@ export default function InsightsPanel({
         )}
       </div>
 
-      <div className="mt-3 grid gap-2 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="mt-3 grid gap-2 sm:grid-cols-2">
+        <div className="rounded-lg border border-pitch-line bg-pitch-2 p-4">
+          <p className="font-mono text-[10px] uppercase tracking-[0.24em] text-lime">histórico recente</p>
+          <div className="mt-3 grid gap-2">
+            {lastRound.map((match) => (
+              <div key={match.id} className="rounded-md border border-pitch-line bg-pitch px-3 py-2">
+                <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-slatey">
+                  G{match.group} · {match.date}
+                </p>
+                <p className="mt-1 text-sm text-chalk">
+                  {match.home} {match.homeGoals}–{match.awayGoals} {match.away}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="rounded-lg border border-pitch-line bg-pitch-2 p-4">
+          <p className="font-mono text-[10px] uppercase tracking-[0.24em] text-lime">apostas arriscadas</p>
+          <div className="mt-3 grid gap-2">
+            {riskyPicks.length > 0 ? (
+              riskyPicks.map((item, index) => (
+                <div key={`${item.match.id}-${item.pick.name}-${index}`} className="rounded-md border border-pitch-line bg-pitch px-3 py-2">
+                  <p className="truncate text-sm font-semibold text-chalk">{item.pick.name}</p>
+                  <p className="mt-1 text-xs text-slatey">
+                    {item.match.home} x {item.match.away} · {item.pick.homeGoals}x{item.pick.awayGoals}
+                  </p>
+                </div>
+              ))
+            ) : (
+              <p className="text-sm text-slatey">Sem apostas com divergência relevante.</p>
+            )}
+          </div>
+        </div>
+      </div>
+
+      <div className={`mt-3 grid gap-2 ${compactMode ? "sm:grid-cols-2" : "sm:grid-cols-2 lg:grid-cols-4"}`}>
         {matchMetrics.map((metric, index) => (
           <div key={`${index}-${metric?.label ?? "empty"}`} className="rounded-lg border border-pitch-line bg-pitch-2 p-4">
             <MetricMatch metric={metric} />
