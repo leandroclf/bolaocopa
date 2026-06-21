@@ -112,11 +112,20 @@ for (const name of wb.SheetNames) {
   let valid = 0;
   // A valid pick is a non-negative integer goal count. Floats, negatives, blanks
   // and out-of-range junk are treated as "no pick" (scores 0 for that match).
-  const goal = (n: unknown): n is number =>
-    typeof n === "number" && Number.isInteger(n) && n >= 0 && n <= 30;
+  const goal = (n: unknown, formatted?: unknown): number | null => {
+    if (typeof n === "number" && Number.isInteger(n) && n >= 0 && n <= 30) return n;
+    if (typeof formatted === "string" && /^\d+$/.test(formatted)) {
+      const parsed = Number(formatted);
+      if (parsed >= 0 && parsed <= 30) return parsed;
+    }
+    return null;
+  };
   fixtures.forEach((fx, i) => {
-    const f = cell(ws, `F${7 + i}`), h = cell(ws, `H${7 + i}`);
-    if (goal(f) && goal(h)) { picks[String(fx.id)] = [f, h]; valid++; }
+    const fAddr = `F${7 + i}`;
+    const hAddr = `H${7 + i}`;
+    const f = goal(cell(ws, fAddr), (ws[fAddr] as XLSX.CellObject | undefined)?.w);
+    const h = goal(cell(ws, hAddr), (ws[hAddr] as XLSX.CellObject | undefined)?.w);
+    if (f != null && h != null) { picks[String(fx.id)] = [f, h]; valid++; }
   });
   if (valid === 0) continue;
   participants.push({ name: display, picks });

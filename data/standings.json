@@ -12030,8 +12030,8 @@
       "group": "J",
       "home": "Jordânia",
       "away": "Argentina",
-      "totalPicks": 37,
-      "missingPicks": 1,
+      "totalPicks": 38,
+      "missingPicks": 0,
       "picks": [
         {
           "name": "Ana Beatriz",
@@ -12133,6 +12133,12 @@
           "name": "Igor",
           "homeGoals": 0,
           "awayGoals": 3,
+          "outcome": "away"
+        },
+        {
+          "name": "Ítalo \"Polvo Paul\"",
+          "homeGoals": 0,
+          "awayGoals": 2,
           "outcome": "away"
         },
         {
@@ -12259,24 +12265,24 @@
       "outcomeBreakdown": {
         "homeWin": 0,
         "draw": 0,
-        "awayWin": 37
+        "awayWin": 38
       },
       "topOutcome": {
         "outcome": "away",
         "label": "Argentina vence",
-        "count": 37,
+        "count": 38,
         "percentage": 100
       },
       "averageHomeGoals": 0.1,
-      "averageAwayGoals": 2.9,
-      "averageTotalGoals": 3,
+      "averageAwayGoals": 2.8,
+      "averageTotalGoals": 2.9,
       "mostCommonScores": [
         {
           "homeGoals": 0,
           "awayGoals": 3,
           "score": "0-3",
           "count": 17,
-          "percentage": 45.9,
+          "percentage": 44.7,
           "names": [
             "Antonio Dimitrov",
             "Beatriz",
@@ -12301,13 +12307,14 @@
           "homeGoals": 0,
           "awayGoals": 2,
           "score": "0-2",
-          "count": 12,
-          "percentage": 32.4,
+          "count": 13,
+          "percentage": 34.2,
           "names": [
             "Ana Beatriz",
             "Clécio",
             "Ézio",
             "Felipe Vitoriano",
+            "Ítalo \"Polvo Paul\"",
             "Juba",
             "Leandro",
             "Lyon",
@@ -12323,7 +12330,7 @@
           "awayGoals": 4,
           "score": "0-4",
           "count": 5,
-          "percentage": 13.5,
+          "percentage": 13.2,
           "names": [
             "Breno",
             "Edwin",
@@ -12339,14 +12346,14 @@
     "totalMatches": 72,
     "finishedMatches": 36,
     "remainingMatches": 36,
-    "totalValidPicks": 2735,
+    "totalValidPicks": 2736,
     "averageUpcomingGoals": 2.4,
     "completionRate": 50,
     "leaderGap": 15,
     "leaderEfficiency": 39.4,
     "averagePoints": 97.8,
-    "completeCards": 37,
-    "missingPickCards": 1,
+    "completeCards": 38,
+    "missingPickCards": 0,
     "topExact": {
       "label": "Rei dos exatos",
       "value": "9",
@@ -12430,8 +12437,8 @@
       },
       {
         "label": "Cartelas completas",
-        "value": "37/38",
-        "detail": "1 apostador com palpite ausente ou inválido."
+        "value": "38/38",
+        "detail": "Todos têm 72 palpites válidos."
       },
       {
         "label": "Placar mais apostado",
