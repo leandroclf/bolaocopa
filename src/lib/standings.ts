@@ -51,7 +51,7 @@ export function computeStandings(
     .sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : b.id - a.id));
 
   return {
-    lastUpdated: new Date().toISOString(),
+    lastUpdated: results.lastUpdated,
     source: results.source,
     totalParticipants: predictions.participants.length,
     countedMatches: finishedIds.length,

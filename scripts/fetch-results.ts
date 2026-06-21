@@ -24,6 +24,13 @@ type TeamMap = { enToCanon: Record<string, string>; fixtureCanon: Record<string,
 const OPENFOOTBALL_URL =
   "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json";
 
+const stableResults = (results: Record<string, ResultEntry>) =>
+  JSON.stringify(
+    Object.keys(results)
+      .sort((a, b) => Number(a) - Number(b))
+      .map((id) => [id, results[id]])
+  );
+
 function buildIndex(fixtures: FixturesFile, tm: TeamMap) {
   const byKey = new Map<string, { id: number; homeCanon: string }>();
   for (const m of fixtures.matches) {
@@ -93,6 +100,10 @@ export async function fetchResults(): Promise<void> {
     const results = source === "football-data"
       ? await fromFootballData(fixtures, tm)
       : await fromOpenfootball(fixtures, tm);
+    if (current.source === source && stableResults(current.results) === stableResults(results)) {
+      console.log(`fetched ${Object.keys(results).length} finished matches from ${source}; no changes`);
+      return;
+    }
     const out: ResultsFile = { lastUpdated: new Date().toISOString(), source, results };
     writeFileSync(join(DATA, "results.json"), JSON.stringify(out, null, 2));
     console.log(`fetched ${Object.keys(results).length} finished matches from ${source}`);

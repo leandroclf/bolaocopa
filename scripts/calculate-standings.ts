@@ -6,6 +6,14 @@ import type { FixturesFile, PredictionsFile, ResultsFile, StandingsFile } from "
 
 const DATA = join(process.cwd(), "data");
 const read = <T>(f: string): T => JSON.parse(readFileSync(join(DATA, f), "utf8")) as T;
+const materialStandings = (s: StandingsFile) => JSON.stringify({
+  source: s.source,
+  totalParticipants: s.totalParticipants,
+  countedMatches: s.countedMatches,
+  standings: s.standings.map(({ rank, name, points, exact, partial, played }) =>
+    ({ rank, name, points, exact, partial, played })),
+  recentResults: s.recentResults,
+});
 
 export function calculateStandings(): void {
   const fixtures = read<FixturesFile>("fixtures.json");
@@ -15,6 +23,10 @@ export function calculateStandings(): void {
   const previous = existsSync(prevPath) ? (JSON.parse(readFileSync(prevPath, "utf8")) as StandingsFile) : null;
 
   const standings = computeStandings(fixtures, predictions, results, previous);
+  if (previous && materialStandings(previous) === materialStandings(standings)) {
+    console.log(`standings unchanged: ${standings.totalParticipants} participants, ${standings.countedMatches} matches counted`);
+    return;
+  }
   writeFileSync(prevPath, JSON.stringify(standings, null, 2));
   const leader = standings.standings[0];
   console.log(`standings: ${standings.totalParticipants} participants, ${standings.countedMatches} matches counted` +
