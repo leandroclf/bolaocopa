@@ -8,12 +8,16 @@
  * Resilient by design: if the source fails, the last valid results.json is
  * kept untouched so the site never breaks or loses standings.
  */
-import { readFileSync, writeFileSync } from "node:fs";
+import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import type { FixturesFile, ResultsFile, ResultEntry } from "../src/lib/types";
 
 const DATA = join(process.cwd(), "data");
 const read = <T>(f: string): T => JSON.parse(readFileSync(join(DATA, f), "utf8")) as T;
+const readOptional = <T>(f: string, fallback: T): T => {
+  const path = join(DATA, f);
+  return existsSync(path) ? JSON.parse(readFileSync(path, "utf8")) as T : fallback;
+};
 
 const norm = (s: unknown) =>
   String(s).normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase()
@@ -97,9 +101,11 @@ export async function fetchResults(): Promise<void> {
   const fixtures = read<FixturesFile>("fixtures.json");
   const tm = read<TeamMap>("team-map.json");
   try {
-    const results = source === "football-data"
+    const fetched = source === "football-data"
       ? await fromFootballData(fixtures, tm)
       : await fromOpenfootball(fixtures, tm);
+    const overrides = readOptional<Record<string, ResultEntry>>("result-overrides.json", {});
+    const results = { ...fetched, ...overrides };
     if (current.source === source && stableResults(current.results) === stableResults(results)) {
       console.log(`fetched ${Object.keys(results).length} finished matches from ${source}; no changes`);
       return;

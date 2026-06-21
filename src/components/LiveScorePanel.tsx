@@ -12,7 +12,6 @@ function formatTime(value: string | null) {
 
 export default function LiveScorePanel() {
   const [matches, setMatches] = useState<LiveScoreMatch[] | null>(null);
-  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     let active = true;
@@ -27,7 +26,7 @@ export default function LiveScorePanel() {
         setMatches(Array.isArray(json.livescores) ? json.livescores : []);
       } catch (err) {
         if (!active) return;
-        setError((err as Error).message);
+        setMatches([]);
       }
     }
 
@@ -40,8 +39,8 @@ export default function LiveScorePanel() {
     };
   }, []);
 
-  if (matches == null && !error) return null;
-  if ((matches?.length ?? 0) === 0 && !error) return null;
+  if (matches == null) return null;
+  if (matches.length === 0) return null;
 
   const live = matches?.[0] ?? null;
 
@@ -60,12 +59,6 @@ export default function LiveScorePanel() {
             atualiza a cada 30s
           </span>
         </div>
-
-        {error && (
-          <p className="mt-3 text-sm text-slatey">
-            Não foi possível carregar o placar ao vivo agora. A apuração oficial segue funcionando normalmente.
-          </p>
-        )}
 
         {live && (
           <div className="mt-3 rounded-lg border border-pitch-line bg-pitch-2 p-4">
