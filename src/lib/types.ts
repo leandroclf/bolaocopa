@@ -148,3 +148,22 @@ export type StandingsFile = {
   upcomingMatches: UpcomingMatchInsight[];
   metrics: StandingsMetrics;
 };
+
+export type LiveScoreMatch = {
+  idLiveScore: string;
+  idEvent: string;
+  strSport: string;
+  idLeague: string;
+  strLeague: string;
+  idHomeTeam: string;
+  idAwayTeam: string;
+  strHomeTeam: string;
+  strAwayTeam: string;
+  intHomeScore: string | null;
+  intAwayScore: string | null;
+  strProgress: string | null;
+  strStatus: string | null;
+  strEventTime: string | null;
+  dateEvent: string | null;
+  updated: string | null;
+};

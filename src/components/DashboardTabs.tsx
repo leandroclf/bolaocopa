@@ -7,6 +7,7 @@ import UpcomingMatches from "@/components/UpcomingMatches";
 import StandingsTable from "@/components/StandingsTable";
 import RecentMatches from "@/components/RecentMatches";
 import RulesCard from "@/components/RulesCard";
+import LiveScorePanel from "@/components/LiveScorePanel";
 import type { StandingsFile } from "@/lib/types";
 
 type TabKey = "classification" | "insights" | "next" | "map" | "recent";
@@ -72,6 +73,7 @@ export default function DashboardTabs({ standings }: { standings: StandingsFile 
           </div>
         </div>
       </nav>
+      <LiveScorePanel />
 
       <div className="mx-auto max-w-5xl px-5 pt-4">
         <div className="grid gap-2 rounded-lg border border-pitch-line bg-pitch-2 p-3 lg:grid-cols-[1.2fr_0.8fr]">
