@@ -6,3 +6,7 @@
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# Artefatos gerados
+GITHUB_SETUP.md
+*.zip
