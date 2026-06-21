@@ -1,0 +1,103 @@
+"use client";
+import { useMemo, useState } from "react";
+import type { StandingEntry } from "@/lib/types";
+
+type SortKey = "rank" | "points" | "exact" | "name";
+const normalize = (s: string) =>
+  s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+
+function Delta({ delta }: { delta: number | null }) {
+  if (delta == null) return <span className="font-mono text-[11px] text-slatey/60">novo</span>;
+  if (delta > 0) return <span className="font-mono text-[11px] text-lime">▲{delta}</span>;
+  if (delta < 0) return <span className="font-mono text-[11px] text-danger">▼{-delta}</span>;
+  return <span className="font-mono text-[11px] text-slatey/60">–</span>;
+}
+
+export default function StandingsTable({ standings }: { standings: StandingEntry[] }) {
+  const [query, setQuery] = useState("");
+  const [sortKey, setSortKey] = useState<SortKey>("rank");
+
+  const rows = useMemo(() => {
+    const q = normalize(query.trim());
+    const filtered = q ? standings.filter((e) => normalize(e.name).includes(q)) : standings;
+    const sorted = [...filtered];
+    if (sortKey === "points") sorted.sort((a, b) => b.points - a.points || a.rank - b.rank);
+    else if (sortKey === "exact") sorted.sort((a, b) => b.exact - a.exact || a.rank - b.rank);
+    else if (sortKey === "name") sorted.sort((a, b) => a.name.localeCompare(b.name, "pt-BR"));
+    else sorted.sort((a, b) => a.rank - b.rank);
+    return sorted;
+  }, [standings, query, sortKey]);
+
+  const sortBtn = (key: SortKey, label: string) => (
+    <button
+      onClick={() => setSortKey(key)}
+      aria-pressed={sortKey === key}
+      className={`rounded-full px-3 py-1 font-mono text-[11px] uppercase tracking-wider transition-colors ${
+        sortKey === key ? "bg-lime text-pitch" : "bg-pitch-2 text-slatey hover:text-chalk"
+      }`}
+    >
+      {label}
+    </button>
+  );
+
+  return (
+    <section className="mx-auto max-w-3xl px-5 py-8">
+      <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
+        <h2 className="font-display text-lg uppercase tracking-widest text-chalk">Classificação</h2>
+        <div className="flex items-center gap-1.5">
+          <span className="mr-1 font-mono text-[10px] uppercase tracking-wider text-slatey">ordenar</span>
+          {sortBtn("rank", "posição")}
+          {sortBtn("points", "pontos")}
+          {sortBtn("exact", "exatos")}
+          {sortBtn("name", "nome")}
+        </div>
+      </div>
+
+      <input
+        type="search"
+        value={query}
+        onChange={(e) => setQuery(e.target.value)}
+        placeholder="Buscar apostador…"
+        aria-label="Buscar apostador"
+        className="mb-4 w-full rounded-lg border border-pitch-line bg-pitch-2 px-4 py-2.5 text-sm text-chalk placeholder:text-slatey/70 focus:border-lime"
+      />
+
+      <ol className="space-y-1">
+        {rows.map((e) => {
+          const leader = e.rank === 1;
+          return (
+            <li
+              key={e.name}
+              className={`flex items-center gap-3 rounded-lg border px-3 py-2.5 ${
+                leader ? "border-gold/40 bg-gold/10" : "border-transparent bg-pitch-2"
+              }`}
+            >
+              <div className={`w-7 text-center font-mono text-sm ${leader ? "text-gold" : "text-slatey"}`}>
+                {e.rank}
+              </div>
+              <div className="min-w-0 flex-1">
+                <p className={`truncate text-sm font-semibold ${leader ? "text-gold" : "text-chalk"}`}>
+                  {e.name}
+                </p>
+                <p className="font-mono text-[11px] text-slatey">
+                  {e.exact} exatos · {e.partial} parciais
+                </p>
+              </div>
+              <div className="w-9 text-center"><Delta delta={e.delta} /></div>
+              <div className="w-12 text-right">
+                <span className={`font-mono text-xl font-bold ${leader ? "text-gold" : "text-chalk"}`}>
+                  {e.points}
+                </span>
+              </div>
+            </li>
+          );
+        })}
+        {rows.length === 0 && (
+          <li className="rounded-lg border border-dashed border-pitch-line px-4 py-6 text-center text-sm text-slatey">
+            Nenhum apostador encontrado.
+          </li>
+        )}
+      </ol>
+    </section>
+  );
+}

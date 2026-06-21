@@ -1,0 +1,67 @@
+name: Update standings and deploy to GitHub Pages
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"   # best-effort; commits/deploys only when results change
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+
+permissions:
+  contents: write   # to commit refreshed JSON back to the repo
+  pages: write      # to publish to GitHub Pages
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  update-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Fetch results and recompute standings
+        env:
+          RESULTS_SOURCE: openfootball
+        run: npm run update
+
+      - name: Commit refreshed standings if changed
+        run: |
+          git config user.name "bolao-bot"
+          git config user.email "bolao-bot@users.noreply.github.com"
+          git add data/results.json data/standings.json
+          if ! git diff --staged --quiet; then
+            git commit -m "chore: update standings [skip ci]"
+            git push
+          fi
+
+      - name: Build static site
+        env:
+          NEXT_PUBLIC_BASE_PATH: /bolaocopa   # must match the repository name
+        run: npm run build
+
+      - name: Add .nojekyll (serve _next assets verbatim)
+        run: touch ./out/.nojekyll
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./out
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

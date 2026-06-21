@@ -1,0 +1,403 @@
+{
+  "ptToCanon": {
+    "mexico": "mexico",
+    "africa do sul": "south africa",
+    "coreia do sul": "south korea",
+    "republica tcheca": "czech republic",
+    "repub tcheca": "czech republic",
+    "canada": "canada",
+    "bosnia": "bosnia",
+    "catar": "qatar",
+    "suica": "switzerland",
+    "brasil": "brazil",
+    "marrocos": "morocco",
+    "haiti": "haiti",
+    "escocia": "scotland",
+    "estados unidos": "usa",
+    "paraguai": "paraguay",
+    "australia": "australia",
+    "turquia": "turkey",
+    "alemanha": "germany",
+    "curacau": "curacao",
+    "curacao": "curacao",
+    "costa do marfim": "ivory coast",
+    "equador": "ecuador",
+    "holanda": "netherlands",
+    "japao": "japan",
+    "suecia": "sweden",
+    "tunisia": "tunisia",
+    "belgica": "belgium",
+    "egito": "egypt",
+    "ira": "iran",
+    "nova zelandia": "new zealand",
+    "espanha": "spain",
+    "cabo verde": "cape verde",
+    "arabia saudita": "saudi arabia",
+    "uruguai": "uruguay",
+    "franca": "france",
+    "senegal": "senegal",
+    "iraque": "iraq",
+    "noruega": "norway",
+    "argentina": "argentina",
+    "argelia": "algeria",
+    "argerlia": "algeria",
+    "austria": "austria",
+    "jordania": "jordan",
+    "portugal": "portugal",
+    "repub do congo": "dr congo",
+    "republica do congo": "dr congo",
+    "repub congo": "dr congo",
+    "uzbequistao": "uzbekistan",
+    "colombia": "colombia",
+    "inglaterra": "england",
+    "croacia": "croatia",
+    "gana": "ghana",
+    "panama": "panama"
+  },
+  "enToCanon": {
+    "mexico": "mexico",
+    "south africa": "south africa",
+    "south korea": "south korea",
+    "czech republic": "czech republic",
+    "canada": "canada",
+    "bosnia and herzegovina": "bosnia",
+    "bosnia herzegovina": "bosnia",
+    "qatar": "qatar",
+    "switzerland": "switzerland",
+    "brazil": "brazil",
+    "morocco": "morocco",
+    "haiti": "haiti",
+    "scotland": "scotland",
+    "usa": "usa",
+    "united states": "usa",
+    "paraguay": "paraguay",
+    "australia": "australia",
+    "turkey": "turkey",
+    "turkiye": "turkey",
+    "germany": "germany",
+    "curacao": "curacao",
+    "ivory coast": "ivory coast",
+    "cote divoire": "ivory coast",
+    "ecuador": "ecuador",
+    "netherlands": "netherlands",
+    "japan": "japan",
+    "sweden": "sweden",
+    "tunisia": "tunisia",
+    "belgium": "belgium",
+    "egypt": "egypt",
+    "iran": "iran",
+    "new zealand": "new zealand",
+    "spain": "spain",
+    "cape verde": "cape verde",
+    "saudi arabia": "saudi arabia",
+    "uruguay": "uruguay",
+    "france": "france",
+    "senegal": "senegal",
+    "iraq": "iraq",
+    "norway": "norway",
+    "argentina": "argentina",
+    "algeria": "algeria",
+    "austria": "austria",
+    "jordan": "jordan",
+    "portugal": "portugal",
+    "dr congo": "dr congo",
+    "congo dr": "dr congo",
+    "congo": "dr congo",
+    "uzbekistan": "uzbekistan",
+    "colombia": "colombia",
+    "england": "england",
+    "croatia": "croatia",
+    "ghana": "ghana",
+    "panama": "panama"
+  },
+  "fixtureCanon": {
+    "1": [
+      "mexico",
+      "south africa"
+    ],
+    "2": [
+      "south korea",
+      "czech republic"
+    ],
+    "3": [
+      "canada",
+      "bosnia"
+    ],
+    "4": [
+      "usa",
+      "paraguay"
+    ],
+    "5": [
+      "australia",
+      "turkey"
+    ],
+    "6": [
+      "qatar",
+      "switzerland"
+    ],
+    "7": [
+      "brazil",
+      "morocco"
+    ],
+    "8": [
+      "haiti",
+      "scotland"
+    ],
+    "9": [
+      "germany",
+      "curacao"
+    ],
+    "10": [
+      "netherlands",
+      "japan"
+    ],
+    "11": [
+      "ivory coast",
+      "ecuador"
+    ],
+    "12": [
+      "sweden",
+      "tunisia"
+    ],
+    "13": [
+      "spain",
+      "cape verde"
+    ],
+    "14": [
+      "belgium",
+      "egypt"
+    ],
+    "15": [
+      "saudi arabia",
+      "uruguay"
+    ],
+    "16": [
+      "iran",
+      "new zealand"
+    ],
+    "17": [
+      "austria",
+      "jordan"
+    ],
+    "18": [
+      "france",
+      "senegal"
+    ],
+    "19": [
+      "iraq",
+      "norway"
+    ],
+    "20": [
+      "argentina",
+      "algeria"
+    ],
+    "21": [
+      "portugal",
+      "dr congo"
+    ],
+    "22": [
+      "england",
+      "croatia"
+    ],
+    "23": [
+      "ghana",
+      "panama"
+    ],
+    "24": [
+      "uzbekistan",
+      "colombia"
+    ],
+    "25": [
+      "czech republic",
+      "south africa"
+    ],
+    "26": [
+      "switzerland",
+      "bosnia"
+    ],
+    "27": [
+      "canada",
+      "qatar"
+    ],
+    "28": [
+      "mexico",
+      "south korea"
+    ],
+    "29": [
+      "turkey",
+      "paraguay"
+    ],
+    "30": [
+      "usa",
+      "australia"
+    ],
+    "31": [
+      "scotland",
+      "morocco"
+    ],
+    "32": [
+      "brazil",
+      "haiti"
+    ],
+    "33": [
+      "netherlands",
+      "sweden"
+    ],
+    "34": [
+      "germany",
+      "ivory coast"
+    ],
+    "35": [
+      "ecuador",
+      "curacao"
+    ],
+    "36": [
+      "tunisia",
+      "japan"
+    ],
+    "37": [
+      "spain",
+      "saudi arabia"
+    ],
+    "38": [
+      "belgium",
+      "iran"
+    ],
+    "39": [
+      "uruguay",
+      "cape verde"
+    ],
+    "40": [
+      "new zealand",
+      "egypt"
+    ],
+    "41": [
+      "jordan",
+      "algeria"
+    ],
+    "42": [
+      "argentina",
+      "austria"
+    ],
+    "43": [
+      "france",
+      "iraq"
+    ],
+    "44": [
+      "norway",
+      "senegal"
+    ],
+    "45": [
+      "portugal",
+      "uzbekistan"
+    ],
+    "46": [
+      "england",
+      "ghana"
+    ],
+    "47": [
+      "panama",
+      "croatia"
+    ],
+    "48": [
+      "colombia",
+      "dr congo"
+    ],
+    "49": [
+      "bosnia",
+      "qatar"
+    ],
+    "50": [
+      "switzerland",
+      "canada"
+    ],
+    "51": [
+      "morocco",
+      "haiti"
+    ],
+    "52": [
+      "scotland",
+      "brazil"
+    ],
+    "53": [
+      "czech republic",
+      "mexico"
+    ],
+    "54": [
+      "south africa",
+      "south korea"
+    ],
+    "55": [
+      "ecuador",
+      "germany"
+    ],
+    "56": [
+      "curacao",
+      "ivory coast"
+    ],
+    "57": [
+      "tunisia",
+      "netherlands"
+    ],
+    "58": [
+      "japan",
+      "sweden"
+    ],
+    "59": [
+      "turkey",
+      "usa"
+    ],
+    "60": [
+      "paraguay",
+      "australia"
+    ],
+    "61": [
+      "egypt",
+      "iran"
+    ],
+    "62": [
+      "new zealand",
+      "belgium"
+    ],
+    "63": [
+      "senegal",
+      "iraq"
+    ],
+    "64": [
+      "norway",
+      "france"
+    ],
+    "65": [
+      "cape verde",
+      "saudi arabia"
+    ],
+    "66": [
+      "uruguay",
+      "spain"
+    ],
+    "67": [
+      "panama",
+      "england"
+    ],
+    "68": [
+      "croatia",
+      "ghana"
+    ],
+    "69": [
+      "colombia",
+      "portugal"
+    ],
+    "70": [
+      "dr congo",
+      "uzbekistan"
+    ],
+    "71": [
+      "algeria",
+      "austria"
+    ],
+    "72": [
+      "jordan",
+      "argentina"
+    ]
+  }
+}

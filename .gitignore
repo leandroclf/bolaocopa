@@ -1,12 +1,19 @@
-# IntelliJ IDEA
+node_modules/
+.next/
+out/
+*.log
+.env*
+
+# IDE e sistema operacional
 .idea/
 *.iml
-
-# Sistema operacional
 .DS_Store
 Thumbs.db
 desktop.ini
 
-# Artefatos gerados
+# Artefatos locais de empacotamento
 GITHUB_SETUP.md
 *.zip
+
+# Never commit the source spreadsheet: it contains personal data (phone, Pix).
+*.xlsx

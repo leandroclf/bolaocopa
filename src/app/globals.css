@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+
+body {
+  background-color: theme(colors.pitch);
+  /* faint mown-pitch stripes — the signature surface, kept very quiet */
+  background-image: repeating-linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.012) 0px,
+    rgba(255, 255, 255, 0.012) 64px,
+    transparent 64px,
+    transparent 128px
+  );
+  color: theme(colors.chalk);
+}
+
+*:focus-visible {
+  outline: 2px solid theme(colors.lime);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}
