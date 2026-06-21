@@ -22,6 +22,12 @@ const tabs: Array<{ key: TabKey; label: string }> = [
 export default function DashboardTabs({ standings }: { standings: StandingsFile }) {
   const [active, setActive] = useState<TabKey>("classification");
   const activeLabel = useMemo(() => tabs.find((tab) => tab.key === active)?.label, [active]);
+  const nextDayMatches = useMemo(
+    () => standings.nextMatch
+      ? standings.upcomingMatches.filter((match) => match.date === standings.nextMatch?.date)
+      : [],
+    [standings.nextMatch, standings.upcomingMatches]
+  );
 
   return (
     <div>
@@ -53,7 +59,7 @@ export default function DashboardTabs({ standings }: { standings: StandingsFile 
           </>
         )}
         {active === "insights" && <InsightsPanel metrics={standings.metrics} />}
-        {active === "next" && <NextMatchPanel match={standings.nextMatch} />}
+        {active === "next" && <NextMatchPanel match={standings.nextMatch} dayMatches={nextDayMatches} />}
         {active === "map" && <UpcomingMatches matches={standings.upcomingMatches} />}
         {active === "recent" && <RecentMatches results={standings.recentResults} />}
       </div>

@@ -12341,6 +12341,27 @@
     "remainingMatches": 36,
     "totalValidPicks": 2735,
     "averageUpcomingGoals": 2.4,
+    "completionRate": 50,
+    "leaderGap": 15,
+    "leaderEfficiency": 39.4,
+    "averagePoints": 97.8,
+    "completeCards": 37,
+    "missingPickCards": 1,
+    "topExact": {
+      "label": "Rei dos exatos",
+      "value": "9",
+      "detail": "Bianka e Rafael"
+    },
+    "topPartial": {
+      "label": "Mais parciais",
+      "value": "21",
+      "detail": "GuiGui ET"
+    },
+    "topUpcomingScore": {
+      "label": "Placar mais apostado",
+      "value": "2-0",
+      "detail": "189 palpites"
+    },
     "highestConsensus": {
       "id": 37,
       "date": "2026-06-21",
@@ -12370,6 +12391,53 @@
       "away": "Iraque",
       "label": "Mais gols previstos",
       "value": "3.5 gols em média"
-    }
+    },
+    "highestDrawShare": {
+      "id": 70,
+      "date": "2026-06-27",
+      "time": "20:30",
+      "group": "K",
+      "home": "Repub. Congo",
+      "away": "Uzbequistão",
+      "label": "Mais cara de empate",
+      "value": "47.4% em empate"
+    },
+    "storyMetrics": [
+      {
+        "label": "Briga pela liderança",
+        "value": "15 pts",
+        "detail": "Bianka e Rafael abre 15 pontos sobre GuiGui ET."
+      },
+      {
+        "label": "Aproveitamento do líder",
+        "value": "39.4%",
+        "detail": "142 pontos em 36 jogos apurados."
+      },
+      {
+        "label": "Média do pelotão",
+        "value": "97.8 pts",
+        "detail": "Média atual entre 38 apostadores."
+      },
+      {
+        "label": "Rei dos exatos",
+        "value": "9",
+        "detail": "Bianka e Rafael lidera em placares cravados."
+      },
+      {
+        "label": "Mais parciais",
+        "value": "21",
+        "detail": "GuiGui ET lidera em acertos de 5 ou 3 pontos."
+      },
+      {
+        "label": "Cartelas completas",
+        "value": "37/38",
+        "detail": "1 apostador com palpite ausente ou inválido."
+      },
+      {
+        "label": "Placar mais apostado",
+        "value": "2-0",
+        "detail": "189 vezes nos jogos pendentes."
+      }
+    ]
   }
 }

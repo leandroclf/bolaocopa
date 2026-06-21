@@ -43,9 +43,82 @@ function OutcomeBars({ match }: { match: UpcomingMatchInsight }) {
   );
 }
 
-export default function NextMatchPanel({ match }: { match: UpcomingMatchInsight | null }) {
-  if (!match) return null;
+function MatchPickList({ match }: { match: UpcomingMatchInsight }) {
   const leadingScores = new Set(match.mostCommonScores.slice(0, 1).map((score) => score.score));
+  return (
+    <div className="grid gap-1.5 sm:grid-cols-2">
+      {match.picks.map((pick) => {
+        const score = `${pick.homeGoals}-${pick.awayGoals}`;
+        const leader = leadingScores.has(score);
+        return (
+          <div
+            key={pick.name}
+            className={`grid grid-cols-[1fr_auto] items-center gap-3 rounded-lg border px-3 py-2 ${
+              leader ? "border-gold/40 bg-gold/10" : "border-pitch-line bg-pitch-2"
+            }`}
+          >
+            <span className="truncate text-sm text-chalk">{pick.name}</span>
+            <span className={`font-mono text-sm font-bold ${leader ? "text-gold" : "text-lime"}`}>
+              {pick.homeGoals} x {pick.awayGoals}
+            </span>
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
+function DayMatchCard({ match, defaultOpen }: { match: UpcomingMatchInsight; defaultOpen: boolean }) {
+  return (
+    <details className="rounded-lg border border-pitch-line bg-pitch-2 p-4" open={defaultOpen}>
+      <summary className="cursor-pointer list-none">
+        <div className="flex flex-wrap items-start justify-between gap-3">
+          <div>
+            <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-slatey">
+              G{match.group} · {match.time}
+            </p>
+            <h3 className="mt-1 font-display text-xl uppercase tracking-wide text-chalk">
+              {match.home} x {match.away}
+            </h3>
+          </div>
+          <div className="text-right">
+            <p className="font-mono text-[10px] uppercase tracking-wider text-slatey">favorito</p>
+            <p className="max-w-[9rem] truncate font-mono text-xs font-bold text-lime">{match.topOutcome.label}</p>
+          </div>
+        </div>
+        <div className="mt-3 flex flex-wrap gap-2">
+          <span className="rounded bg-pitch px-2 py-1 font-mono text-xs text-chalk">
+            média {match.averageHomeGoals} x {match.averageAwayGoals}
+          </span>
+          {match.mostCommonScores.map((score) => (
+            <span key={score.score} className="rounded bg-pitch px-2 py-1 font-mono text-xs text-chalk">
+              {score.score} · {score.count}
+            </span>
+          ))}
+          <span className="rounded bg-lime/15 px-2 py-1 font-mono text-xs text-lime">
+            {match.totalPicks} palpites
+          </span>
+        </div>
+      </summary>
+      <div className="mt-4 border-t border-pitch-line pt-4">
+        <OutcomeBars match={match} />
+        <div className="mt-4 max-h-[28rem] overflow-auto pr-1">
+          <MatchPickList match={match} />
+        </div>
+      </div>
+    </details>
+  );
+}
+
+export default function NextMatchPanel({
+  match,
+  dayMatches,
+}: {
+  match: UpcomingMatchInsight | null;
+  dayMatches: UpcomingMatchInsight[];
+}) {
+  if (!match) return null;
+  const matchesOfDay = dayMatches.length > 0 ? dayMatches : [match];
 
   return (
     <section className="mx-auto max-w-5xl px-5 py-8">
@@ -104,24 +177,23 @@ export default function NextMatchPanel({ match }: { match: UpcomingMatchInsight 
             Palpites dos competidores
           </h3>
           <div className="grid max-h-[34rem] gap-1.5 overflow-auto pr-1 sm:grid-cols-2">
-            {match.picks.map((pick) => {
-              const score = `${pick.homeGoals}-${pick.awayGoals}`;
-              const leader = leadingScores.has(score);
-              return (
-                <div
-                  key={pick.name}
-                  className={`grid grid-cols-[1fr_auto] items-center gap-3 rounded-lg border px-3 py-2 ${
-                    leader ? "border-gold/40 bg-gold/10" : "border-pitch-line bg-pitch-2"
-                  }`}
-                >
-                  <span className="truncate text-sm text-chalk">{pick.name}</span>
-                  <span className={`font-mono text-sm font-bold ${leader ? "text-gold" : "text-lime"}`}>
-                    {pick.homeGoals} x {pick.awayGoals}
-                  </span>
-                </div>
-              );
-            })}
+            <MatchPickList match={match} />
           </div>
+        </div>
+      </div>
+
+      <div className="mt-6">
+        <div className="mb-3 flex items-end justify-between gap-4">
+          <div>
+            <p className="font-mono text-[10px] uppercase tracking-[0.26em] text-lime">agenda do dia</p>
+            <h2 className="mt-1 font-display text-xl uppercase tracking-widest text-chalk">Jogos do dia</h2>
+          </div>
+          <p className="font-mono text-xs text-slatey">{matchesOfDay.length} jogos</p>
+        </div>
+        <div className="grid gap-2">
+          {matchesOfDay.map((dayMatch) => (
+            <DayMatchCard key={dayMatch.id} match={dayMatch} defaultOpen={dayMatch.id === match.id} />
+          ))}
         </div>
       </div>
     </section>

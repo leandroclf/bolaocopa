@@ -39,5 +39,10 @@ describe("computeStandings upcoming match insights", () => {
     expect(standings.nextMatch?.mostCommonScores.map((score) => score.score)).toEqual(["1-1", "2-0"]);
     expect(standings.metrics.remainingMatches).toBe(1);
     expect(standings.metrics.averageUpcomingGoals).toBe(2);
+    expect(standings.metrics.completionRate).toBe(50);
+    expect(standings.metrics.completeCards).toBe(2);
+    expect(standings.metrics.missingPickCards).toBe(1);
+    expect(standings.metrics.topUpcomingScore?.value).toBe("1-1");
+    expect(standings.metrics.storyMetrics.some((metric) => metric.label === "Briga pela liderança")).toBe(true);
   });
 });

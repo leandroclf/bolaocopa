@@ -109,15 +109,32 @@ export type MatchMetric = {
   value: string;
 };
 
+export type InsightMetric = {
+  label: string;
+  value: string;
+  detail: string;
+};
+
 export type StandingsMetrics = {
   totalMatches: number;
   finishedMatches: number;
   remainingMatches: number;
   totalValidPicks: number;
   averageUpcomingGoals: number;
+  completionRate: number;
+  leaderGap: number | null;
+  leaderEfficiency: number | null;
+  averagePoints: number;
+  completeCards: number;
+  missingPickCards: number;
+  topExact: InsightMetric | null;
+  topPartial: InsightMetric | null;
+  topUpcomingScore: InsightMetric | null;
   highestConsensus: MatchMetric | null;
   mostDivisive: MatchMetric | null;
   highestExpectedGoals: MatchMetric | null;
+  highestDrawShare: MatchMetric | null;
+  storyMetrics: InsightMetric[];
 };
 
 export type StandingsFile = {

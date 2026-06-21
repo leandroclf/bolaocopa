@@ -96,7 +96,7 @@ export function computeStandings(
     recentResults,
     nextMatch: upcomingMatches[0] ?? null,
     upcomingMatches,
-    metrics: computeMetrics(fixtures.matches.length, finishedIds.length, predictions, upcomingMatches),
+    metrics: computeMetrics(fixtures.matches.length, finishedIds.length, predictions, standings, upcomingMatches),
   };
 }
 
@@ -200,17 +200,28 @@ function computeMetrics(
   totalMatches: number,
   finishedMatches: number,
   predictions: PredictionsFile,
+  standings: StandingEntry[],
   upcomingMatches: UpcomingMatchInsight[]
 ) {
   const totalValidPicks = predictions.participants.reduce(
     (sum, participant) => sum + Object.keys(participant.picks).length,
     0
   );
+  const completeCards = predictions.participants.filter(
+    (participant) => Object.keys(participant.picks).length === totalMatches
+  ).length;
   const totalUpcomingPicks = upcomingMatches.reduce((sum, match) => sum + match.totalPicks, 0);
   const totalUpcomingGoals = upcomingMatches.reduce(
     (sum, match) => sum + match.averageTotalGoals * match.totalPicks,
     0
   );
+  const scoreCounts = new Map<string, number>();
+  for (const match of upcomingMatches) {
+    for (const pick of match.picks) {
+      const key = scoreKey(pick.homeGoals, pick.awayGoals);
+      scoreCounts.set(key, (scoreCounts.get(key) ?? 0) + 1);
+    }
+  }
 
   const withPicks = upcomingMatches.filter((match) => match.totalPicks > 0);
   const highestConsensus = withPicks
@@ -222,6 +233,67 @@ function computeMetrics(
   const highestExpectedGoals = withPicks
     .slice()
     .sort((a, b) => b.averageTotalGoals - a.averageTotalGoals || bySchedule(a, b))[0];
+  const highestDrawShare = withPicks
+    .slice()
+    .sort((a, b) => pct(b.outcomeBreakdown.draw, b.totalPicks) - pct(a.outcomeBreakdown.draw, a.totalPicks) || bySchedule(a, b))[0];
+  const leader = standings[0] ?? null;
+  const runnerUp = standings[1] ?? null;
+  const topExact = standings.slice().sort((a, b) => b.exact - a.exact || a.rank - b.rank)[0] ?? null;
+  const topPartial = standings.slice().sort((a, b) => b.partial - a.partial || a.rank - b.rank)[0] ?? null;
+  const topUpcomingScore = Array.from(scoreCounts.entries()).sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))[0] ?? null;
+  const averagePoints = avg(standings.reduce((sum, row) => sum + row.points, 0), standings.length);
+  const maxPossiblePoints = finishedMatches * 10;
+  const leaderEfficiency = leader && maxPossiblePoints > 0 ? pct(leader.points, maxPossiblePoints) : null;
+  const leaderGap = leader && runnerUp ? leader.points - runnerUp.points : null;
+  const missingPickCards = predictions.participants.length - completeCards;
+
+  const storyMetrics = [
+    leader && runnerUp && leaderGap != null
+      ? {
+        label: "Briga pela liderança",
+        value: `${leaderGap} pts`,
+        detail: `${leader.name} abre ${leaderGap} ponto${leaderGap === 1 ? "" : "s"} sobre ${runnerUp.name}.`,
+      }
+      : null,
+    leader && leaderEfficiency != null
+      ? {
+        label: "Aproveitamento do líder",
+        value: `${leaderEfficiency}%`,
+        detail: `${leader.points} pontos em ${finishedMatches} jogos apurados.`,
+      }
+      : null,
+    {
+      label: "Média do pelotão",
+      value: `${averagePoints} pts`,
+      detail: `Média atual entre ${standings.length} apostadores.`,
+    },
+    topExact
+      ? {
+        label: "Rei dos exatos",
+        value: `${topExact.exact}`,
+        detail: `${topExact.name} lidera em placares cravados.`,
+      }
+      : null,
+    topPartial
+      ? {
+        label: "Mais parciais",
+        value: `${topPartial.partial}`,
+        detail: `${topPartial.name} lidera em acertos de 5 ou 3 pontos.`,
+      }
+      : null,
+    {
+      label: "Cartelas completas",
+      value: `${completeCards}/${predictions.participants.length}`,
+      detail: missingPickCards === 0 ? "Todos têm 72 palpites válidos." : `${missingPickCards} apostador${missingPickCards === 1 ? "" : "es"} com palpite ausente ou inválido.`,
+    },
+    topUpcomingScore
+      ? {
+        label: "Placar mais apostado",
+        value: topUpcomingScore[0],
+        detail: `${topUpcomingScore[1]} vezes nos jogos pendentes.`,
+      }
+      : null,
+  ].filter((metric): metric is { label: string; value: string; detail: string } => metric !== null);
 
   return {
     totalMatches,
@@ -229,6 +301,21 @@ function computeMetrics(
     remainingMatches: totalMatches - finishedMatches,
     totalValidPicks,
     averageUpcomingGoals: avg(totalUpcomingGoals, totalUpcomingPicks),
+    completionRate: pct(finishedMatches, totalMatches),
+    leaderGap,
+    leaderEfficiency,
+    averagePoints,
+    completeCards,
+    missingPickCards,
+    topExact: topExact
+      ? { label: "Rei dos exatos", value: String(topExact.exact), detail: topExact.name }
+      : null,
+    topPartial: topPartial
+      ? { label: "Mais parciais", value: String(topPartial.partial), detail: topPartial.name }
+      : null,
+    topUpcomingScore: topUpcomingScore
+      ? { label: "Placar mais apostado", value: topUpcomingScore[0], detail: `${topUpcomingScore[1]} palpites` }
+      : null,
     highestConsensus: highestConsensus
       ? metricFromMatch(highestConsensus, "Maior consenso", `${highestConsensus.topOutcome.label} · ${highestConsensus.topOutcome.percentage}%`)
       : null,
@@ -238,5 +325,9 @@ function computeMetrics(
     highestExpectedGoals: highestExpectedGoals
       ? metricFromMatch(highestExpectedGoals, "Mais gols previstos", `${highestExpectedGoals.averageTotalGoals} gols em média`)
       : null,
+    highestDrawShare: highestDrawShare
+      ? metricFromMatch(highestDrawShare, "Mais cara de empate", `${pct(highestDrawShare.outcomeBreakdown.draw, highestDrawShare.totalPicks)}% em empate`)
+      : null,
+    storyMetrics,
   };
 }
