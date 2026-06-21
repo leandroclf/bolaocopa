@@ -1,10 +1,5 @@
 import Scoreboard from "@/components/Scoreboard";
-import StandingsTable from "@/components/StandingsTable";
-import RecentMatches from "@/components/RecentMatches";
-import RulesCard from "@/components/RulesCard";
-import InsightsPanel from "@/components/InsightsPanel";
-import NextMatchPanel from "@/components/NextMatchPanel";
-import UpcomingMatches from "@/components/UpcomingMatches";
+import DashboardTabs from "@/components/DashboardTabs";
 import { getStandings } from "@/lib/data";
 
 export default function Page() {
@@ -18,12 +13,7 @@ export default function Page() {
         countedMatches={s.countedMatches}
         leader={leader}
       />
-      <InsightsPanel metrics={s.metrics} />
-      <NextMatchPanel match={s.nextMatch} />
-      <UpcomingMatches matches={s.upcomingMatches} />
-      <StandingsTable standings={s.standings} />
-      <RecentMatches results={s.recentResults} />
-      <RulesCard />
+      <DashboardTabs standings={s} />
       <footer className="mx-auto max-w-3xl px-5 pt-4">
         <p className="font-mono text-[11px] text-slatey/70">
           Resultados via openfootball (domínio público). Desempate alfabético. Atualização automática a cada apuração.

@@ -39,6 +39,9 @@ export type StandingEntry = {
   points: number;
   exact: number; // # of 10-point hits
   partial: number; // # of 5- or 3-point hits
+  partialWinnerGoal: number; // # of 5-point hits matching the winner's goals
+  partialLoserGoal: number; // # of 5-point hits matching the loser's goals
+  resultOnly: number; // # of 3-point hits
   played: number; // # of finished matches this participant had a valid pick for
 };
 

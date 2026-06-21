@@ -16,8 +16,8 @@ describe("computeStandings upcoming match insights", () => {
     const predictions: PredictionsFile = {
       participants: [
         { name: "Ana", picks: { "1": [2, 1], "2": [2, 0] } },
-        { name: "Bia", picks: { "1": [1, 0], "2": [1, 1] } },
-        { name: "Caio", picks: {} },
+        { name: "Bia", picks: { "1": [2, 0], "2": [1, 1] } },
+        { name: "Caio", picks: { "1": [3, 1] } },
       ],
     };
     const results: ResultsFile = {
@@ -29,6 +29,9 @@ describe("computeStandings upcoming match insights", () => {
     const standings = computeStandings(fixtures, predictions, results);
 
     expect(standings.countedMatches).toBe(1);
+    expect(standings.standings.find((row) => row.name === "Bia")?.partialWinnerGoal).toBe(1);
+    expect(standings.standings.find((row) => row.name === "Caio")?.partialLoserGoal).toBe(1);
+    expect(standings.standings.find((row) => row.name === "Ana")?.exact).toBe(1);
     expect(standings.nextMatch?.id).toBe(2);
     expect(standings.nextMatch?.totalPicks).toBe(2);
     expect(standings.nextMatch?.missingPicks).toBe(1);

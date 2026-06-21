@@ -7,7 +7,11 @@ const tiers = [
 
 export default function RulesCard() {
   return (
-    <section className="mx-auto max-w-3xl px-5 py-8">
+    <section className="mx-auto max-w-5xl px-5 pb-8 pt-2">
+      <div className="mb-3">
+        <p className="font-mono text-[10px] uppercase tracking-[0.26em] text-lime">informações importantes</p>
+        <h2 className="mt-1 font-display text-xl uppercase tracking-widest text-chalk">Pontuação e premiação</h2>
+      </div>
       <div className="grid gap-3 sm:grid-cols-2">
         <div className="rounded-lg border border-pitch-line bg-pitch-2 p-5">
           <h3 className="mb-3 font-display text-base uppercase tracking-widest text-chalk">Pontuação</h3>

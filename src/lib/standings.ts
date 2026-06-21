@@ -36,7 +36,13 @@ export function computeStandings(
   const prevRankByName = new Map((previous?.standings ?? []).map((e) => [e.name, e.rank]));
 
   const rows = predictions.participants.map((p) => {
-    let points = 0, exact = 0, partial = 0, played = 0;
+    let points = 0;
+    let exact = 0;
+    let partial = 0;
+    let partialWinnerGoal = 0;
+    let partialLoserGoal = 0;
+    let resultOnly = 0;
+    let played = 0;
     for (const idStr of finishedIds) {
       const r = results.results[idStr];
       const pick = p.picks[idStr];
@@ -44,9 +50,21 @@ export function computeStandings(
       if (pick) played += 1;
       points += pts;
       if (pts === 10) exact += 1;
-      else if (pts === 5 || pts === 3) partial += 1;
+      else if (pts === 5 || pts === 3) {
+        partial += 1;
+        if (pts === 3) resultOnly += 1;
+        else if (pick) {
+          const homeWon = r.home > r.away;
+          const predictedWinnerGoals = homeWon ? pick[0] : pick[1];
+          const predictedLoserGoals = homeWon ? pick[1] : pick[0];
+          const actualWinnerGoals = homeWon ? r.home : r.away;
+          const actualLoserGoals = homeWon ? r.away : r.home;
+          if (predictedWinnerGoals === actualWinnerGoals) partialWinnerGoal += 1;
+          if (predictedLoserGoals === actualLoserGoals) partialLoserGoal += 1;
+        }
+      }
     }
-    return { name: p.name, points, exact, partial, played };
+    return { name: p.name, points, exact, partial, partialWinnerGoal, partialLoserGoal, resultOnly, played };
   });
 
   const tiebreak = (a: typeof rows[number], b: typeof rows[number]) =>
