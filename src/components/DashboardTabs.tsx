@@ -21,6 +21,7 @@ const tabs: Array<{ key: TabKey; label: string }> = [
 
 export default function DashboardTabs({ standings }: { standings: StandingsFile }) {
   const [active, setActive] = useState<TabKey>("classification");
+  const [selectedParticipant, setSelectedParticipant] = useState<string>("todos");
   const activeLabel = useMemo(() => tabs.find((tab) => tab.key === active)?.label, [active]);
   const nextDayMatches = useMemo(
     () => standings.nextMatch
@@ -28,6 +29,13 @@ export default function DashboardTabs({ standings }: { standings: StandingsFile 
       : [],
     [standings.nextMatch, standings.upcomingMatches]
   );
+  const participantOptions = useMemo(() => {
+    const names = new Set<string>();
+    for (const match of standings.upcomingMatches) {
+      for (const pick of match.picks) names.add(pick.name);
+    }
+    return ["todos", ...Array.from(names).sort((a, b) => a.localeCompare(b, "pt-BR"))];
+  }, [standings.upcomingMatches]);
 
   return (
     <div>
@@ -54,12 +62,20 @@ export default function DashboardTabs({ standings }: { standings: StandingsFile 
       <div role="region" aria-label={activeLabel}>
         {active === "classification" && (
           <>
-            <StandingsTable standings={standings.standings} />
+            <StandingsTable standings={standings.standings} metrics={standings.metrics} />
             <RulesCard />
           </>
         )}
         {active === "insights" && <InsightsPanel metrics={standings.metrics} />}
-        {active === "next" && <NextMatchPanel match={standings.nextMatch} dayMatches={nextDayMatches} />}
+        {active === "next" && (
+          <NextMatchPanel
+            match={standings.nextMatch}
+            dayMatches={nextDayMatches}
+            participantOptions={participantOptions}
+            selectedParticipant={selectedParticipant}
+            onParticipantChange={setSelectedParticipant}
+          />
+        )}
         {active === "map" && <UpcomingMatches matches={standings.upcomingMatches} />}
         {active === "recent" && <RecentMatches results={standings.recentResults} />}
       </div>

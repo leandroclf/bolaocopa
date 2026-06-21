@@ -28,6 +28,7 @@ export default function InsightsPanel({ metrics }: { metrics: StandingsMetrics }
     metrics.mostDivisive,
     metrics.highestExpectedGoals,
   ];
+  const roundSummary = [metrics.highestConsensus, metrics.mostDivisive, metrics.highestDrawShare, metrics.topUpcomingScore];
 
   return (
     <section className="mx-auto max-w-5xl px-5 py-8">
@@ -70,6 +71,27 @@ export default function InsightsPanel({ metrics }: { metrics: StandingsMetrics }
             <p className="mt-1 text-sm text-slatey">{metric.detail}</p>
           </div>
         ))}
+      </div>
+
+      <div className="mt-3 rounded-lg border border-pitch-line bg-pitch-2 p-4">
+        <p className="font-mono text-[10px] uppercase tracking-[0.24em] text-lime">resumo da rodada</p>
+        <div className="mt-3 grid gap-2 sm:grid-cols-2 xl:grid-cols-4">
+          {roundSummary.map((metric) => (
+            <div key={metric?.label ?? "empty"} className="rounded-md border border-pitch-line bg-pitch px-4 py-3">
+              {metric ? (
+                <>
+                  <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-slatey">{metric.label}</p>
+                  <p className="mt-1 text-sm font-semibold text-chalk">{metric.value}</p>
+                  <p className="mt-1 text-xs text-slatey">
+                    {"detail" in metric ? metric.detail : `${metric.label} em destaque`}
+                  </p>
+                </>
+              ) : (
+                <p className="text-sm text-slatey">Sem dado suficiente.</p>
+              )}
+            </div>
+          ))}
+        </div>
       </div>
 
       {secondaryStories.length > 0 && (

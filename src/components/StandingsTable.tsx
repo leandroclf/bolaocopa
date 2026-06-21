@@ -1,19 +1,25 @@
 "use client";
 import { useMemo, useState } from "react";
-import type { StandingEntry } from "@/lib/types";
+import type { StandingsMetrics, StandingEntry } from "@/lib/types";
 
 type SortKey = "rank" | "points" | "exact" | "partial" | "name";
 const normalize = (s: string) =>
   s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
 
 function Delta({ delta }: { delta: number | null }) {
-  if (delta == null) return <span className="font-mono text-[11px] text-slatey/60">novo</span>;
-  if (delta > 0) return <span className="font-mono text-[11px] text-lime">▲{delta}</span>;
-  if (delta < 0) return <span className="font-mono text-[11px] text-danger">▼{-delta}</span>;
-  return <span className="font-mono text-[11px] text-slatey/60">–</span>;
+  if (delta == null) return <span className="rounded-full bg-pitch px-2 py-0.5 font-mono text-[10px] uppercase tracking-wider text-slatey">novo</span>;
+  if (delta > 0) return <span className="rounded-full bg-lime/15 px-2 py-0.5 font-mono text-[10px] uppercase tracking-wider text-lime">subiu +{delta}</span>;
+  if (delta < 0) return <span className="rounded-full bg-danger/10 px-2 py-0.5 font-mono text-[10px] uppercase tracking-wider text-danger">caiu {delta}</span>;
+  return <span className="rounded-full bg-pitch px-2 py-0.5 font-mono text-[10px] uppercase tracking-wider text-slatey">estável</span>;
 }
 
-export default function StandingsTable({ standings }: { standings: StandingEntry[] }) {
+export default function StandingsTable({
+  standings,
+  metrics,
+}: {
+  standings: StandingEntry[];
+  metrics: StandingsMetrics;
+}) {
   const [query, setQuery] = useState("");
   const [sortKey, setSortKey] = useState<SortKey>("rank");
 
@@ -28,6 +34,16 @@ export default function StandingsTable({ standings }: { standings: StandingEntry
     else sorted.sort((a, b) => a.rank - b.rank);
     return sorted;
   }, [standings, query, sortKey]);
+  const topMovement = useMemo(() => {
+    const movers = standings
+      .filter((entry) => entry.delta !== null && entry.delta !== 0)
+      .slice()
+      .sort((a, b) => Math.abs(b.delta ?? 0) - Math.abs(a.delta ?? 0) || b.delta! - a.delta!);
+    return {
+      up: movers.find((entry) => (entry.delta ?? 0) > 0) ?? null,
+      down: movers.find((entry) => (entry.delta ?? 0) < 0) ?? null,
+    };
+  }, [standings]);
 
   const sortBtn = (key: SortKey, label: string) => (
     <button
@@ -51,14 +67,50 @@ export default function StandingsTable({ standings }: { standings: StandingEntry
           </div>
           <span className="font-mono text-[10px] uppercase tracking-wider text-slatey">{rows.length} nomes</span>
         </div>
+        <div className="mt-3 grid gap-2 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="rounded-lg border border-gold/30 bg-gold/10 px-4 py-3">
+            <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-slatey">líder</p>
+            <p className="mt-1 truncate font-display text-lg uppercase tracking-wide text-chalk">
+              {standings[0]?.name ?? "-"}
+            </p>
+            <p className="mt-1 font-mono text-xs text-gold">{standings[0]?.points ?? 0} pontos</p>
+          </div>
+          <div className="rounded-lg border border-pitch-line bg-pitch-2 px-4 py-3">
+            <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-slatey">diferença</p>
+            <p className="mt-1 font-mono text-2xl font-bold text-lime">{metrics.leaderGap ?? 0} pts</p>
+            <p className="mt-1 text-xs text-slatey">para o vice-líder</p>
+          </div>
+          <div className="rounded-lg border border-pitch-line bg-pitch-2 px-4 py-3">
+            <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-slatey">média do pelotão</p>
+            <p className="mt-1 font-mono text-2xl font-bold text-gold">{metrics.averagePoints}</p>
+            <p className="mt-1 text-xs text-slatey">pontos por apostador</p>
+          </div>
+          <div className="rounded-lg border border-pitch-line bg-pitch-2 px-4 py-3">
+            <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-slatey">jogos apurados</p>
+            <p className="mt-1 font-mono text-2xl font-bold text-chalk">{metrics.finishedMatches}</p>
+            <p className="mt-1 text-xs text-slatey">de {metrics.totalMatches}</p>
+          </div>
+        </div>
+        <div className="mt-3 grid gap-2 sm:grid-cols-2">
+          <div className="rounded-lg border border-pitch-line bg-pitch-2 px-4 py-3">
+            <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-slatey">subida mais forte</p>
+            <p className="mt-1 truncate text-sm font-semibold text-chalk">{topMovement.up?.name ?? "Sem mudança"}</p>
+            <p className="mt-1 font-mono text-xs text-lime">{topMovement.up ? `+${topMovement.up.delta} posições` : "Aguardando nova apuração"}</p>
+          </div>
+          <div className="rounded-lg border border-pitch-line bg-pitch-2 px-4 py-3">
+            <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-slatey">queda mais forte</p>
+            <p className="mt-1 truncate text-sm font-semibold text-chalk">{topMovement.down?.name ?? "Sem queda"}</p>
+            <p className="mt-1 font-mono text-xs text-danger">{topMovement.down ? `${topMovement.down.delta} posições` : "Aguardando nova apuração"}</p>
+          </div>
+        </div>
         <div className="mt-3">
           <div className="flex flex-wrap items-center gap-1.5">
             <span className="mr-1 font-mono text-[10px] uppercase tracking-wider text-slatey">ordenar</span>
-          {sortBtn("rank", "posição")}
-          {sortBtn("points", "pontos")}
-          {sortBtn("exact", "exatos")}
-          {sortBtn("partial", "parciais")}
-          {sortBtn("name", "nome")}
+            {sortBtn("rank", "posição")}
+            {sortBtn("points", "pontos")}
+            {sortBtn("exact", "exatos")}
+            {sortBtn("partial", "parciais")}
+            {sortBtn("name", "nome")}
           </div>
         </div>
       </div>
@@ -71,14 +123,19 @@ export default function StandingsTable({ standings }: { standings: StandingEntry
         aria-label="Buscar apostador"
         className="mb-4 w-full rounded-lg border border-pitch-line bg-pitch-2 px-4 py-2.5 text-sm text-chalk placeholder:text-slatey/70 focus:border-lime"
       />
+      <p className="mb-3 font-mono text-[10px] uppercase tracking-wider text-slatey">
+        {query ? `${rows.length} resultado${rows.length === 1 ? "" : "s"} para "${query}"` : "busca rápida por nome"}
+      </p>
 
       <ol className="space-y-1.5">
         {rows.map((e) => {
           const leader = e.rank === 1;
+          const deltaLabel =
+            e.delta == null ? "novo" : e.delta === 0 ? "estável" : e.delta > 0 ? `subiu ${e.delta}` : `caiu ${Math.abs(e.delta)}`;
           return (
             <li
               key={e.name}
-              className={`grid grid-cols-[2rem_1fr_2.2rem_3.3rem] items-center gap-2 rounded-lg border px-3 py-2.5 ${
+              className={`grid grid-cols-[2rem_1fr_2.8rem_3.3rem] items-center gap-2 rounded-lg border px-3 py-2.5 sm:grid-cols-[2rem_1fr_4rem_3.3rem] ${
                 leader ? "border-gold/40 bg-gold/10" : "border-transparent bg-pitch-2"
               }`}
             >
@@ -104,7 +161,10 @@ export default function StandingsTable({ standings }: { standings: StandingEntry
                   </span>
                 </div>
               </div>
-              <div className="text-center"><Delta delta={e.delta} /></div>
+              <div className="text-center">
+                <Delta delta={e.delta} />
+                <p className="mt-1 font-mono text-[10px] uppercase tracking-wider text-slatey">{deltaLabel}</p>
+              </div>
               <div className="text-right">
                 <span className={`font-mono text-xl font-bold ${leader ? "text-gold" : "text-chalk"}`}>
                   {e.points}
