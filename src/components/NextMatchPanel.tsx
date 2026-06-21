@@ -68,6 +68,34 @@ function MatchPickList({ match }: { match: UpcomingMatchInsight }) {
   );
 }
 
+function ParticipantSummary({
+  selectedParticipant,
+  match,
+}: {
+  selectedParticipant: string;
+  match: UpcomingMatchInsight;
+}) {
+  const selectedPick = match.picks.find((pick) => pick.name === selectedParticipant) ?? null;
+  if (!selectedPick) return null;
+  const groupOutcome = match.topOutcome.label;
+  const userScore = `${selectedPick.homeGoals} x ${selectedPick.awayGoals}`;
+  return (
+    <div className="mt-3 rounded-lg border border-lime/20 bg-lime/10 px-4 py-3">
+      <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-lime">seu palpite</p>
+      <div className="mt-2 flex flex-wrap items-center justify-between gap-3">
+        <p className="text-sm text-chalk">
+          <span className="font-semibold text-lime">{selectedParticipant}</span> apostou{" "}
+          <span className="font-mono font-bold">{userScore}</span> enquanto o grupo aponta{" "}
+          <span className="font-mono font-bold">{groupOutcome}</span>.
+        </p>
+        <span className="rounded-full bg-pitch px-2 py-1 font-mono text-[10px] uppercase tracking-wider text-slatey">
+          comparação rápida
+        </span>
+      </div>
+    </div>
+  );
+}
+
 function ParticipantFilter({
   options,
   value,
@@ -211,6 +239,7 @@ export default function NextMatchPanel({
                 {selectedParticipant} representa {selectedShare}% dos palpites do jogo
               </p>
             )}
+            {selectedParticipant !== "todos" && <ParticipantSummary selectedParticipant={selectedParticipant} match={match} />}
           </div>
         </div>
 

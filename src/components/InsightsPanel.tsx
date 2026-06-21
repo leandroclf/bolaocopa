@@ -1,4 +1,4 @@
-import type { MatchMetric, StandingsMetrics } from "@/lib/types";
+import type { MatchMetric, StandingEntry, StandingsMetrics } from "@/lib/types";
 
 function MetricMatch({ metric }: { metric: MatchMetric | null }) {
   if (!metric) return <span className="text-slatey">Sem jogos pendentes</span>;
@@ -13,7 +13,15 @@ function MetricMatch({ metric }: { metric: MatchMetric | null }) {
   );
 }
 
-export default function InsightsPanel({ metrics }: { metrics: StandingsMetrics }) {
+export default function InsightsPanel({
+  metrics,
+  selectedParticipant,
+  selectedStanding,
+}: {
+  metrics: StandingsMetrics;
+  selectedParticipant: string;
+  selectedStanding: StandingEntry | null;
+}) {
   const primaryStories = metrics.storyMetrics.slice(0, 5);
   const secondaryStories = metrics.storyMetrics.slice(5);
   const stats = [
@@ -29,6 +37,7 @@ export default function InsightsPanel({ metrics }: { metrics: StandingsMetrics }
     metrics.highestExpectedGoals,
   ];
   const roundSummary = [metrics.highestConsensus, metrics.mostDivisive, metrics.highestDrawShare, metrics.topUpcomingScore];
+  const focusDelta = selectedStanding ? selectedStanding.points - metrics.averagePoints : null;
 
   return (
     <section className="mx-auto max-w-5xl px-5 py-8">
@@ -53,6 +62,36 @@ export default function InsightsPanel({ metrics }: { metrics: StandingsMetrics }
           <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-slatey">Média de pontos</p>
           <p className="mt-1 font-mono text-2xl font-bold text-gold">{metrics.averagePoints}</p>
         </div>
+      </div>
+
+      <div className="mt-3 rounded-lg border border-pitch-line bg-pitch-2 p-4">
+        <p className="font-mono text-[10px] uppercase tracking-[0.24em] text-lime">resumo individual</p>
+        {selectedStanding ? (
+          <div className="mt-3 grid gap-2 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="rounded-md border border-pitch-line bg-pitch px-4 py-3">
+              <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-slatey">apostador</p>
+              <p className="mt-1 truncate text-sm font-semibold text-chalk">{selectedStanding.name}</p>
+            </div>
+            <div className="rounded-md border border-pitch-line bg-pitch px-4 py-3">
+              <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-slatey">posição</p>
+              <p className="mt-1 font-mono text-2xl font-bold text-gold">{selectedStanding.rank}</p>
+            </div>
+            <div className="rounded-md border border-pitch-line bg-pitch px-4 py-3">
+              <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-slatey">acertos</p>
+              <p className="mt-1 font-mono text-2xl font-bold text-lime">
+                {selectedStanding.exact} / {selectedStanding.partial}
+              </p>
+            </div>
+            <div className="rounded-md border border-pitch-line bg-pitch px-4 py-3">
+              <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-slatey">vs grupo</p>
+              <p className="mt-1 font-mono text-2xl font-bold text-chalk">
+                {focusDelta != null ? `${focusDelta > 0 ? "+" : ""}${focusDelta}` : "—"}
+              </p>
+            </div>
+          </div>
+        ) : (
+          <p className="mt-3 text-sm text-slatey">Selecione um apostador para ver a leitura individual e a comparação com o grupo.</p>
+        )}
       </div>
 
       <div className="mt-3 grid gap-2 sm:grid-cols-2 lg:grid-cols-4">

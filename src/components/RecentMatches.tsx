@@ -3,11 +3,25 @@ import type { RecentResult } from "@/lib/types";
 const fmtDay = (d: string) =>
   new Intl.DateTimeFormat("pt-BR", { day: "2-digit", month: "2-digit" }).format(new Date(`${d}T12:00:00`));
 
-export default function RecentMatches({ results }: { results: RecentResult[] }) {
+export default function RecentMatches({
+  results,
+  selectedParticipant,
+}: {
+  results: RecentResult[];
+  selectedParticipant: string;
+}) {
   if (results.length === 0) return null;
   return (
     <section className="mx-auto max-w-3xl px-5 py-8">
       <h2 className="mb-4 font-display text-lg uppercase tracking-widest text-chalk">Jogos apurados</h2>
+      {selectedParticipant !== "todos" && (
+        <div className="mb-4 rounded-lg border border-lime/20 bg-lime/10 px-4 py-3">
+          <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-lime">foco atual</p>
+          <p className="mt-1 text-sm text-chalk">
+            O grupo está filtrado por <span className="font-semibold text-lime">{selectedParticipant}</span>.
+          </p>
+        </div>
+      )}
       <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
         {results.map((m) => (
           <div key={m.id} className="flex items-center gap-3 rounded-lg border border-pitch-line bg-pitch-2 px-3 py-2.5">

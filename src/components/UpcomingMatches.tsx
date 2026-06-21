@@ -6,7 +6,13 @@ import type { UpcomingMatchInsight } from "@/lib/types";
 const fmtDay = (d: string) =>
   new Intl.DateTimeFormat("pt-BR", { day: "2-digit", month: "2-digit" }).format(new Date(`${d}T12:00:00`));
 
-export default function UpcomingMatches({ matches }: { matches: UpcomingMatchInsight[] }) {
+export default function UpcomingMatches({
+  matches,
+  selectedParticipant,
+}: {
+  matches: UpcomingMatchInsight[];
+  selectedParticipant: string;
+}) {
   const [selectedId, setSelectedId] = useState(matches[0]?.id ?? null);
   const selected = useMemo(
     () => matches.find((match) => match.id === selectedId) ?? matches[0] ?? null,
@@ -24,6 +30,14 @@ export default function UpcomingMatches({ matches }: { matches: UpcomingMatchIns
         </div>
         <p className="font-mono text-xs text-slatey">{matches.length} jogos pendentes</p>
       </div>
+      {selectedParticipant !== "todos" && (
+        <div className="mb-4 rounded-lg border border-lime/20 bg-lime/10 px-4 py-3">
+          <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-lime">foco atual</p>
+          <p className="mt-1 text-sm text-chalk">
+            Mostrando o mapa para <span className="font-semibold text-lime">{selectedParticipant}</span>.
+          </p>
+        </div>
+      )}
 
       <div className="grid gap-3 lg:grid-cols-[0.9fr_1.1fr]">
         <div className="grid max-h-[42rem] gap-2 overflow-auto pr-1 sm:grid-cols-2 lg:grid-cols-1">
@@ -87,19 +101,24 @@ export default function UpcomingMatches({ matches }: { matches: UpcomingMatchIns
                 </div>
               </div>
 
-              <div className="mt-4 flex flex-wrap gap-2">
-                {selected.mostCommonScores.map((score) => (
-                  <span key={score.score} className="rounded bg-pitch px-2 py-1 font-mono text-xs text-chalk">
-                    {score.score} · {score.count} votos
-                  </span>
-                ))}
-                {selected.missingPicks > 0 && (
-                  <span className="rounded bg-danger/15 px-2 py-1 font-mono text-xs text-danger">
-                    {selected.missingPicks} sem palpite válido
-                  </span>
-                )}
-              </div>
+            <div className="mt-4 flex flex-wrap gap-2">
+              {selected.mostCommonScores.map((score) => (
+                <span key={score.score} className="rounded bg-pitch px-2 py-1 font-mono text-xs text-chalk">
+                  {score.score} · {score.count} votos
+                </span>
+              ))}
+              {selected.missingPicks > 0 && (
+                <span className="rounded bg-danger/15 px-2 py-1 font-mono text-xs text-danger">
+                  {selected.missingPicks} sem palpite válido
+                </span>
+              )}
             </div>
+            {selectedParticipant !== "todos" && (
+              <p className="mt-3 text-sm text-slatey">
+                Selecione outro nome acima para comparar a leitura individual com o comportamento do grupo.
+              </p>
+            )}
+          </div>
 
             <div className="mt-2 grid max-h-[28rem] gap-1.5 overflow-auto pr-1 sm:grid-cols-2">
               {selected.picks.map((pick) => (

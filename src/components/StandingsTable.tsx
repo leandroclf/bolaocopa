@@ -16,9 +16,13 @@ function Delta({ delta }: { delta: number | null }) {
 export default function StandingsTable({
   standings,
   metrics,
+  selectedParticipant,
+  onSelectParticipant,
 }: {
   standings: StandingEntry[];
   metrics: StandingsMetrics;
+  selectedParticipant: string;
+  onSelectParticipant: (name: string) => void;
 }) {
   const [query, setQuery] = useState("");
   const [sortKey, setSortKey] = useState<SortKey>("rank");
@@ -126,24 +130,84 @@ export default function StandingsTable({
       <p className="mb-3 font-mono text-[10px] uppercase tracking-wider text-slatey">
         {query ? `${rows.length} resultado${rows.length === 1 ? "" : "s"} para "${query}"` : "busca rápida por nome"}
       </p>
+      {selectedParticipant !== "todos" && (
+        <div className="mb-3 rounded-lg border border-lime/30 bg-lime/10 px-4 py-3">
+          <div className="flex items-start justify-between gap-3">
+            <div>
+              <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-lime">modo foco</p>
+              <p className="mt-1 text-sm font-semibold text-chalk">{selectedParticipant}</p>
+            </div>
+            <button
+              type="button"
+              onClick={() => onSelectParticipant("todos")}
+              className="rounded-full bg-pitch px-3 py-1 font-mono text-[10px] uppercase tracking-wider text-slatey"
+            >
+              limpar
+            </button>
+          </div>
+        </div>
+      )}
+
+      {selectedParticipant !== "todos" && standings.find((entry) => entry.name === selectedParticipant) && (
+        <div className="mb-4 rounded-lg border border-pitch-line bg-pitch-2 p-4">
+          {(() => {
+            const focused = standings.find((entry) => entry.name === selectedParticipant)!;
+            return (
+              <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-4">
+                <div>
+                  <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-slatey">posição</p>
+                  <p className="mt-1 font-mono text-2xl font-bold text-gold">{focused.rank}</p>
+                </div>
+                <div>
+                  <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-slatey">pontos</p>
+                  <p className="mt-1 font-mono text-2xl font-bold text-lime">{focused.points}</p>
+                </div>
+                <div>
+                  <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-slatey">exatos</p>
+                  <p className="mt-1 font-mono text-2xl font-bold text-chalk">{focused.exact}</p>
+                </div>
+                <div>
+                  <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-slatey">parciais</p>
+                  <p className="mt-1 font-mono text-2xl font-bold text-chalk">{focused.partial}</p>
+                </div>
+              </div>
+            );
+          })()}
+          <p className="mt-3 text-sm text-slatey">
+            {selectedParticipant} está a{" "}
+            <span className="text-chalk">
+              {Math.abs((standings[0]?.points ?? 0) - (standings.find((entry) => entry.name === selectedParticipant)?.points ?? 0))}
+            </span>{" "}
+            ponto{Math.abs((standings[0]?.points ?? 0) - (standings.find((entry) => entry.name === selectedParticipant)?.points ?? 0)) === 1 ? "" : "s"} do líder e
+            {(() => {
+              const focused = standings.find((entry) => entry.name === selectedParticipant);
+              if (!focused) return " ainda não tem dados suficientes.";
+              const delta = focused.points - metrics.averagePoints;
+              return ` está ${delta > 0 ? "+" : ""}${delta} em relação à média do grupo.`;
+            })()}
+          </p>
+        </div>
+      )}
 
       <ol className="space-y-1.5">
         {rows.map((e) => {
           const leader = e.rank === 1;
+          const focused = e.name === selectedParticipant;
           const deltaLabel =
             e.delta == null ? "novo" : e.delta === 0 ? "estável" : e.delta > 0 ? `subiu ${e.delta}` : `caiu ${Math.abs(e.delta)}`;
           return (
             <li
               key={e.name}
               className={`grid grid-cols-[2rem_1fr_2.8rem_3.3rem] items-center gap-2 rounded-lg border px-3 py-2.5 sm:grid-cols-[2rem_1fr_4rem_3.3rem] ${
-                leader ? "border-gold/40 bg-gold/10" : "border-transparent bg-pitch-2"
+                focused ? "border-lime/50 bg-lime/10" : leader ? "border-gold/40 bg-gold/10" : "border-transparent bg-pitch-2"
               }`}
+              onClick={() => onSelectParticipant(e.name)}
             >
-              <div className={`text-center font-mono text-sm ${leader ? "text-gold" : "text-slatey"}`}>
+              <div className={`text-center font-mono text-sm ${leader ? "text-gold" : focused ? "text-lime" : "text-slatey"}`}>
                 {e.rank}
               </div>
               <div className="min-w-0 flex-1">
-                <p className={`truncate text-sm font-semibold ${leader ? "text-gold" : "text-chalk"}`}>
+                <p className={`truncate text-sm font-semibold ${leader ? "text-gold" : focused ? "text-lime" : "text-chalk"}`}>
                   {e.name}
                 </p>
                 <p className="font-mono text-[11px] text-slatey">
@@ -166,7 +230,7 @@ export default function StandingsTable({
                 <p className="mt-1 font-mono text-[10px] uppercase tracking-wider text-slatey">{deltaLabel}</p>
               </div>
               <div className="text-right">
-                <span className={`font-mono text-xl font-bold ${leader ? "text-gold" : "text-chalk"}`}>
+                <span className={`font-mono text-xl font-bold ${leader ? "text-gold" : focused ? "text-lime" : "text-chalk"}`}>
                   {e.points}
                 </span>
               </div>
