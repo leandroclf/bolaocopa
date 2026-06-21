@@ -14,19 +14,19 @@ function MetricMatch({ metric }: { metric: MatchMetric | null }) {
 }
 
 export default function InsightsPanel({ metrics }: { metrics: StandingsMetrics }) {
+  const primaryStories = metrics.storyMetrics.slice(0, 5);
+  const secondaryStories = metrics.storyMetrics.slice(5);
   const stats = [
     ["Jogos restantes", String(metrics.remainingMatches)],
     ["Jogos apurados", String(metrics.finishedMatches)],
     ["Avanço da fase", `${metrics.completionRate}%`],
     ["Palpites válidos", String(metrics.totalValidPicks)],
     ["Gols previstos", `${metrics.averageUpcomingGoals}`],
-    ["Média de pontos", `${metrics.averagePoints}`],
   ] as const;
   const matchMetrics = [
     metrics.highestConsensus,
     metrics.mostDivisive,
     metrics.highestExpectedGoals,
-    metrics.highestDrawShare,
   ];
 
   return (
@@ -41,13 +41,17 @@ export default function InsightsPanel({ metrics }: { metrics: StandingsMetrics }
         </p>
       </div>
 
-      <div className="grid gap-2 sm:grid-cols-3 lg:grid-cols-6">
+      <div className="grid gap-2 sm:grid-cols-3 lg:grid-cols-5">
         {stats.map(([label, value]) => (
           <div key={label} className="rounded-lg border border-pitch-line bg-pitch-2 px-4 py-3">
             <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-slatey">{label}</p>
             <p className="mt-1 font-mono text-2xl font-bold text-gold">{value}</p>
           </div>
         ))}
+        <div className="rounded-lg border border-pitch-line bg-pitch-2 px-4 py-3">
+          <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-slatey">Média de pontos</p>
+          <p className="mt-1 font-mono text-2xl font-bold text-gold">{metrics.averagePoints}</p>
+        </div>
       </div>
 
       <div className="mt-3 grid gap-2 sm:grid-cols-2 lg:grid-cols-4">
@@ -59,7 +63,7 @@ export default function InsightsPanel({ metrics }: { metrics: StandingsMetrics }
       </div>
 
       <div className="mt-3 grid gap-2 sm:grid-cols-2">
-        {metrics.storyMetrics.map((metric) => (
+        {primaryStories.map((metric) => (
           <div key={metric.label} className="rounded-lg border border-pitch-line bg-pitch-2 p-4">
             <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-slatey">{metric.label}</p>
             <p className="mt-1 font-mono text-2xl font-bold text-gold">{metric.value}</p>
@@ -67,6 +71,23 @@ export default function InsightsPanel({ metrics }: { metrics: StandingsMetrics }
           </div>
         ))}
       </div>
+
+      {secondaryStories.length > 0 && (
+        <details className="mt-3 rounded-lg border border-pitch-line bg-pitch-2 p-4">
+          <summary className="cursor-pointer list-none font-mono text-[10px] uppercase tracking-[0.24em] text-slatey">
+            Mais leituras
+          </summary>
+          <div className="mt-3 grid gap-2 sm:grid-cols-2">
+            {secondaryStories.map((metric) => (
+              <div key={metric.label} className="rounded-md border border-pitch-line bg-pitch px-4 py-3">
+                <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-slatey">{metric.label}</p>
+                <p className="mt-1 font-mono text-xl font-bold text-chalk">{metric.value}</p>
+                <p className="mt-1 text-sm text-slatey">{metric.detail}</p>
+              </div>
+            ))}
+          </div>
+        </details>
+      )}
     </section>
   );
 }
