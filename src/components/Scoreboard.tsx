@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { StandingEntry } from "@/lib/types";
 
 function formatStamp(iso: string) {
@@ -22,6 +23,12 @@ export default function Scoreboard({
             <h1 className="mt-1 font-display text-4xl leading-[0.9] tracking-wide text-chalk sm:text-6xl">
               BOLÃO<br />COPA 2026
             </h1>
+            <Link
+              href="/classificacao/"
+              className="mt-3 inline-flex h-9 items-center rounded-md border border-lime/40 bg-lime/10 px-3 font-mono text-[10px] font-bold uppercase tracking-wider text-lime"
+            >
+              Ver classificação simples
+            </Link>
           </div>
 
           <div className="grid grid-cols-3 gap-1.5 font-mono text-[10px] text-slatey sm:min-w-[24rem] sm:text-xs">
