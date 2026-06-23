@@ -2,6 +2,8 @@
  * Fetches official results and writes data/results.json (index-keyed: 1..72).
  * Sources (RESULTS_SOURCE env):
  *   openfootball (default) — public-domain JSON, no key, ~daily updates
+ *   fast                  — API-Football when configured + openfootball fallback
+ *   api-football          — API-Football only (token required)
  *   football-data          — free tier (token required, scores delayed)
  *   manual                 — does nothing; results.json is edited by hand
  *
@@ -27,6 +29,8 @@ const isGoal = (n: unknown): n is number => typeof n === "number" && Number.isIn
 type TeamMap = { enToCanon: Record<string, string>; fixtureCanon: Record<string, [string, string]> };
 const OPENFOOTBALL_URL =
   "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json";
+const API_FOOTBALL_URL = "https://v3.football.api-sports.io/fixtures?league=1&season=2026";
+const FINAL_STATUS = new Set(["FT", "AET", "PEN"]);
 
 const stableResults = (results: Record<string, ResultEntry>) =>
   JSON.stringify(
@@ -40,6 +44,18 @@ function buildIndex(fixtures: FixturesFile, tm: TeamMap) {
   for (const m of fixtures.matches) {
     const [hc, ac] = tm.fixtureCanon[String(m.id)];
     byKey.set(`${m.group}|${[hc, ac].sort().join("~")}`, { id: m.id, homeCanon: hc });
+  }
+  return byKey;
+}
+
+function buildPairIndex(fixtures: FixturesFile, tm: TeamMap) {
+  const byKey = new Map<string, Array<{ id: number; homeCanon: string }>>();
+  for (const m of fixtures.matches) {
+    const [hc, ac] = tm.fixtureCanon[String(m.id)];
+    const key = [hc, ac].sort().join("~");
+    const matches = byKey.get(key) ?? [];
+    matches.push({ id: m.id, homeCanon: hc });
+    byKey.set(key, matches);
   }
   return byKey;
 }
@@ -60,6 +76,34 @@ async function fromOpenfootball(fixtures: FixturesFile, tm: TeamMap): Promise<Re
     const hit = idx.get(`${g}|${[c1, c2].sort().join("~")}`);
     if (!hit) continue;
     const [hg, ag] = c1 === hit.homeCanon ? [ft[0], ft[1]] : [ft[1], ft[0]];
+    out[String(hit.id)] = { home: hg, away: ag, status: "finished" };
+  }
+  return out;
+}
+
+async function fromApiFootball(fixtures: FixturesFile, tm: TeamMap): Promise<Record<string, ResultEntry>> {
+  const token = process.env.API_FOOTBALL_KEY;
+  if (!token) throw new Error("API_FOOTBALL_KEY not set");
+  const res = await fetch(API_FOOTBALL_URL, {
+    headers: { "x-apisports-key": token },
+  });
+  if (!res.ok) throw new Error(`api-football HTTP ${res.status}`);
+  const data = (await res.json()) as { response: any[] };
+  const idx = buildPairIndex(fixtures, tm);
+  const canon = (n: string) => tm.enToCanon[norm(n)] ?? norm(n);
+  const out: Record<string, ResultEntry> = {};
+  for (const m of data.response ?? []) {
+    const status = String(m.fixture?.status?.short ?? "").toUpperCase();
+    if (!FINAL_STATUS.has(status)) continue;
+    const c1 = canon(m.teams?.home?.name);
+    const c2 = canon(m.teams?.away?.name);
+    const hits = idx.get([c1, c2].sort().join("~"));
+    if (!hits || hits.length !== 1) continue;
+    const fh = m.score?.fulltime?.home ?? m.goals?.home;
+    const fa = m.score?.fulltime?.away ?? m.goals?.away;
+    if (!isGoal(fh) || !isGoal(fa)) continue;
+    const hit = hits[0];
+    const [hg, ag] = c1 === hit.homeCanon ? [fh, fa] : [fa, fh];
     out[String(hit.id)] = { home: hg, away: ag, status: "finished" };
   }
   return out;
@@ -101,18 +145,35 @@ export async function fetchResults(): Promise<void> {
   const fixtures = read<FixturesFile>("fixtures.json");
   const tm = read<TeamMap>("team-map.json");
   try {
+    const openfootball = source === "api-football"
+      ? {}
+      : await fromOpenfootball(fixtures, tm);
+    let apiFootball: Record<string, ResultEntry> = {};
+    if (source === "fast" || source === "api-football") {
+      try {
+        apiFootball = await fromApiFootball(fixtures, tm);
+      } catch (err) {
+        if (source === "api-football") throw err;
+        console.warn(`api-football skipped (${(err as Error).message}); using openfootball fallback`);
+      }
+    }
     const fetched = source === "football-data"
       ? await fromFootballData(fixtures, tm)
-      : await fromOpenfootball(fixtures, tm);
+      : { ...openfootball, ...apiFootball };
     const overrides = readOptional<Record<string, ResultEntry>>("result-overrides.json", {});
     const results = { ...fetched, ...overrides };
-    if (current.source === source && stableResults(current.results) === stableResults(results)) {
-      console.log(`fetched ${Object.keys(results).length} finished matches from ${source}; no changes`);
+    const sourceLabel = source === "fast" && Object.keys(apiFootball).length > 0
+      ? "api-football+openfootball"
+      : source === "fast"
+        ? "openfootball"
+        : source;
+    if (current.source === sourceLabel && stableResults(current.results) === stableResults(results)) {
+      console.log(`fetched ${Object.keys(results).length} finished matches from ${sourceLabel}; no changes`);
       return;
     }
-    const out: ResultsFile = { lastUpdated: new Date().toISOString(), source, results };
+    const out: ResultsFile = { lastUpdated: new Date().toISOString(), source: sourceLabel, results };
     writeFileSync(join(DATA, "results.json"), JSON.stringify(out, null, 2));
-    console.log(`fetched ${Object.keys(results).length} finished matches from ${source}`);
+    console.log(`fetched ${Object.keys(results).length} finished matches from ${sourceLabel}`);
   } catch (err) {
     console.warn(`fetch failed (${(err as Error).message}); keeping last valid results (${Object.keys(current.results).length} matches)`);
   }
