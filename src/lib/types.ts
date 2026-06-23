@@ -31,6 +31,19 @@ export type ResultsFile = {
   results: Record<string, ResultEntry>; // matchId -> result (only finished matches present)
 };
 
+export type LiveResultEntry = {
+  home: number;
+  away: number;
+  status: string;
+  elapsed: number | null;
+};
+
+export type LiveResultsFile = {
+  lastUpdated: string;
+  source: string;
+  results: Record<string, LiveResultEntry>; // matchId -> in-progress score only
+};
+
 export type StandingEntry = {
   rank: number;
   previousRank: number | null;
@@ -149,21 +162,23 @@ export type StandingsFile = {
   metrics: StandingsMetrics;
 };
 
-export type LiveScoreMatch = {
-  idLiveScore: string;
-  idEvent: string;
-  strSport: string;
-  idLeague: string;
-  strLeague: string;
-  idHomeTeam: string;
-  idAwayTeam: string;
-  strHomeTeam: string;
-  strAwayTeam: string;
-  intHomeScore: string | null;
-  intAwayScore: string | null;
-  strProgress: string | null;
-  strStatus: string | null;
-  strEventTime: string | null;
-  dateEvent: string | null;
-  updated: string | null;
+export type LiveStandingEntry = StandingEntry & {
+  officialRank: number;
+  officialPoints: number;
+  projectedGain: number;
+};
+
+export type LiveMatch = Match & {
+  homeGoals: number;
+  awayGoals: number;
+  status: string;
+  elapsed: number | null;
+};
+
+export type LiveStandingsFile = {
+  active: boolean;
+  lastUpdated: string;
+  source: string;
+  matches: LiveMatch[];
+  standings: LiveStandingEntry[];
 };

@@ -12,7 +12,7 @@
  */
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
-import type { FixturesFile, ResultsFile, ResultEntry } from "../src/lib/types";
+import type { FixturesFile, LiveResultEntry, LiveResultsFile, ResultsFile, ResultEntry } from "../src/lib/types";
 
 const DATA = join(process.cwd(), "data");
 const read = <T>(f: string): T => JSON.parse(readFileSync(join(DATA, f), "utf8")) as T;
@@ -31,10 +31,19 @@ const OPENFOOTBALL_URL =
   "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json";
 const API_FOOTBALL_URL = "https://v3.football.api-sports.io/fixtures?league=1&season=2026";
 const FINAL_STATUS = new Set(["FT", "AET", "PEN"]);
+const LIVE_STATUS = new Set(["1H", "HT", "2H", "ET", "BT", "P", "SUSP", "INT", "LIVE"]);
 const API_FOOTBALL_WINDOW_START_MIN = 95;
 const API_FOOTBALL_WINDOW_END_MIN = 135;
+const API_FOOTBALL_LIVE_WINDOW_START_MIN = 45;
+const API_FOOTBALL_LIVE_WINDOW_END_MIN = 135;
 
 const stableResults = (results: Record<string, ResultEntry>) =>
+  JSON.stringify(
+    Object.keys(results)
+      .sort((a, b) => Number(a) - Number(b))
+      .map((id) => [id, results[id]])
+  );
+const stableLiveResults = (results: Record<string, LiveResultEntry>) =>
   JSON.stringify(
     Object.keys(results)
       .sort((a, b) => Number(a) - Number(b))
@@ -68,7 +77,13 @@ function kickoffAtSaoPaulo(date: string, time: string) {
   return new Date(`${date}T${String(hour).padStart(2, "0")}:00:00-03:00`);
 }
 
-function shouldUseApiFootball(fixtures: FixturesFile, current: ResultsFile) {
+function hasMatchInWindow(
+  fixtures: FixturesFile,
+  current: ResultsFile,
+  startMin: number,
+  endMin: number,
+  label: string
+) {
   const mode = process.env.API_FOOTBALL_MODE ?? "smart";
   if (mode === "never") return false;
   if (mode === "always") return true;
@@ -82,16 +97,36 @@ function shouldUseApiFootball(fixtures: FixturesFile, current: ResultsFile) {
     const kickoff = kickoffAtSaoPaulo(match.date, match.time);
     if (!kickoff) return false;
     const minutesAfterKickoff = (now.getTime() - kickoff.getTime()) / 60000;
-    return minutesAfterKickoff >= API_FOOTBALL_WINDOW_START_MIN
-      && minutesAfterKickoff <= API_FOOTBALL_WINDOW_END_MIN;
+    return minutesAfterKickoff >= startMin
+      && minutesAfterKickoff <= endMin;
   });
 
   if (activeWindows.length === 0) {
-    console.log("api-football skipped (outside smart quota window)");
+    console.log(`api-football skipped (outside ${label} smart quota window)`);
     return false;
   }
-  console.log(`api-football smart window active for ${activeWindows.length} match(es)`);
+  console.log(`api-football ${label} smart window active for ${activeWindows.length} match(es)`);
   return true;
+}
+
+function shouldUseApiFootball(fixtures: FixturesFile, current: ResultsFile) {
+  return hasMatchInWindow(
+    fixtures,
+    current,
+    API_FOOTBALL_WINDOW_START_MIN,
+    API_FOOTBALL_WINDOW_END_MIN,
+    "final"
+  );
+}
+
+function shouldUseApiFootballLive(fixtures: FixturesFile, current: ResultsFile) {
+  return hasMatchInWindow(
+    fixtures,
+    current,
+    API_FOOTBALL_LIVE_WINDOW_START_MIN,
+    API_FOOTBALL_LIVE_WINDOW_END_MIN,
+    "live"
+  );
 }
 
 async function fromOpenfootball(fixtures: FixturesFile, tm: TeamMap): Promise<Record<string, ResultEntry>> {
@@ -115,7 +150,7 @@ async function fromOpenfootball(fixtures: FixturesFile, tm: TeamMap): Promise<Re
   return out;
 }
 
-async function fromApiFootball(fixtures: FixturesFile, tm: TeamMap): Promise<Record<string, ResultEntry>> {
+async function fetchApiFootballFixtures(): Promise<any[]> {
   const token = process.env.API_FOOTBALL_KEY;
   if (!token) throw new Error("API_FOOTBALL_KEY not set");
   const res = await fetch(API_FOOTBALL_URL, {
@@ -123,10 +158,18 @@ async function fromApiFootball(fixtures: FixturesFile, tm: TeamMap): Promise<Rec
   });
   if (!res.ok) throw new Error(`api-football HTTP ${res.status}`);
   const data = (await res.json()) as { response: any[] };
+  return data.response ?? [];
+}
+
+function finalResultsFromApiFootball(
+  fixtures: FixturesFile,
+  tm: TeamMap,
+  response: any[]
+): Record<string, ResultEntry> {
   const idx = buildPairIndex(fixtures, tm);
   const canon = (n: string) => tm.enToCanon[norm(n)] ?? norm(n);
   const out: Record<string, ResultEntry> = {};
-  for (const m of data.response ?? []) {
+  for (const m of response) {
     const status = String(m.fixture?.status?.short ?? "").toUpperCase();
     if (!FINAL_STATUS.has(status)) continue;
     const c1 = canon(m.teams?.home?.name);
@@ -141,6 +184,53 @@ async function fromApiFootball(fixtures: FixturesFile, tm: TeamMap): Promise<Rec
     out[String(hit.id)] = { home: hg, away: ag, status: "finished" };
   }
   return out;
+}
+
+function liveResultsFromApiFootball(
+  fixtures: FixturesFile,
+  tm: TeamMap,
+  response: any[],
+  official: ResultsFile
+): Record<string, LiveResultEntry> {
+  const idx = buildPairIndex(fixtures, tm);
+  const canon = (n: string) => tm.enToCanon[norm(n)] ?? norm(n);
+  const out: Record<string, LiveResultEntry> = {};
+  for (const m of response) {
+    const status = String(m.fixture?.status?.short ?? "").toUpperCase();
+    if (!LIVE_STATUS.has(status)) continue;
+    const c1 = canon(m.teams?.home?.name);
+    const c2 = canon(m.teams?.away?.name);
+    const hits = idx.get([c1, c2].sort().join("~"));
+    if (!hits || hits.length !== 1) continue;
+    const gh = m.goals?.home;
+    const ga = m.goals?.away;
+    if (!isGoal(gh) || !isGoal(ga)) continue;
+    const hit = hits[0];
+    if (official.results[String(hit.id)]) continue;
+    const [home, away] = c1 === hit.homeCanon ? [gh, ga] : [ga, gh];
+    out[String(hit.id)] = {
+      home,
+      away,
+      status,
+      elapsed: typeof m.fixture?.status?.elapsed === "number" ? m.fixture.status.elapsed : null,
+    };
+  }
+  return out;
+}
+
+function writeLiveResults(source: string, results: Record<string, LiveResultEntry>) {
+  const current = readOptional<LiveResultsFile>("live-results.json", {
+    lastUpdated: "",
+    source,
+    results: {},
+  });
+  if (current.source === source && stableLiveResults(current.results) === stableLiveResults(results)) {
+    console.log(`live results unchanged: ${Object.keys(results).length} match(es)`);
+    return;
+  }
+  const out: LiveResultsFile = { lastUpdated: new Date().toISOString(), source, results };
+  writeFileSync(join(DATA, "live-results.json"), JSON.stringify(out, null, 2));
+  console.log(`live results: ${Object.keys(results).length} match(es)`);
 }
 
 async function fromFootballData(fixtures: FixturesFile, tm: TeamMap): Promise<Record<string, ResultEntry>> {
@@ -183,13 +273,24 @@ export async function fetchResults(): Promise<void> {
       ? {}
       : await fromOpenfootball(fixtures, tm);
     let apiFootball: Record<string, ResultEntry> = {};
-    if ((source === "fast" && shouldUseApiFootball(fixtures, current)) || source === "api-football") {
+    let apiFootballResponse: any[] | null = null;
+    const useFinalApi = (source === "fast" && shouldUseApiFootball(fixtures, current)) || source === "api-football";
+    const useLiveApi = source === "fast" && shouldUseApiFootballLive(fixtures, current);
+    if (useFinalApi || useLiveApi) {
       try {
-        apiFootball = await fromApiFootball(fixtures, tm);
+        apiFootballResponse = await fetchApiFootballFixtures();
+        apiFootball = finalResultsFromApiFootball(fixtures, tm, apiFootballResponse);
+        writeLiveResults(
+          "api-football",
+          useLiveApi ? liveResultsFromApiFootball(fixtures, tm, apiFootballResponse, current) : {}
+        );
       } catch (err) {
         if (source === "api-football") throw err;
         console.warn(`api-football skipped (${(err as Error).message}); using openfootball fallback`);
+        writeLiveResults("api-football", {});
       }
+    } else if (source === "fast") {
+      writeLiveResults("api-football", {});
     }
     const fetched = source === "football-data"
       ? await fromFootballData(fixtures, tm)

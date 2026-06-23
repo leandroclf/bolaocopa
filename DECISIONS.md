@@ -38,14 +38,19 @@ computada). Este projeto reimplementa essa lógica em código e a publica.
    O agendamento roda a cada 5 minutos e só faz build/deploy em execução
    agendada quando os dados mudam.
 
-9. **Cota da API-Football protegida por janela inteligente.** O cron roda a cada
-   5 minutos, mas a API-Football só é chamada no modo `smart` entre 95 e 135
-   minutos após o início previsto de um jogo ainda não apurado. A janela começa
-   antes do fim provável para capturar o status final logo que a API publicar,
-   normalmente em até poucos minutos após o apito final. Nos demais horários, o
-   robô consulta apenas `openfootball`. Em dias com 6 jogos, essa janela fica
-   abaixo de 100 chamadas/dia. Execuções manuais podem usar `always` ou `never`
-   quando necessário.
+9. **Cota da API-Football protegida por janelas inteligentes.** O cron roda a
+   cada 5 minutos, mas a API-Football só é chamada no modo `smart` quando há jogo
+   ainda não apurado em janela útil: entre 45 e 135 minutos após o início para
+   placar parcial, e entre 95 e 135 minutos para detectar resultado final. Nos
+   demais horários, o robô consulta apenas `openfootball`. Em dias com 6 jogos
+   pareados, essa estratégia fica abaixo de 100 chamadas/dia. Execuções manuais
+   podem usar `always` ou `never` quando necessário.
+
+10. **Classificação parcial não é apuração oficial.** Placar em andamento fica em
+   `data/live-results.json`; a tabela "se acabasse agora" fica em
+   `data/live-standings.json`. Esses dados são exibidos só enquanto houver jogo
+   ao vivo e nunca entram em `data/results.json`, que continua aceitando apenas
+   resultados finais.
 
 ## Limitações conhecidas
 - Escopo = 72 jogos da fase de grupos (a planilha não tem mata-mata).

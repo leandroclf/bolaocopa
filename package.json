@@ -10,6 +10,7 @@
     "import:excel": "tsx scripts/import-excel.ts",
     "fetch:results": "tsx scripts/fetch-results.ts",
     "calc:standings": "tsx scripts/calculate-standings.ts",
+    "calc:live": "tsx scripts/calculate-live-standings.ts",
     "update": "tsx scripts/update-all.ts"
   },
   "dependencies": {

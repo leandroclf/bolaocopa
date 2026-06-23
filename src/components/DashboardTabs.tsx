@@ -7,8 +7,8 @@ import UpcomingMatches from "@/components/UpcomingMatches";
 import StandingsTable from "@/components/StandingsTable";
 import RecentMatches from "@/components/RecentMatches";
 import RulesCard from "@/components/RulesCard";
-import LiveScorePanel from "@/components/LiveScorePanel";
-import type { StandingsFile } from "@/lib/types";
+import LiveProjectionPanel from "@/components/LiveProjectionPanel";
+import type { LiveStandingsFile, StandingsFile } from "@/lib/types";
 
 type TabKey = "classification" | "insights" | "next" | "map" | "recent";
 
@@ -20,7 +20,13 @@ const tabs: Array<{ key: TabKey; label: string }> = [
   { key: "recent", label: "Jogos apurados" },
 ];
 
-export default function DashboardTabs({ standings }: { standings: StandingsFile }) {
+export default function DashboardTabs({
+  standings,
+  liveStandings,
+}: {
+  standings: StandingsFile;
+  liveStandings: LiveStandingsFile;
+}) {
   const [active, setActive] = useState<TabKey>("classification");
   const [selectedParticipant, setSelectedParticipant] = useState<string>("todos");
   const [compactMode, setCompactMode] = useState(true);
@@ -73,7 +79,7 @@ export default function DashboardTabs({ standings }: { standings: StandingsFile 
           </div>
         </div>
       </nav>
-      <LiveScorePanel />
+      <LiveProjectionPanel live={liveStandings} />
 
       <div className="mx-auto max-w-5xl px-5 pt-4">
         <div className="grid gap-2 rounded-lg border border-pitch-line bg-pitch-2 p-3 lg:grid-cols-[1.2fr_0.8fr]">
