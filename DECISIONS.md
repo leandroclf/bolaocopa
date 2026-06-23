@@ -44,7 +44,9 @@ computada). Este projeto reimplementa essa lógica em código e a publica.
    placar parcial, e entre 95 e 135 minutos para detectar resultado final. Nos
    demais horários, o robô consulta apenas `openfootball`. Em dias com 6 jogos
    pareados, essa estratégia fica abaixo de 100 chamadas/dia. Execuções manuais
-   podem usar `always` ou `never` quando necessário.
+   podem usar `always` ou `never` quando necessário. A chave configurada precisa
+   ter acesso explícito à temporada 2026; respostas `errors` da API são tratadas
+   como falha da fonte rápida e não sobrescrevem resultados válidos.
 
 10. **Classificação parcial não é apuração oficial.** Placar em andamento fica em
    `data/live-results.json`; a tabela "se acabasse agora" fica em

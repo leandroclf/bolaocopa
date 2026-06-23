@@ -157,7 +157,10 @@ async function fetchApiFootballFixtures(): Promise<any[]> {
     headers: { "x-apisports-key": token },
   });
   if (!res.ok) throw new Error(`api-football HTTP ${res.status}`);
-  const data = (await res.json()) as { response: any[] };
+  const data = (await res.json()) as { response?: any[]; errors?: unknown };
+  if (data.errors && JSON.stringify(data.errors) !== "[]") {
+    throw new Error(`api-football errors: ${JSON.stringify(data.errors)}`);
+  }
   return data.response ?? [];
 }
 
