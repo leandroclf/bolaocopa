@@ -31,6 +31,8 @@ const OPENFOOTBALL_URL =
   "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json";
 const API_FOOTBALL_URL = "https://v3.football.api-sports.io/fixtures?league=1&season=2026";
 const FINAL_STATUS = new Set(["FT", "AET", "PEN"]);
+const API_FOOTBALL_WINDOW_START_MIN = 105;
+const API_FOOTBALL_WINDOW_END_MIN = 165;
 
 const stableResults = (results: Record<string, ResultEntry>) =>
   JSON.stringify(
@@ -58,6 +60,38 @@ function buildPairIndex(fixtures: FixturesFile, tm: TeamMap) {
     byKey.set(key, matches);
   }
   return byKey;
+}
+
+function kickoffAtSaoPaulo(date: string, time: string) {
+  const hour = Number(String(time).replace(/\D/g, ""));
+  if (!Number.isFinite(hour)) return null;
+  return new Date(`${date}T${String(hour).padStart(2, "0")}:00:00-03:00`);
+}
+
+function shouldUseApiFootball(fixtures: FixturesFile, current: ResultsFile) {
+  const mode = process.env.API_FOOTBALL_MODE ?? "smart";
+  if (mode === "never") return false;
+  if (mode === "always") return true;
+  if (mode !== "smart") throw new Error(`invalid API_FOOTBALL_MODE: ${mode}`);
+
+  const now = process.env.API_FOOTBALL_NOW
+    ? new Date(process.env.API_FOOTBALL_NOW)
+    : new Date();
+  const activeWindows = fixtures.matches.filter((match) => {
+    if (current.results[String(match.id)]) return false;
+    const kickoff = kickoffAtSaoPaulo(match.date, match.time);
+    if (!kickoff) return false;
+    const minutesAfterKickoff = (now.getTime() - kickoff.getTime()) / 60000;
+    return minutesAfterKickoff >= API_FOOTBALL_WINDOW_START_MIN
+      && minutesAfterKickoff <= API_FOOTBALL_WINDOW_END_MIN;
+  });
+
+  if (activeWindows.length === 0) {
+    console.log("api-football skipped (outside smart quota window)");
+    return false;
+  }
+  console.log(`api-football smart window active for ${activeWindows.length} match(es)`);
+  return true;
 }
 
 async function fromOpenfootball(fixtures: FixturesFile, tm: TeamMap): Promise<Record<string, ResultEntry>> {
@@ -149,7 +183,7 @@ export async function fetchResults(): Promise<void> {
       ? {}
       : await fromOpenfootball(fixtures, tm);
     let apiFootball: Record<string, ResultEntry> = {};
-    if (source === "fast" || source === "api-football") {
+    if ((source === "fast" && shouldUseApiFootball(fixtures, current)) || source === "api-football") {
       try {
         apiFootball = await fromApiFootball(fixtures, tm);
       } catch (err) {

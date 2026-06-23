@@ -3,7 +3,17 @@ name: Update standings and deploy to GitHub Pages
 on:
   schedule:
     - cron: "*/5 * * * *"    # best-effort; deploys only when results change
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      api_football_mode:
+        description: "Uso da API-Football nesta execução"
+        required: false
+        default: "smart"
+        type: choice
+        options:
+          - smart
+          - always
+          - never
   push:
     branches: [main]
 
@@ -34,6 +44,7 @@ jobs:
       - name: Fetch results and recompute standings
         env:
           RESULTS_SOURCE: fast
+          API_FOOTBALL_MODE: ${{ github.event.inputs.api_football_mode || 'smart' }}
           API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
         run: npm run update
 
