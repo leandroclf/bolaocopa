@@ -31,8 +31,8 @@ const OPENFOOTBALL_URL =
   "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json";
 const API_FOOTBALL_URL = "https://v3.football.api-sports.io/fixtures?league=1&season=2026";
 const FINAL_STATUS = new Set(["FT", "AET", "PEN"]);
-const API_FOOTBALL_WINDOW_START_MIN = 105;
-const API_FOOTBALL_WINDOW_END_MIN = 165;
+const API_FOOTBALL_WINDOW_START_MIN = 95;
+const API_FOOTBALL_WINDOW_END_MIN = 135;
 
 const stableResults = (results: Record<string, ResultEntry>) =>
   JSON.stringify(

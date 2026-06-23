@@ -39,11 +39,13 @@ computada). Este projeto reimplementa essa lógica em código e a publica.
    agendada quando os dados mudam.
 
 9. **Cota da API-Football protegida por janela inteligente.** O cron roda a cada
-   5 minutos, mas a API-Football só é chamada no modo `smart` entre 105 e 165
-   minutos após o horário previsto de um jogo ainda não apurado. Nos demais
-   horários, o robô consulta apenas `openfootball`. Em dias com 6 jogos, essa
-   janela fica abaixo de 100 chamadas/dia. Execuções manuais podem usar
-   `always` ou `never` quando necessário.
+   5 minutos, mas a API-Football só é chamada no modo `smart` entre 95 e 135
+   minutos após o início previsto de um jogo ainda não apurado. A janela começa
+   antes do fim provável para capturar o status final logo que a API publicar,
+   normalmente em até poucos minutos após o apito final. Nos demais horários, o
+   robô consulta apenas `openfootball`. Em dias com 6 jogos, essa janela fica
+   abaixo de 100 chamadas/dia. Execuções manuais podem usar `always` ou `never`
+   quando necessário.
 
 ## Limitações conhecidas
 - Escopo = 72 jogos da fase de grupos (a planilha não tem mata-mata).
