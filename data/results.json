@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-25T01:53:14.376Z",
+  "lastUpdated": "2026-06-25T06:00:11.324Z",
   "source": "openfootball",
   "results": {
     "1": {
@@ -260,6 +260,16 @@
     "52": {
       "home": 0,
       "away": 3,
+      "status": "finished"
+    },
+    "53": {
+      "home": 0,
+      "away": 3,
+      "status": "finished"
+    },
+    "54": {
+      "home": 1,
+      "away": 0,
       "status": "finished"
     }
   }
