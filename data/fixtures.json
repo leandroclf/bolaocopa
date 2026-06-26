@@ -137,7 +137,7 @@
     {
       "id": 17,
       "date": "2026-06-16",
-      "time": "1h",
+      "time": "01h",
       "group": "J",
       "home": "Áustria",
       "away": "Jordânia"
@@ -233,7 +233,7 @@
     {
       "id": 29,
       "date": "2026-06-19",
-      "time": "0h",
+      "time": "00h",
       "group": "D",
       "home": "Turquia",
       "away": "Paraguai"
@@ -257,7 +257,7 @@
     {
       "id": 32,
       "date": "2026-06-19",
-      "time": "21:30",
+      "time": "21h30",
       "group": "C",
       "home": "Brasil",
       "away": "Haiti"
@@ -553,7 +553,7 @@
     {
       "id": 69,
       "date": "2026-06-27",
-      "time": "20:30",
+      "time": "20h30",
       "group": "K",
       "home": "Colômbia",
       "away": "Portugal"
@@ -561,7 +561,7 @@
     {
       "id": 70,
       "date": "2026-06-27",
-      "time": "20:30",
+      "time": "20h30",
       "group": "K",
       "home": "Repub. Congo",
       "away": "Uzbequistão"
