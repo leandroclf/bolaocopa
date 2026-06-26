@@ -1,127 +1,48 @@
-import type { PickOutcome, UpcomingMatchInsight } from "@/lib/types";
+import type { UpcomingMatchInsight } from "@/lib/types";
 
 const fmtDay = (d: string) =>
   new Intl.DateTimeFormat("pt-BR", { weekday: "short", day: "2-digit", month: "2-digit" })
     .format(new Date(`${d}T12:00:00`))
     .replace(".", "");
 
-const outcomeClass: Record<PickOutcome, string> = {
-  home: "text-lime",
-  draw: "text-gold",
-  away: "text-danger",
-};
-
-function OutcomeBars({ match }: { match: UpcomingMatchInsight }) {
-  const bars: Array<[PickOutcome, string, number]> = [
-    ["home" as const, match.home, match.outcomeBreakdown.homeWin],
-    ["draw" as const, "Empate", match.outcomeBreakdown.draw],
-    ["away" as const, match.away, match.outcomeBreakdown.awayWin],
+function OutcomeCounts({ match }: { match: UpcomingMatchInsight }) {
+  const rows: Array<[string, number, string]> = [
+    [match.home, match.outcomeBreakdown.homeWin, "text-lime"],
+    ["Empate", match.outcomeBreakdown.draw, "text-slatey"],
+    [match.away, match.outcomeBreakdown.awayWin, "text-info"],
   ];
-
   return (
-    <div className="space-y-2">
-      {bars.map(([outcome, label, count]) => {
-        const percentage = match.totalPicks === 0 ? 0 : Math.round((count / match.totalPicks) * 1000) / 10;
-        return (
-          <div key={outcome}>
-            <div className="mb-1 flex items-center justify-between gap-3 font-mono text-[11px]">
-              <span className="truncate text-slatey">{label}</span>
-              <span className={outcomeClass[outcome]}>{percentage}%</span>
-            </div>
-            <div className="h-1.5 overflow-hidden rounded-full bg-pitch">
-              <div
-                className={`h-full rounded-full ${
-                  outcome === "home" ? "bg-lime" : outcome === "draw" ? "bg-gold" : "bg-danger"
-                }`}
-                style={{ width: `${percentage}%` }}
-              />
-            </div>
-          </div>
-        );
-      })}
+    <div className="grid gap-1.5">
+      {rows.map(([label, count, color]) => (
+        <div
+          key={label}
+          className="flex items-center justify-between gap-3 rounded-md border border-pitch-line bg-pitch px-3 py-2"
+        >
+          <span className="truncate text-sm text-chalk">{label}</span>
+          <span className={`font-mono text-sm font-bold ${color}`}>
+            {count} {count === 1 ? "aposta" : "apostas"}
+          </span>
+        </div>
+      ))}
     </div>
   );
 }
 
 function MatchPickList({ match }: { match: UpcomingMatchInsight }) {
-  const leadingScores = new Set(match.mostCommonScores.slice(0, 1).map((score) => score.score));
   return (
     <div className="grid gap-1.5 sm:grid-cols-2">
-      {match.picks.map((pick) => {
-        const score = `${pick.homeGoals}-${pick.awayGoals}`;
-        const leader = leadingScores.has(score);
-        return (
-          <div
-            key={pick.name}
-            className={`grid grid-cols-[1fr_auto] items-center gap-3 rounded-lg border px-3 py-2 ${
-              leader ? "border-gold/40 bg-gold/10" : "border-pitch-line bg-pitch-2"
-            }`}
-          >
-            <span className="truncate text-sm text-chalk">{pick.name}</span>
-            <span className={`font-mono text-sm font-bold ${leader ? "text-gold" : "text-lime"}`}>
-              {pick.homeGoals} x {pick.awayGoals}
-            </span>
-          </div>
-        );
-      })}
+      {match.picks.map((pick) => (
+        <div
+          key={pick.name}
+          className="grid grid-cols-[1fr_auto] items-center gap-3 rounded-lg border border-pitch-line bg-pitch-2 px-3 py-2"
+        >
+          <span className="truncate text-sm text-chalk">{pick.name}</span>
+          <span className="font-mono text-sm font-bold text-lime">
+            {pick.homeGoals} x {pick.awayGoals}
+          </span>
+        </div>
+      ))}
     </div>
-  );
-}
-
-function ParticipantSummary({
-  selectedParticipant,
-  match,
-}: {
-  selectedParticipant: string;
-  match: UpcomingMatchInsight;
-}) {
-  const selectedPick = match.picks.find((pick) => pick.name === selectedParticipant) ?? null;
-  if (!selectedPick) return null;
-  const groupOutcome = match.topOutcome.label;
-  const userScore = `${selectedPick.homeGoals} x ${selectedPick.awayGoals}`;
-  return (
-    <div className="mt-3 rounded-lg border border-lime/20 bg-lime/10 px-4 py-3">
-      <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-lime">seu palpite</p>
-      <div className="mt-2 flex flex-wrap items-center justify-between gap-3">
-        <p className="text-sm text-chalk">
-          <span className="font-semibold text-lime">{selectedParticipant}</span> apostou{" "}
-          <span className="font-mono font-bold">{userScore}</span> enquanto o grupo aponta{" "}
-          <span className="font-mono font-bold">{groupOutcome}</span>.
-        </p>
-        <span className="rounded-full bg-pitch px-2 py-1 font-mono text-[10px] uppercase tracking-wider text-slatey">
-          comparação rápida
-        </span>
-      </div>
-    </div>
-  );
-}
-
-function ParticipantFilter({
-  options,
-  value,
-  onChange,
-}: {
-  options: string[];
-  value: string;
-  onChange: (value: string) => void;
-}) {
-  return (
-    <label className="block">
-      <span className="mb-1 block font-mono text-[10px] uppercase tracking-[0.22em] text-slatey">
-        somente meus palpites
-      </span>
-      <select
-        value={value}
-        onChange={(e) => onChange(e.target.value)}
-        className="w-full rounded-lg border border-pitch-line bg-pitch-2 px-3 py-2 text-sm text-chalk focus:border-lime"
-      >
-        {options.map((option) => (
-          <option key={option} value={option}>
-            {option === "todos" ? "Todos os apostadores" : option}
-          </option>
-        ))}
-      </select>
-    </label>
   );
 }
 
@@ -138,27 +59,13 @@ function DayMatchCard({ match, defaultOpen }: { match: UpcomingMatchInsight; def
               {match.home} x {match.away}
             </h3>
           </div>
-          <div className="text-right">
-            <p className="font-mono text-[10px] uppercase tracking-wider text-slatey">favorito</p>
-            <p className="max-w-[9rem] truncate font-mono text-xs font-bold text-lime">{match.topOutcome.label}</p>
-          </div>
-        </div>
-        <div className="mt-3 flex flex-wrap gap-2">
-          <span className="rounded bg-pitch px-2 py-1 font-mono text-xs text-chalk">
-            média {match.averageHomeGoals} x {match.averageAwayGoals}
-          </span>
-          {match.mostCommonScores.map((score) => (
-            <span key={score.score} className="rounded bg-pitch px-2 py-1 font-mono text-xs text-chalk">
-              {score.score} · {score.count}
-            </span>
-          ))}
-          <span className="rounded bg-lime/15 px-2 py-1 font-mono text-xs text-lime">
+          <span className="rounded bg-pitch px-2 py-1 font-mono text-xs text-slatey">
             {match.totalPicks} palpites
           </span>
         </div>
       </summary>
       <div className="mt-4 border-t border-pitch-line pt-4">
-        <OutcomeBars match={match} />
+        <OutcomeCounts match={match} />
         <div className="mt-4 max-h-[28rem] overflow-auto pr-1">
           <MatchPickList match={match} />
         </div>
@@ -170,172 +77,23 @@ function DayMatchCard({ match, defaultOpen }: { match: UpcomingMatchInsight; def
 export default function NextMatchPanel({
   match,
   dayMatches,
-  participantOptions,
-  selectedParticipant,
-  onParticipantChange,
-  compactMode,
 }: {
   match: UpcomingMatchInsight | null;
   dayMatches: UpcomingMatchInsight[];
-  participantOptions: string[];
-  selectedParticipant: string;
-  onParticipantChange: (value: string) => void;
-  compactMode: boolean;
 }) {
   if (!match) return null;
   const matchesOfDay = dayMatches.length > 0 ? dayMatches : [match];
-  const visibleMatch = selectedParticipant === "todos" ? match : {
-    ...match,
-    picks: match.picks.filter((pick) => pick.name === selectedParticipant),
-    totalPicks: match.picks.filter((pick) => pick.name === selectedParticipant).length,
-    missingPicks: Math.max(0, match.missingPicks - (match.picks.some((pick) => pick.name === selectedParticipant) ? 0 : 1)),
-  };
-  const selectedShare = selectedParticipant === "todos" || match.totalPicks === 0
-    ? null
-    : Math.round((visibleMatch.totalPicks / match.totalPicks) * 1000) / 10;
 
   return (
-    <section className={`mx-auto max-w-5xl px-5 ${compactMode ? "py-5" : "py-8"}`}>
+    <section className="mx-auto max-w-5xl px-5 py-5">
       <div className="mb-4 flex items-end justify-between gap-4">
-        <div>
-          <p className="font-mono text-[10px] uppercase tracking-[0.28em] text-lime">próxima apuração</p>
-          <h2 className="mt-1 font-display text-xl uppercase tracking-widest text-chalk">Próximo jogo</h2>
-        </div>
-        <p className="font-mono text-xs text-slatey">G{match.group} · {fmtDay(match.date)} · {match.time}</p>
+        <h2 className="font-display text-xl uppercase tracking-widest text-chalk">Jogos do dia</h2>
+        <p className="font-mono text-xs text-slatey">{fmtDay(match.date)} · {matchesOfDay.length} jogos</p>
       </div>
-
-      <div className={`mb-4 grid gap-3 ${compactMode ? "lg:grid-cols-[1fr_17rem]" : "lg:grid-cols-[1fr_18rem]"}`}>
-        <div className="rounded-lg border border-pitch-line bg-pitch-2 p-4">
-          <ParticipantFilter options={participantOptions} value={selectedParticipant} onChange={onParticipantChange} />
-          <div className="mt-3 rounded-lg border border-gold/40 bg-gold/10 p-4">
-            <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-gold/80">
-              {selectedParticipant === "todos" ? "próximo jogo" : "palpites filtrados"}
-            </p>
-            <div className="mt-2 grid grid-cols-[1fr_auto_1fr] items-center gap-3">
-              <p className="text-right font-display text-2xl uppercase leading-none tracking-wide text-chalk sm:text-3xl">
-                {match.home}
-              </p>
-              <p className="font-mono text-xs uppercase tracking-widest text-gold">x</p>
-              <p className="font-display text-2xl uppercase leading-none tracking-wide text-chalk sm:text-3xl">
-                {match.away}
-              </p>
-            </div>
-            <div className="mt-4 grid grid-cols-3 gap-2 text-center">
-              <div className="rounded-lg border border-pitch-line bg-pitch-2 px-3 py-2">
-                <p className="font-mono text-[10px] uppercase tracking-wider text-slatey">favorito</p>
-                <p className="mt-1 truncate text-sm font-semibold text-lime">{match.topOutcome.label}</p>
-              </div>
-              <div className="rounded-lg border border-pitch-line bg-pitch-2 px-3 py-2">
-                <p className="font-mono text-[10px] uppercase tracking-wider text-slatey">média</p>
-                <p className="mt-1 font-mono text-sm font-bold text-chalk">
-                  {match.averageHomeGoals} x {match.averageAwayGoals}
-                </p>
-              </div>
-              <div className="rounded-lg border border-pitch-line bg-pitch-2 px-3 py-2">
-                <p className="font-mono text-[10px] uppercase tracking-wider text-slatey">palpites</p>
-                <p className="mt-1 font-mono text-sm font-bold text-chalk">{visibleMatch.totalPicks}</p>
-              </div>
-            </div>
-            {selectedShare != null && (
-              <p className="mt-3 font-mono text-[10px] uppercase tracking-wider text-slatey">
-                {selectedParticipant} representa {selectedShare}% dos palpites do jogo
-              </p>
-            )}
-            {selectedParticipant !== "todos" && (
-              <p className="mt-2 text-sm text-slatey">
-                Seu palpite fica em destaque ao lado da média do grupo, para comparar rapidamente se você está mais conservador ou mais agressivo.
-              </p>
-            )}
-            {selectedParticipant !== "todos" && <ParticipantSummary selectedParticipant={selectedParticipant} match={match} />}
-          </div>
-        </div>
-
-        <div className="rounded-lg border border-pitch-line bg-pitch-2 p-4">
-          <h3 className="font-mono text-[10px] uppercase tracking-[0.24em] text-slatey">resumo da rodada</h3>
-          <div className="mt-3 grid gap-2">
-            <div className="rounded-lg border border-pitch-line bg-pitch px-4 py-3">
-              <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-slatey">consenso</p>
-              <p className="mt-1 text-sm font-semibold text-chalk">{match.topOutcome.label}</p>
-            </div>
-            <div className="rounded-lg border border-pitch-line bg-pitch px-4 py-3">
-              <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-slatey">placares mais fortes</p>
-              <p className="mt-1 text-sm font-semibold text-chalk">
-                {match.mostCommonScores.slice(0, 2).map((score) => score.score).join(" · ") || "Sem dados"}
-              </p>
-            </div>
-            <div className="rounded-lg border border-pitch-line bg-pitch px-4 py-3">
-              <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-slatey">média de gols</p>
-              <p className="mt-1 text-sm font-semibold text-chalk">{match.averageTotalGoals} por jogo</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="grid gap-3 lg:grid-cols-[0.95fr_1.05fr]">
-        <div className="rounded-lg border border-gold/40 bg-gold/10 p-5">
-          <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-3">
-            <p className="text-right font-display text-3xl uppercase leading-none tracking-wide text-chalk">
-              {match.home}
-            </p>
-            <p className="font-mono text-xs uppercase tracking-widest text-gold">x</p>
-            <p className="font-display text-3xl uppercase leading-none tracking-wide text-chalk">
-              {match.away}
-            </p>
-          </div>
-
-          <div className="mt-5 grid grid-cols-3 gap-2 text-center">
-            <div className="rounded-lg border border-pitch-line bg-pitch-2 px-3 py-2">
-              <p className="font-mono text-[10px] uppercase tracking-wider text-slatey">favorito</p>
-              <p className="mt-1 truncate text-sm font-semibold text-lime">{match.topOutcome.label}</p>
-            </div>
-            <div className="rounded-lg border border-pitch-line bg-pitch-2 px-3 py-2">
-              <p className="font-mono text-[10px] uppercase tracking-wider text-slatey">média</p>
-              <p className="mt-1 font-mono text-sm font-bold text-chalk">
-                {match.averageHomeGoals} x {match.averageAwayGoals}
-              </p>
-            </div>
-            <div className="rounded-lg border border-pitch-line bg-pitch-2 px-3 py-2">
-              <p className="font-mono text-[10px] uppercase tracking-wider text-slatey">palpites</p>
-              <p className="mt-1 font-mono text-sm font-bold text-chalk">{match.totalPicks}</p>
-            </div>
-          </div>
-
-          <div className="mt-5">
-            <OutcomeBars match={match} />
-          </div>
-
-          <div className="mt-5 flex flex-wrap gap-2">
-            {match.mostCommonScores.map((score) => (
-              <span key={score.score} className="rounded bg-pitch px-2 py-1 font-mono text-xs text-chalk">
-                {score.score} · {score.count}
-              </span>
-            ))}
-          </div>
-        </div>
-
-        <div>
-          <h3 className="mb-2 font-mono text-[10px] uppercase tracking-[0.24em] text-slatey">
-            Palpites dos competidores
-          </h3>
-          <div className="grid max-h-[34rem] gap-1.5 overflow-auto pr-1 sm:grid-cols-2">
-            <MatchPickList match={selectedParticipant === "todos" ? match : visibleMatch} />
-          </div>
-        </div>
-      </div>
-
-      <div className="mt-6">
-        <div className="mb-3 flex items-end justify-between gap-4">
-          <div>
-            <p className="font-mono text-[10px] uppercase tracking-[0.26em] text-lime">agenda do dia</p>
-            <h2 className="mt-1 font-display text-xl uppercase tracking-widest text-chalk">Jogos do dia</h2>
-          </div>
-          <p className="font-mono text-xs text-slatey">{matchesOfDay.length} jogos</p>
-        </div>
-        <div className="grid gap-2">
-          {matchesOfDay.map((dayMatch) => (
-            <DayMatchCard key={dayMatch.id} match={dayMatch} defaultOpen={dayMatch.id === match.id} />
-          ))}
-        </div>
+      <div className="grid gap-2">
+        {matchesOfDay.map((dayMatch) => (
+          <DayMatchCard key={dayMatch.id} match={dayMatch} defaultOpen={dayMatch.id === match.id} />
+        ))}
       </div>
     </section>
   );

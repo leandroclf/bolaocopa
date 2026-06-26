@@ -27,7 +27,7 @@ export default function RulesCard() {
         <div className="rounded-lg border border-pitch-line bg-pitch-2 p-5">
           <h3 className="mb-3 font-display text-base uppercase tracking-widest text-chalk">Premiação</h3>
           <p className="font-mono text-xs text-slatey">Bolada total</p>
-          <p className="font-mono text-2xl font-bold text-gold">R$ 3.800</p>
+          <p className="font-mono text-2xl font-bold text-lime">R$ 3.800</p>
           <ul className="mt-3 space-y-1.5 font-mono text-sm text-chalk">
             <li className="flex justify-between"><span className="text-slatey">1º · 70%</span><span>R$ 2.660</span></li>
             <li className="flex justify-between"><span className="text-slatey">2º · 20%</span><span>R$ 760</span></li>

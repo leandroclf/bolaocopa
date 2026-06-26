@@ -2,12 +2,15 @@ import Scoreboard from "@/components/Scoreboard";
 import DashboardTabs from "@/components/DashboardTabs";
 import { getLiveStandings, getStandings } from "@/lib/data";
 
+const fmt = (iso: string, opts: Intl.DateTimeFormatOptions) =>
+  new Intl.DateTimeFormat("pt-BR", { timeZone: "America/Sao_Paulo", ...opts }).format(new Date(iso));
+
 export default function Page() {
   const s = getStandings();
   const live = getLiveStandings();
   const leader = s.standings[0] ?? null;
   return (
-    <main className="min-h-screen pb-16">
+    <main className="min-h-screen pb-10">
       <Scoreboard
         lastUpdated={s.lastUpdated}
         totalParticipants={s.totalParticipants}
@@ -15,10 +18,10 @@ export default function Page() {
         leader={leader}
       />
       <DashboardTabs standings={s} liveStandings={live} />
-      <footer className="mx-auto max-w-3xl px-5 pt-4">
-        <p className="font-mono text-[11px] text-slatey/70">
-          Resultados via openfootball (domínio público). Desempate alfabético. Atualiza automaticamente quando a planilha oficial é reprocessada e publicada.
-        </p>
+      <footer className="mx-auto max-w-5xl px-5 pt-6 text-center">
+        <p className="font-mono text-[10px] uppercase tracking-[0.24em] text-slatey">Última atualização</p>
+        <p className="mt-1 font-mono text-sm text-chalk">{fmt(s.lastUpdated, { day: "2-digit", month: "2-digit", year: "numeric" })}</p>
+        <p className="font-mono text-sm text-chalk">{fmt(s.lastUpdated, { hour: "2-digit", minute: "2-digit" })}</p>
       </footer>
     </main>
   );

@@ -10,9 +10,9 @@ export default {
         "pitch-line": "#1C5238",
         lime: "#3BE37A",
         gold: "#F4C430",
+        info: "#5BAEF0",
         chalk: "#F2F5EE",
         slatey: "#83A292",
-        danger: "#FF6B6B",
       },
       fontFamily: {
         display: ["Anton", "Impact", "sans-serif"],

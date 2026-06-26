@@ -6,15 +6,7 @@ import type { UpcomingMatchInsight } from "@/lib/types";
 const fmtDay = (d: string) =>
   new Intl.DateTimeFormat("pt-BR", { day: "2-digit", month: "2-digit" }).format(new Date(`${d}T12:00:00`));
 
-export default function UpcomingMatches({
-  matches,
-  selectedParticipant,
-  compactMode,
-}: {
-  matches: UpcomingMatchInsight[];
-  selectedParticipant: string;
-  compactMode: boolean;
-}) {
+export default function UpcomingMatches({ matches }: { matches: UpcomingMatchInsight[] }) {
   const [selectedId, setSelectedId] = useState(matches[0]?.id ?? null);
   const selected = useMemo(
     () => matches.find((match) => match.id === selectedId) ?? matches[0] ?? null,
@@ -24,24 +16,13 @@ export default function UpcomingMatches({
   if (matches.length === 0) return null;
 
   return (
-    <section className={`mx-auto max-w-5xl px-5 ${compactMode ? "py-5" : "py-8"}`}>
+    <section className="mx-auto max-w-5xl px-5 py-5">
       <div className="mb-4 flex items-end justify-between gap-4">
-        <div>
-          <p className="font-mono text-[10px] uppercase tracking-[0.28em] text-lime">mapa de palpites</p>
-          <h2 className="mt-1 font-display text-xl uppercase tracking-widest text-chalk">Próximos jogos</h2>
-        </div>
+        <h2 className="font-display text-xl uppercase tracking-widest text-chalk">Mapa de palpites</h2>
         <p className="font-mono text-xs text-slatey">{matches.length} jogos pendentes</p>
       </div>
-      {selectedParticipant !== "todos" && (
-        <div className="mb-4 rounded-lg border border-lime/20 bg-lime/10 px-4 py-3">
-          <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-lime">foco atual</p>
-          <p className="mt-1 text-sm text-chalk">
-            Mostrando o mapa para <span className="font-semibold text-lime">{selectedParticipant}</span>.
-          </p>
-        </div>
-      )}
 
-      <div className={`grid gap-3 ${compactMode ? "lg:grid-cols-[0.85fr_1.15fr]" : "lg:grid-cols-[0.9fr_1.1fr]"}`}>
+      <div className="grid gap-3 lg:grid-cols-[0.85fr_1.15fr]">
         <div className="grid max-h-[42rem] gap-2 overflow-auto pr-1 sm:grid-cols-2 lg:grid-cols-1">
           {matches.map((match) => (
             <button
@@ -49,21 +30,18 @@ export default function UpcomingMatches({
               type="button"
               onClick={() => setSelectedId(match.id)}
               aria-pressed={selected?.id === match.id}
-              className={`rounded-lg border p-3 text-left transition-colors ${
+              className={`rounded-lg border p-3 text-left ${
                 selected?.id === match.id
                   ? "border-lime bg-lime/10"
-                  : "border-pitch-line bg-pitch-2 hover:border-slatey"
+                  : "border-pitch-line bg-pitch-2"
               }`}
             >
               <div className="mb-2 flex items-center justify-between gap-2">
-                <span className="rounded bg-pitch px-1.5 py-0.5 font-mono text-[10px] text-lime">G{match.group}</span>
+                <span className="rounded bg-pitch px-1.5 py-0.5 font-mono text-[10px] text-slatey">G{match.group}</span>
                 <span className="font-mono text-[10px] text-slatey">{fmtDay(match.date)} · {match.time}</span>
               </div>
               <p className="truncate text-sm font-semibold text-chalk">{match.home} x {match.away}</p>
-              <div className="mt-2 flex items-center justify-between gap-3 font-mono text-[11px] text-slatey">
-                <span className="truncate">{match.topOutcome.label}</span>
-                <span className="text-gold">{match.topOutcome.percentage}%</span>
-              </div>
+              <p className="mt-1 font-mono text-[11px] text-slatey">{match.totalPicks} palpites</p>
             </button>
           ))}
         </div>
@@ -71,56 +49,46 @@ export default function UpcomingMatches({
         {selected && (
           <div>
             <div className="rounded-lg border border-pitch-line bg-pitch-2 p-4">
-              <div className="flex flex-wrap items-start justify-between gap-3">
-                <div>
-                  <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-slatey">
-                    G{selected.group} · {fmtDay(selected.date)} · {selected.time}
-                  </p>
-                  <h3 className="mt-1 font-display text-2xl uppercase tracking-wide text-chalk">
-                    {selected.home} x {selected.away}
-                  </h3>
-                </div>
-                <div className="text-right">
-                  <p className="font-mono text-[10px] uppercase tracking-wider text-slatey">média</p>
-                  <p className="font-mono text-lg font-bold text-gold">
-                    {selected.averageHomeGoals} x {selected.averageAwayGoals}
-                  </p>
-                </div>
+              <div className="mb-3 flex flex-wrap items-baseline justify-between gap-2">
+                <h3 className="font-display text-2xl uppercase tracking-wide text-chalk">
+                  {selected.home} x {selected.away}
+                </h3>
+                <p className="font-mono text-[10px] uppercase tracking-wider text-slatey">
+                  G{selected.group} · {fmtDay(selected.date)} · {selected.time}
+                </p>
               </div>
 
-              <div className="mt-4 grid gap-2 sm:grid-cols-3">
-                <div className="rounded border border-pitch-line bg-pitch px-3 py-2">
-                  <p className="font-mono text-[10px] uppercase tracking-wider text-slatey">mandante</p>
-                  <p className="font-mono text-sm text-lime">{selected.outcomeBreakdown.homeWin}</p>
-                </div>
-                <div className="rounded border border-pitch-line bg-pitch px-3 py-2">
-                  <p className="font-mono text-[10px] uppercase tracking-wider text-slatey">empate</p>
-                  <p className="font-mono text-sm text-gold">{selected.outcomeBreakdown.draw}</p>
-                </div>
-                <div className="rounded border border-pitch-line bg-pitch px-3 py-2">
-                  <p className="font-mono text-[10px] uppercase tracking-wider text-slatey">visitante</p>
-                  <p className="font-mono text-sm text-danger">{selected.outcomeBreakdown.awayWin}</p>
-                </div>
+              <div className="grid gap-1.5">
+                {([
+                  [selected.home, selected.outcomeBreakdown.homeWin, "text-lime"],
+                  ["Empate", selected.outcomeBreakdown.draw, "text-slatey"],
+                  [selected.away, selected.outcomeBreakdown.awayWin, "text-info"],
+                ] as Array<[string, number, string]>).map(([label, count, color]) => (
+                  <div
+                    key={label}
+                    className="flex items-center justify-between gap-3 rounded-md border border-pitch-line bg-pitch px-3 py-2"
+                  >
+                    <span className="truncate text-sm text-chalk">{label}</span>
+                    <span className={`font-mono text-sm font-bold ${color}`}>
+                      {count} {count === 1 ? "aposta" : "apostas"}
+                    </span>
+                  </div>
+                ))}
               </div>
 
-            <div className="mt-4 flex flex-wrap gap-2">
-              {selected.mostCommonScores.map((score) => (
-                <span key={score.score} className="rounded bg-pitch px-2 py-1 font-mono text-xs text-chalk">
-                  {score.score} · {score.count} votos
-                </span>
-              ))}
-              {selected.missingPicks > 0 && (
-                <span className="rounded bg-danger/15 px-2 py-1 font-mono text-xs text-danger">
-                  {selected.missingPicks} sem palpite válido
-                </span>
+              {selected.mostCommonScores.length > 0 && (
+                <div className="mt-3">
+                  <p className="mb-1.5 font-mono text-[10px] uppercase tracking-wider text-slatey">placares mais apostados</p>
+                  <div className="flex flex-wrap gap-2">
+                    {selected.mostCommonScores.map((score) => (
+                      <span key={score.score} className="rounded bg-pitch px-2 py-1 font-mono text-xs text-chalk">
+                        {score.score} · {score.count} {score.count === 1 ? "voto" : "votos"}
+                      </span>
+                    ))}
+                  </div>
+                </div>
               )}
             </div>
-            {selectedParticipant !== "todos" && (
-              <p className="mt-3 text-sm text-slatey">
-                Selecione outro nome acima para comparar a leitura individual com o comportamento do grupo.
-              </p>
-            )}
-          </div>
 
             <div className="mt-2 grid max-h-[28rem] gap-1.5 overflow-auto pr-1 sm:grid-cols-2">
               {selected.picks.map((pick) => (
