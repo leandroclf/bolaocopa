@@ -7,13 +7,16 @@ import StandingsTable from "@/components/StandingsTable";
 import RecentMatches from "@/components/RecentMatches";
 import RulesCard from "@/components/RulesCard";
 import LiveProjectionPanel from "@/components/LiveProjectionPanel";
+import BracketView from "@/components/BracketView";
 import type { LiveStandingsFile, StandingsFile } from "@/lib/types";
+import type { Bracket } from "@/knockout/types";
 
-type TabKey = "classification" | "next" | "map" | "recent";
+type TabKey = "classification" | "next" | "bracket" | "map" | "recent";
 
 const tabs: Array<{ key: TabKey; label: string; short: string }> = [
   { key: "classification", label: "Classificação", short: "Tabela" },
   { key: "next", label: "Próximos jogos", short: "Próximos" },
+  { key: "bracket", label: "Chaveamento", short: "Chave" },
   { key: "map", label: "Mapa de palpites", short: "Palpites" },
   { key: "recent", label: "Resultados", short: "Resultados" },
 ];
@@ -21,9 +24,11 @@ const tabs: Array<{ key: TabKey; label: string; short: string }> = [
 export default function DashboardTabs({
   standings,
   liveStandings,
+  bracket,
 }: {
   standings: StandingsFile;
   liveStandings: LiveStandingsFile;
+  bracket: Bracket | null;
 }) {
   const [active, setActive] = useState<TabKey>("classification");
   const activeLabel = useMemo(() => tabs.find((tab) => tab.key === active)?.label, [active]);
@@ -38,7 +43,7 @@ export default function DashboardTabs({
     <div>
       <nav className="sticky top-0 z-20 border-y border-pitch-line bg-pitch" aria-label="Seções do bolão">
         <div className="mx-auto max-w-5xl px-3 py-2">
-          <div className="grid grid-cols-4 gap-1 rounded-lg border border-pitch-line bg-pitch-2 p-1">
+          <div className="grid grid-cols-5 gap-1 rounded-lg border border-pitch-line bg-pitch-2 p-1">
             {tabs.map((tab) => (
               <button
                 key={tab.key}
@@ -68,6 +73,7 @@ export default function DashboardTabs({
         {active === "next" && (
           <NextMatchPanel match={standings.nextMatch} dayMatches={nextDayMatches} />
         )}
+        {active === "bracket" && <BracketView bracket={bracket} />}
         {active === "map" && <UpcomingMatches matches={standings.upcomingMatches} />}
         {active === "recent" && <RecentMatches results={standings.recentResults} />}
       </div>

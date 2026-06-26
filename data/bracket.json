@@ -1,0 +1,998 @@
+{
+  "generatedAt": "2026-06-26T10:44:18.912Z",
+  "competition": "Copa do Mundo FIFA 2026",
+  "source": "openfootball",
+  "groupsComplete": false,
+  "complete": false,
+  "phases": [
+    {
+      "key": "R32",
+      "label": "32 avos de final",
+      "shortLabel": "32avos",
+      "matches": [
+        {
+          "id": "M73",
+          "matchNumber": 73,
+          "phase": "R32",
+          "phaseLabel": "32 avos de final",
+          "order": 1,
+          "home": {
+            "label": "África do Sul",
+            "source": "Vice do Grupo A",
+            "team": {
+              "canon": "south africa",
+              "name": "África do Sul",
+              "flag": "🇿🇦"
+            }
+          },
+          "away": {
+            "label": "Canadá",
+            "source": "Vice do Grupo B",
+            "team": {
+              "canon": "canada",
+              "name": "Canadá",
+              "flag": "🇨🇦"
+            }
+          },
+          "homeGoals": null,
+          "awayGoals": null,
+          "winner": null,
+          "status": "scheduled",
+          "date": "2026-06-28",
+          "time": null,
+          "stadium": null,
+          "city": null,
+          "nextMatch": 90,
+          "winnerTo": "home",
+          "loserTo": null
+        },
+        {
+          "id": "M74",
+          "matchNumber": 74,
+          "phase": "R32",
+          "phaseLabel": "32 avos de final",
+          "order": 2,
+          "home": {
+            "label": "Alemanha",
+            "source": "Vencedor do Grupo E",
+            "team": {
+              "canon": "germany",
+              "name": "Alemanha",
+              "flag": "🇩🇪"
+            }
+          },
+          "away": {
+            "label": "Melhor 3º colocado",
+            "source": "Melhor 3º (A/B/C/D/F)",
+            "team": null
+          },
+          "homeGoals": null,
+          "awayGoals": null,
+          "winner": null,
+          "status": "pending",
+          "date": "2026-06-29",
+          "time": null,
+          "stadium": null,
+          "city": null,
+          "nextMatch": 89,
+          "winnerTo": "home",
+          "loserTo": null
+        },
+        {
+          "id": "M75",
+          "matchNumber": 75,
+          "phase": "R32",
+          "phaseLabel": "32 avos de final",
+          "order": 3,
+          "home": {
+            "label": "Holanda",
+            "source": "Vencedor do Grupo F",
+            "team": {
+              "canon": "netherlands",
+              "name": "Holanda",
+              "flag": "🇳🇱"
+            }
+          },
+          "away": {
+            "label": "Marrocos",
+            "source": "Vice do Grupo C",
+            "team": {
+              "canon": "morocco",
+              "name": "Marrocos",
+              "flag": "🇲🇦"
+            }
+          },
+          "homeGoals": null,
+          "awayGoals": null,
+          "winner": null,
+          "status": "scheduled",
+          "date": "2026-06-29",
+          "time": null,
+          "stadium": null,
+          "city": null,
+          "nextMatch": 90,
+          "winnerTo": "away",
+          "loserTo": null
+        },
+        {
+          "id": "M76",
+          "matchNumber": 76,
+          "phase": "R32",
+          "phaseLabel": "32 avos de final",
+          "order": 4,
+          "home": {
+            "label": "Brasil",
+            "source": "Vencedor do Grupo C",
+            "team": {
+              "canon": "brazil",
+              "name": "Brasil",
+              "flag": "🇧🇷"
+            }
+          },
+          "away": {
+            "label": "Japão",
+            "source": "Vice do Grupo F",
+            "team": {
+              "canon": "japan",
+              "name": "Japão",
+              "flag": "🇯🇵"
+            }
+          },
+          "homeGoals": null,
+          "awayGoals": null,
+          "winner": null,
+          "status": "scheduled",
+          "date": "2026-06-29",
+          "time": null,
+          "stadium": null,
+          "city": null,
+          "nextMatch": 91,
+          "winnerTo": "home",
+          "loserTo": null
+        },
+        {
+          "id": "M77",
+          "matchNumber": 77,
+          "phase": "R32",
+          "phaseLabel": "32 avos de final",
+          "order": 5,
+          "home": {
+            "label": "1º Grupo I",
+            "source": "Vencedor do Grupo I",
+            "team": null
+          },
+          "away": {
+            "label": "Melhor 3º colocado",
+            "source": "Melhor 3º (C/D/F/G/H)",
+            "team": null
+          },
+          "homeGoals": null,
+          "awayGoals": null,
+          "winner": null,
+          "status": "pending",
+          "date": "2026-06-30",
+          "time": null,
+          "stadium": null,
+          "city": null,
+          "nextMatch": 89,
+          "winnerTo": "away",
+          "loserTo": null
+        },
+        {
+          "id": "M78",
+          "matchNumber": 78,
+          "phase": "R32",
+          "phaseLabel": "32 avos de final",
+          "order": 6,
+          "home": {
+            "label": "Costa do Marfim",
+            "source": "Vice do Grupo E",
+            "team": {
+              "canon": "ivory coast",
+              "name": "Costa do Marfim",
+              "flag": "🇨🇮"
+            }
+          },
+          "away": {
+            "label": "2º Grupo I",
+            "source": "Vice do Grupo I",
+            "team": null
+          },
+          "homeGoals": null,
+          "awayGoals": null,
+          "winner": null,
+          "status": "pending",
+          "date": "2026-06-30",
+          "time": null,
+          "stadium": null,
+          "city": null,
+          "nextMatch": 91,
+          "winnerTo": "away",
+          "loserTo": null
+        },
+        {
+          "id": "M79",
+          "matchNumber": 79,
+          "phase": "R32",
+          "phaseLabel": "32 avos de final",
+          "order": 7,
+          "home": {
+            "label": "México",
+            "source": "Vencedor do Grupo A",
+            "team": {
+              "canon": "mexico",
+              "name": "México",
+              "flag": "🇲🇽"
+            }
+          },
+          "away": {
+            "label": "Melhor 3º colocado",
+            "source": "Melhor 3º (C/E/F/H/I)",
+            "team": null
+          },
+          "homeGoals": null,
+          "awayGoals": null,
+          "winner": null,
+          "status": "pending",
+          "date": "2026-06-30",
+          "time": null,
+          "stadium": null,
+          "city": null,
+          "nextMatch": 92,
+          "winnerTo": "home",
+          "loserTo": null
+        },
+        {
+          "id": "M80",
+          "matchNumber": 80,
+          "phase": "R32",
+          "phaseLabel": "32 avos de final",
+          "order": 8,
+          "home": {
+            "label": "1º Grupo L",
+            "source": "Vencedor do Grupo L",
+            "team": null
+          },
+          "away": {
+            "label": "Melhor 3º colocado",
+            "source": "Melhor 3º (E/H/I/J/K)",
+            "team": null
+          },
+          "homeGoals": null,
+          "awayGoals": null,
+          "winner": null,
+          "status": "pending",
+          "date": "2026-07-01",
+          "time": null,
+          "stadium": null,
+          "city": null,
+          "nextMatch": 92,
+          "winnerTo": "away",
+          "loserTo": null
+        },
+        {
+          "id": "M81",
+          "matchNumber": 81,
+          "phase": "R32",
+          "phaseLabel": "32 avos de final",
+          "order": 9,
+          "home": {
+            "label": "Estados Unidos",
+            "source": "Vencedor do Grupo D",
+            "team": {
+              "canon": "usa",
+              "name": "Estados Unidos",
+              "flag": "🇺🇸"
+            }
+          },
+          "away": {
+            "label": "Melhor 3º colocado",
+            "source": "Melhor 3º (B/E/F/I/J)",
+            "team": null
+          },
+          "homeGoals": null,
+          "awayGoals": null,
+          "winner": null,
+          "status": "pending",
+          "date": "2026-07-01",
+          "time": null,
+          "stadium": null,
+          "city": null,
+          "nextMatch": 94,
+          "winnerTo": "home",
+          "loserTo": null
+        },
+        {
+          "id": "M82",
+          "matchNumber": 82,
+          "phase": "R32",
+          "phaseLabel": "32 avos de final",
+          "order": 10,
+          "home": {
+            "label": "1º Grupo G",
+            "source": "Vencedor do Grupo G",
+            "team": null
+          },
+          "away": {
+            "label": "Melhor 3º colocado",
+            "source": "Melhor 3º (A/E/H/I/J)",
+            "team": null
+          },
+          "homeGoals": null,
+          "awayGoals": null,
+          "winner": null,
+          "status": "pending",
+          "date": "2026-07-01",
+          "time": null,
+          "stadium": null,
+          "city": null,
+          "nextMatch": 94,
+          "winnerTo": "away",
+          "loserTo": null
+        },
+        {
+          "id": "M83",
+          "matchNumber": 83,
+          "phase": "R32",
+          "phaseLabel": "32 avos de final",
+          "order": 11,
+          "home": {
+            "label": "2º Grupo K",
+            "source": "Vice do Grupo K",
+            "team": null
+          },
+          "away": {
+            "label": "2º Grupo L",
+            "source": "Vice do Grupo L",
+            "team": null
+          },
+          "homeGoals": null,
+          "awayGoals": null,
+          "winner": null,
+          "status": "pending",
+          "date": "2026-07-02",
+          "time": null,
+          "stadium": null,
+          "city": null,
+          "nextMatch": 93,
+          "winnerTo": "home",
+          "loserTo": null
+        },
+        {
+          "id": "M84",
+          "matchNumber": 84,
+          "phase": "R32",
+          "phaseLabel": "32 avos de final",
+          "order": 12,
+          "home": {
+            "label": "1º Grupo H",
+            "source": "Vencedor do Grupo H",
+            "team": null
+          },
+          "away": {
+            "label": "2º Grupo J",
+            "source": "Vice do Grupo J",
+            "team": null
+          },
+          "homeGoals": null,
+          "awayGoals": null,
+          "winner": null,
+          "status": "pending",
+          "date": "2026-07-02",
+          "time": null,
+          "stadium": null,
+          "city": null,
+          "nextMatch": 93,
+          "winnerTo": "away",
+          "loserTo": null
+        },
+        {
+          "id": "M85",
+          "matchNumber": 85,
+          "phase": "R32",
+          "phaseLabel": "32 avos de final",
+          "order": 13,
+          "home": {
+            "label": "Suíça",
+            "source": "Vencedor do Grupo B",
+            "team": {
+              "canon": "switzerland",
+              "name": "Suíça",
+              "flag": "🇨🇭"
+            }
+          },
+          "away": {
+            "label": "Melhor 3º colocado",
+            "source": "Melhor 3º (E/F/G/I/J)",
+            "team": null
+          },
+          "homeGoals": null,
+          "awayGoals": null,
+          "winner": null,
+          "status": "pending",
+          "date": "2026-07-02",
+          "time": null,
+          "stadium": null,
+          "city": null,
+          "nextMatch": 96,
+          "winnerTo": "home",
+          "loserTo": null
+        },
+        {
+          "id": "M86",
+          "matchNumber": 86,
+          "phase": "R32",
+          "phaseLabel": "32 avos de final",
+          "order": 14,
+          "home": {
+            "label": "1º Grupo J",
+            "source": "Vencedor do Grupo J",
+            "team": null
+          },
+          "away": {
+            "label": "2º Grupo H",
+            "source": "Vice do Grupo H",
+            "team": null
+          },
+          "homeGoals": null,
+          "awayGoals": null,
+          "winner": null,
+          "status": "pending",
+          "date": "2026-07-03",
+          "time": null,
+          "stadium": null,
+          "city": null,
+          "nextMatch": 95,
+          "winnerTo": "home",
+          "loserTo": null
+        },
+        {
+          "id": "M87",
+          "matchNumber": 87,
+          "phase": "R32",
+          "phaseLabel": "32 avos de final",
+          "order": 15,
+          "home": {
+            "label": "1º Grupo K",
+            "source": "Vencedor do Grupo K",
+            "team": null
+          },
+          "away": {
+            "label": "Melhor 3º colocado",
+            "source": "Melhor 3º (D/E/I/J/L)",
+            "team": null
+          },
+          "homeGoals": null,
+          "awayGoals": null,
+          "winner": null,
+          "status": "pending",
+          "date": "2026-07-03",
+          "time": null,
+          "stadium": null,
+          "city": null,
+          "nextMatch": 96,
+          "winnerTo": "away",
+          "loserTo": null
+        },
+        {
+          "id": "M88",
+          "matchNumber": 88,
+          "phase": "R32",
+          "phaseLabel": "32 avos de final",
+          "order": 16,
+          "home": {
+            "label": "Austrália",
+            "source": "Vice do Grupo D",
+            "team": {
+              "canon": "australia",
+              "name": "Austrália",
+              "flag": "🇦🇺"
+            }
+          },
+          "away": {
+            "label": "2º Grupo G",
+            "source": "Vice do Grupo G",
+            "team": null
+          },
+          "homeGoals": null,
+          "awayGoals": null,
+          "winner": null,
+          "status": "pending",
+          "date": "2026-07-03",
+          "time": null,
+          "stadium": null,
+          "city": null,
+          "nextMatch": 95,
+          "winnerTo": "away",
+          "loserTo": null
+        }
+      ]
+    },
+    {
+      "key": "R16",
+      "label": "Oitavas de final",
+      "shortLabel": "Oitavas",
+      "matches": [
+        {
+          "id": "M89",
+          "matchNumber": 89,
+          "phase": "R16",
+          "phaseLabel": "Oitavas de final",
+          "order": 1,
+          "home": {
+            "label": "Vencedor Jogo 74",
+            "source": "Vencedor do Jogo 74",
+            "team": null
+          },
+          "away": {
+            "label": "Vencedor Jogo 77",
+            "source": "Vencedor do Jogo 77",
+            "team": null
+          },
+          "homeGoals": null,
+          "awayGoals": null,
+          "winner": null,
+          "status": "pending",
+          "date": "2026-07-04",
+          "time": null,
+          "stadium": null,
+          "city": null,
+          "nextMatch": 97,
+          "winnerTo": "home",
+          "loserTo": null
+        },
+        {
+          "id": "M90",
+          "matchNumber": 90,
+          "phase": "R16",
+          "phaseLabel": "Oitavas de final",
+          "order": 2,
+          "home": {
+            "label": "Vencedor Jogo 73",
+            "source": "Vencedor do Jogo 73",
+            "team": null
+          },
+          "away": {
+            "label": "Vencedor Jogo 75",
+            "source": "Vencedor do Jogo 75",
+            "team": null
+          },
+          "homeGoals": null,
+          "awayGoals": null,
+          "winner": null,
+          "status": "pending",
+          "date": "2026-07-04",
+          "time": null,
+          "stadium": null,
+          "city": null,
+          "nextMatch": 97,
+          "winnerTo": "away",
+          "loserTo": null
+        },
+        {
+          "id": "M91",
+          "matchNumber": 91,
+          "phase": "R16",
+          "phaseLabel": "Oitavas de final",
+          "order": 3,
+          "home": {
+            "label": "Vencedor Jogo 76",
+            "source": "Vencedor do Jogo 76",
+            "team": null
+          },
+          "away": {
+            "label": "Vencedor Jogo 78",
+            "source": "Vencedor do Jogo 78",
+            "team": null
+          },
+          "homeGoals": null,
+          "awayGoals": null,
+          "winner": null,
+          "status": "pending",
+          "date": "2026-07-05",
+          "time": null,
+          "stadium": null,
+          "city": null,
+          "nextMatch": 99,
+          "winnerTo": "home",
+          "loserTo": null
+        },
+        {
+          "id": "M92",
+          "matchNumber": 92,
+          "phase": "R16",
+          "phaseLabel": "Oitavas de final",
+          "order": 4,
+          "home": {
+            "label": "Vencedor Jogo 79",
+            "source": "Vencedor do Jogo 79",
+            "team": null
+          },
+          "away": {
+            "label": "Vencedor Jogo 80",
+            "source": "Vencedor do Jogo 80",
+            "team": null
+          },
+          "homeGoals": null,
+          "awayGoals": null,
+          "winner": null,
+          "status": "pending",
+          "date": "2026-07-05",
+          "time": null,
+          "stadium": null,
+          "city": null,
+          "nextMatch": 99,
+          "winnerTo": "away",
+          "loserTo": null
+        },
+        {
+          "id": "M93",
+          "matchNumber": 93,
+          "phase": "R16",
+          "phaseLabel": "Oitavas de final",
+          "order": 5,
+          "home": {
+            "label": "Vencedor Jogo 83",
+            "source": "Vencedor do Jogo 83",
+            "team": null
+          },
+          "away": {
+            "label": "Vencedor Jogo 84",
+            "source": "Vencedor do Jogo 84",
+            "team": null
+          },
+          "homeGoals": null,
+          "awayGoals": null,
+          "winner": null,
+          "status": "pending",
+          "date": "2026-07-06",
+          "time": null,
+          "stadium": null,
+          "city": null,
+          "nextMatch": 98,
+          "winnerTo": "home",
+          "loserTo": null
+        },
+        {
+          "id": "M94",
+          "matchNumber": 94,
+          "phase": "R16",
+          "phaseLabel": "Oitavas de final",
+          "order": 6,
+          "home": {
+            "label": "Vencedor Jogo 81",
+            "source": "Vencedor do Jogo 81",
+            "team": null
+          },
+          "away": {
+            "label": "Vencedor Jogo 82",
+            "source": "Vencedor do Jogo 82",
+            "team": null
+          },
+          "homeGoals": null,
+          "awayGoals": null,
+          "winner": null,
+          "status": "pending",
+          "date": "2026-07-06",
+          "time": null,
+          "stadium": null,
+          "city": null,
+          "nextMatch": 98,
+          "winnerTo": "away",
+          "loserTo": null
+        },
+        {
+          "id": "M95",
+          "matchNumber": 95,
+          "phase": "R16",
+          "phaseLabel": "Oitavas de final",
+          "order": 7,
+          "home": {
+            "label": "Vencedor Jogo 86",
+            "source": "Vencedor do Jogo 86",
+            "team": null
+          },
+          "away": {
+            "label": "Vencedor Jogo 88",
+            "source": "Vencedor do Jogo 88",
+            "team": null
+          },
+          "homeGoals": null,
+          "awayGoals": null,
+          "winner": null,
+          "status": "pending",
+          "date": "2026-07-07",
+          "time": null,
+          "stadium": null,
+          "city": null,
+          "nextMatch": 100,
+          "winnerTo": "home",
+          "loserTo": null
+        },
+        {
+          "id": "M96",
+          "matchNumber": 96,
+          "phase": "R16",
+          "phaseLabel": "Oitavas de final",
+          "order": 8,
+          "home": {
+            "label": "Vencedor Jogo 85",
+            "source": "Vencedor do Jogo 85",
+            "team": null
+          },
+          "away": {
+            "label": "Vencedor Jogo 87",
+            "source": "Vencedor do Jogo 87",
+            "team": null
+          },
+          "homeGoals": null,
+          "awayGoals": null,
+          "winner": null,
+          "status": "pending",
+          "date": "2026-07-07",
+          "time": null,
+          "stadium": null,
+          "city": null,
+          "nextMatch": 100,
+          "winnerTo": "away",
+          "loserTo": null
+        }
+      ]
+    },
+    {
+      "key": "QF",
+      "label": "Quartas de final",
+      "shortLabel": "Quartas",
+      "matches": [
+        {
+          "id": "M97",
+          "matchNumber": 97,
+          "phase": "QF",
+          "phaseLabel": "Quartas de final",
+          "order": 1,
+          "home": {
+            "label": "Vencedor Jogo 89",
+            "source": "Vencedor do Jogo 89",
+            "team": null
+          },
+          "away": {
+            "label": "Vencedor Jogo 90",
+            "source": "Vencedor do Jogo 90",
+            "team": null
+          },
+          "homeGoals": null,
+          "awayGoals": null,
+          "winner": null,
+          "status": "pending",
+          "date": "2026-07-09",
+          "time": null,
+          "stadium": null,
+          "city": null,
+          "nextMatch": 101,
+          "winnerTo": "home",
+          "loserTo": null
+        },
+        {
+          "id": "M98",
+          "matchNumber": 98,
+          "phase": "QF",
+          "phaseLabel": "Quartas de final",
+          "order": 2,
+          "home": {
+            "label": "Vencedor Jogo 93",
+            "source": "Vencedor do Jogo 93",
+            "team": null
+          },
+          "away": {
+            "label": "Vencedor Jogo 94",
+            "source": "Vencedor do Jogo 94",
+            "team": null
+          },
+          "homeGoals": null,
+          "awayGoals": null,
+          "winner": null,
+          "status": "pending",
+          "date": "2026-07-10",
+          "time": null,
+          "stadium": null,
+          "city": null,
+          "nextMatch": 101,
+          "winnerTo": "away",
+          "loserTo": null
+        },
+        {
+          "id": "M99",
+          "matchNumber": 99,
+          "phase": "QF",
+          "phaseLabel": "Quartas de final",
+          "order": 3,
+          "home": {
+            "label": "Vencedor Jogo 91",
+            "source": "Vencedor do Jogo 91",
+            "team": null
+          },
+          "away": {
+            "label": "Vencedor Jogo 92",
+            "source": "Vencedor do Jogo 92",
+            "team": null
+          },
+          "homeGoals": null,
+          "awayGoals": null,
+          "winner": null,
+          "status": "pending",
+          "date": "2026-07-10",
+          "time": null,
+          "stadium": null,
+          "city": null,
+          "nextMatch": 102,
+          "winnerTo": "home",
+          "loserTo": null
+        },
+        {
+          "id": "M100",
+          "matchNumber": 100,
+          "phase": "QF",
+          "phaseLabel": "Quartas de final",
+          "order": 4,
+          "home": {
+            "label": "Vencedor Jogo 95",
+            "source": "Vencedor do Jogo 95",
+            "team": null
+          },
+          "away": {
+            "label": "Vencedor Jogo 96",
+            "source": "Vencedor do Jogo 96",
+            "team": null
+          },
+          "homeGoals": null,
+          "awayGoals": null,
+          "winner": null,
+          "status": "pending",
+          "date": "2026-07-11",
+          "time": null,
+          "stadium": null,
+          "city": null,
+          "nextMatch": 102,
+          "winnerTo": "away",
+          "loserTo": null
+        }
+      ]
+    },
+    {
+      "key": "SF",
+      "label": "Semifinais",
+      "shortLabel": "Semis",
+      "matches": [
+        {
+          "id": "M101",
+          "matchNumber": 101,
+          "phase": "SF",
+          "phaseLabel": "Semifinais",
+          "order": 1,
+          "home": {
+            "label": "Vencedor Jogo 97",
+            "source": "Vencedor do Jogo 97",
+            "team": null
+          },
+          "away": {
+            "label": "Vencedor Jogo 98",
+            "source": "Vencedor do Jogo 98",
+            "team": null
+          },
+          "homeGoals": null,
+          "awayGoals": null,
+          "winner": null,
+          "status": "pending",
+          "date": "2026-07-14",
+          "time": null,
+          "stadium": null,
+          "city": null,
+          "nextMatch": 104,
+          "winnerTo": "home",
+          "loserTo": 103
+        },
+        {
+          "id": "M102",
+          "matchNumber": 102,
+          "phase": "SF",
+          "phaseLabel": "Semifinais",
+          "order": 2,
+          "home": {
+            "label": "Vencedor Jogo 99",
+            "source": "Vencedor do Jogo 99",
+            "team": null
+          },
+          "away": {
+            "label": "Vencedor Jogo 100",
+            "source": "Vencedor do Jogo 100",
+            "team": null
+          },
+          "homeGoals": null,
+          "awayGoals": null,
+          "winner": null,
+          "status": "pending",
+          "date": "2026-07-15",
+          "time": null,
+          "stadium": null,
+          "city": null,
+          "nextMatch": 104,
+          "winnerTo": "away",
+          "loserTo": 103
+        }
+      ]
+    },
+    {
+      "key": "TP",
+      "label": "Disputa de 3º lugar",
+      "shortLabel": "3º lugar",
+      "matches": [
+        {
+          "id": "M103",
+          "matchNumber": 103,
+          "phase": "TP",
+          "phaseLabel": "Disputa de 3º lugar",
+          "order": 1,
+          "home": {
+            "label": "Perdedor Jogo 101",
+            "source": "Perdedor do Jogo 101",
+            "team": null
+          },
+          "away": {
+            "label": "Perdedor Jogo 102",
+            "source": "Perdedor do Jogo 102",
+            "team": null
+          },
+          "homeGoals": null,
+          "awayGoals": null,
+          "winner": null,
+          "status": "pending",
+          "date": "2026-07-18",
+          "time": null,
+          "stadium": null,
+          "city": null,
+          "nextMatch": null,
+          "winnerTo": null,
+          "loserTo": null
+        }
+      ]
+    },
+    {
+      "key": "F",
+      "label": "Final",
+      "shortLabel": "Final",
+      "matches": [
+        {
+          "id": "M104",
+          "matchNumber": 104,
+          "phase": "F",
+          "phaseLabel": "Final",
+          "order": 1,
+          "home": {
+            "label": "Vencedor Jogo 101",
+            "source": "Vencedor do Jogo 101",
+            "team": null
+          },
+          "away": {
+            "label": "Vencedor Jogo 102",
+            "source": "Vencedor do Jogo 102",
+            "team": null
+          },
+          "homeGoals": null,
+          "awayGoals": null,
+          "winner": null,
+          "status": "pending",
+          "date": "2026-07-19",
+          "time": null,
+          "stadium": null,
+          "city": null,
+          "nextMatch": null,
+          "winnerTo": null,
+          "loserTo": null
+        }
+      ]
+    }
+  ],
+  "qualifiedThirds": [],
+  "valid": true,
+  "errors": []
+}

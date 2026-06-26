@@ -1,6 +1,7 @@
-import { readFileSync } from "node:fs";
+import { readFileSync, existsSync } from "node:fs";
 import { join } from "node:path";
 import type { FixturesFile, LiveStandingsFile, StandingsFile } from "./types";
+import type { Bracket } from "@/knockout/types";
 
 const dataDir = join(process.cwd(), "data");
 const read = <T>(file: string): T => JSON.parse(readFileSync(join(dataDir, file), "utf8")) as T;
@@ -8,3 +9,5 @@ const read = <T>(file: string): T => JSON.parse(readFileSync(join(dataDir, file)
 export const getStandings = () => read<StandingsFile>("standings.json");
 export const getFixtures = () => read<FixturesFile>("fixtures.json");
 export const getLiveStandings = () => read<LiveStandingsFile>("live-standings.json");
+export const getBracket = (): Bracket | null =>
+  existsSync(join(dataDir, "bracket.json")) ? read<Bracket>("bracket.json") : null;

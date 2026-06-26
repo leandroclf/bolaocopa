@@ -1,0 +1,50 @@
+{
+  "competition": "Copa do Mundo FIFA 2026",
+  "phases": [
+    { "key": "R32", "label": "32 avos de final", "shortLabel": "32avos" },
+    { "key": "R16", "label": "Oitavas de final", "shortLabel": "Oitavas" },
+    { "key": "QF", "label": "Quartas de final", "shortLabel": "Quartas" },
+    { "key": "SF", "label": "Semifinais", "shortLabel": "Semis" },
+    { "key": "TP", "label": "Disputa de 3º lugar", "shortLabel": "3º lugar" },
+    { "key": "F", "label": "Final", "shortLabel": "Final" }
+  ],
+  "matches": [
+    { "matchNumber": 73, "phase": "R32", "order": 1, "home": { "kind": "runnerUp", "group": "A" }, "away": { "kind": "runnerUp", "group": "B" }, "date": "2026-06-28", "time": null, "stadium": null, "city": null },
+    { "matchNumber": 74, "phase": "R32", "order": 2, "home": { "kind": "winner", "group": "E" }, "away": { "kind": "third", "groups": ["A", "B", "C", "D", "F"] }, "date": "2026-06-29", "time": null, "stadium": null, "city": null },
+    { "matchNumber": 75, "phase": "R32", "order": 3, "home": { "kind": "winner", "group": "F" }, "away": { "kind": "runnerUp", "group": "C" }, "date": "2026-06-29", "time": null, "stadium": null, "city": null },
+    { "matchNumber": 76, "phase": "R32", "order": 4, "home": { "kind": "winner", "group": "C" }, "away": { "kind": "runnerUp", "group": "F" }, "date": "2026-06-29", "time": null, "stadium": null, "city": null },
+    { "matchNumber": 77, "phase": "R32", "order": 5, "home": { "kind": "winner", "group": "I" }, "away": { "kind": "third", "groups": ["C", "D", "F", "G", "H"] }, "date": "2026-06-30", "time": null, "stadium": null, "city": null },
+    { "matchNumber": 78, "phase": "R32", "order": 6, "home": { "kind": "runnerUp", "group": "E" }, "away": { "kind": "runnerUp", "group": "I" }, "date": "2026-06-30", "time": null, "stadium": null, "city": null },
+    { "matchNumber": 79, "phase": "R32", "order": 7, "home": { "kind": "winner", "group": "A" }, "away": { "kind": "third", "groups": ["C", "E", "F", "H", "I"] }, "date": "2026-06-30", "time": null, "stadium": null, "city": null },
+    { "matchNumber": 80, "phase": "R32", "order": 8, "home": { "kind": "winner", "group": "L" }, "away": { "kind": "third", "groups": ["E", "H", "I", "J", "K"] }, "date": "2026-07-01", "time": null, "stadium": null, "city": null },
+    { "matchNumber": 81, "phase": "R32", "order": 9, "home": { "kind": "winner", "group": "D" }, "away": { "kind": "third", "groups": ["B", "E", "F", "I", "J"] }, "date": "2026-07-01", "time": null, "stadium": null, "city": null },
+    { "matchNumber": 82, "phase": "R32", "order": 10, "home": { "kind": "winner", "group": "G" }, "away": { "kind": "third", "groups": ["A", "E", "H", "I", "J"] }, "date": "2026-07-01", "time": null, "stadium": null, "city": null },
+    { "matchNumber": 83, "phase": "R32", "order": 11, "home": { "kind": "runnerUp", "group": "K" }, "away": { "kind": "runnerUp", "group": "L" }, "date": "2026-07-02", "time": null, "stadium": null, "city": null },
+    { "matchNumber": 84, "phase": "R32", "order": 12, "home": { "kind": "winner", "group": "H" }, "away": { "kind": "runnerUp", "group": "J" }, "date": "2026-07-02", "time": null, "stadium": null, "city": null },
+    { "matchNumber": 85, "phase": "R32", "order": 13, "home": { "kind": "winner", "group": "B" }, "away": { "kind": "third", "groups": ["E", "F", "G", "I", "J"] }, "date": "2026-07-02", "time": null, "stadium": null, "city": null },
+    { "matchNumber": 86, "phase": "R32", "order": 14, "home": { "kind": "winner", "group": "J" }, "away": { "kind": "runnerUp", "group": "H" }, "date": "2026-07-03", "time": null, "stadium": null, "city": null },
+    { "matchNumber": 87, "phase": "R32", "order": 15, "home": { "kind": "winner", "group": "K" }, "away": { "kind": "third", "groups": ["D", "E", "I", "J", "L"] }, "date": "2026-07-03", "time": null, "stadium": null, "city": null },
+    { "matchNumber": 88, "phase": "R32", "order": 16, "home": { "kind": "runnerUp", "group": "D" }, "away": { "kind": "runnerUp", "group": "G" }, "date": "2026-07-03", "time": null, "stadium": null, "city": null },
+
+    { "matchNumber": 89, "phase": "R16", "order": 1, "home": { "kind": "matchWinner", "match": 74 }, "away": { "kind": "matchWinner", "match": 77 }, "date": "2026-07-04", "time": null, "stadium": null, "city": null },
+    { "matchNumber": 90, "phase": "R16", "order": 2, "home": { "kind": "matchWinner", "match": 73 }, "away": { "kind": "matchWinner", "match": 75 }, "date": "2026-07-04", "time": null, "stadium": null, "city": null },
+    { "matchNumber": 91, "phase": "R16", "order": 3, "home": { "kind": "matchWinner", "match": 76 }, "away": { "kind": "matchWinner", "match": 78 }, "date": "2026-07-05", "time": null, "stadium": null, "city": null },
+    { "matchNumber": 92, "phase": "R16", "order": 4, "home": { "kind": "matchWinner", "match": 79 }, "away": { "kind": "matchWinner", "match": 80 }, "date": "2026-07-05", "time": null, "stadium": null, "city": null },
+    { "matchNumber": 93, "phase": "R16", "order": 5, "home": { "kind": "matchWinner", "match": 83 }, "away": { "kind": "matchWinner", "match": 84 }, "date": "2026-07-06", "time": null, "stadium": null, "city": null },
+    { "matchNumber": 94, "phase": "R16", "order": 6, "home": { "kind": "matchWinner", "match": 81 }, "away": { "kind": "matchWinner", "match": 82 }, "date": "2026-07-06", "time": null, "stadium": null, "city": null },
+    { "matchNumber": 95, "phase": "R16", "order": 7, "home": { "kind": "matchWinner", "match": 86 }, "away": { "kind": "matchWinner", "match": 88 }, "date": "2026-07-07", "time": null, "stadium": null, "city": null },
+    { "matchNumber": 96, "phase": "R16", "order": 8, "home": { "kind": "matchWinner", "match": 85 }, "away": { "kind": "matchWinner", "match": 87 }, "date": "2026-07-07", "time": null, "stadium": null, "city": null },
+
+    { "matchNumber": 97, "phase": "QF", "order": 1, "home": { "kind": "matchWinner", "match": 89 }, "away": { "kind": "matchWinner", "match": 90 }, "date": "2026-07-09", "time": null, "stadium": null, "city": null },
+    { "matchNumber": 98, "phase": "QF", "order": 2, "home": { "kind": "matchWinner", "match": 93 }, "away": { "kind": "matchWinner", "match": 94 }, "date": "2026-07-10", "time": null, "stadium": null, "city": null },
+    { "matchNumber": 99, "phase": "QF", "order": 3, "home": { "kind": "matchWinner", "match": 91 }, "away": { "kind": "matchWinner", "match": 92 }, "date": "2026-07-10", "time": null, "stadium": null, "city": null },
+    { "matchNumber": 100, "phase": "QF", "order": 4, "home": { "kind": "matchWinner", "match": 95 }, "away": { "kind": "matchWinner", "match": 96 }, "date": "2026-07-11", "time": null, "stadium": null, "city": null },
+
+    { "matchNumber": 101, "phase": "SF", "order": 1, "home": { "kind": "matchWinner", "match": 97 }, "away": { "kind": "matchWinner", "match": 98 }, "date": "2026-07-14", "time": null, "stadium": null, "city": null },
+    { "matchNumber": 102, "phase": "SF", "order": 2, "home": { "kind": "matchWinner", "match": 99 }, "away": { "kind": "matchWinner", "match": 100 }, "date": "2026-07-15", "time": null, "stadium": null, "city": null },
+
+    { "matchNumber": 103, "phase": "TP", "order": 1, "home": { "kind": "matchLoser", "match": 101 }, "away": { "kind": "matchLoser", "match": 102 }, "date": "2026-07-18", "time": null, "stadium": null, "city": null },
+
+    { "matchNumber": 104, "phase": "F", "order": 1, "home": { "kind": "matchWinner", "match": 101 }, "away": { "kind": "matchWinner", "match": 102 }, "date": "2026-07-19", "time": null, "stadium": null, "city": null }
+  ]
+}
