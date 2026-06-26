@@ -1,468 +1,494 @@
 {
-  "lastUpdated": "2026-06-25T22:42:35.184Z",
+  "lastUpdated": "2026-06-26T04:24:46.028Z",
   "source": "openfootball",
   "totalParticipants": 38,
-  "countedMatches": 56,
+  "countedMatches": 60,
   "standings": [
     {
       "rank": 1,
       "previousRank": 1,
       "delta": 0,
       "name": "Bianka e Rafael",
-      "points": 215,
-      "exact": 12,
+      "points": 235,
+      "exact": 14,
       "partial": 25,
       "partialWinnerGoal": 1,
       "partialLoserGoal": 9,
       "resultOnly": 15,
-      "played": 56
+      "played": 60
     },
     {
       "rank": 2,
       "previousRank": 2,
       "delta": 0,
       "name": "Breno",
-      "points": 206,
-      "exact": 11,
-      "partial": 24,
-      "partialWinnerGoal": 3,
+      "points": 224,
+      "exact": 12,
+      "partial": 26,
+      "partialWinnerGoal": 4,
       "partialLoserGoal": 9,
-      "resultOnly": 12,
-      "played": 56
+      "resultOnly": 13,
+      "played": 60
     },
     {
       "rank": 3,
-      "previousRank": 4,
-      "delta": 1,
-      "name": "Neto",
-      "points": 189,
+      "previousRank": 11,
+      "delta": 8,
+      "name": "Elias",
+      "points": 192,
       "exact": 8,
-      "partial": 27,
-      "partialWinnerGoal": 5,
-      "partialLoserGoal": 9,
-      "resultOnly": 13,
-      "played": 56
+      "partial": 28,
+      "partialWinnerGoal": 4,
+      "partialLoserGoal": 10,
+      "resultOnly": 14,
+      "played": 60
     },
     {
       "rank": 4,
       "previousRank": 3,
       "delta": -1,
-      "name": "Vinícius",
-      "points": 188,
-      "exact": 7,
-      "partial": 30,
+      "name": "Neto",
+      "points": 192,
+      "exact": 8,
+      "partial": 28,
       "partialWinnerGoal": 5,
       "partialLoserGoal": 9,
-      "resultOnly": 16,
-      "played": 56
+      "resultOnly": 14,
+      "played": 60
     },
     {
       "rank": 5,
-      "previousRank": 5,
-      "delta": 0,
-      "name": "GuiGui ET",
-      "points": 185,
-      "exact": 5,
-      "partial": 33,
-      "partialWinnerGoal": 2,
-      "partialLoserGoal": 16,
-      "resultOnly": 15,
-      "played": 56
+      "previousRank": 4,
+      "delta": -1,
+      "name": "Vinícius",
+      "points": 191,
+      "exact": 7,
+      "partial": 31,
+      "partialWinnerGoal": 5,
+      "partialLoserGoal": 9,
+      "resultOnly": 17,
+      "played": 60
     },
     {
       "rank": 6,
-      "previousRank": 7,
-      "delta": 1,
-      "name": "Beatriz",
-      "points": 184,
-      "exact": 9,
-      "partial": 24,
-      "partialWinnerGoal": 0,
-      "partialLoserGoal": 11,
-      "resultOnly": 13,
-      "played": 56
+      "previousRank": 5,
+      "delta": -1,
+      "name": "GuiGui ET",
+      "points": 190,
+      "exact": 5,
+      "partial": 34,
+      "partialWinnerGoal": 2,
+      "partialLoserGoal": 17,
+      "resultOnly": 15,
+      "played": 60
     },
     {
       "rank": 7,
       "previousRank": 6,
       "delta": -1,
-      "name": "Edwin",
-      "points": 180,
-      "exact": 8,
-      "partial": 26,
-      "partialWinnerGoal": 0,
+      "name": "Beatriz",
+      "points": 189,
+      "exact": 9,
+      "partial": 25,
+      "partialWinnerGoal": 1,
       "partialLoserGoal": 11,
-      "resultOnly": 15,
-      "played": 56
+      "resultOnly": 13,
+      "played": 60
     },
     {
       "rank": 8,
       "previousRank": 8,
       "delta": 0,
       "name": "Luiz Henrique",
-      "points": 180,
+      "points": 185,
       "exact": 8,
-      "partial": 26,
+      "partial": 27,
       "partialWinnerGoal": 3,
-      "partialLoserGoal": 8,
+      "partialLoserGoal": 9,
       "resultOnly": 15,
-      "played": 56
+      "played": 60
     },
     {
       "rank": 9,
-      "previousRank": 9,
-      "delta": 0,
-      "name": "Matheus",
-      "points": 177,
-      "exact": 7,
+      "previousRank": 7,
+      "delta": -2,
+      "name": "Edwin",
+      "points": 183,
+      "exact": 8,
       "partial": 27,
       "partialWinnerGoal": 0,
-      "partialLoserGoal": 13,
-      "resultOnly": 14,
-      "played": 56
+      "partialLoserGoal": 11,
+      "resultOnly": 16,
+      "played": 60
     },
     {
       "rank": 10,
-      "previousRank": 10,
-      "delta": 0,
-      "name": "Leandro",
-      "points": 175,
-      "exact": 5,
-      "partial": 31,
-      "partialWinnerGoal": 3,
+      "previousRank": 9,
+      "delta": -1,
+      "name": "Matheus",
+      "points": 182,
+      "exact": 7,
+      "partial": 28,
+      "partialWinnerGoal": 1,
       "partialLoserGoal": 13,
-      "resultOnly": 15,
-      "played": 56
+      "resultOnly": 14,
+      "played": 60
     },
     {
       "rank": 11,
-      "previousRank": 11,
-      "delta": 0,
-      "name": "Elias",
-      "points": 169,
-      "exact": 6,
-      "partial": 27,
-      "partialWinnerGoal": 4,
-      "partialLoserGoal": 10,
-      "resultOnly": 13,
-      "played": 56
+      "previousRank": 22,
+      "delta": 11,
+      "name": "Wolfgand Vinícius",
+      "points": 182,
+      "exact": 7,
+      "partial": 30,
+      "partialWinnerGoal": 2,
+      "partialLoserGoal": 9,
+      "resultOnly": 19,
+      "played": 60
     },
     {
       "rank": 12,
-      "previousRank": 17,
-      "delta": 5,
-      "name": "Igor",
-      "points": 169,
-      "exact": 6,
-      "partial": 25,
+      "previousRank": 18,
+      "delta": 6,
+      "name": "Walma",
+      "points": 179,
+      "exact": 5,
+      "partial": 29,
       "partialWinnerGoal": 6,
-      "partialLoserGoal": 11,
+      "partialLoserGoal": 15,
       "resultOnly": 8,
-      "played": 56
+      "played": 60
     },
     {
       "rank": 13,
-      "previousRank": 12,
-      "delta": -1,
-      "name": "Mário Rossi",
-      "points": 169,
+      "previousRank": 10,
+      "delta": -3,
+      "name": "Leandro",
+      "points": 178,
       "exact": 5,
-      "partial": 29,
-      "partialWinnerGoal": 2,
-      "partialLoserGoal": 14,
-      "resultOnly": 13,
-      "played": 56
+      "partial": 32,
+      "partialWinnerGoal": 3,
+      "partialLoserGoal": 13,
+      "resultOnly": 16,
+      "played": 60
     },
     {
       "rank": 14,
-      "previousRank": 13,
-      "delta": -1,
+      "previousRank": 14,
+      "delta": 0,
       "name": "Felipe Vitoriano",
-      "points": 168,
+      "points": 176,
       "exact": 4,
-      "partial": 30,
+      "partial": 32,
       "partialWinnerGoal": 4,
-      "partialLoserGoal": 15,
-      "resultOnly": 11,
-      "played": 56
+      "partialLoserGoal": 16,
+      "resultOnly": 12,
+      "played": 60
     },
     {
       "rank": 15,
-      "previousRank": 14,
-      "delta": -1,
-      "name": "Ézio",
-      "points": 167,
-      "exact": 7,
-      "partial": 23,
-      "partialWinnerGoal": 4,
-      "partialLoserGoal": 10,
-      "resultOnly": 9,
-      "played": 56
+      "previousRank": 19,
+      "delta": 4,
+      "name": "Robson",
+      "points": 176,
+      "exact": 5,
+      "partial": 32,
+      "partialWinnerGoal": 3,
+      "partialLoserGoal": 12,
+      "resultOnly": 17,
+      "played": 60
     },
     {
       "rank": 16,
-      "previousRank": 15,
-      "delta": -1,
-      "name": "Clécio",
-      "points": 166,
-      "exact": 4,
-      "partial": 30,
-      "partialWinnerGoal": 3,
-      "partialLoserGoal": 15,
-      "resultOnly": 12,
-      "played": 56
+      "previousRank": 12,
+      "delta": -4,
+      "name": "Igor",
+      "points": 174,
+      "exact": 6,
+      "partial": 26,
+      "partialWinnerGoal": 7,
+      "partialLoserGoal": 11,
+      "resultOnly": 8,
+      "played": 60
     },
     {
       "rank": 17,
-      "previousRank": 20,
-      "delta": 3,
+      "previousRank": 16,
+      "delta": -1,
+      "name": "Clécio",
+      "points": 172,
+      "exact": 4,
+      "partial": 32,
+      "partialWinnerGoal": 3,
+      "partialLoserGoal": 15,
+      "resultOnly": 14,
+      "played": 60
+    },
+    {
+      "rank": 18,
+      "previousRank": 15,
+      "delta": -3,
+      "name": "Ézio",
+      "points": 172,
+      "exact": 7,
+      "partial": 24,
+      "partialWinnerGoal": 5,
+      "partialLoserGoal": 10,
+      "resultOnly": 9,
+      "played": 60
+    },
+    {
+      "rank": 19,
+      "previousRank": 13,
+      "delta": -6,
+      "name": "Mário Rossi",
+      "points": 172,
+      "exact": 5,
+      "partial": 30,
+      "partialWinnerGoal": 2,
+      "partialLoserGoal": 14,
+      "resultOnly": 14,
+      "played": 60
+    },
+    {
+      "rank": 20,
+      "previousRank": 17,
+      "delta": -3,
       "name": "Bruno Sebben",
+      "points": 171,
+      "exact": 5,
+      "partial": 31,
+      "partialWinnerGoal": 1,
+      "partialLoserGoal": 13,
+      "resultOnly": 17,
+      "played": 60
+    },
+    {
+      "rank": 21,
+      "previousRank": 27,
+      "delta": 6,
+      "name": "Douglas",
+      "points": 166,
+      "exact": 7,
+      "partial": 26,
+      "partialWinnerGoal": 1,
+      "partialLoserGoal": 8,
+      "resultOnly": 17,
+      "played": 60
+    },
+    {
+      "rank": 22,
+      "previousRank": 20,
+      "delta": -2,
+      "name": "Ana Beatriz",
+      "points": 165,
+      "exact": 3,
+      "partial": 31,
+      "partialWinnerGoal": 7,
+      "partialLoserGoal": 14,
+      "resultOnly": 10,
+      "played": 60
+    },
+    {
+      "rank": 23,
+      "previousRank": 28,
+      "delta": 5,
+      "name": "Jonas",
       "points": 165,
       "exact": 5,
       "partial": 29,
       "partialWinnerGoal": 1,
       "partialLoserGoal": 13,
       "resultOnly": 15,
-      "played": 56
-    },
-    {
-      "rank": 18,
-      "previousRank": 16,
-      "delta": -2,
-      "name": "Walma",
-      "points": 164,
-      "exact": 4,
-      "partial": 28,
-      "partialWinnerGoal": 5,
-      "partialLoserGoal": 15,
-      "resultOnly": 8,
-      "played": 56
-    },
-    {
-      "rank": 19,
-      "previousRank": 22,
-      "delta": 3,
-      "name": "Robson",
-      "points": 163,
-      "exact": 4,
-      "partial": 31,
-      "partialWinnerGoal": 3,
-      "partialLoserGoal": 12,
-      "resultOnly": 16,
-      "played": 56
-    },
-    {
-      "rank": 20,
-      "previousRank": 18,
-      "delta": -2,
-      "name": "Ana Beatriz",
-      "points": 162,
-      "exact": 3,
-      "partial": 30,
-      "partialWinnerGoal": 7,
-      "partialLoserGoal": 14,
-      "resultOnly": 9,
-      "played": 56
-    },
-    {
-      "rank": 21,
-      "previousRank": 23,
-      "delta": 2,
-      "name": "Sassá",
-      "points": 162,
-      "exact": 5,
-      "partial": 28,
-      "partialWinnerGoal": 4,
-      "partialLoserGoal": 10,
-      "resultOnly": 14,
-      "played": 56
-    },
-    {
-      "rank": 22,
-      "previousRank": 19,
-      "delta": -3,
-      "name": "Wolfgand Vinícius",
-      "points": 162,
-      "exact": 5,
-      "partial": 30,
-      "partialWinnerGoal": 2,
-      "partialLoserGoal": 9,
-      "resultOnly": 19,
-      "played": 56
-    },
-    {
-      "rank": 23,
-      "previousRank": 25,
-      "delta": 2,
-      "name": "Rodney",
-      "points": 159,
-      "exact": 4,
-      "partial": 29,
-      "partialWinnerGoal": 4,
-      "partialLoserGoal": 12,
-      "resultOnly": 13,
-      "played": 56
+      "played": 60
     },
     {
       "rank": 24,
-      "previousRank": 24,
-      "delta": 0,
-      "name": "Taty ET",
-      "points": 156,
-      "exact": 4,
-      "partial": 30,
-      "partialWinnerGoal": 3,
+      "previousRank": 21,
+      "delta": -3,
+      "name": "Sassá",
+      "points": 165,
+      "exact": 5,
+      "partial": 29,
+      "partialWinnerGoal": 4,
       "partialLoserGoal": 10,
-      "resultOnly": 17,
-      "played": 56
+      "resultOnly": 15,
+      "played": 60
     },
     {
       "rank": 25,
-      "previousRank": 21,
-      "delta": -4,
-      "name": "Nauselir",
-      "points": 155,
-      "exact": 8,
-      "partial": 17,
-      "partialWinnerGoal": 3,
-      "partialLoserGoal": 9,
-      "resultOnly": 5,
-      "played": 56
+      "previousRank": 30,
+      "delta": 5,
+      "name": "Ítalo \"Polvo Paul\"",
+      "points": 163,
+      "exact": 7,
+      "partial": 23,
+      "partialWinnerGoal": 2,
+      "partialLoserGoal": 10,
+      "resultOnly": 11,
+      "played": 60
     },
     {
       "rank": 26,
-      "previousRank": 28,
-      "delta": 2,
-      "name": "Juba",
-      "points": 154,
+      "previousRank": 34,
+      "delta": 8,
+      "name": "Hugo Garcia",
+      "points": 162,
       "exact": 5,
-      "partial": 24,
-      "partialWinnerGoal": 6,
-      "partialLoserGoal": 10,
-      "resultOnly": 8,
-      "played": 56
+      "partial": 28,
+      "partialWinnerGoal": 2,
+      "partialLoserGoal": 12,
+      "resultOnly": 14,
+      "played": 60
     },
     {
       "rank": 27,
-      "previousRank": 29,
-      "delta": 2,
-      "name": "Douglas",
-      "points": 153,
-      "exact": 6,
-      "partial": 25,
-      "partialWinnerGoal": 1,
-      "partialLoserGoal": 8,
-      "resultOnly": 16,
-      "played": 56
+      "previousRank": 26,
+      "delta": -1,
+      "name": "Juba",
+      "points": 162,
+      "exact": 5,
+      "partial": 26,
+      "partialWinnerGoal": 7,
+      "partialLoserGoal": 10,
+      "resultOnly": 9,
+      "played": 60
     },
     {
       "rank": 28,
-      "previousRank": 26,
-      "delta": -2,
-      "name": "Jonas",
-      "points": 152,
+      "previousRank": 23,
+      "delta": -5,
+      "name": "Rodney",
+      "points": 162,
       "exact": 4,
-      "partial": 28,
-      "partialWinnerGoal": 1,
-      "partialLoserGoal": 13,
+      "partial": 30,
+      "partialWinnerGoal": 4,
+      "partialLoserGoal": 12,
       "resultOnly": 14,
-      "played": 56
+      "played": 60
     },
     {
       "rank": 29,
-      "previousRank": 31,
-      "delta": 2,
-      "name": "Léo Genaro",
-      "points": 151,
-      "exact": 5,
-      "partial": 25,
-      "partialWinnerGoal": 5,
-      "partialLoserGoal": 8,
-      "resultOnly": 12,
-      "played": 56
+      "previousRank": 24,
+      "delta": -5,
+      "name": "Taty ET",
+      "points": 162,
+      "exact": 4,
+      "partial": 32,
+      "partialWinnerGoal": 3,
+      "partialLoserGoal": 10,
+      "resultOnly": 19,
+      "played": 60
     },
     {
       "rank": 30,
-      "previousRank": 32,
-      "delta": 2,
-      "name": "Ítalo \"Polvo Paul\"",
-      "points": 147,
+      "previousRank": 31,
+      "delta": 1,
+      "name": "Ypiranga",
+      "points": 162,
       "exact": 6,
-      "partial": 21,
+      "partial": 28,
       "partialWinnerGoal": 2,
-      "partialLoserGoal": 10,
-      "resultOnly": 9,
-      "played": 56
+      "partialLoserGoal": 7,
+      "resultOnly": 19,
+      "played": 60
     },
     {
       "rank": 31,
-      "previousRank": 33,
-      "delta": 2,
-      "name": "Ypiranga",
-      "points": 147,
-      "exact": 5,
-      "partial": 27,
-      "partialWinnerGoal": 2,
-      "partialLoserGoal": 6,
-      "resultOnly": 19,
-      "played": 56
+      "previousRank": 25,
+      "delta": -6,
+      "name": "Nauselir",
+      "points": 160,
+      "exact": 8,
+      "partial": 18,
+      "partialWinnerGoal": 4,
+      "partialLoserGoal": 9,
+      "resultOnly": 5,
+      "played": 60
     },
     {
       "rank": 32,
-      "previousRank": 30,
-      "delta": -2,
+      "previousRank": 32,
+      "delta": 0,
       "name": "Heidmilene",
-      "points": 146,
+      "points": 157,
       "exact": 5,
-      "partial": 24,
-      "partialWinnerGoal": 1,
+      "partial": 27,
+      "partialWinnerGoal": 2,
       "partialLoserGoal": 11,
-      "resultOnly": 12,
-      "played": 56
+      "resultOnly": 14,
+      "played": 60
     },
     {
       "rank": 33,
-      "previousRank": 27,
-      "delta": -6,
-      "name": "Élcio",
-      "points": 144,
-      "exact": 4,
+      "previousRank": 29,
+      "delta": -4,
+      "name": "Léo Genaro",
+      "points": 154,
+      "exact": 5,
       "partial": 26,
-      "partialWinnerGoal": 3,
-      "partialLoserGoal": 10,
+      "partialWinnerGoal": 5,
+      "partialLoserGoal": 8,
       "resultOnly": 13,
-      "played": 56
+      "played": 60
     },
     {
       "rank": 34,
-      "previousRank": 34,
-      "delta": 0,
-      "name": "Hugo Garcia",
-      "points": 144,
-      "exact": 4,
-      "partial": 26,
-      "partialWinnerGoal": 1,
-      "partialLoserGoal": 12,
-      "resultOnly": 13,
-      "played": 56
+      "previousRank": 38,
+      "delta": 4,
+      "name": "Luiz Otávio",
+      "points": 148,
+      "exact": 5,
+      "partial": 24,
+      "partialWinnerGoal": 2,
+      "partialLoserGoal": 11,
+      "resultOnly": 11,
+      "played": 60
     },
     {
       "rank": 35,
-      "previousRank": 35,
-      "delta": 0,
-      "name": "Antonio Dimitrov",
-      "points": 130,
-      "exact": 3,
-      "partial": 24,
-      "partialWinnerGoal": 2,
-      "partialLoserGoal": 12,
-      "resultOnly": 10,
-      "played": 56
+      "previousRank": 33,
+      "delta": -2,
+      "name": "Élcio",
+      "points": 147,
+      "exact": 4,
+      "partial": 27,
+      "partialWinnerGoal": 3,
+      "partialLoserGoal": 10,
+      "resultOnly": 14,
+      "played": 60
     },
     {
       "rank": 36,
-      "previousRank": 36,
+      "previousRank": 35,
+      "delta": -1,
+      "name": "Antonio Dimitrov",
+      "points": 146,
+      "exact": 4,
+      "partial": 26,
+      "partialWinnerGoal": 2,
+      "partialLoserGoal": 12,
+      "resultOnly": 12,
+      "played": 60
+    },
+    {
+      "rank": 37,
+      "previousRank": 37,
       "delta": 0,
+      "name": "Luizão",
+      "points": 136,
+      "exact": 4,
+      "partial": 26,
+      "partialWinnerGoal": 5,
+      "partialLoserGoal": 4,
+      "resultOnly": 17,
+      "played": 60
+    },
+    {
+      "rank": 38,
+      "previousRank": 36,
+      "delta": -2,
       "name": "Lyon",
       "points": 128,
       "exact": 4,
@@ -470,36 +496,46 @@
       "partialWinnerGoal": 4,
       "partialLoserGoal": 7,
       "resultOnly": 11,
-      "played": 56
-    },
-    {
-      "rank": 37,
-      "previousRank": 38,
-      "delta": 1,
-      "name": "Luizão",
-      "points": 126,
-      "exact": 3,
-      "partial": 26,
-      "partialWinnerGoal": 5,
-      "partialLoserGoal": 4,
-      "resultOnly": 17,
-      "played": 56
-    },
-    {
-      "rank": 38,
-      "previousRank": 37,
-      "delta": -1,
-      "name": "Luiz Otávio",
-      "points": 125,
-      "exact": 3,
-      "partial": 23,
-      "partialWinnerGoal": 2,
-      "partialLoserGoal": 11,
-      "resultOnly": 10,
-      "played": 56
+      "played": 60
     }
   ],
   "recentResults": [
+    {
+      "id": 60,
+      "date": "2026-06-25",
+      "group": "D",
+      "home": "Paraguai",
+      "away": "Astrália",
+      "homeGoals": 0,
+      "awayGoals": 0
+    },
+    {
+      "id": 59,
+      "date": "2026-06-25",
+      "group": "D",
+      "home": "Turquia",
+      "away": "Estados Unidos",
+      "homeGoals": 3,
+      "awayGoals": 2
+    },
+    {
+      "id": 58,
+      "date": "2026-06-25",
+      "group": "F",
+      "home": "Japão",
+      "away": "Suécia",
+      "homeGoals": 1,
+      "awayGoals": 1
+    },
+    {
+      "id": 57,
+      "date": "2026-06-25",
+      "group": "F",
+      "home": "Tunísia",
+      "away": "Holanda",
+      "homeGoals": 1,
+      "awayGoals": 3
+    },
     {
       "id": 56,
       "date": "2026-06-25",
@@ -1006,1557 +1042,310 @@
     }
   ],
   "nextMatch": {
-    "id": 57,
-    "date": "2026-06-25",
-    "time": "20h",
-    "group": "F",
-    "home": "Tunísia",
-    "away": "Holanda",
+    "id": 61,
+    "date": "2026-06-26",
+    "time": "00h",
+    "group": "G",
+    "home": "Egito",
+    "away": "Irã",
     "totalPicks": 38,
     "missingPicks": 0,
     "picks": [
       {
         "name": "Ana Beatriz",
-        "homeGoals": 0,
+        "homeGoals": 2,
         "awayGoals": 1,
-        "outcome": "away"
+        "outcome": "home"
       },
       {
         "name": "Antonio Dimitrov",
-        "homeGoals": 0,
-        "awayGoals": 2,
-        "outcome": "away"
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "outcome": "home"
       },
       {
         "name": "Beatriz",
-        "homeGoals": 0,
-        "awayGoals": 3,
-        "outcome": "away"
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "outcome": "home"
       },
       {
         "name": "Bianka e Rafael",
-        "homeGoals": 1,
-        "awayGoals": 3,
-        "outcome": "away"
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "outcome": "home"
       },
       {
         "name": "Breno",
-        "homeGoals": 0,
-        "awayGoals": 3,
-        "outcome": "away"
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "outcome": "home"
       },
       {
         "name": "Bruno Sebben",
-        "homeGoals": 0,
+        "homeGoals": 1,
         "awayGoals": 2,
         "outcome": "away"
       },
       {
         "name": "Clécio",
-        "homeGoals": 0,
-        "awayGoals": 2,
-        "outcome": "away"
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "outcome": "home"
       },
       {
         "name": "Douglas",
         "homeGoals": 0,
-        "awayGoals": 2,
-        "outcome": "away"
+        "awayGoals": 0,
+        "outcome": "draw"
       },
       {
         "name": "Edwin",
-        "homeGoals": 0,
-        "awayGoals": 2,
-        "outcome": "away"
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "outcome": "home"
       },
       {
         "name": "Élcio",
-        "homeGoals": 0,
-        "awayGoals": 2,
-        "outcome": "away"
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "outcome": "home"
       },
       {
         "name": "Elias",
-        "homeGoals": 1,
-        "awayGoals": 3,
-        "outcome": "away"
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "outcome": "home"
       },
       {
         "name": "Ézio",
-        "homeGoals": 0,
-        "awayGoals": 3,
-        "outcome": "away"
+        "homeGoals": 2,
+        "awayGoals": 2,
+        "outcome": "draw"
       },
       {
         "name": "Felipe Vitoriano",
-        "homeGoals": 1,
-        "awayGoals": 2,
-        "outcome": "away"
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "outcome": "home"
       },
       {
         "name": "GuiGui ET",
         "homeGoals": 1,
-        "awayGoals": 2,
-        "outcome": "away"
+        "awayGoals": 0,
+        "outcome": "home"
       },
       {
         "name": "Heidmilene",
-        "homeGoals": 0,
-        "awayGoals": 3,
-        "outcome": "away"
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "outcome": "home"
       },
       {
         "name": "Hugo Garcia",
-        "homeGoals": 0,
-        "awayGoals": 3,
-        "outcome": "away"
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "outcome": "draw"
       },
       {
         "name": "Igor",
-        "homeGoals": 0,
-        "awayGoals": 3,
-        "outcome": "away"
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "outcome": "draw"
       },
       {
         "name": "Ítalo \"Polvo Paul\"",
-        "homeGoals": 0,
-        "awayGoals": 2,
-        "outcome": "away"
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "outcome": "draw"
       },
       {
         "name": "Jonas",
         "homeGoals": 1,
-        "awayGoals": 3,
+        "awayGoals": 2,
         "outcome": "away"
       },
       {
         "name": "Juba",
-        "homeGoals": 0,
-        "awayGoals": 3,
-        "outcome": "away"
+        "homeGoals": 2,
+        "awayGoals": 2,
+        "outcome": "draw"
       },
       {
         "name": "Leandro",
-        "homeGoals": 0,
-        "awayGoals": 2,
-        "outcome": "away"
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "outcome": "home"
       },
       {
         "name": "Léo Genaro",
-        "homeGoals": 0,
-        "awayGoals": 2,
-        "outcome": "away"
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "outcome": "home"
       },
       {
         "name": "Luiz Henrique",
         "homeGoals": 1,
-        "awayGoals": 2,
-        "outcome": "away"
+        "awayGoals": 0,
+        "outcome": "home"
       },
       {
         "name": "Luiz Otávio",
         "homeGoals": 1,
-        "awayGoals": 3,
-        "outcome": "away"
+        "awayGoals": 1,
+        "outcome": "draw"
       },
       {
         "name": "Luizão",
-        "homeGoals": 1,
-        "awayGoals": 3,
-        "outcome": "away"
+        "homeGoals": 4,
+        "awayGoals": 0,
+        "outcome": "home"
       },
       {
         "name": "Lyon",
         "homeGoals": 1,
-        "awayGoals": 1,
-        "outcome": "draw"
+        "awayGoals": 0,
+        "outcome": "home"
       },
       {
         "name": "Mário Rossi",
-        "homeGoals": 0,
-        "awayGoals": 2,
-        "outcome": "away"
+        "homeGoals": 2,
+        "awayGoals": 1,
+        "outcome": "home"
       },
       {
         "name": "Matheus",
-        "homeGoals": 0,
-        "awayGoals": 3,
-        "outcome": "away"
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "outcome": "draw"
       },
       {
         "name": "Nauselir",
         "homeGoals": 0,
-        "awayGoals": 3,
-        "outcome": "away"
+        "awayGoals": 0,
+        "outcome": "draw"
       },
       {
         "name": "Neto",
-        "homeGoals": 0,
-        "awayGoals": 2,
-        "outcome": "away"
-      },
-      {
-        "name": "Robson",
-        "homeGoals": 0,
-        "awayGoals": 2,
-        "outcome": "away"
-      },
-      {
-        "name": "Rodney",
         "homeGoals": 0,
         "awayGoals": 1,
         "outcome": "away"
       },
       {
-        "name": "Sassá",
-        "homeGoals": 0,
-        "awayGoals": 2,
-        "outcome": "away"
+        "name": "Robson",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "outcome": "home"
       },
       {
-        "name": "Taty ET",
-        "homeGoals": 0,
-        "awayGoals": 2,
-        "outcome": "away"
-      },
-      {
-        "name": "Vinícius",
+        "name": "Rodney",
         "homeGoals": 1,
         "awayGoals": 1,
         "outcome": "draw"
       },
       {
-        "name": "Walma",
+        "name": "Sassá",
         "homeGoals": 0,
-        "awayGoals": 3,
+        "awayGoals": 1,
         "outcome": "away"
+      },
+      {
+        "name": "Taty ET",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "outcome": "draw"
+      },
+      {
+        "name": "Vinícius",
+        "homeGoals": 3,
+        "awayGoals": 0,
+        "outcome": "home"
+      },
+      {
+        "name": "Walma",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "outcome": "home"
       },
       {
         "name": "Wolfgand Vinícius",
-        "homeGoals": 1,
-        "awayGoals": 3,
-        "outcome": "away"
+        "homeGoals": 0,
+        "awayGoals": 0,
+        "outcome": "draw"
       },
       {
         "name": "Ypiranga",
-        "homeGoals": 1,
+        "homeGoals": 2,
         "awayGoals": 2,
-        "outcome": "away"
+        "outcome": "draw"
       }
     ],
     "outcomeBreakdown": {
-      "homeWin": 0,
-      "draw": 2,
-      "awayWin": 36
+      "homeWin": 21,
+      "draw": 13,
+      "awayWin": 4
     },
     "topOutcome": {
-      "outcome": "away",
-      "label": "Holanda vence",
-      "count": 36,
-      "percentage": 94.7
+      "outcome": "home",
+      "label": "Egito vence",
+      "count": 21,
+      "percentage": 55.3
     },
-    "averageHomeGoals": 0.3,
-    "averageAwayGoals": 2.3,
-    "averageTotalGoals": 2.6,
+    "averageHomeGoals": 1.4,
+    "averageAwayGoals": 0.6,
+    "averageTotalGoals": 2,
     "mostCommonScores": [
       {
-        "homeGoals": 0,
-        "awayGoals": 2,
-        "score": "0-2",
-        "count": 14,
-        "percentage": 36.8,
+        "homeGoals": 1,
+        "awayGoals": 0,
+        "score": "1-0",
+        "count": 8,
+        "percentage": 21.1,
         "names": [
-          "Antonio Dimitrov",
-          "Bruno Sebben",
-          "Clécio",
-          "Douglas",
+          "Beatriz",
+          "Breno",
           "Edwin",
-          "Élcio",
-          "Ítalo \"Polvo Paul\"",
+          "GuiGui ET",
+          "Heidmilene",
           "Leandro",
-          "Léo Genaro",
-          "Mário Rossi",
-          "Neto",
-          "Robson",
-          "Sassá",
+          "Luiz Henrique",
+          "Lyon"
+        ]
+      },
+      {
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "score": "1-1",
+        "count": 7,
+        "percentage": 18.4,
+        "names": [
+          "Hugo Garcia",
+          "Igor",
+          "Ítalo \"Polvo Paul\"",
+          "Luiz Otávio",
+          "Matheus",
+          "Rodney",
           "Taty ET"
         ]
       },
       {
-        "homeGoals": 0,
-        "awayGoals": 3,
-        "score": "0-3",
-        "count": 10,
-        "percentage": 26.3,
-        "names": [
-          "Beatriz",
-          "Breno",
-          "Ézio",
-          "Heidmilene",
-          "Hugo Garcia",
-          "Igor",
-          "Juba",
-          "Matheus",
-          "Nauselir",
-          "Walma"
-        ]
-      },
-      {
-        "homeGoals": 1,
-        "awayGoals": 3,
-        "score": "1-3",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "score": "2-0",
         "count": 6,
         "percentage": 15.8,
         "names": [
-          "Bianka e Rafael",
-          "Elias",
-          "Jonas",
-          "Luiz Otávio",
-          "Luizão",
-          "Wolfgand Vinícius"
+          "Antonio Dimitrov",
+          "Élcio",
+          "Felipe Vitoriano",
+          "Léo Genaro",
+          "Robson",
+          "Walma"
         ]
       }
     ]
   },
   "upcomingMatches": [
-    {
-      "id": 57,
-      "date": "2026-06-25",
-      "time": "20h",
-      "group": "F",
-      "home": "Tunísia",
-      "away": "Holanda",
-      "totalPicks": 38,
-      "missingPicks": 0,
-      "picks": [
-        {
-          "name": "Ana Beatriz",
-          "homeGoals": 0,
-          "awayGoals": 1,
-          "outcome": "away"
-        },
-        {
-          "name": "Antonio Dimitrov",
-          "homeGoals": 0,
-          "awayGoals": 2,
-          "outcome": "away"
-        },
-        {
-          "name": "Beatriz",
-          "homeGoals": 0,
-          "awayGoals": 3,
-          "outcome": "away"
-        },
-        {
-          "name": "Bianka e Rafael",
-          "homeGoals": 1,
-          "awayGoals": 3,
-          "outcome": "away"
-        },
-        {
-          "name": "Breno",
-          "homeGoals": 0,
-          "awayGoals": 3,
-          "outcome": "away"
-        },
-        {
-          "name": "Bruno Sebben",
-          "homeGoals": 0,
-          "awayGoals": 2,
-          "outcome": "away"
-        },
-        {
-          "name": "Clécio",
-          "homeGoals": 0,
-          "awayGoals": 2,
-          "outcome": "away"
-        },
-        {
-          "name": "Douglas",
-          "homeGoals": 0,
-          "awayGoals": 2,
-          "outcome": "away"
-        },
-        {
-          "name": "Edwin",
-          "homeGoals": 0,
-          "awayGoals": 2,
-          "outcome": "away"
-        },
-        {
-          "name": "Élcio",
-          "homeGoals": 0,
-          "awayGoals": 2,
-          "outcome": "away"
-        },
-        {
-          "name": "Elias",
-          "homeGoals": 1,
-          "awayGoals": 3,
-          "outcome": "away"
-        },
-        {
-          "name": "Ézio",
-          "homeGoals": 0,
-          "awayGoals": 3,
-          "outcome": "away"
-        },
-        {
-          "name": "Felipe Vitoriano",
-          "homeGoals": 1,
-          "awayGoals": 2,
-          "outcome": "away"
-        },
-        {
-          "name": "GuiGui ET",
-          "homeGoals": 1,
-          "awayGoals": 2,
-          "outcome": "away"
-        },
-        {
-          "name": "Heidmilene",
-          "homeGoals": 0,
-          "awayGoals": 3,
-          "outcome": "away"
-        },
-        {
-          "name": "Hugo Garcia",
-          "homeGoals": 0,
-          "awayGoals": 3,
-          "outcome": "away"
-        },
-        {
-          "name": "Igor",
-          "homeGoals": 0,
-          "awayGoals": 3,
-          "outcome": "away"
-        },
-        {
-          "name": "Ítalo \"Polvo Paul\"",
-          "homeGoals": 0,
-          "awayGoals": 2,
-          "outcome": "away"
-        },
-        {
-          "name": "Jonas",
-          "homeGoals": 1,
-          "awayGoals": 3,
-          "outcome": "away"
-        },
-        {
-          "name": "Juba",
-          "homeGoals": 0,
-          "awayGoals": 3,
-          "outcome": "away"
-        },
-        {
-          "name": "Leandro",
-          "homeGoals": 0,
-          "awayGoals": 2,
-          "outcome": "away"
-        },
-        {
-          "name": "Léo Genaro",
-          "homeGoals": 0,
-          "awayGoals": 2,
-          "outcome": "away"
-        },
-        {
-          "name": "Luiz Henrique",
-          "homeGoals": 1,
-          "awayGoals": 2,
-          "outcome": "away"
-        },
-        {
-          "name": "Luiz Otávio",
-          "homeGoals": 1,
-          "awayGoals": 3,
-          "outcome": "away"
-        },
-        {
-          "name": "Luizão",
-          "homeGoals": 1,
-          "awayGoals": 3,
-          "outcome": "away"
-        },
-        {
-          "name": "Lyon",
-          "homeGoals": 1,
-          "awayGoals": 1,
-          "outcome": "draw"
-        },
-        {
-          "name": "Mário Rossi",
-          "homeGoals": 0,
-          "awayGoals": 2,
-          "outcome": "away"
-        },
-        {
-          "name": "Matheus",
-          "homeGoals": 0,
-          "awayGoals": 3,
-          "outcome": "away"
-        },
-        {
-          "name": "Nauselir",
-          "homeGoals": 0,
-          "awayGoals": 3,
-          "outcome": "away"
-        },
-        {
-          "name": "Neto",
-          "homeGoals": 0,
-          "awayGoals": 2,
-          "outcome": "away"
-        },
-        {
-          "name": "Robson",
-          "homeGoals": 0,
-          "awayGoals": 2,
-          "outcome": "away"
-        },
-        {
-          "name": "Rodney",
-          "homeGoals": 0,
-          "awayGoals": 1,
-          "outcome": "away"
-        },
-        {
-          "name": "Sassá",
-          "homeGoals": 0,
-          "awayGoals": 2,
-          "outcome": "away"
-        },
-        {
-          "name": "Taty ET",
-          "homeGoals": 0,
-          "awayGoals": 2,
-          "outcome": "away"
-        },
-        {
-          "name": "Vinícius",
-          "homeGoals": 1,
-          "awayGoals": 1,
-          "outcome": "draw"
-        },
-        {
-          "name": "Walma",
-          "homeGoals": 0,
-          "awayGoals": 3,
-          "outcome": "away"
-        },
-        {
-          "name": "Wolfgand Vinícius",
-          "homeGoals": 1,
-          "awayGoals": 3,
-          "outcome": "away"
-        },
-        {
-          "name": "Ypiranga",
-          "homeGoals": 1,
-          "awayGoals": 2,
-          "outcome": "away"
-        }
-      ],
-      "outcomeBreakdown": {
-        "homeWin": 0,
-        "draw": 2,
-        "awayWin": 36
-      },
-      "topOutcome": {
-        "outcome": "away",
-        "label": "Holanda vence",
-        "count": 36,
-        "percentage": 94.7
-      },
-      "averageHomeGoals": 0.3,
-      "averageAwayGoals": 2.3,
-      "averageTotalGoals": 2.6,
-      "mostCommonScores": [
-        {
-          "homeGoals": 0,
-          "awayGoals": 2,
-          "score": "0-2",
-          "count": 14,
-          "percentage": 36.8,
-          "names": [
-            "Antonio Dimitrov",
-            "Bruno Sebben",
-            "Clécio",
-            "Douglas",
-            "Edwin",
-            "Élcio",
-            "Ítalo \"Polvo Paul\"",
-            "Leandro",
-            "Léo Genaro",
-            "Mário Rossi",
-            "Neto",
-            "Robson",
-            "Sassá",
-            "Taty ET"
-          ]
-        },
-        {
-          "homeGoals": 0,
-          "awayGoals": 3,
-          "score": "0-3",
-          "count": 10,
-          "percentage": 26.3,
-          "names": [
-            "Beatriz",
-            "Breno",
-            "Ézio",
-            "Heidmilene",
-            "Hugo Garcia",
-            "Igor",
-            "Juba",
-            "Matheus",
-            "Nauselir",
-            "Walma"
-          ]
-        },
-        {
-          "homeGoals": 1,
-          "awayGoals": 3,
-          "score": "1-3",
-          "count": 6,
-          "percentage": 15.8,
-          "names": [
-            "Bianka e Rafael",
-            "Elias",
-            "Jonas",
-            "Luiz Otávio",
-            "Luizão",
-            "Wolfgand Vinícius"
-          ]
-        }
-      ]
-    },
-    {
-      "id": 58,
-      "date": "2026-06-25",
-      "time": "20h",
-      "group": "F",
-      "home": "Japão",
-      "away": "Suécia",
-      "totalPicks": 38,
-      "missingPicks": 0,
-      "picks": [
-        {
-          "name": "Ana Beatriz",
-          "homeGoals": 2,
-          "awayGoals": 1,
-          "outcome": "home"
-        },
-        {
-          "name": "Antonio Dimitrov",
-          "homeGoals": 2,
-          "awayGoals": 1,
-          "outcome": "home"
-        },
-        {
-          "name": "Beatriz",
-          "homeGoals": 2,
-          "awayGoals": 1,
-          "outcome": "home"
-        },
-        {
-          "name": "Bianka e Rafael",
-          "homeGoals": 1,
-          "awayGoals": 1,
-          "outcome": "draw"
-        },
-        {
-          "name": "Breno",
-          "homeGoals": 1,
-          "awayGoals": 1,
-          "outcome": "draw"
-        },
-        {
-          "name": "Bruno Sebben",
-          "homeGoals": 2,
-          "awayGoals": 1,
-          "outcome": "home"
-        },
-        {
-          "name": "Clécio",
-          "homeGoals": 1,
-          "awayGoals": 0,
-          "outcome": "home"
-        },
-        {
-          "name": "Douglas",
-          "homeGoals": 1,
-          "awayGoals": 1,
-          "outcome": "draw"
-        },
-        {
-          "name": "Edwin",
-          "homeGoals": 0,
-          "awayGoals": 1,
-          "outcome": "away"
-        },
-        {
-          "name": "Élcio",
-          "homeGoals": 2,
-          "awayGoals": 1,
-          "outcome": "home"
-        },
-        {
-          "name": "Elias",
-          "homeGoals": 1,
-          "awayGoals": 1,
-          "outcome": "draw"
-        },
-        {
-          "name": "Ézio",
-          "homeGoals": 2,
-          "awayGoals": 1,
-          "outcome": "home"
-        },
-        {
-          "name": "Felipe Vitoriano",
-          "homeGoals": 2,
-          "awayGoals": 1,
-          "outcome": "home"
-        },
-        {
-          "name": "GuiGui ET",
-          "homeGoals": 1,
-          "awayGoals": 0,
-          "outcome": "home"
-        },
-        {
-          "name": "Heidmilene",
-          "homeGoals": 2,
-          "awayGoals": 2,
-          "outcome": "draw"
-        },
-        {
-          "name": "Hugo Garcia",
-          "homeGoals": 1,
-          "awayGoals": 1,
-          "outcome": "draw"
-        },
-        {
-          "name": "Igor",
-          "homeGoals": 1,
-          "awayGoals": 2,
-          "outcome": "away"
-        },
-        {
-          "name": "Ítalo \"Polvo Paul\"",
-          "homeGoals": 1,
-          "awayGoals": 1,
-          "outcome": "draw"
-        },
-        {
-          "name": "Jonas",
-          "homeGoals": 2,
-          "awayGoals": 2,
-          "outcome": "draw"
-        },
-        {
-          "name": "Juba",
-          "homeGoals": 2,
-          "awayGoals": 2,
-          "outcome": "draw"
-        },
-        {
-          "name": "Leandro",
-          "homeGoals": 2,
-          "awayGoals": 0,
-          "outcome": "home"
-        },
-        {
-          "name": "Léo Genaro",
-          "homeGoals": 2,
-          "awayGoals": 0,
-          "outcome": "home"
-        },
-        {
-          "name": "Luiz Henrique",
-          "homeGoals": 2,
-          "awayGoals": 1,
-          "outcome": "home"
-        },
-        {
-          "name": "Luiz Otávio",
-          "homeGoals": 1,
-          "awayGoals": 1,
-          "outcome": "draw"
-        },
-        {
-          "name": "Luizão",
-          "homeGoals": 2,
-          "awayGoals": 1,
-          "outcome": "home"
-        },
-        {
-          "name": "Lyon",
-          "homeGoals": 2,
-          "awayGoals": 1,
-          "outcome": "home"
-        },
-        {
-          "name": "Mário Rossi",
-          "homeGoals": 1,
-          "awayGoals": 0,
-          "outcome": "home"
-        },
-        {
-          "name": "Matheus",
-          "homeGoals": 2,
-          "awayGoals": 1,
-          "outcome": "home"
-        },
-        {
-          "name": "Nauselir",
-          "homeGoals": 1,
-          "awayGoals": 0,
-          "outcome": "home"
-        },
-        {
-          "name": "Neto",
-          "homeGoals": 1,
-          "awayGoals": 2,
-          "outcome": "away"
-        },
-        {
-          "name": "Robson",
-          "homeGoals": 1,
-          "awayGoals": 2,
-          "outcome": "away"
-        },
-        {
-          "name": "Rodney",
-          "homeGoals": 2,
-          "awayGoals": 1,
-          "outcome": "home"
-        },
-        {
-          "name": "Sassá",
-          "homeGoals": 2,
-          "awayGoals": 1,
-          "outcome": "home"
-        },
-        {
-          "name": "Taty ET",
-          "homeGoals": 2,
-          "awayGoals": 1,
-          "outcome": "home"
-        },
-        {
-          "name": "Vinícius",
-          "homeGoals": 3,
-          "awayGoals": 0,
-          "outcome": "home"
-        },
-        {
-          "name": "Walma",
-          "homeGoals": 1,
-          "awayGoals": 1,
-          "outcome": "draw"
-        },
-        {
-          "name": "Wolfgand Vinícius",
-          "homeGoals": 1,
-          "awayGoals": 1,
-          "outcome": "draw"
-        },
-        {
-          "name": "Ypiranga",
-          "homeGoals": 1,
-          "awayGoals": 1,
-          "outcome": "draw"
-        }
-      ],
-      "outcomeBreakdown": {
-        "homeWin": 21,
-        "draw": 13,
-        "awayWin": 4
-      },
-      "topOutcome": {
-        "outcome": "home",
-        "label": "Japão vence",
-        "count": 21,
-        "percentage": 55.3
-      },
-      "averageHomeGoals": 1.5,
-      "averageAwayGoals": 1,
-      "averageTotalGoals": 2.5,
-      "mostCommonScores": [
-        {
-          "homeGoals": 2,
-          "awayGoals": 1,
-          "score": "2-1",
-          "count": 14,
-          "percentage": 36.8,
-          "names": [
-            "Ana Beatriz",
-            "Antonio Dimitrov",
-            "Beatriz",
-            "Bruno Sebben",
-            "Élcio",
-            "Ézio",
-            "Felipe Vitoriano",
-            "Luiz Henrique",
-            "Luizão",
-            "Lyon",
-            "Matheus",
-            "Rodney",
-            "Sassá",
-            "Taty ET"
-          ]
-        },
-        {
-          "homeGoals": 1,
-          "awayGoals": 1,
-          "score": "1-1",
-          "count": 10,
-          "percentage": 26.3,
-          "names": [
-            "Bianka e Rafael",
-            "Breno",
-            "Douglas",
-            "Elias",
-            "Hugo Garcia",
-            "Ítalo \"Polvo Paul\"",
-            "Luiz Otávio",
-            "Walma",
-            "Wolfgand Vinícius",
-            "Ypiranga"
-          ]
-        },
-        {
-          "homeGoals": 1,
-          "awayGoals": 0,
-          "score": "1-0",
-          "count": 4,
-          "percentage": 10.5,
-          "names": [
-            "Clécio",
-            "GuiGui ET",
-            "Mário Rossi",
-            "Nauselir"
-          ]
-        }
-      ]
-    },
-    {
-      "id": 59,
-      "date": "2026-06-25",
-      "time": "23h",
-      "group": "D",
-      "home": "Turquia",
-      "away": "Estados Unidos",
-      "totalPicks": 38,
-      "missingPicks": 0,
-      "picks": [
-        {
-          "name": "Ana Beatriz",
-          "homeGoals": 0,
-          "awayGoals": 2,
-          "outcome": "away"
-        },
-        {
-          "name": "Antonio Dimitrov",
-          "homeGoals": 1,
-          "awayGoals": 0,
-          "outcome": "home"
-        },
-        {
-          "name": "Beatriz",
-          "homeGoals": 0,
-          "awayGoals": 1,
-          "outcome": "away"
-        },
-        {
-          "name": "Bianka e Rafael",
-          "homeGoals": 0,
-          "awayGoals": 1,
-          "outcome": "away"
-        },
-        {
-          "name": "Breno",
-          "homeGoals": 1,
-          "awayGoals": 2,
-          "outcome": "away"
-        },
-        {
-          "name": "Bruno Sebben",
-          "homeGoals": 2,
-          "awayGoals": 1,
-          "outcome": "home"
-        },
-        {
-          "name": "Clécio",
-          "homeGoals": 1,
-          "awayGoals": 1,
-          "outcome": "draw"
-        },
-        {
-          "name": "Douglas",
-          "homeGoals": 1,
-          "awayGoals": 2,
-          "outcome": "away"
-        },
-        {
-          "name": "Edwin",
-          "homeGoals": 1,
-          "awayGoals": 1,
-          "outcome": "draw"
-        },
-        {
-          "name": "Élcio",
-          "homeGoals": 1,
-          "awayGoals": 2,
-          "outcome": "away"
-        },
-        {
-          "name": "Elias",
-          "homeGoals": 1,
-          "awayGoals": 2,
-          "outcome": "away"
-        },
-        {
-          "name": "Ézio",
-          "homeGoals": 1,
-          "awayGoals": 2,
-          "outcome": "away"
-        },
-        {
-          "name": "Felipe Vitoriano",
-          "homeGoals": 2,
-          "awayGoals": 1,
-          "outcome": "home"
-        },
-        {
-          "name": "GuiGui ET",
-          "homeGoals": 1,
-          "awayGoals": 2,
-          "outcome": "away"
-        },
-        {
-          "name": "Heidmilene",
-          "homeGoals": 2,
-          "awayGoals": 1,
-          "outcome": "home"
-        },
-        {
-          "name": "Hugo Garcia",
-          "homeGoals": 2,
-          "awayGoals": 2,
-          "outcome": "draw"
-        },
-        {
-          "name": "Igor",
-          "homeGoals": 1,
-          "awayGoals": 2,
-          "outcome": "away"
-        },
-        {
-          "name": "Ítalo \"Polvo Paul\"",
-          "homeGoals": 1,
-          "awayGoals": 2,
-          "outcome": "away"
-        },
-        {
-          "name": "Jonas",
-          "homeGoals": 1,
-          "awayGoals": 1,
-          "outcome": "draw"
-        },
-        {
-          "name": "Juba",
-          "homeGoals": 0,
-          "awayGoals": 2,
-          "outcome": "away"
-        },
-        {
-          "name": "Leandro",
-          "homeGoals": 0,
-          "awayGoals": 2,
-          "outcome": "away"
-        },
-        {
-          "name": "Léo Genaro",
-          "homeGoals": 0,
-          "awayGoals": 2,
-          "outcome": "away"
-        },
-        {
-          "name": "Luiz Henrique",
-          "homeGoals": 1,
-          "awayGoals": 2,
-          "outcome": "away"
-        },
-        {
-          "name": "Luiz Otávio",
-          "homeGoals": 2,
-          "awayGoals": 0,
-          "outcome": "home"
-        },
-        {
-          "name": "Luizão",
-          "homeGoals": 1,
-          "awayGoals": 1,
-          "outcome": "draw"
-        },
-        {
-          "name": "Lyon",
-          "homeGoals": 1,
-          "awayGoals": 1,
-          "outcome": "draw"
-        },
-        {
-          "name": "Mário Rossi",
-          "homeGoals": 1,
-          "awayGoals": 2,
-          "outcome": "away"
-        },
-        {
-          "name": "Matheus",
-          "homeGoals": 1,
-          "awayGoals": 2,
-          "outcome": "away"
-        },
-        {
-          "name": "Nauselir",
-          "homeGoals": 0,
-          "awayGoals": 1,
-          "outcome": "away"
-        },
-        {
-          "name": "Neto",
-          "homeGoals": 1,
-          "awayGoals": 1,
-          "outcome": "draw"
-        },
-        {
-          "name": "Robson",
-          "homeGoals": 0,
-          "awayGoals": 0,
-          "outcome": "draw"
-        },
-        {
-          "name": "Rodney",
-          "homeGoals": 2,
-          "awayGoals": 2,
-          "outcome": "draw"
-        },
-        {
-          "name": "Sassá",
-          "homeGoals": 0,
-          "awayGoals": 1,
-          "outcome": "away"
-        },
-        {
-          "name": "Taty ET",
-          "homeGoals": 1,
-          "awayGoals": 2,
-          "outcome": "away"
-        },
-        {
-          "name": "Vinícius",
-          "homeGoals": 1,
-          "awayGoals": 0,
-          "outcome": "home"
-        },
-        {
-          "name": "Walma",
-          "homeGoals": 1,
-          "awayGoals": 1,
-          "outcome": "draw"
-        },
-        {
-          "name": "Wolfgand Vinícius",
-          "homeGoals": 1,
-          "awayGoals": 1,
-          "outcome": "draw"
-        },
-        {
-          "name": "Ypiranga",
-          "homeGoals": 2,
-          "awayGoals": 2,
-          "outcome": "draw"
-        }
-      ],
-      "outcomeBreakdown": {
-        "homeWin": 6,
-        "draw": 12,
-        "awayWin": 20
-      },
-      "topOutcome": {
-        "outcome": "away",
-        "label": "Estados Unidos vence",
-        "count": 20,
-        "percentage": 52.6
-      },
-      "averageHomeGoals": 0.9,
-      "averageAwayGoals": 1.4,
-      "averageTotalGoals": 2.3,
-      "mostCommonScores": [
-        {
-          "homeGoals": 1,
-          "awayGoals": 2,
-          "score": "1-2",
-          "count": 12,
-          "percentage": 31.6,
-          "names": [
-            "Breno",
-            "Douglas",
-            "Élcio",
-            "Elias",
-            "Ézio",
-            "GuiGui ET",
-            "Igor",
-            "Ítalo \"Polvo Paul\"",
-            "Luiz Henrique",
-            "Mário Rossi",
-            "Matheus",
-            "Taty ET"
-          ]
-        },
-        {
-          "homeGoals": 1,
-          "awayGoals": 1,
-          "score": "1-1",
-          "count": 8,
-          "percentage": 21.1,
-          "names": [
-            "Clécio",
-            "Edwin",
-            "Jonas",
-            "Luizão",
-            "Lyon",
-            "Neto",
-            "Walma",
-            "Wolfgand Vinícius"
-          ]
-        },
-        {
-          "homeGoals": 0,
-          "awayGoals": 1,
-          "score": "0-1",
-          "count": 4,
-          "percentage": 10.5,
-          "names": [
-            "Beatriz",
-            "Bianka e Rafael",
-            "Nauselir",
-            "Sassá"
-          ]
-        }
-      ]
-    },
-    {
-      "id": 60,
-      "date": "2026-06-25",
-      "time": "23h",
-      "group": "D",
-      "home": "Paraguai",
-      "away": "Astrália",
-      "totalPicks": 38,
-      "missingPicks": 0,
-      "picks": [
-        {
-          "name": "Ana Beatriz",
-          "homeGoals": 1,
-          "awayGoals": 2,
-          "outcome": "away"
-        },
-        {
-          "name": "Antonio Dimitrov",
-          "homeGoals": 0,
-          "awayGoals": 0,
-          "outcome": "draw"
-        },
-        {
-          "name": "Beatriz",
-          "homeGoals": 2,
-          "awayGoals": 1,
-          "outcome": "home"
-        },
-        {
-          "name": "Bianka e Rafael",
-          "homeGoals": 1,
-          "awayGoals": 2,
-          "outcome": "away"
-        },
-        {
-          "name": "Breno",
-          "homeGoals": 1,
-          "awayGoals": 1,
-          "outcome": "draw"
-        },
-        {
-          "name": "Bruno Sebben",
-          "homeGoals": 2,
-          "awayGoals": 1,
-          "outcome": "home"
-        },
-        {
-          "name": "Clécio",
-          "homeGoals": 1,
-          "awayGoals": 1,
-          "outcome": "draw"
-        },
-        {
-          "name": "Douglas",
-          "homeGoals": 2,
-          "awayGoals": 1,
-          "outcome": "home"
-        },
-        {
-          "name": "Edwin",
-          "homeGoals": 1,
-          "awayGoals": 0,
-          "outcome": "home"
-        },
-        {
-          "name": "Élcio",
-          "homeGoals": 3,
-          "awayGoals": 1,
-          "outcome": "home"
-        },
-        {
-          "name": "Elias",
-          "homeGoals": 1,
-          "awayGoals": 1,
-          "outcome": "draw"
-        },
-        {
-          "name": "Ézio",
-          "homeGoals": 2,
-          "awayGoals": 0,
-          "outcome": "home"
-        },
-        {
-          "name": "Felipe Vitoriano",
-          "homeGoals": 1,
-          "awayGoals": 0,
-          "outcome": "home"
-        },
-        {
-          "name": "GuiGui ET",
-          "homeGoals": 2,
-          "awayGoals": 1,
-          "outcome": "home"
-        },
-        {
-          "name": "Heidmilene",
-          "homeGoals": 1,
-          "awayGoals": 0,
-          "outcome": "home"
-        },
-        {
-          "name": "Hugo Garcia",
-          "homeGoals": 1,
-          "awayGoals": 1,
-          "outcome": "draw"
-        },
-        {
-          "name": "Igor",
-          "homeGoals": 0,
-          "awayGoals": 1,
-          "outcome": "away"
-        },
-        {
-          "name": "Ítalo \"Polvo Paul\"",
-          "homeGoals": 1,
-          "awayGoals": 1,
-          "outcome": "draw"
-        },
-        {
-          "name": "Jonas",
-          "homeGoals": 2,
-          "awayGoals": 0,
-          "outcome": "home"
-        },
-        {
-          "name": "Juba",
-          "homeGoals": 2,
-          "awayGoals": 0,
-          "outcome": "home"
-        },
-        {
-          "name": "Leandro",
-          "homeGoals": 1,
-          "awayGoals": 0,
-          "outcome": "home"
-        },
-        {
-          "name": "Léo Genaro",
-          "homeGoals": 3,
-          "awayGoals": 1,
-          "outcome": "home"
-        },
-        {
-          "name": "Luiz Henrique",
-          "homeGoals": 2,
-          "awayGoals": 1,
-          "outcome": "home"
-        },
-        {
-          "name": "Luiz Otávio",
-          "homeGoals": 1,
-          "awayGoals": 0,
-          "outcome": "home"
-        },
-        {
-          "name": "Luizão",
-          "homeGoals": 2,
-          "awayGoals": 0,
-          "outcome": "home"
-        },
-        {
-          "name": "Lyon",
-          "homeGoals": 1,
-          "awayGoals": 0,
-          "outcome": "home"
-        },
-        {
-          "name": "Mário Rossi",
-          "homeGoals": 0,
-          "awayGoals": 2,
-          "outcome": "away"
-        },
-        {
-          "name": "Matheus",
-          "homeGoals": 2,
-          "awayGoals": 1,
-          "outcome": "home"
-        },
-        {
-          "name": "Nauselir",
-          "homeGoals": 2,
-          "awayGoals": 1,
-          "outcome": "home"
-        },
-        {
-          "name": "Neto",
-          "homeGoals": 2,
-          "awayGoals": 1,
-          "outcome": "home"
-        },
-        {
-          "name": "Robson",
-          "homeGoals": 0,
-          "awayGoals": 0,
-          "outcome": "draw"
-        },
-        {
-          "name": "Rodney",
-          "homeGoals": 1,
-          "awayGoals": 0,
-          "outcome": "home"
-        },
-        {
-          "name": "Sassá",
-          "homeGoals": 2,
-          "awayGoals": 1,
-          "outcome": "home"
-        },
-        {
-          "name": "Taty ET",
-          "homeGoals": 1,
-          "awayGoals": 1,
-          "outcome": "draw"
-        },
-        {
-          "name": "Vinícius",
-          "homeGoals": 2,
-          "awayGoals": 1,
-          "outcome": "home"
-        },
-        {
-          "name": "Walma",
-          "homeGoals": 1,
-          "awayGoals": 0,
-          "outcome": "home"
-        },
-        {
-          "name": "Wolfgand Vinícius",
-          "homeGoals": 2,
-          "awayGoals": 0,
-          "outcome": "home"
-        },
-        {
-          "name": "Ypiranga",
-          "homeGoals": 1,
-          "awayGoals": 2,
-          "outcome": "away"
-        }
-      ],
-      "outcomeBreakdown": {
-        "homeWin": 25,
-        "draw": 8,
-        "awayWin": 5
-      },
-      "topOutcome": {
-        "outcome": "home",
-        "label": "Paraguai vence",
-        "count": 25,
-        "percentage": 65.8
-      },
-      "averageHomeGoals": 1.4,
-      "averageAwayGoals": 0.7,
-      "averageTotalGoals": 2.1,
-      "mostCommonScores": [
-        {
-          "homeGoals": 2,
-          "awayGoals": 1,
-          "score": "2-1",
-          "count": 10,
-          "percentage": 26.3,
-          "names": [
-            "Beatriz",
-            "Bruno Sebben",
-            "Douglas",
-            "GuiGui ET",
-            "Luiz Henrique",
-            "Matheus",
-            "Nauselir",
-            "Neto",
-            "Sassá",
-            "Vinícius"
-          ]
-        },
-        {
-          "homeGoals": 1,
-          "awayGoals": 0,
-          "score": "1-0",
-          "count": 8,
-          "percentage": 21.1,
-          "names": [
-            "Edwin",
-            "Felipe Vitoriano",
-            "Heidmilene",
-            "Leandro",
-            "Luiz Otávio",
-            "Lyon",
-            "Rodney",
-            "Walma"
-          ]
-        },
-        {
-          "homeGoals": 1,
-          "awayGoals": 1,
-          "score": "1-1",
-          "count": 6,
-          "percentage": 15.8,
-          "names": [
-            "Breno",
-            "Clécio",
-            "Elias",
-            "Hugo Garcia",
-            "Ítalo \"Polvo Paul\"",
-            "Taty ET"
-          ]
-        }
-      ]
-    },
     {
       "id": 61,
       "date": "2026-06-26",
@@ -6279,30 +5068,30 @@
   ],
   "metrics": {
     "totalMatches": 72,
-    "finishedMatches": 56,
-    "remainingMatches": 16,
+    "finishedMatches": 60,
+    "remainingMatches": 12,
     "totalValidPicks": 2736,
     "averageUpcomingGoals": 2.4,
-    "completionRate": 77.8,
-    "leaderGap": 9,
-    "leaderEfficiency": 38.4,
-    "averagePoints": 162.7,
+    "completionRate": 83.3,
+    "leaderGap": 11,
+    "leaderEfficiency": 39.2,
+    "averagePoints": 171.7,
     "completeCards": 38,
     "missingPickCards": 0,
     "topExact": {
       "label": "Rei dos exatos",
-      "value": "12",
+      "value": "14",
       "detail": "Bianka e Rafael"
     },
     "topPartial": {
       "label": "Mais parciais",
-      "value": "33",
+      "value": "34",
       "detail": "GuiGui ET"
     },
     "topUpcomingScore": {
       "label": "Placar mais apostado",
       "value": "0-2",
-      "detail": "83 palpites"
+      "detail": "64 palpites"
     },
     "highestConsensus": {
       "id": 62,
@@ -6347,27 +5136,27 @@
     "storyMetrics": [
       {
         "label": "Briga pela liderança",
-        "value": "9 pts",
-        "detail": "Bianka e Rafael abre 9 pontos sobre Breno."
+        "value": "11 pts",
+        "detail": "Bianka e Rafael abre 11 pontos sobre Breno."
       },
       {
         "label": "Aproveitamento do líder",
-        "value": "38.4%",
-        "detail": "215 pontos em 56 jogos apurados."
+        "value": "39.2%",
+        "detail": "235 pontos em 60 jogos apurados."
       },
       {
         "label": "Média do pelotão",
-        "value": "162.7 pts",
+        "value": "171.7 pts",
         "detail": "Média atual entre 38 apostadores."
       },
       {
         "label": "Rei dos exatos",
-        "value": "12",
+        "value": "14",
         "detail": "Bianka e Rafael lidera em placares cravados."
       },
       {
         "label": "Mais parciais",
-        "value": "33",
+        "value": "34",
         "detail": "GuiGui ET lidera em acertos de 5 ou 3 pontos."
       },
       {
@@ -6378,7 +5167,7 @@
       {
         "label": "Placar mais apostado",
         "value": "0-2",
-        "detail": "83 vezes nos jogos pendentes."
+        "detail": "64 vezes nos jogos pendentes."
       }
     ]
   }
