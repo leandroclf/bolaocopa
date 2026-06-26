@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-26T10:44:18.912Z",
+  "generatedAt": "2026-06-26T22:14:44.727Z",
   "competition": "Copa do Mundo FIFA 2026",
   "source": "openfootball",
   "groupsComplete": false,
@@ -157,9 +157,13 @@
           "phaseLabel": "32 avos de final",
           "order": 5,
           "home": {
-            "label": "1º Grupo I",
+            "label": "França",
             "source": "Vencedor do Grupo I",
-            "team": null
+            "team": {
+              "canon": "france",
+              "name": "França",
+              "flag": "🇫🇷"
+            }
           },
           "away": {
             "label": "Melhor 3º colocado",
@@ -194,14 +198,18 @@
             }
           },
           "away": {
-            "label": "2º Grupo I",
+            "label": "Noruega",
             "source": "Vice do Grupo I",
-            "team": null
+            "team": {
+              "canon": "norway",
+              "name": "Noruega",
+              "flag": "🇳🇴"
+            }
           },
           "homeGoals": null,
           "awayGoals": null,
           "winner": null,
-          "status": "pending",
+          "status": "scheduled",
           "date": "2026-06-30",
           "time": null,
           "stadium": null,
