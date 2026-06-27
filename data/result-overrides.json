@@ -3,5 +3,10 @@
     "home": 4,
     "away": 0,
     "status": "finished"
+  },
+  "66": {
+    "home": 0,
+    "away": 1,
+    "status": "finished"
   }
 }

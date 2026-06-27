@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-26T22:14:44.727Z",
+  "generatedAt": "2026-06-27T02:11:25.741Z",
   "competition": "Copa do Mundo FIFA 2026",
   "source": "openfootball",
   "groupsComplete": false,
@@ -373,9 +373,13 @@
           "phaseLabel": "32 avos de final",
           "order": 12,
           "home": {
-            "label": "1º Grupo H",
+            "label": "Espanha",
             "source": "Vencedor do Grupo H",
-            "team": null
+            "team": {
+              "canon": "spain",
+              "name": "Espanha",
+              "flag": "🇪🇸"
+            }
           },
           "away": {
             "label": "2º Grupo J",
@@ -438,9 +442,13 @@
             "team": null
           },
           "away": {
-            "label": "2º Grupo H",
+            "label": "Cabo Verde",
             "source": "Vice do Grupo H",
-            "team": null
+            "team": {
+              "canon": "cape verde",
+              "name": "Cabo Verde",
+              "flag": "🇨🇻"
+            }
           },
           "homeGoals": null,
           "awayGoals": null,
