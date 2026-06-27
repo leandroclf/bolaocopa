@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-27T05:34:18.348Z",
+  "generatedAt": "2026-06-27T23:31:34.276Z",
   "competition": "Copa do Mundo FIFA 2026",
   "source": "openfootball",
   "groupsComplete": false,
@@ -257,9 +257,13 @@
           "phaseLabel": "32 avos de final",
           "order": 8,
           "home": {
-            "label": "1º Grupo L",
+            "label": "Inglaterra",
             "source": "Vencedor do Grupo L",
-            "team": null
+            "team": {
+              "canon": "england",
+              "name": "Inglaterra",
+              "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿"
+            }
           },
           "away": {
             "label": "Melhor 3º colocado",
@@ -354,9 +358,13 @@
             "team": null
           },
           "away": {
-            "label": "2º Grupo L",
+            "label": "Croácia",
             "source": "Vice do Grupo L",
-            "team": null
+            "team": {
+              "canon": "croatia",
+              "name": "Croácia",
+              "flag": "🇭🇷"
+            }
           },
           "homeGoals": null,
           "awayGoals": null,
