@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-27T02:11:25.741Z",
+  "generatedAt": "2026-06-27T05:34:18.348Z",
   "competition": "Copa do Mundo FIFA 2026",
   "source": "openfootball",
   "groupsComplete": false,
@@ -317,9 +317,13 @@
           "phaseLabel": "32 avos de final",
           "order": 10,
           "home": {
-            "label": "1º Grupo G",
+            "label": "Bélgica",
             "source": "Vencedor do Grupo G",
-            "team": null
+            "team": {
+              "canon": "belgium",
+              "name": "Bélgica",
+              "flag": "🇧🇪"
+            }
           },
           "away": {
             "label": "Melhor 3º colocado",
@@ -506,14 +510,18 @@
             }
           },
           "away": {
-            "label": "2º Grupo G",
+            "label": "Egito",
             "source": "Vice do Grupo G",
-            "team": null
+            "team": {
+              "canon": "egypt",
+              "name": "Egito",
+              "flag": "🇪🇬"
+            }
           },
           "homeGoals": null,
           "awayGoals": null,
           "winner": null,
-          "status": "pending",
+          "status": "scheduled",
           "date": "2026-07-03",
           "time": null,
           "stadium": null,
