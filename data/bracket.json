@@ -39,9 +39,9 @@
           "winner": null,
           "status": "scheduled",
           "date": "2026-06-28",
-          "time": null,
-          "stadium": null,
-          "city": null,
+          "time": "16:00",
+          "stadium": "SoFi Stadium",
+          "city": "EUA",
           "nextMatch": 90,
           "winnerTo": "home",
           "loserTo": null
@@ -62,11 +62,11 @@
             }
           },
           "away": {
-            "label": "Bósnia",
-            "source": "3º Grupo B",
+            "label": "Paraguai",
+            "source": "3º Grupo A/B/C/D/F",
             "team": {
               "canon": "bosnia",
-              "name": "Bósnia",
+              "name": "Paraguai",
               "flag": "🇧🇦"
             }
           },
@@ -75,9 +75,9 @@
           "winner": null,
           "status": "scheduled",
           "date": "2026-06-29",
-          "time": null,
-          "stadium": null,
-          "city": null,
+          "time": "17:30",
+          "stadium": "Gillette Stadium",
+          "city": "EUA",
           "nextMatch": 89,
           "winnerTo": "home",
           "loserTo": null
@@ -111,9 +111,9 @@
           "winner": null,
           "status": "scheduled",
           "date": "2026-06-29",
-          "time": null,
-          "stadium": null,
-          "city": null,
+          "time": "22:00",
+          "stadium": "Estádio BBVA",
+          "city": "MEX",
           "nextMatch": 90,
           "winnerTo": "away",
           "loserTo": null
@@ -147,9 +147,9 @@
           "winner": null,
           "status": "scheduled",
           "date": "2026-06-29",
-          "time": null,
-          "stadium": null,
-          "city": null,
+          "time": "14:00",
+          "stadium": "NRG Stadium",
+          "city": "EUA",
           "nextMatch": 91,
           "winnerTo": "home",
           "loserTo": null
@@ -170,11 +170,11 @@
             }
           },
           "away": {
-            "label": "Paraguai",
-            "source": "3º Grupo D",
+            "label": "Suécia",
+            "source": "3º Grupo C/D/F/G/H",
             "team": {
               "canon": "paraguay",
-              "name": "Paraguai",
+              "name": "Suécia",
               "flag": "🇵🇾"
             }
           },
@@ -183,9 +183,9 @@
           "winner": null,
           "status": "scheduled",
           "date": "2026-06-30",
-          "time": null,
-          "stadium": null,
-          "city": null,
+          "time": "18:00",
+          "stadium": "MetLife Stadium",
+          "city": "EUA",
           "nextMatch": 89,
           "winnerTo": "away",
           "loserTo": null
@@ -219,9 +219,9 @@
           "winner": null,
           "status": "scheduled",
           "date": "2026-06-30",
-          "time": null,
-          "stadium": null,
-          "city": null,
+          "time": "14:00",
+          "stadium": "AT&T Stadium",
+          "city": "EUA",
           "nextMatch": 91,
           "winnerTo": "away",
           "loserTo": null
@@ -243,7 +243,7 @@
           },
           "away": {
             "label": "Equador",
-            "source": "3º Grupo E",
+            "source": "3º Grupo C/E/F/H/I",
             "team": {
               "canon": "ecuador",
               "name": "Equador",
@@ -255,9 +255,9 @@
           "winner": null,
           "status": "scheduled",
           "date": "2026-06-30",
-          "time": null,
-          "stadium": null,
-          "city": null,
+          "time": "22:00",
+          "stadium": "Estádio Azteca",
+          "city": "MEX",
           "nextMatch": 92,
           "winnerTo": "home",
           "loserTo": null
@@ -278,11 +278,11 @@
             }
           },
           "away": {
-            "label": "Rep. Dem. do Congo",
-            "source": "3º Grupo K",
+            "label": "RD Congo",
+            "source": "3º Grupo E/H/I/J/K",
             "team": {
               "canon": "dr congo",
-              "name": "Rep. Dem. do Congo",
+              "name": "RD Congo",
               "flag": "🇨🇩"
             }
           },
@@ -291,9 +291,9 @@
           "winner": null,
           "status": "scheduled",
           "date": "2026-07-01",
-          "time": null,
-          "stadium": null,
-          "city": null,
+          "time": "13:00",
+          "stadium": "Mercedes-Benz Stadium",
+          "city": "EUA",
           "nextMatch": 92,
           "winnerTo": "away",
           "loserTo": null
@@ -305,20 +305,20 @@
           "phaseLabel": "32 avos de final",
           "order": 9,
           "home": {
-            "label": "Estados Unidos",
+            "label": "Bélgica",
             "source": "Vencedor do Grupo D",
             "team": {
               "canon": "usa",
-              "name": "Estados Unidos",
+              "name": "Bélgica",
               "flag": "🇺🇸"
             }
           },
           "away": {
-            "label": "Suécia",
-            "source": "3º Grupo F",
+            "label": "Senegal",
+            "source": "3º Grupo B/E/F/I/J",
             "team": {
               "canon": "sweden",
-              "name": "Suécia",
+              "name": "Senegal",
               "flag": "🇸🇪"
             }
           },
@@ -327,9 +327,9 @@
           "winner": null,
           "status": "scheduled",
           "date": "2026-07-01",
-          "time": null,
-          "stadium": null,
-          "city": null,
+          "time": "17:00",
+          "stadium": "Lumen Field",
+          "city": "EUA",
           "nextMatch": 94,
           "winnerTo": "home",
           "loserTo": null
@@ -341,20 +341,20 @@
           "phaseLabel": "32 avos de final",
           "order": 10,
           "home": {
-            "label": "Bélgica",
+            "label": "Estados Unidos",
             "source": "Vencedor do Grupo G",
             "team": {
               "canon": "belgium",
-              "name": "Bélgica",
+              "name": "Estados Unidos",
               "flag": "🇧🇪"
             }
           },
           "away": {
-            "label": "Senegal",
-            "source": "3º Grupo I",
+            "label": "Bósnia",
+            "source": "3º Grupo A/E/H/I/J",
             "team": {
               "canon": "senegal",
-              "name": "Senegal",
+              "name": "Bósnia",
               "flag": "🇸🇳"
             }
           },
@@ -363,9 +363,9 @@
           "winner": null,
           "status": "scheduled",
           "date": "2026-07-01",
-          "time": null,
-          "stadium": null,
-          "city": null,
+          "time": "21:00",
+          "stadium": "Levi's Stadium",
+          "city": "EUA",
           "nextMatch": 94,
           "winnerTo": "away",
           "loserTo": null
@@ -377,20 +377,20 @@
           "phaseLabel": "32 avos de final",
           "order": 11,
           "home": {
-            "label": "Portugal",
+            "label": "Espanha",
             "source": "Vice do Grupo K",
             "team": {
               "canon": "portugal",
-              "name": "Portugal",
+              "name": "Espanha",
               "flag": "🇵🇹"
             }
           },
           "away": {
-            "label": "Croácia",
+            "label": "Áustria",
             "source": "Vice do Grupo L",
             "team": {
               "canon": "croatia",
-              "name": "Croácia",
+              "name": "Áustria",
               "flag": "🇭🇷"
             }
           },
@@ -399,9 +399,9 @@
           "winner": null,
           "status": "scheduled",
           "date": "2026-07-02",
-          "time": null,
-          "stadium": null,
-          "city": null,
+          "time": "16:00",
+          "stadium": "SoFi Stadium",
+          "city": "EUA",
           "nextMatch": 93,
           "winnerTo": "home",
           "loserTo": null
@@ -413,20 +413,20 @@
           "phaseLabel": "32 avos de final",
           "order": 12,
           "home": {
-            "label": "Espanha",
+            "label": "Portugal",
             "source": "Vencedor do Grupo H",
             "team": {
               "canon": "spain",
-              "name": "Espanha",
+              "name": "Portugal",
               "flag": "🇪🇸"
             }
           },
           "away": {
-            "label": "Áustria",
+            "label": "Croácia",
             "source": "Vice do Grupo J",
             "team": {
               "canon": "austria",
-              "name": "Áustria",
+              "name": "Croácia",
               "flag": "🇦🇹"
             }
           },
@@ -435,9 +435,9 @@
           "winner": null,
           "status": "scheduled",
           "date": "2026-07-02",
-          "time": null,
-          "stadium": null,
-          "city": null,
+          "time": "20:00",
+          "stadium": "BMO Field",
+          "city": "CAN",
           "nextMatch": 93,
           "winnerTo": "away",
           "loserTo": null
@@ -459,7 +459,7 @@
           },
           "away": {
             "label": "Argélia",
-            "source": "3º Grupo J",
+            "source": "3º Grupo E/F/G/I/J",
             "team": {
               "canon": "algeria",
               "name": "Argélia",
@@ -470,10 +470,10 @@
           "awayGoals": null,
           "winner": null,
           "status": "scheduled",
-          "date": "2026-07-02",
-          "time": null,
-          "stadium": null,
-          "city": null,
+          "date": "2026-07-03",
+          "time": "00:00",
+          "stadium": "BC Place",
+          "city": "CAN",
           "nextMatch": 96,
           "winnerTo": "home",
           "loserTo": null
@@ -485,20 +485,20 @@
           "phaseLabel": "32 avos de final",
           "order": 14,
           "home": {
-            "label": "Argentina",
+            "label": "Austrália",
             "source": "Vencedor do Grupo J",
             "team": {
               "canon": "argentina",
-              "name": "Argentina",
+              "name": "Austrália",
               "flag": "🇦🇷"
             }
           },
           "away": {
-            "label": "Cabo Verde",
+            "label": "Egito",
             "source": "Vice do Grupo H",
             "team": {
               "canon": "cape verde",
-              "name": "Cabo Verde",
+              "name": "Egito",
               "flag": "🇨🇻"
             }
           },
@@ -507,9 +507,9 @@
           "winner": null,
           "status": "scheduled",
           "date": "2026-07-03",
-          "time": null,
-          "stadium": null,
-          "city": null,
+          "time": "15:00",
+          "stadium": "AT&T Stadium",
+          "city": "EUA",
           "nextMatch": 95,
           "winnerTo": "home",
           "loserTo": null
@@ -521,20 +521,20 @@
           "phaseLabel": "32 avos de final",
           "order": 15,
           "home": {
-            "label": "Colômbia",
+            "label": "Argentina",
             "source": "Vencedor do Grupo K",
             "team": {
               "canon": "colombia",
-              "name": "Colômbia",
+              "name": "Argentina",
               "flag": "🇨🇴"
             }
           },
           "away": {
-            "label": "Gana",
-            "source": "3º Grupo L",
+            "label": "Cabo Verde",
+            "source": "3º Grupo D/E/I/J/L",
             "team": {
               "canon": "ghana",
-              "name": "Gana",
+              "name": "Cabo Verde",
               "flag": "🇬🇭"
             }
           },
@@ -543,9 +543,9 @@
           "winner": null,
           "status": "scheduled",
           "date": "2026-07-03",
-          "time": null,
-          "stadium": null,
-          "city": null,
+          "time": "19:00",
+          "stadium": "Hard Rock Stadium",
+          "city": "EUA",
           "nextMatch": 96,
           "winnerTo": "away",
           "loserTo": null
@@ -557,20 +557,20 @@
           "phaseLabel": "32 avos de final",
           "order": 16,
           "home": {
-            "label": "Austrália",
+            "label": "Colômbia",
             "source": "Vice do Grupo D",
             "team": {
               "canon": "australia",
-              "name": "Austrália",
+              "name": "Colômbia",
               "flag": "🇦🇺"
             }
           },
           "away": {
-            "label": "Egito",
+            "label": "Gana",
             "source": "Vice do Grupo G",
             "team": {
               "canon": "egypt",
-              "name": "Egito",
+              "name": "Gana",
               "flag": "🇪🇬"
             }
           },
@@ -579,9 +579,9 @@
           "winner": null,
           "status": "scheduled",
           "date": "2026-07-03",
-          "time": null,
-          "stadium": null,
-          "city": null,
+          "time": "22:30",
+          "stadium": "Arrowhead Stadium",
+          "city": "EUA",
           "nextMatch": 95,
           "winnerTo": "away",
           "loserTo": null
