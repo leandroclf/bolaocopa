@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-27T23:31:34.276Z",
+  "generatedAt": "2026-06-28T01:36:22.073Z",
   "competition": "Copa do Mundo FIFA 2026",
   "source": "openfootball",
   "groupsComplete": false,
@@ -353,9 +353,13 @@
           "phaseLabel": "32 avos de final",
           "order": 11,
           "home": {
-            "label": "2º Grupo K",
+            "label": "Portugal",
             "source": "Vice do Grupo K",
-            "team": null
+            "team": {
+              "canon": "portugal",
+              "name": "Portugal",
+              "flag": "🇵🇹"
+            }
           },
           "away": {
             "label": "Croácia",
@@ -369,7 +373,7 @@
           "homeGoals": null,
           "awayGoals": null,
           "winner": null,
-          "status": "pending",
+          "status": "scheduled",
           "date": "2026-07-02",
           "time": null,
           "stadium": null,
@@ -481,9 +485,13 @@
           "phaseLabel": "32 avos de final",
           "order": 15,
           "home": {
-            "label": "1º Grupo K",
+            "label": "Colômbia",
             "source": "Vencedor do Grupo K",
-            "team": null
+            "team": {
+              "canon": "colombia",
+              "name": "Colômbia",
+              "flag": "🇨🇴"
+            }
           },
           "away": {
             "label": "Melhor 3º colocado",
