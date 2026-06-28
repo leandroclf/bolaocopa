@@ -50,16 +50,16 @@ export default function Scoreboard({
         </div>
 
         <div className="mt-4 rounded-lg border border-gold/30 bg-gold/10 px-4 py-3 font-mono text-[10px] uppercase tracking-[0.22em] text-gold">
-          Premiação acumulada até o momento: R$ {prizeNow.toFixed(2).replace(".00", ",00")}. No fechamento da captura,
+          Premiação acumulada até o momento: R$ {prizeNow.toFixed(2).replace(".00", ",00")}. Com a captura encerrada,
           a bolada será a soma final das inscrições recebidas.
         </div>
 
         {countedMatches === 0 || !leader ? (
           <div className="mt-4 rounded-lg border border-dashed border-pitch-line bg-pitch-2 px-4 py-4">
-            <p className="font-display text-xl tracking-wide text-gold">CAPTURA DE PALPITES ABERTA</p>
+            <p className="font-display text-xl tracking-wide text-gold">CAPTURA DE PALPITES ENCERRADA</p>
             <p className="mt-1 text-sm text-slatey">
-              A fase de 32 avos está aberta. Os confrontos oficiais aparecem abaixo e a classificação surge à medida
-              que os novos palpites forem enviados.
+              O prazo para novos apostadores foi encerrado. Os palpites publicados abaixo seguem apenas para
+              conferência e apuração.
             </p>
           </div>
         ) : (

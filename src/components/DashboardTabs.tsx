@@ -64,7 +64,7 @@ export default function DashboardTabs({
             <StandingsTable
               standings={standings.standings}
               metrics={standings.metrics}
-              emptyBody="A fase de 32 avos de final está aberta. A classificação desta etapa aparece assim que os novos apostadores enviarem os palpites."
+              emptyBody="O prazo de envio terminou. A classificação desta etapa segue apenas para conferência e apuração dos palpites já recebidos."
             />
             <RulesCard />
           </>

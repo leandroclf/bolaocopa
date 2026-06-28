@@ -8,8 +8,8 @@ const normalize = (s: string) =>
 export default function StandingsTable({
   standings,
   metrics,
-  emptyTitle = "CAPTURA DE PALPITES ABERTA",
-  emptyBody = "A fase de 32 avos de final está em coleta. Quando os novos apostadores enviarem a planilha, a classificação aparecerá aqui.",
+  emptyTitle = "CAPTURA ENCERRADA",
+  emptyBody = "O prazo de envio terminou. A classificação desta fase segue apenas para conferência e apuração dos palpites já recebidos.",
 }: {
   standings: StandingEntry[];
   metrics: StandingsMetrics;
