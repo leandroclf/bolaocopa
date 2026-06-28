@@ -1,9 +1,23 @@
 {
   "lastUpdated": "2026-06-28T10:22:22.269Z",
   "source": "openfootball",
-  "totalParticipants": 0,
+  "totalParticipants": 1,
   "countedMatches": 0,
-  "standings": [],
+  "standings": [
+    {
+      "rank": 1,
+      "previousRank": null,
+      "delta": null,
+      "name": "Rodney (Louva a deus)",
+      "points": 0,
+      "exact": 0,
+      "partial": 0,
+      "partialWinnerGoal": 0,
+      "partialLoserGoal": 0,
+      "resultOnly": 0,
+      "played": 0
+    }
+  ],
   "recentResults": [],
   "nextMatch": {
     "id": 73,
@@ -13,24 +27,42 @@
     "phaseLabel": "32 avos de final",
     "home": "África do Sul",
     "away": "Canadá",
-    "totalPicks": 0,
+    "totalPicks": 1,
     "missingPicks": 0,
-    "picks": [],
+    "picks": [
+      {
+        "name": "Rodney (Louva a deus)",
+        "homeGoals": 1,
+        "awayGoals": 2,
+        "outcome": "away"
+      }
+    ],
     "outcomeBreakdown": {
       "homeWin": 0,
       "draw": 0,
-      "awayWin": 0
+      "awayWin": 1
     },
     "topOutcome": {
-      "outcome": "home",
-      "label": "África do Sul vence",
-      "count": 0,
-      "percentage": 0
+      "outcome": "away",
+      "label": "Canadá vence",
+      "count": 1,
+      "percentage": 100
     },
-    "averageHomeGoals": 0,
-    "averageAwayGoals": 0,
-    "averageTotalGoals": 0,
-    "mostCommonScores": []
+    "averageHomeGoals": 1,
+    "averageAwayGoals": 2,
+    "averageTotalGoals": 3,
+    "mostCommonScores": [
+      {
+        "homeGoals": 1,
+        "awayGoals": 2,
+        "score": "1-2",
+        "count": 1,
+        "percentage": 100,
+        "names": [
+          "Rodney (Louva a deus)"
+        ]
+      }
+    ]
   },
   "upcomingMatches": [
     {
@@ -41,24 +73,42 @@
       "phaseLabel": "32 avos de final",
       "home": "África do Sul",
       "away": "Canadá",
-      "totalPicks": 0,
+      "totalPicks": 1,
       "missingPicks": 0,
-      "picks": [],
+      "picks": [
+        {
+          "name": "Rodney (Louva a deus)",
+          "homeGoals": 1,
+          "awayGoals": 2,
+          "outcome": "away"
+        }
+      ],
       "outcomeBreakdown": {
         "homeWin": 0,
         "draw": 0,
-        "awayWin": 0
+        "awayWin": 1
       },
       "topOutcome": {
-        "outcome": "home",
-        "label": "África do Sul vence",
-        "count": 0,
-        "percentage": 0
+        "outcome": "away",
+        "label": "Canadá vence",
+        "count": 1,
+        "percentage": 100
       },
-      "averageHomeGoals": 0,
-      "averageAwayGoals": 0,
-      "averageTotalGoals": 0,
-      "mostCommonScores": []
+      "averageHomeGoals": 1,
+      "averageAwayGoals": 2,
+      "averageTotalGoals": 3,
+      "mostCommonScores": [
+        {
+          "homeGoals": 1,
+          "awayGoals": 2,
+          "score": "1-2",
+          "count": 1,
+          "percentage": 100,
+          "names": [
+            "Rodney (Louva a deus)"
+          ]
+        }
+      ]
     },
     {
       "id": 74,
@@ -68,24 +118,42 @@
       "phaseLabel": "32 avos de final",
       "home": "Alemanha",
       "away": "Bósnia",
-      "totalPicks": 0,
+      "totalPicks": 1,
       "missingPicks": 0,
-      "picks": [],
+      "picks": [
+        {
+          "name": "Rodney (Louva a deus)",
+          "homeGoals": 2,
+          "awayGoals": 0,
+          "outcome": "home"
+        }
+      ],
       "outcomeBreakdown": {
-        "homeWin": 0,
+        "homeWin": 1,
         "draw": 0,
         "awayWin": 0
       },
       "topOutcome": {
         "outcome": "home",
         "label": "Alemanha vence",
-        "count": 0,
-        "percentage": 0
+        "count": 1,
+        "percentage": 100
       },
-      "averageHomeGoals": 0,
+      "averageHomeGoals": 2,
       "averageAwayGoals": 0,
-      "averageTotalGoals": 0,
-      "mostCommonScores": []
+      "averageTotalGoals": 2,
+      "mostCommonScores": [
+        {
+          "homeGoals": 2,
+          "awayGoals": 0,
+          "score": "2-0",
+          "count": 1,
+          "percentage": 100,
+          "names": [
+            "Rodney (Louva a deus)"
+          ]
+        }
+      ]
     },
     {
       "id": 75,
@@ -95,24 +163,42 @@
       "phaseLabel": "32 avos de final",
       "home": "Holanda",
       "away": "Marrocos",
-      "totalPicks": 0,
+      "totalPicks": 1,
       "missingPicks": 0,
-      "picks": [],
+      "picks": [
+        {
+          "name": "Rodney (Louva a deus)",
+          "homeGoals": 3,
+          "awayGoals": 1,
+          "outcome": "home"
+        }
+      ],
       "outcomeBreakdown": {
-        "homeWin": 0,
+        "homeWin": 1,
         "draw": 0,
         "awayWin": 0
       },
       "topOutcome": {
-        "outcome": "draw",
-        "label": "Empate",
-        "count": 0,
-        "percentage": 0
+        "outcome": "home",
+        "label": "Holanda vence",
+        "count": 1,
+        "percentage": 100
       },
-      "averageHomeGoals": 0,
-      "averageAwayGoals": 0,
-      "averageTotalGoals": 0,
-      "mostCommonScores": []
+      "averageHomeGoals": 3,
+      "averageAwayGoals": 1,
+      "averageTotalGoals": 4,
+      "mostCommonScores": [
+        {
+          "homeGoals": 3,
+          "awayGoals": 1,
+          "score": "3-1",
+          "count": 1,
+          "percentage": 100,
+          "names": [
+            "Rodney (Louva a deus)"
+          ]
+        }
+      ]
     },
     {
       "id": 76,
@@ -122,24 +208,42 @@
       "phaseLabel": "32 avos de final",
       "home": "Brasil",
       "away": "Japão",
-      "totalPicks": 0,
+      "totalPicks": 1,
       "missingPicks": 0,
-      "picks": [],
+      "picks": [
+        {
+          "name": "Rodney (Louva a deus)",
+          "homeGoals": 3,
+          "awayGoals": 1,
+          "outcome": "home"
+        }
+      ],
       "outcomeBreakdown": {
-        "homeWin": 0,
+        "homeWin": 1,
         "draw": 0,
         "awayWin": 0
       },
       "topOutcome": {
         "outcome": "home",
         "label": "Brasil vence",
-        "count": 0,
-        "percentage": 0
+        "count": 1,
+        "percentage": 100
       },
-      "averageHomeGoals": 0,
-      "averageAwayGoals": 0,
-      "averageTotalGoals": 0,
-      "mostCommonScores": []
+      "averageHomeGoals": 3,
+      "averageAwayGoals": 1,
+      "averageTotalGoals": 4,
+      "mostCommonScores": [
+        {
+          "homeGoals": 3,
+          "awayGoals": 1,
+          "score": "3-1",
+          "count": 1,
+          "percentage": 100,
+          "names": [
+            "Rodney (Louva a deus)"
+          ]
+        }
+      ]
     },
     {
       "id": 77,
@@ -149,24 +253,42 @@
       "phaseLabel": "32 avos de final",
       "home": "França",
       "away": "Paraguai",
-      "totalPicks": 0,
+      "totalPicks": 1,
       "missingPicks": 0,
-      "picks": [],
+      "picks": [
+        {
+          "name": "Rodney (Louva a deus)",
+          "homeGoals": 2,
+          "awayGoals": 0,
+          "outcome": "home"
+        }
+      ],
       "outcomeBreakdown": {
-        "homeWin": 0,
+        "homeWin": 1,
         "draw": 0,
         "awayWin": 0
       },
       "topOutcome": {
-        "outcome": "draw",
-        "label": "Empate",
-        "count": 0,
-        "percentage": 0
+        "outcome": "home",
+        "label": "França vence",
+        "count": 1,
+        "percentage": 100
       },
-      "averageHomeGoals": 0,
+      "averageHomeGoals": 2,
       "averageAwayGoals": 0,
-      "averageTotalGoals": 0,
-      "mostCommonScores": []
+      "averageTotalGoals": 2,
+      "mostCommonScores": [
+        {
+          "homeGoals": 2,
+          "awayGoals": 0,
+          "score": "2-0",
+          "count": 1,
+          "percentage": 100,
+          "names": [
+            "Rodney (Louva a deus)"
+          ]
+        }
+      ]
     },
     {
       "id": 78,
@@ -176,24 +298,42 @@
       "phaseLabel": "32 avos de final",
       "home": "Costa do Marfim",
       "away": "Noruega",
-      "totalPicks": 0,
+      "totalPicks": 1,
       "missingPicks": 0,
-      "picks": [],
+      "picks": [
+        {
+          "name": "Rodney (Louva a deus)",
+          "homeGoals": 2,
+          "awayGoals": 1,
+          "outcome": "home"
+        }
+      ],
       "outcomeBreakdown": {
-        "homeWin": 0,
+        "homeWin": 1,
         "draw": 0,
         "awayWin": 0
       },
       "topOutcome": {
         "outcome": "home",
         "label": "Costa do Marfim vence",
-        "count": 0,
-        "percentage": 0
+        "count": 1,
+        "percentage": 100
       },
-      "averageHomeGoals": 0,
-      "averageAwayGoals": 0,
-      "averageTotalGoals": 0,
-      "mostCommonScores": []
+      "averageHomeGoals": 2,
+      "averageAwayGoals": 1,
+      "averageTotalGoals": 3,
+      "mostCommonScores": [
+        {
+          "homeGoals": 2,
+          "awayGoals": 1,
+          "score": "2-1",
+          "count": 1,
+          "percentage": 100,
+          "names": [
+            "Rodney (Louva a deus)"
+          ]
+        }
+      ]
     },
     {
       "id": 79,
@@ -203,24 +343,42 @@
       "phaseLabel": "32 avos de final",
       "home": "México",
       "away": "Equador",
-      "totalPicks": 0,
+      "totalPicks": 1,
       "missingPicks": 0,
-      "picks": [],
+      "picks": [
+        {
+          "name": "Rodney (Louva a deus)",
+          "homeGoals": 2,
+          "awayGoals": 1,
+          "outcome": "home"
+        }
+      ],
       "outcomeBreakdown": {
-        "homeWin": 0,
+        "homeWin": 1,
         "draw": 0,
         "awayWin": 0
       },
       "topOutcome": {
-        "outcome": "draw",
-        "label": "Empate",
-        "count": 0,
-        "percentage": 0
+        "outcome": "home",
+        "label": "México vence",
+        "count": 1,
+        "percentage": 100
       },
-      "averageHomeGoals": 0,
-      "averageAwayGoals": 0,
-      "averageTotalGoals": 0,
-      "mostCommonScores": []
+      "averageHomeGoals": 2,
+      "averageAwayGoals": 1,
+      "averageTotalGoals": 3,
+      "mostCommonScores": [
+        {
+          "homeGoals": 2,
+          "awayGoals": 1,
+          "score": "2-1",
+          "count": 1,
+          "percentage": 100,
+          "names": [
+            "Rodney (Louva a deus)"
+          ]
+        }
+      ]
     },
     {
       "id": 80,
@@ -230,24 +388,42 @@
       "phaseLabel": "32 avos de final",
       "home": "Inglaterra",
       "away": "Rep. Dem. do Congo",
-      "totalPicks": 0,
+      "totalPicks": 1,
       "missingPicks": 0,
-      "picks": [],
+      "picks": [
+        {
+          "name": "Rodney (Louva a deus)",
+          "homeGoals": 1,
+          "awayGoals": 0,
+          "outcome": "home"
+        }
+      ],
       "outcomeBreakdown": {
-        "homeWin": 0,
+        "homeWin": 1,
         "draw": 0,
         "awayWin": 0
       },
       "topOutcome": {
-        "outcome": "draw",
-        "label": "Empate",
-        "count": 0,
-        "percentage": 0
+        "outcome": "home",
+        "label": "Inglaterra vence",
+        "count": 1,
+        "percentage": 100
       },
-      "averageHomeGoals": 0,
+      "averageHomeGoals": 1,
       "averageAwayGoals": 0,
-      "averageTotalGoals": 0,
-      "mostCommonScores": []
+      "averageTotalGoals": 1,
+      "mostCommonScores": [
+        {
+          "homeGoals": 1,
+          "awayGoals": 0,
+          "score": "1-0",
+          "count": 1,
+          "percentage": 100,
+          "names": [
+            "Rodney (Louva a deus)"
+          ]
+        }
+      ]
     },
     {
       "id": 81,
@@ -257,24 +433,42 @@
       "phaseLabel": "32 avos de final",
       "home": "Estados Unidos",
       "away": "Suécia",
-      "totalPicks": 0,
+      "totalPicks": 1,
       "missingPicks": 0,
-      "picks": [],
+      "picks": [
+        {
+          "name": "Rodney (Louva a deus)",
+          "homeGoals": 2,
+          "awayGoals": 1,
+          "outcome": "home"
+        }
+      ],
       "outcomeBreakdown": {
-        "homeWin": 0,
+        "homeWin": 1,
         "draw": 0,
         "awayWin": 0
       },
       "topOutcome": {
-        "outcome": "draw",
-        "label": "Empate",
-        "count": 0,
-        "percentage": 0
+        "outcome": "home",
+        "label": "Estados Unidos vence",
+        "count": 1,
+        "percentage": 100
       },
-      "averageHomeGoals": 0,
-      "averageAwayGoals": 0,
-      "averageTotalGoals": 0,
-      "mostCommonScores": []
+      "averageHomeGoals": 2,
+      "averageAwayGoals": 1,
+      "averageTotalGoals": 3,
+      "mostCommonScores": [
+        {
+          "homeGoals": 2,
+          "awayGoals": 1,
+          "score": "2-1",
+          "count": 1,
+          "percentage": 100,
+          "names": [
+            "Rodney (Louva a deus)"
+          ]
+        }
+      ]
     },
     {
       "id": 82,
@@ -284,24 +478,42 @@
       "phaseLabel": "32 avos de final",
       "home": "Bélgica",
       "away": "Senegal",
-      "totalPicks": 0,
+      "totalPicks": 1,
       "missingPicks": 0,
-      "picks": [],
+      "picks": [
+        {
+          "name": "Rodney (Louva a deus)",
+          "homeGoals": 1,
+          "awayGoals": 0,
+          "outcome": "home"
+        }
+      ],
       "outcomeBreakdown": {
-        "homeWin": 0,
+        "homeWin": 1,
         "draw": 0,
         "awayWin": 0
       },
       "topOutcome": {
         "outcome": "home",
         "label": "Bélgica vence",
-        "count": 0,
-        "percentage": 0
+        "count": 1,
+        "percentage": 100
       },
-      "averageHomeGoals": 0,
+      "averageHomeGoals": 1,
       "averageAwayGoals": 0,
-      "averageTotalGoals": 0,
-      "mostCommonScores": []
+      "averageTotalGoals": 1,
+      "mostCommonScores": [
+        {
+          "homeGoals": 1,
+          "awayGoals": 0,
+          "score": "1-0",
+          "count": 1,
+          "percentage": 100,
+          "names": [
+            "Rodney (Louva a deus)"
+          ]
+        }
+      ]
     },
     {
       "id": 83,
@@ -311,24 +523,42 @@
       "phaseLabel": "32 avos de final",
       "home": "Portugal",
       "away": "Croácia",
-      "totalPicks": 0,
+      "totalPicks": 1,
       "missingPicks": 0,
-      "picks": [],
+      "picks": [
+        {
+          "name": "Rodney (Louva a deus)",
+          "homeGoals": 1,
+          "awayGoals": 1,
+          "outcome": "draw"
+        }
+      ],
       "outcomeBreakdown": {
         "homeWin": 0,
-        "draw": 0,
+        "draw": 1,
         "awayWin": 0
       },
       "topOutcome": {
-        "outcome": "away",
-        "label": "Croácia vence",
-        "count": 0,
-        "percentage": 0
+        "outcome": "draw",
+        "label": "Empate",
+        "count": 1,
+        "percentage": 100
       },
-      "averageHomeGoals": 0,
-      "averageAwayGoals": 0,
-      "averageTotalGoals": 0,
-      "mostCommonScores": []
+      "averageHomeGoals": 1,
+      "averageAwayGoals": 1,
+      "averageTotalGoals": 2,
+      "mostCommonScores": [
+        {
+          "homeGoals": 1,
+          "awayGoals": 1,
+          "score": "1-1",
+          "count": 1,
+          "percentage": 100,
+          "names": [
+            "Rodney (Louva a deus)"
+          ]
+        }
+      ]
     },
     {
       "id": 84,
@@ -338,24 +568,42 @@
       "phaseLabel": "32 avos de final",
       "home": "Espanha",
       "away": "Áustria",
-      "totalPicks": 0,
+      "totalPicks": 1,
       "missingPicks": 0,
-      "picks": [],
+      "picks": [
+        {
+          "name": "Rodney (Louva a deus)",
+          "homeGoals": 2,
+          "awayGoals": 0,
+          "outcome": "home"
+        }
+      ],
       "outcomeBreakdown": {
-        "homeWin": 0,
+        "homeWin": 1,
         "draw": 0,
         "awayWin": 0
       },
       "topOutcome": {
-        "outcome": "away",
-        "label": "Áustria vence",
-        "count": 0,
-        "percentage": 0
+        "outcome": "home",
+        "label": "Espanha vence",
+        "count": 1,
+        "percentage": 100
       },
-      "averageHomeGoals": 0,
+      "averageHomeGoals": 2,
       "averageAwayGoals": 0,
-      "averageTotalGoals": 0,
-      "mostCommonScores": []
+      "averageTotalGoals": 2,
+      "mostCommonScores": [
+        {
+          "homeGoals": 2,
+          "awayGoals": 0,
+          "score": "2-0",
+          "count": 1,
+          "percentage": 100,
+          "names": [
+            "Rodney (Louva a deus)"
+          ]
+        }
+      ]
     },
     {
       "id": 85,
@@ -365,24 +613,42 @@
       "phaseLabel": "32 avos de final",
       "home": "Suíça",
       "away": "Argélia",
-      "totalPicks": 0,
+      "totalPicks": 1,
       "missingPicks": 0,
-      "picks": [],
+      "picks": [
+        {
+          "name": "Rodney (Louva a deus)",
+          "homeGoals": 1,
+          "awayGoals": 1,
+          "outcome": "draw"
+        }
+      ],
       "outcomeBreakdown": {
         "homeWin": 0,
-        "draw": 0,
+        "draw": 1,
         "awayWin": 0
       },
       "topOutcome": {
-        "outcome": "away",
-        "label": "Argélia vence",
-        "count": 0,
-        "percentage": 0
+        "outcome": "draw",
+        "label": "Empate",
+        "count": 1,
+        "percentage": 100
       },
-      "averageHomeGoals": 0,
-      "averageAwayGoals": 0,
-      "averageTotalGoals": 0,
-      "mostCommonScores": []
+      "averageHomeGoals": 1,
+      "averageAwayGoals": 1,
+      "averageTotalGoals": 2,
+      "mostCommonScores": [
+        {
+          "homeGoals": 1,
+          "awayGoals": 1,
+          "score": "1-1",
+          "count": 1,
+          "percentage": 100,
+          "names": [
+            "Rodney (Louva a deus)"
+          ]
+        }
+      ]
     },
     {
       "id": 86,
@@ -392,24 +658,42 @@
       "phaseLabel": "32 avos de final",
       "home": "Argentina",
       "away": "Cabo Verde",
-      "totalPicks": 0,
+      "totalPicks": 1,
       "missingPicks": 0,
-      "picks": [],
+      "picks": [
+        {
+          "name": "Rodney (Louva a deus)",
+          "homeGoals": 3,
+          "awayGoals": 0,
+          "outcome": "home"
+        }
+      ],
       "outcomeBreakdown": {
-        "homeWin": 0,
+        "homeWin": 1,
         "draw": 0,
         "awayWin": 0
       },
       "topOutcome": {
         "outcome": "home",
         "label": "Argentina vence",
-        "count": 0,
-        "percentage": 0
+        "count": 1,
+        "percentage": 100
       },
-      "averageHomeGoals": 0,
+      "averageHomeGoals": 3,
       "averageAwayGoals": 0,
-      "averageTotalGoals": 0,
-      "mostCommonScores": []
+      "averageTotalGoals": 3,
+      "mostCommonScores": [
+        {
+          "homeGoals": 3,
+          "awayGoals": 0,
+          "score": "3-0",
+          "count": 1,
+          "percentage": 100,
+          "names": [
+            "Rodney (Louva a deus)"
+          ]
+        }
+      ]
     },
     {
       "id": 87,
@@ -419,24 +703,42 @@
       "phaseLabel": "32 avos de final",
       "home": "Colômbia",
       "away": "Gana",
-      "totalPicks": 0,
+      "totalPicks": 1,
       "missingPicks": 0,
-      "picks": [],
+      "picks": [
+        {
+          "name": "Rodney (Louva a deus)",
+          "homeGoals": 2,
+          "awayGoals": 0,
+          "outcome": "home"
+        }
+      ],
       "outcomeBreakdown": {
-        "homeWin": 0,
+        "homeWin": 1,
         "draw": 0,
         "awayWin": 0
       },
       "topOutcome": {
         "outcome": "home",
         "label": "Colômbia vence",
-        "count": 0,
-        "percentage": 0
+        "count": 1,
+        "percentage": 100
       },
-      "averageHomeGoals": 0,
+      "averageHomeGoals": 2,
       "averageAwayGoals": 0,
-      "averageTotalGoals": 0,
-      "mostCommonScores": []
+      "averageTotalGoals": 2,
+      "mostCommonScores": [
+        {
+          "homeGoals": 2,
+          "awayGoals": 0,
+          "score": "2-0",
+          "count": 1,
+          "percentage": 100,
+          "names": [
+            "Rodney (Louva a deus)"
+          ]
+        }
+      ]
     },
     {
       "id": 88,
@@ -446,55 +748,136 @@
       "phaseLabel": "32 avos de final",
       "home": "Austrália",
       "away": "Egito",
-      "totalPicks": 0,
+      "totalPicks": 1,
       "missingPicks": 0,
-      "picks": [],
+      "picks": [
+        {
+          "name": "Rodney (Louva a deus)",
+          "homeGoals": 1,
+          "awayGoals": 1,
+          "outcome": "draw"
+        }
+      ],
       "outcomeBreakdown": {
         "homeWin": 0,
-        "draw": 0,
+        "draw": 1,
         "awayWin": 0
       },
       "topOutcome": {
-        "outcome": "home",
-        "label": "Austrália vence",
-        "count": 0,
-        "percentage": 0
+        "outcome": "draw",
+        "label": "Empate",
+        "count": 1,
+        "percentage": 100
       },
-      "averageHomeGoals": 0,
-      "averageAwayGoals": 0,
-      "averageTotalGoals": 0,
-      "mostCommonScores": []
+      "averageHomeGoals": 1,
+      "averageAwayGoals": 1,
+      "averageTotalGoals": 2,
+      "mostCommonScores": [
+        {
+          "homeGoals": 1,
+          "awayGoals": 1,
+          "score": "1-1",
+          "count": 1,
+          "percentage": 100,
+          "names": [
+            "Rodney (Louva a deus)"
+          ]
+        }
+      ]
     }
   ],
   "metrics": {
     "totalMatches": 16,
     "finishedMatches": 0,
     "remainingMatches": 16,
-    "totalValidPicks": 0,
-    "averageUpcomingGoals": 0,
+    "totalValidPicks": 16,
+    "averageUpcomingGoals": 2.4,
     "completionRate": 0,
     "leaderGap": null,
     "leaderEfficiency": null,
     "averagePoints": 0,
-    "completeCards": 0,
+    "completeCards": 1,
     "missingPickCards": 0,
-    "topExact": null,
-    "topPartial": null,
-    "topUpcomingScore": null,
-    "highestConsensus": null,
-    "mostDivisive": null,
-    "highestExpectedGoals": null,
-    "highestDrawShare": null,
+    "topExact": {
+      "label": "Rei dos exatos",
+      "value": "0",
+      "detail": "Rodney (Louva a deus)"
+    },
+    "topPartial": {
+      "label": "Mais parciais",
+      "value": "0",
+      "detail": "Rodney (Louva a deus)"
+    },
+    "topUpcomingScore": {
+      "label": "Placar mais apostado",
+      "value": "2-0",
+      "detail": "4 palpites"
+    },
+    "highestConsensus": {
+      "id": 73,
+      "date": "2026-06-28",
+      "time": "",
+      "group": "R32",
+      "home": "África do Sul",
+      "away": "Canadá",
+      "label": "Maior consenso",
+      "value": "Canadá vence · 100%"
+    },
+    "mostDivisive": {
+      "id": 73,
+      "date": "2026-06-28",
+      "time": "",
+      "group": "R32",
+      "home": "África do Sul",
+      "away": "Canadá",
+      "label": "Jogo mais dividido",
+      "value": "Canadá vence · 100%"
+    },
+    "highestExpectedGoals": {
+      "id": 75,
+      "date": "2026-06-29",
+      "time": "",
+      "group": "R32",
+      "home": "Holanda",
+      "away": "Marrocos",
+      "label": "Mais gols previstos",
+      "value": "4 gols em média"
+    },
+    "highestDrawShare": {
+      "id": 83,
+      "date": "2026-07-02",
+      "time": "",
+      "group": "R32",
+      "home": "Portugal",
+      "away": "Croácia",
+      "label": "Mais cara de empate",
+      "value": "100% em empate"
+    },
     "storyMetrics": [
       {
         "label": "Média do pelotão",
         "value": "0 pts",
-        "detail": "Média atual entre 0 apostadores."
+        "detail": "Média atual entre 1 apostadores."
+      },
+      {
+        "label": "Rei dos exatos",
+        "value": "0",
+        "detail": "Rodney (Louva a deus) lidera em placares cravados."
+      },
+      {
+        "label": "Mais parciais",
+        "value": "0",
+        "detail": "Rodney (Louva a deus) lidera em acertos de 5 ou 3 pontos."
       },
       {
         "label": "Cartelas completas",
-        "value": "0/0",
+        "value": "1/1",
         "detail": "Todos têm 72 palpites válidos."
+      },
+      {
+        "label": "Placar mais apostado",
+        "value": "2-0",
+        "detail": "4 vezes nos jogos pendentes."
       }
     ]
   }
