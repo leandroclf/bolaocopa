@@ -21,7 +21,7 @@ export default function Page() {
         totalMatches={s.metrics.totalMatches}
         leader={leader}
       />
-      <PaymentBlock />
+      <PaymentBlock totalParticipants={s.totalParticipants} entryFee={50} />
       <PhaseNotice />
       <DashboardTabs standings={s} liveStandings={live} bracket={bracket} />
       <footer className="mx-auto max-w-5xl px-5 pt-6 text-center">

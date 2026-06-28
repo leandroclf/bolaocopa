@@ -1,4 +1,5 @@
-export default function PaymentBlock() {
+export default function PaymentBlock({ totalParticipants, entryFee }: { totalParticipants: number; entryFee: number }) {
+  const currentPrize = totalParticipants * entryFee;
   return (
     <section className="mx-auto max-w-5xl px-5 pt-4">
       <div className="overflow-hidden rounded-xl border border-gold/30 bg-gradient-to-br from-gold/20 via-pitch-2 to-pitch-2">
@@ -9,12 +10,16 @@ export default function PaymentBlock() {
               Chave PIX para confirmação do palpite
             </h2>
             <p className="mt-2 text-sm leading-6 text-slatey">
-              A taxa de inscrição é de <strong className="text-chalk">R$ 50</strong> por apostador. O valor deve ser
-              enviado para a chave PIX destacada ao lado.
+              A taxa de inscrição é de <strong className="text-chalk">R$ {entryFee.toFixed(2).replace(".00", ",00")}</strong> por apostador.
+              O valor deve ser enviado para a chave PIX destacada ao lado.
             </p>
             <p className="mt-3 rounded-md border border-lime/20 bg-lime/10 px-3 py-2 font-mono text-[10px] uppercase tracking-[0.22em] text-lime">
               Para a pontuação, conta o placar final da partida após o tempo normal e a prorrogação. Os pênaltis
               servem apenas para definir o classificado.
+            </p>
+            <p className="mt-3 text-sm leading-6 text-slatey">
+              Premiação acumulada até o momento: <strong className="text-chalk">R$ {currentPrize.toFixed(2).replace(".00", ",00")}</strong>.
+              No fechamento da captura de palpites, a bolada será a soma final de todas as inscrições recebidas.
             </p>
           </div>
 
@@ -28,6 +33,9 @@ export default function PaymentBlock() {
               </span>
               <span className="rounded-full border border-pitch-line bg-pitch-2 px-3 py-1 font-mono text-[10px] uppercase tracking-[0.18em] text-slatey">
                 tempo normal + prorrogação
+              </span>
+              <span className="rounded-full border border-gold/30 bg-gold/10 px-3 py-1 font-mono text-[10px] uppercase tracking-[0.18em] text-gold">
+                bolada atual R$ {currentPrize.toFixed(2).replace(".00", ",00")}
               </span>
             </div>
           </div>

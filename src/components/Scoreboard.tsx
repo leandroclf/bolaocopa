@@ -12,6 +12,8 @@ export default function Scoreboard({
 }: {
   lastUpdated: string; totalParticipants: number; countedMatches: number; totalMatches: number; leader: StandingEntry | null;
 }) {
+  const entryFee = 50;
+  const prizeNow = totalParticipants * entryFee;
   return (
     <header className="border-b border-pitch-line">
       <div className="mx-auto max-w-5xl px-5 pb-4 pt-6 sm:pb-6 sm:pt-8">
@@ -45,6 +47,11 @@ export default function Scoreboard({
               <span>atualizado</span>
             </div>
           </div>
+        </div>
+
+        <div className="mt-4 rounded-lg border border-gold/30 bg-gold/10 px-4 py-3 font-mono text-[10px] uppercase tracking-[0.22em] text-gold">
+          Premiação acumulada até o momento: R$ {prizeNow.toFixed(2).replace(".00", ",00")}. No fechamento da captura,
+          a bolada será a soma final das inscrições recebidas.
         </div>
 
         {countedMatches === 0 || !leader ? (
