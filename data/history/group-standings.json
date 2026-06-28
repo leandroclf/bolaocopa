@@ -1,0 +1,1214 @@
+{
+  "lastUpdated": "2026-06-28T06:01:34.216Z",
+  "source": "openfootball",
+  "totalParticipants": 38,
+  "countedMatches": 72,
+  "standings": [
+    {
+      "rank": 1,
+      "previousRank": 1,
+      "delta": 0,
+      "name": "Bianka e Rafael",
+      "points": 266,
+      "exact": 14,
+      "partial": 32,
+      "partialWinnerGoal": 4,
+      "partialLoserGoal": 11,
+      "resultOnly": 17,
+      "played": 72
+    },
+    {
+      "rank": 2,
+      "previousRank": 2,
+      "delta": 0,
+      "name": "Breno",
+      "points": 256,
+      "exact": 13,
+      "partial": 32,
+      "partialWinnerGoal": 4,
+      "partialLoserGoal": 11,
+      "resultOnly": 17,
+      "played": 72
+    },
+    {
+      "rank": 3,
+      "previousRank": 3,
+      "delta": 0,
+      "name": "Elias",
+      "points": 236,
+      "exact": 9,
+      "partial": 36,
+      "partialWinnerGoal": 5,
+      "partialLoserGoal": 14,
+      "resultOnly": 17,
+      "played": 72
+    },
+    {
+      "rank": 4,
+      "previousRank": 4,
+      "delta": 0,
+      "name": "Matheus",
+      "points": 229,
+      "exact": 9,
+      "partial": 35,
+      "partialWinnerGoal": 2,
+      "partialLoserGoal": 15,
+      "resultOnly": 18,
+      "played": 72
+    },
+    {
+      "rank": 5,
+      "previousRank": 6,
+      "delta": 1,
+      "name": "Wolfgand Vinícius",
+      "points": 225,
+      "exact": 9,
+      "partial": 37,
+      "partialWinnerGoal": 2,
+      "partialLoserGoal": 10,
+      "resultOnly": 25,
+      "played": 72
+    },
+    {
+      "rank": 6,
+      "previousRank": 12,
+      "delta": 6,
+      "name": "Beatriz",
+      "points": 221,
+      "exact": 9,
+      "partial": 33,
+      "partialWinnerGoal": 2,
+      "partialLoserGoal": 14,
+      "resultOnly": 17,
+      "played": 72
+    },
+    {
+      "rank": 7,
+      "previousRank": 5,
+      "delta": -2,
+      "name": "GuiGui ET",
+      "points": 221,
+      "exact": 5,
+      "partial": 41,
+      "partialWinnerGoal": 4,
+      "partialLoserGoal": 20,
+      "resultOnly": 17,
+      "played": 72
+    },
+    {
+      "rank": 8,
+      "previousRank": 8,
+      "delta": 0,
+      "name": "Neto",
+      "points": 220,
+      "exact": 9,
+      "partial": 34,
+      "partialWinnerGoal": 5,
+      "partialLoserGoal": 9,
+      "resultOnly": 20,
+      "played": 72
+    },
+    {
+      "rank": 9,
+      "previousRank": 7,
+      "delta": -2,
+      "name": "Robson",
+      "points": 220,
+      "exact": 7,
+      "partial": 38,
+      "partialWinnerGoal": 4,
+      "partialLoserGoal": 14,
+      "resultOnly": 20,
+      "played": 72
+    },
+    {
+      "rank": 10,
+      "previousRank": 11,
+      "delta": 1,
+      "name": "Mário Rossi",
+      "points": 219,
+      "exact": 7,
+      "partial": 37,
+      "partialWinnerGoal": 2,
+      "partialLoserGoal": 17,
+      "resultOnly": 18,
+      "played": 72
+    },
+    {
+      "rank": 11,
+      "previousRank": 9,
+      "delta": -2,
+      "name": "Walma",
+      "points": 219,
+      "exact": 6,
+      "partial": 37,
+      "partialWinnerGoal": 6,
+      "partialLoserGoal": 18,
+      "resultOnly": 13,
+      "played": 72
+    },
+    {
+      "rank": 12,
+      "previousRank": 10,
+      "delta": -2,
+      "name": "Vinícius",
+      "points": 217,
+      "exact": 7,
+      "partial": 37,
+      "partialWinnerGoal": 7,
+      "partialLoserGoal": 11,
+      "resultOnly": 19,
+      "played": 72
+    },
+    {
+      "rank": 13,
+      "previousRank": 13,
+      "delta": 0,
+      "name": "Ítalo \"Polvo Paul\"",
+      "points": 216,
+      "exact": 10,
+      "partial": 30,
+      "partialWinnerGoal": 2,
+      "partialLoserGoal": 11,
+      "resultOnly": 17,
+      "played": 72
+    },
+    {
+      "rank": 14,
+      "previousRank": 14,
+      "delta": 0,
+      "name": "Edwin",
+      "points": 215,
+      "exact": 9,
+      "partial": 33,
+      "partialWinnerGoal": 0,
+      "partialLoserGoal": 13,
+      "resultOnly": 20,
+      "played": 72
+    },
+    {
+      "rank": 15,
+      "previousRank": 17,
+      "delta": 2,
+      "name": "Igor",
+      "points": 215,
+      "exact": 8,
+      "partial": 31,
+      "partialWinnerGoal": 8,
+      "partialLoserGoal": 13,
+      "resultOnly": 10,
+      "played": 72
+    },
+    {
+      "rank": 16,
+      "previousRank": 15,
+      "delta": -1,
+      "name": "Leandro",
+      "points": 215,
+      "exact": 6,
+      "partial": 39,
+      "partialWinnerGoal": 4,
+      "partialLoserGoal": 15,
+      "resultOnly": 20,
+      "played": 72
+    },
+    {
+      "rank": 17,
+      "previousRank": 19,
+      "delta": 2,
+      "name": "Luiz Henrique",
+      "points": 212,
+      "exact": 9,
+      "partial": 32,
+      "partialWinnerGoal": 4,
+      "partialLoserGoal": 9,
+      "resultOnly": 19,
+      "played": 72
+    },
+    {
+      "rank": 18,
+      "previousRank": 16,
+      "delta": -2,
+      "name": "Douglas",
+      "points": 210,
+      "exact": 9,
+      "partial": 32,
+      "partialWinnerGoal": 2,
+      "partialLoserGoal": 10,
+      "resultOnly": 20,
+      "played": 72
+    },
+    {
+      "rank": 19,
+      "previousRank": 21,
+      "delta": 2,
+      "name": "Clécio",
+      "points": 207,
+      "exact": 4,
+      "partial": 41,
+      "partialWinnerGoal": 4,
+      "partialLoserGoal": 18,
+      "resultOnly": 19,
+      "played": 72
+    },
+    {
+      "rank": 20,
+      "previousRank": 18,
+      "delta": -2,
+      "name": "Felipe Vitoriano",
+      "points": 207,
+      "exact": 5,
+      "partial": 37,
+      "partialWinnerGoal": 4,
+      "partialLoserGoal": 19,
+      "resultOnly": 14,
+      "played": 72
+    },
+    {
+      "rank": 21,
+      "previousRank": 22,
+      "delta": 1,
+      "name": "Bruno Sebben",
+      "points": 205,
+      "exact": 6,
+      "partial": 37,
+      "partialWinnerGoal": 2,
+      "partialLoserGoal": 15,
+      "resultOnly": 20,
+      "played": 72
+    },
+    {
+      "rank": 22,
+      "previousRank": 23,
+      "delta": 1,
+      "name": "Ézio",
+      "points": 205,
+      "exact": 7,
+      "partial": 33,
+      "partialWinnerGoal": 6,
+      "partialLoserGoal": 12,
+      "resultOnly": 15,
+      "played": 72
+    },
+    {
+      "rank": 23,
+      "previousRank": 20,
+      "delta": -3,
+      "name": "Nauselir",
+      "points": 205,
+      "exact": 10,
+      "partial": 25,
+      "partialWinnerGoal": 4,
+      "partialLoserGoal": 11,
+      "resultOnly": 10,
+      "played": 72
+    },
+    {
+      "rank": 24,
+      "previousRank": 28,
+      "delta": 4,
+      "name": "Jonas",
+      "points": 204,
+      "exact": 6,
+      "partial": 36,
+      "partialWinnerGoal": 2,
+      "partialLoserGoal": 16,
+      "resultOnly": 18,
+      "played": 72
+    },
+    {
+      "rank": 25,
+      "previousRank": 26,
+      "delta": 1,
+      "name": "Juba",
+      "points": 204,
+      "exact": 6,
+      "partial": 34,
+      "partialWinnerGoal": 7,
+      "partialLoserGoal": 14,
+      "resultOnly": 13,
+      "played": 72
+    },
+    {
+      "rank": 26,
+      "previousRank": 25,
+      "delta": -1,
+      "name": "Taty ET",
+      "points": 204,
+      "exact": 5,
+      "partial": 40,
+      "partialWinnerGoal": 5,
+      "partialLoserGoal": 12,
+      "resultOnly": 23,
+      "played": 72
+    },
+    {
+      "rank": 27,
+      "previousRank": 24,
+      "delta": -3,
+      "name": "Hugo Garcia",
+      "points": 202,
+      "exact": 6,
+      "partial": 36,
+      "partialWinnerGoal": 2,
+      "partialLoserGoal": 15,
+      "resultOnly": 19,
+      "played": 72
+    },
+    {
+      "rank": 28,
+      "previousRank": 29,
+      "delta": 1,
+      "name": "Rodney",
+      "points": 201,
+      "exact": 5,
+      "partial": 37,
+      "partialWinnerGoal": 5,
+      "partialLoserGoal": 15,
+      "resultOnly": 17,
+      "played": 72
+    },
+    {
+      "rank": 29,
+      "previousRank": 30,
+      "delta": 1,
+      "name": "Ypiranga",
+      "points": 200,
+      "exact": 7,
+      "partial": 36,
+      "partialWinnerGoal": 3,
+      "partialLoserGoal": 8,
+      "resultOnly": 25,
+      "played": 72
+    },
+    {
+      "rank": 30,
+      "previousRank": 27,
+      "delta": -3,
+      "name": "Ana Beatriz",
+      "points": 199,
+      "exact": 4,
+      "partial": 37,
+      "partialWinnerGoal": 8,
+      "partialLoserGoal": 16,
+      "resultOnly": 13,
+      "played": 72
+    },
+    {
+      "rank": 31,
+      "previousRank": 34,
+      "delta": 3,
+      "name": "Léo Genaro",
+      "points": 196,
+      "exact": 7,
+      "partial": 32,
+      "partialWinnerGoal": 5,
+      "partialLoserGoal": 10,
+      "resultOnly": 17,
+      "played": 72
+    },
+    {
+      "rank": 32,
+      "previousRank": 31,
+      "delta": -1,
+      "name": "Sassá",
+      "points": 196,
+      "exact": 5,
+      "partial": 36,
+      "partialWinnerGoal": 6,
+      "partialLoserGoal": 13,
+      "resultOnly": 17,
+      "played": 72
+    },
+    {
+      "rank": 33,
+      "previousRank": 32,
+      "delta": -1,
+      "name": "Luiz Otávio",
+      "points": 195,
+      "exact": 7,
+      "partial": 31,
+      "partialWinnerGoal": 3,
+      "partialLoserGoal": 13,
+      "resultOnly": 15,
+      "played": 72
+    },
+    {
+      "rank": 34,
+      "previousRank": 33,
+      "delta": -1,
+      "name": "Heidmilene",
+      "points": 194,
+      "exact": 6,
+      "partial": 34,
+      "partialWinnerGoal": 3,
+      "partialLoserGoal": 13,
+      "resultOnly": 18,
+      "played": 72
+    },
+    {
+      "rank": 35,
+      "previousRank": 35,
+      "delta": 0,
+      "name": "Antonio Dimitrov",
+      "points": 180,
+      "exact": 5,
+      "partial": 32,
+      "partialWinnerGoal": 3,
+      "partialLoserGoal": 14,
+      "resultOnly": 15,
+      "played": 72
+    },
+    {
+      "rank": 36,
+      "previousRank": 36,
+      "delta": 0,
+      "name": "Élcio",
+      "points": 174,
+      "exact": 4,
+      "partial": 34,
+      "partialWinnerGoal": 4,
+      "partialLoserGoal": 12,
+      "resultOnly": 18,
+      "played": 72
+    },
+    {
+      "rank": 37,
+      "previousRank": 37,
+      "delta": 0,
+      "name": "Luizão",
+      "points": 174,
+      "exact": 6,
+      "partial": 32,
+      "partialWinnerGoal": 5,
+      "partialLoserGoal": 4,
+      "resultOnly": 23,
+      "played": 72
+    },
+    {
+      "rank": 38,
+      "previousRank": 38,
+      "delta": 0,
+      "name": "Lyon",
+      "points": 173,
+      "exact": 6,
+      "partial": 29,
+      "partialWinnerGoal": 4,
+      "partialLoserGoal": 9,
+      "resultOnly": 16,
+      "played": 72
+    }
+  ],
+  "recentResults": [
+    {
+      "id": 72,
+      "date": "2026-06-27",
+      "group": "J",
+      "home": "Jordânia",
+      "away": "Argentina",
+      "homeGoals": 1,
+      "awayGoals": 3
+    },
+    {
+      "id": 71,
+      "date": "2026-06-27",
+      "group": "J",
+      "home": "Argélia",
+      "away": "Áustria",
+      "homeGoals": 3,
+      "awayGoals": 3
+    },
+    {
+      "id": 70,
+      "date": "2026-06-27",
+      "group": "K",
+      "home": "Repub. Congo",
+      "away": "Uzbequistão",
+      "homeGoals": 3,
+      "awayGoals": 1
+    },
+    {
+      "id": 69,
+      "date": "2026-06-27",
+      "group": "K",
+      "home": "Colômbia",
+      "away": "Portugal",
+      "homeGoals": 0,
+      "awayGoals": 0
+    },
+    {
+      "id": 68,
+      "date": "2026-06-27",
+      "group": "L",
+      "home": "Croácia",
+      "away": "Gana",
+      "homeGoals": 2,
+      "awayGoals": 1
+    },
+    {
+      "id": 67,
+      "date": "2026-06-27",
+      "group": "L",
+      "home": "Panamá",
+      "away": "Inglaterra",
+      "homeGoals": 0,
+      "awayGoals": 2
+    },
+    {
+      "id": 66,
+      "date": "2026-06-26",
+      "group": "H",
+      "home": "Uruguai",
+      "away": "Espanha",
+      "homeGoals": 0,
+      "awayGoals": 1
+    },
+    {
+      "id": 65,
+      "date": "2026-06-26",
+      "group": "H",
+      "home": "Cabo Verde",
+      "away": "Arábia Saudita",
+      "homeGoals": 0,
+      "awayGoals": 0
+    },
+    {
+      "id": 64,
+      "date": "2026-06-26",
+      "group": "I",
+      "home": "Noruega",
+      "away": "França",
+      "homeGoals": 1,
+      "awayGoals": 4
+    },
+    {
+      "id": 63,
+      "date": "2026-06-26",
+      "group": "I",
+      "home": "Senegal",
+      "away": "Iraque",
+      "homeGoals": 5,
+      "awayGoals": 0
+    },
+    {
+      "id": 62,
+      "date": "2026-06-26",
+      "group": "G",
+      "home": "Nova Zelândia",
+      "away": "Bélgica",
+      "homeGoals": 1,
+      "awayGoals": 5
+    },
+    {
+      "id": 61,
+      "date": "2026-06-26",
+      "group": "G",
+      "home": "Egito",
+      "away": "Irã",
+      "homeGoals": 1,
+      "awayGoals": 1
+    },
+    {
+      "id": 60,
+      "date": "2026-06-25",
+      "group": "D",
+      "home": "Paraguai",
+      "away": "Astrália",
+      "homeGoals": 0,
+      "awayGoals": 0
+    },
+    {
+      "id": 59,
+      "date": "2026-06-25",
+      "group": "D",
+      "home": "Turquia",
+      "away": "Estados Unidos",
+      "homeGoals": 3,
+      "awayGoals": 2
+    },
+    {
+      "id": 58,
+      "date": "2026-06-25",
+      "group": "F",
+      "home": "Japão",
+      "away": "Suécia",
+      "homeGoals": 1,
+      "awayGoals": 1
+    },
+    {
+      "id": 57,
+      "date": "2026-06-25",
+      "group": "F",
+      "home": "Tunísia",
+      "away": "Holanda",
+      "homeGoals": 1,
+      "awayGoals": 3
+    },
+    {
+      "id": 56,
+      "date": "2026-06-25",
+      "group": "E",
+      "home": "Curaçau",
+      "away": "Costa do Marfim",
+      "homeGoals": 0,
+      "awayGoals": 2
+    },
+    {
+      "id": 55,
+      "date": "2026-06-25",
+      "group": "E",
+      "home": "Equador",
+      "away": "Alemanha",
+      "homeGoals": 2,
+      "awayGoals": 1
+    },
+    {
+      "id": 54,
+      "date": "2026-06-24",
+      "group": "A",
+      "home": "África do Sul",
+      "away": "Coreia do Sul",
+      "homeGoals": 1,
+      "awayGoals": 0
+    },
+    {
+      "id": 53,
+      "date": "2026-06-24",
+      "group": "A",
+      "home": "República Tcheca",
+      "away": "México",
+      "homeGoals": 0,
+      "awayGoals": 3
+    },
+    {
+      "id": 52,
+      "date": "2026-06-24",
+      "group": "C",
+      "home": "Escócia",
+      "away": "Brasil",
+      "homeGoals": 0,
+      "awayGoals": 3
+    },
+    {
+      "id": 51,
+      "date": "2026-06-24",
+      "group": "C",
+      "home": "Marrocos",
+      "away": "Haíti",
+      "homeGoals": 4,
+      "awayGoals": 2
+    },
+    {
+      "id": 50,
+      "date": "2026-06-24",
+      "group": "B",
+      "home": "Suíça",
+      "away": "Canadá",
+      "homeGoals": 2,
+      "awayGoals": 1
+    },
+    {
+      "id": 49,
+      "date": "2026-06-24",
+      "group": "B",
+      "home": "Bósnia",
+      "away": "Catar",
+      "homeGoals": 3,
+      "awayGoals": 1
+    },
+    {
+      "id": 48,
+      "date": "2026-06-23",
+      "group": "K",
+      "home": "Colômbia",
+      "away": "Repub. do Congo",
+      "homeGoals": 1,
+      "awayGoals": 0
+    },
+    {
+      "id": 47,
+      "date": "2026-06-23",
+      "group": "L",
+      "home": "Panamá",
+      "away": "Croácia",
+      "homeGoals": 0,
+      "awayGoals": 1
+    },
+    {
+      "id": 46,
+      "date": "2026-06-23",
+      "group": "L",
+      "home": "Inglaterra",
+      "away": "Gana",
+      "homeGoals": 0,
+      "awayGoals": 0
+    },
+    {
+      "id": 45,
+      "date": "2026-06-23",
+      "group": "K",
+      "home": "Portugal",
+      "away": "Uzbequistão",
+      "homeGoals": 5,
+      "awayGoals": 0
+    },
+    {
+      "id": 44,
+      "date": "2026-06-22",
+      "group": "I",
+      "home": "Noruega",
+      "away": "Senegal",
+      "homeGoals": 3,
+      "awayGoals": 2
+    },
+    {
+      "id": 43,
+      "date": "2026-06-22",
+      "group": "I",
+      "home": "França",
+      "away": "Iraque",
+      "homeGoals": 3,
+      "awayGoals": 0
+    },
+    {
+      "id": 42,
+      "date": "2026-06-22",
+      "group": "J",
+      "home": "Argentina",
+      "away": "Astrália",
+      "homeGoals": 2,
+      "awayGoals": 0
+    },
+    {
+      "id": 41,
+      "date": "2026-06-22",
+      "group": "J",
+      "home": "Jordânia",
+      "away": "Argérlia",
+      "homeGoals": 1,
+      "awayGoals": 2
+    },
+    {
+      "id": 40,
+      "date": "2026-06-21",
+      "group": "G",
+      "home": "Nova Zelândia",
+      "away": "Egito",
+      "homeGoals": 1,
+      "awayGoals": 3
+    },
+    {
+      "id": 39,
+      "date": "2026-06-21",
+      "group": "H",
+      "home": "Uruguai",
+      "away": "Cabo Verde",
+      "homeGoals": 2,
+      "awayGoals": 2
+    },
+    {
+      "id": 38,
+      "date": "2026-06-21",
+      "group": "G",
+      "home": "Bélgica",
+      "away": "Irã",
+      "homeGoals": 0,
+      "awayGoals": 0
+    },
+    {
+      "id": 37,
+      "date": "2026-06-21",
+      "group": "H",
+      "home": "Espanha",
+      "away": "Arábia Saudita",
+      "homeGoals": 4,
+      "awayGoals": 0
+    },
+    {
+      "id": 36,
+      "date": "2026-06-20",
+      "group": "F",
+      "home": "Tunísia",
+      "away": "Japão",
+      "homeGoals": 0,
+      "awayGoals": 4
+    },
+    {
+      "id": 35,
+      "date": "2026-06-20",
+      "group": "E",
+      "home": "Equador",
+      "away": "Curaçau",
+      "homeGoals": 0,
+      "awayGoals": 0
+    },
+    {
+      "id": 34,
+      "date": "2026-06-20",
+      "group": "E",
+      "home": "Alemanha",
+      "away": "Costa do Marfim",
+      "homeGoals": 2,
+      "awayGoals": 1
+    },
+    {
+      "id": 33,
+      "date": "2026-06-20",
+      "group": "F",
+      "home": "Holanda",
+      "away": "Suécia",
+      "homeGoals": 5,
+      "awayGoals": 1
+    },
+    {
+      "id": 32,
+      "date": "2026-06-19",
+      "group": "C",
+      "home": "Brasil",
+      "away": "Haiti",
+      "homeGoals": 3,
+      "awayGoals": 0
+    },
+    {
+      "id": 31,
+      "date": "2026-06-19",
+      "group": "C",
+      "home": "Escócia",
+      "away": "Marrocos",
+      "homeGoals": 0,
+      "awayGoals": 1
+    },
+    {
+      "id": 30,
+      "date": "2026-06-19",
+      "group": "D",
+      "home": "Estados Unidos",
+      "away": "Austrália",
+      "homeGoals": 2,
+      "awayGoals": 0
+    },
+    {
+      "id": 29,
+      "date": "2026-06-19",
+      "group": "D",
+      "home": "Turquia",
+      "away": "Paraguai",
+      "homeGoals": 0,
+      "awayGoals": 1
+    },
+    {
+      "id": 28,
+      "date": "2026-06-18",
+      "group": "A",
+      "home": "México",
+      "away": "Coreia do Sul",
+      "homeGoals": 1,
+      "awayGoals": 0
+    },
+    {
+      "id": 27,
+      "date": "2026-06-18",
+      "group": "B",
+      "home": "Canadá",
+      "away": "Catar",
+      "homeGoals": 6,
+      "awayGoals": 0
+    },
+    {
+      "id": 26,
+      "date": "2026-06-18",
+      "group": "B",
+      "home": "Suíça",
+      "away": "Bósnia",
+      "homeGoals": 4,
+      "awayGoals": 1
+    },
+    {
+      "id": 25,
+      "date": "2026-06-18",
+      "group": "A",
+      "home": "República Tcheca",
+      "away": "Africa do Sul",
+      "homeGoals": 1,
+      "awayGoals": 1
+    },
+    {
+      "id": 24,
+      "date": "2026-06-17",
+      "group": "K",
+      "home": "Uzbequistão",
+      "away": "Colômbia",
+      "homeGoals": 1,
+      "awayGoals": 3
+    },
+    {
+      "id": 23,
+      "date": "2026-06-17",
+      "group": "L",
+      "home": "Gana",
+      "away": "Panamá",
+      "homeGoals": 1,
+      "awayGoals": 0
+    },
+    {
+      "id": 22,
+      "date": "2026-06-17",
+      "group": "L",
+      "home": "Inglaterra",
+      "away": "Croácia",
+      "homeGoals": 4,
+      "awayGoals": 2
+    },
+    {
+      "id": 21,
+      "date": "2026-06-17",
+      "group": "K",
+      "home": "Portugal",
+      "away": "Repúb. do Congo",
+      "homeGoals": 1,
+      "awayGoals": 1
+    },
+    {
+      "id": 20,
+      "date": "2026-06-16",
+      "group": "J",
+      "home": "Argentina",
+      "away": "Argélia",
+      "homeGoals": 3,
+      "awayGoals": 0
+    },
+    {
+      "id": 19,
+      "date": "2026-06-16",
+      "group": "I",
+      "home": "Iraque",
+      "away": "Noruega",
+      "homeGoals": 1,
+      "awayGoals": 4
+    },
+    {
+      "id": 18,
+      "date": "2026-06-16",
+      "group": "I",
+      "home": "França",
+      "away": "Senegal",
+      "homeGoals": 3,
+      "awayGoals": 1
+    },
+    {
+      "id": 17,
+      "date": "2026-06-16",
+      "group": "J",
+      "home": "Áustria",
+      "away": "Jordânia",
+      "homeGoals": 3,
+      "awayGoals": 1
+    },
+    {
+      "id": 16,
+      "date": "2026-06-15",
+      "group": "G",
+      "home": "Irã",
+      "away": "Nova Zelândia",
+      "homeGoals": 2,
+      "awayGoals": 2
+    },
+    {
+      "id": 15,
+      "date": "2026-06-15",
+      "group": "H",
+      "home": "Arábia Saudita",
+      "away": "Uruguai",
+      "homeGoals": 1,
+      "awayGoals": 1
+    },
+    {
+      "id": 14,
+      "date": "2026-06-15",
+      "group": "G",
+      "home": "Bélgica",
+      "away": "Egito",
+      "homeGoals": 1,
+      "awayGoals": 1
+    },
+    {
+      "id": 13,
+      "date": "2026-06-15",
+      "group": "H",
+      "home": "Espanha",
+      "away": "Cabo Verde",
+      "homeGoals": 0,
+      "awayGoals": 0
+    },
+    {
+      "id": 12,
+      "date": "2026-06-14",
+      "group": "F",
+      "home": "Suécia",
+      "away": "Tunísia",
+      "homeGoals": 5,
+      "awayGoals": 1
+    },
+    {
+      "id": 11,
+      "date": "2026-06-14",
+      "group": "E",
+      "home": "Costa do Marfim",
+      "away": "Equador",
+      "homeGoals": 1,
+      "awayGoals": 0
+    },
+    {
+      "id": 10,
+      "date": "2026-06-14",
+      "group": "F",
+      "home": "Holanda",
+      "away": "Japão",
+      "homeGoals": 2,
+      "awayGoals": 2
+    },
+    {
+      "id": 9,
+      "date": "2026-06-14",
+      "group": "E",
+      "home": "Alemanha",
+      "away": "Curaçau",
+      "homeGoals": 7,
+      "awayGoals": 1
+    },
+    {
+      "id": 8,
+      "date": "2026-06-13",
+      "group": "C",
+      "home": "Haiti",
+      "away": "Escócia",
+      "homeGoals": 0,
+      "awayGoals": 1
+    },
+    {
+      "id": 7,
+      "date": "2026-06-13",
+      "group": "C",
+      "home": "Brasil",
+      "away": "Marrocos",
+      "homeGoals": 1,
+      "awayGoals": 1
+    },
+    {
+      "id": 6,
+      "date": "2026-06-13",
+      "group": "B",
+      "home": "Catar",
+      "away": "Suíça",
+      "homeGoals": 1,
+      "awayGoals": 1
+    },
+    {
+      "id": 5,
+      "date": "2026-06-13",
+      "group": "D",
+      "home": "Austrália",
+      "away": "Turquia",
+      "homeGoals": 2,
+      "awayGoals": 0
+    },
+    {
+      "id": 4,
+      "date": "2026-06-12",
+      "group": "D",
+      "home": "Estados Unidos",
+      "away": "Paraguai",
+      "homeGoals": 4,
+      "awayGoals": 1
+    },
+    {
+      "id": 3,
+      "date": "2026-06-12",
+      "group": "B",
+      "home": "Canadá",
+      "away": "Bósnia",
+      "homeGoals": 1,
+      "awayGoals": 1
+    },
+    {
+      "id": 2,
+      "date": "2026-06-11",
+      "group": "A",
+      "home": "Coreia do Sul",
+      "away": "República Tcheca",
+      "homeGoals": 2,
+      "awayGoals": 1
+    },
+    {
+      "id": 1,
+      "date": "2026-06-11",
+      "group": "A",
+      "home": "México",
+      "away": "África do Sul",
+      "homeGoals": 2,
+      "awayGoals": 0
+    }
+  ],
+  "nextMatch": null,
+  "upcomingMatches": [],
+  "metrics": {
+    "totalMatches": 72,
+    "finishedMatches": 72,
+    "remainingMatches": 0,
+    "totalValidPicks": 2736,
+    "averageUpcomingGoals": 0,
+    "completionRate": 100,
+    "leaderGap": 10,
+    "leaderEfficiency": 36.9,
+    "averagePoints": 209.4,
+    "completeCards": 38,
+    "missingPickCards": 0,
+    "topExact": {
+      "label": "Rei dos exatos",
+      "value": "14",
+      "detail": "Bianka e Rafael"
+    },
+    "topPartial": {
+      "label": "Mais parciais",
+      "value": "41",
+      "detail": "GuiGui ET"
+    },
+    "topUpcomingScore": null,
+    "highestConsensus": null,
+    "mostDivisive": null,
+    "highestExpectedGoals": null,
+    "highestDrawShare": null,
+    "storyMetrics": [
+      {
+        "label": "Briga pela liderança",
+        "value": "10 pts",
+        "detail": "Bianka e Rafael abre 10 pontos sobre Breno."
+      },
+      {
+        "label": "Aproveitamento do líder",
+        "value": "36.9%",
+        "detail": "266 pontos em 72 jogos apurados."
+      },
+      {
+        "label": "Média do pelotão",
+        "value": "209.4 pts",
+        "detail": "Média atual entre 38 apostadores."
+      },
+      {
+        "label": "Rei dos exatos",
+        "value": "14",
+        "detail": "Bianka e Rafael lidera em placares cravados."
+      },
+      {
+        "label": "Mais parciais",
+        "value": "41",
+        "detail": "GuiGui ET lidera em acertos de 5 ou 3 pontos."
+      },
+      {
+        "label": "Cartelas completas",
+        "value": "38/38",
+        "detail": "Todos têm 72 palpites válidos."
+      }
+    ]
+  }
+}

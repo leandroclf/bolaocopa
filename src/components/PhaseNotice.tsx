@@ -12,14 +12,15 @@ export default function PhaseNotice() {
               nova fase · 32 avos de final
             </p>
             <h2 className="mt-1 font-display text-2xl uppercase tracking-wide text-chalk sm:text-3xl">
-              Recebendo palpites da próxima fase
+              Recebendo palpites da fase mata-mata
             </h2>
             <p className="mt-2 text-sm leading-6 text-slatey">
               A planilha oficial já está disponível para download. Apenas os espaços de identificação e as colunas de
-              gols seguem editáveis; as demais colunas permanecem bloqueadas. Não existe taxa administrativa.
+              gols seguem editáveis; as demais colunas permanecem bloqueadas. A fase de grupos ficou preservada como
+              histórico e não existe taxa administrativa.
             </p>
             <p className="mt-2 font-mono text-[10px] uppercase tracking-[0.2em] text-slatey">
-              Proteção por senha interna ativa.
+              Taxa de inscrição de R$ 50 e proteção por senha interna ativa.
             </p>
           </div>
 

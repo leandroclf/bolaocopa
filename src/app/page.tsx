@@ -17,6 +17,7 @@ export default function Page() {
         lastUpdated={s.lastUpdated}
         totalParticipants={s.totalParticipants}
         countedMatches={s.countedMatches}
+        totalMatches={s.metrics.totalMatches}
         leader={leader}
       />
       <PhaseNotice />

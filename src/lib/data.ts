@@ -8,6 +8,7 @@ const read = <T>(file: string): T => JSON.parse(readFileSync(join(dataDir, file)
 
 export const getStandings = () => read<StandingsFile>("standings.json");
 export const getFixtures = () => read<FixturesFile>("fixtures.json");
+export const getHistoricalStandings = () => read<StandingsFile>("history/group-standings.json");
 export const getLiveStandings = () => read<LiveStandingsFile>("live-standings.json");
 export const getBracket = (): Bracket | null =>
   existsSync(join(dataDir, "bracket.json")) ? read<Bracket>("bracket.json") : null;

@@ -1,19 +1,19 @@
-# Bolão Copa 2026 — Classificação
+# Bolão Copa 2026 — 32 avos
 
-Site público com a classificação ao vivo do **Bolão da Copa do Mundo 2026**
-(fase de grupos, 72 jogos, 38 apostadores). A classificação, os próximos jogos,
-os palpites públicos e as métricas do bolão são recomputados a cada apuração de
-resultado e republicados automaticamente.
+Site público com a fase atual de **32 avos de final** do Bolão da Copa do Mundo
+2026. A fase de grupos foi congelada como histórico. A classificação atual,
+os próximos jogos, os palpites públicos e as métricas do bolão são recomputados
+a cada apuração de resultado e republicados automaticamente.
 
 - **Stack:** Next.js 14 (App Router) · TypeScript · Tailwind CSS · Vitest
-- **Dados:** JSON estático em `data/` (sem planilha, sem banco, sem PII)
+- **Dados:** JSON estático em `data/` + histórico congelado em `data/history/`
 - **Automação:** GitHub Actions (cron) → commit → build estático → GitHub Pages
 
 ## Como funciona
 
 ```
-Excel (uma vez)  ──import:excel──►  predictions.json + fixtures.json + team-map.json
-openfootball ────fetch:results──►  results.json  (indexado por jogo 1..72)
+Excel da fase atual ──import:excel──► predictions.json + fixtures.json
+openfootball ────────fetch:results──► results.json (jogos da fase atual)
                   calc:standings─►  standings.json  ◄── classificação + análises
 ```
 
@@ -52,7 +52,7 @@ O `.xlsx` oficial **não** fica no repositório (contém telefone e Pix). Para r
 npm run import:excel -- /caminho/para/Bolao_Copa_2026_preenchida.xlsx
 ```
 
-Regenera `predictions.json`, `fixtures.json` e `team-map.json`. Telefone/Pix são
+Regenera `predictions.json` e `fixtures.json` da fase atual. Telefone/Pix são
 ignorados de propósito. Em seguida rode `npm run update` para manter resultados,
 classificação e análises sincronizados.
 

@@ -8,9 +8,13 @@ const normalize = (s: string) =>
 export default function StandingsTable({
   standings,
   metrics,
+  emptyTitle = "CAPTURA DE PALPITES ABERTA",
+  emptyBody = "A fase de 32 avos de final está em coleta. Quando os novos apostadores enviarem a planilha, a classificação aparecerá aqui.",
 }: {
   standings: StandingEntry[];
   metrics: StandingsMetrics;
+  emptyTitle?: string;
+  emptyBody?: string;
 }) {
   const [query, setQuery] = useState("");
 
@@ -18,6 +22,17 @@ export default function StandingsTable({
     const q = normalize(query.trim());
     return q ? standings.filter((e) => normalize(e.name).includes(q)) : standings;
   }, [standings, query]);
+
+  if (standings.length === 0) {
+    return (
+      <section className="mx-auto max-w-5xl px-5 py-4">
+        <div className="rounded-xl border border-dashed border-pitch-line bg-pitch-2 px-5 py-8 text-center">
+          <p className="font-display text-2xl uppercase tracking-wide text-gold">{emptyTitle}</p>
+          <p className="mx-auto mt-2 max-w-2xl text-sm leading-6 text-slatey">{emptyBody}</p>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section className="mx-auto max-w-5xl px-5 py-4">

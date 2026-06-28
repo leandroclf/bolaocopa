@@ -1,4 +1,5 @@
 import type { UpcomingMatchInsight } from "@/lib/types";
+import { formatMatchLabel } from "@/lib/match-label";
 
 const fmtDay = (d: string) =>
   new Intl.DateTimeFormat("pt-BR", { weekday: "short", day: "2-digit", month: "2-digit" })
@@ -53,7 +54,8 @@ function DayMatchCard({ match, defaultOpen }: { match: UpcomingMatchInsight; def
         <div className="flex flex-wrap items-start justify-between gap-3">
           <div>
             <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-slatey">
-              G{match.group} · {match.time}
+              {formatMatchLabel(match.group, match.phaseLabel)}
+              {match.time ? ` · ${match.time}` : ""}
             </p>
             <h3 className="mt-1 font-display text-xl uppercase tracking-wide text-chalk">
               {match.home} x {match.away}
@@ -87,7 +89,7 @@ export default function NextMatchPanel({
   return (
     <section className="mx-auto max-w-5xl px-5 py-5">
       <div className="mb-4 flex items-end justify-between gap-4">
-        <h2 className="font-display text-xl uppercase tracking-widest text-chalk">Jogos do dia</h2>
+        <h2 className="font-display text-xl uppercase tracking-widest text-chalk">Próximos jogos da fase de 32 avos</h2>
         <p className="font-mono text-xs text-slatey">{fmtDay(match.date)} · {matchesOfDay.length} jogos</p>
       </div>
       <div className="grid gap-2">

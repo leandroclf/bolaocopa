@@ -5,6 +5,7 @@ export type Match = {
   date: string; // YYYY-MM-DD
   time: string; // raw label from the pool sheet, e.g. "16h"
   group: string; // "A".."L"
+  phaseLabel?: string; // e.g. "32 avos de final" for knockout fixtures
   home: string;
   away: string;
 };
@@ -62,6 +63,7 @@ export type RecentResult = {
   id: number;
   date: string;
   group: string;
+  phaseLabel?: string;
   home: string;
   away: string;
   homeGoals: number;
@@ -116,6 +118,7 @@ export type MatchMetric = {
   date: string;
   time: string;
   group: string;
+  phaseLabel?: string;
   home: string;
   away: string;
   label: string;

@@ -17,7 +17,7 @@ const tabs: Array<{ key: TabKey; label: string; short: string }> = [
   { key: "classification", label: "Classificação", short: "Tabela" },
   { key: "next", label: "Próximos jogos", short: "Próximos" },
   { key: "bracket", label: "Chaveamento", short: "Chave" },
-  { key: "map", label: "Mapa de palpites", short: "Palpites" },
+  { key: "map", label: "Palpites 32 avos", short: "32avos" },
   { key: "recent", label: "Resultados", short: "Resultados" },
 ];
 
@@ -66,7 +66,11 @@ export default function DashboardTabs({
       <div role="region" aria-label={activeLabel}>
         {active === "classification" && (
           <>
-            <StandingsTable standings={standings.standings} metrics={standings.metrics} />
+            <StandingsTable
+              standings={standings.standings}
+              metrics={standings.metrics}
+              emptyBody="A fase de 32 avos de final está aberta. A classificação desta etapa aparece assim que os novos apostadores enviarem os palpites."
+            />
             <RulesCard />
           </>
         )}

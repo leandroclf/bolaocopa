@@ -8,9 +8,9 @@ function formatStamp(iso: string) {
 }
 
 export default function Scoreboard({
-  lastUpdated, totalParticipants, countedMatches, leader,
+  lastUpdated, totalParticipants, countedMatches, totalMatches, leader,
 }: {
-  lastUpdated: string; totalParticipants: number; countedMatches: number; leader: StandingEntry | null;
+  lastUpdated: string; totalParticipants: number; countedMatches: number; totalMatches: number; leader: StandingEntry | null;
 }) {
   return (
     <header className="border-b border-pitch-line">
@@ -18,7 +18,7 @@ export default function Scoreboard({
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div>
             <p className="font-mono text-[10px] uppercase tracking-[0.24em] text-lime sm:text-xs">
-              6ª edição · nova fase aberta
+              6ª edição · 32 avos de final
             </p>
             <h1 className="mt-1 font-display text-4xl leading-[0.9] tracking-wide text-chalk sm:text-6xl">
               BOLÃO<br />COPA 2026
@@ -27,14 +27,14 @@ export default function Scoreboard({
               href="/classificacao/"
               className="mt-3 inline-flex h-9 items-center rounded-md border border-lime/40 bg-lime/10 px-3 font-mono text-[10px] font-bold uppercase tracking-wider text-lime"
             >
-              Ver classificação simples
+              Ver histórico
             </Link>
           </div>
 
           <div className="grid grid-cols-3 gap-1.5 font-mono text-[10px] text-slatey sm:min-w-[24rem] sm:text-xs">
             <div className="rounded-lg border border-pitch-line bg-pitch-2 px-2.5 py-2">
-              <span className="block text-chalk">{countedMatches}/72</span>
-              <span>jogos apurados</span>
+              <span className="block text-chalk">{countedMatches}/{totalMatches}</span>
+              <span>jogos da fase</span>
             </div>
             <div className="rounded-lg border border-pitch-line bg-pitch-2 px-2.5 py-2">
               <span className="block text-chalk">{totalParticipants}</span>
@@ -49,9 +49,9 @@ export default function Scoreboard({
 
         {countedMatches === 0 || !leader ? (
           <div className="mt-4 rounded-lg border border-dashed border-pitch-line bg-pitch-2 px-4 py-4">
-            <p className="font-display text-xl tracking-wide text-gold">APURAÇÃO EM ANDAMENTO</p>
+            <p className="font-display text-xl tracking-wide text-gold">CAPTURA DE PALPITES ABERTA</p>
             <p className="mt-1 text-sm text-slatey">
-              Os palpites estão registrados. A classificação aparece assim que o primeiro jogo for apurado.
+              A fase de 32 avos está aberta. A classificação aparece aqui quando os novos palpites forem enviados.
             </p>
           </div>
         ) : (

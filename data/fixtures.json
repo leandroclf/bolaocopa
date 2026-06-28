@@ -1,586 +1,154 @@
 {
-  "tournament": "Bolão Copa do Mundo 2026 — Fase de Grupos",
-  "stage": "group",
+  "tournament": "Bolão Copa do Mundo 2026 — Fase Mata-Mata",
+  "stage": "knockout",
   "window": {
-    "start": "2026-06-11",
-    "end": "2026-06-27"
+    "start": "2026-06-28",
+    "end": "2026-07-03"
   },
   "matches": [
     {
-      "id": 1,
-      "date": "2026-06-11",
-      "time": "16h",
-      "group": "A",
-      "home": "México",
-      "away": "África do Sul"
-    },
-    {
-      "id": 2,
-      "date": "2026-06-11",
-      "time": "23h",
-      "group": "A",
-      "home": "Coreia do Sul",
-      "away": "República Tcheca"
-    },
-    {
-      "id": 3,
-      "date": "2026-06-12",
-      "time": "16h",
-      "group": "B",
-      "home": "Canadá",
-      "away": "Bósnia"
-    },
-    {
-      "id": 4,
-      "date": "2026-06-12",
-      "time": "22h",
-      "group": "D",
-      "home": "Estados Unidos",
-      "away": "Paraguai"
-    },
-    {
-      "id": 5,
-      "date": "2026-06-13",
-      "time": "01h",
-      "group": "D",
-      "home": "Austrália",
-      "away": "Turquia"
-    },
-    {
-      "id": 6,
-      "date": "2026-06-13",
-      "time": "16h",
-      "group": "B",
-      "home": "Catar",
-      "away": "Suíça"
-    },
-    {
-      "id": 7,
-      "date": "2026-06-13",
-      "time": "19h",
-      "group": "C",
-      "home": "Brasil",
-      "away": "Marrocos"
-    },
-    {
-      "id": 8,
-      "date": "2026-06-13",
-      "time": "22h",
-      "group": "C",
-      "home": "Haiti",
-      "away": "Escócia"
-    },
-    {
-      "id": 9,
-      "date": "2026-06-14",
-      "time": "14h",
-      "group": "E",
-      "home": "Alemanha",
-      "away": "Curaçau"
-    },
-    {
-      "id": 10,
-      "date": "2026-06-14",
-      "time": "17h",
-      "group": "F",
-      "home": "Holanda",
-      "away": "Japão"
-    },
-    {
-      "id": 11,
-      "date": "2026-06-14",
-      "time": "20h",
-      "group": "E",
-      "home": "Costa do Marfim",
-      "away": "Equador"
-    },
-    {
-      "id": 12,
-      "date": "2026-06-14",
-      "time": "23h",
-      "group": "F",
-      "home": "Suécia",
-      "away": "Tunísia"
-    },
-    {
-      "id": 13,
-      "date": "2026-06-15",
-      "time": "13h",
-      "group": "H",
-      "home": "Espanha",
-      "away": "Cabo Verde"
-    },
-    {
-      "id": 14,
-      "date": "2026-06-15",
-      "time": "16h",
-      "group": "G",
-      "home": "Bélgica",
-      "away": "Egito"
-    },
-    {
-      "id": 15,
-      "date": "2026-06-15",
-      "time": "19h",
-      "group": "H",
-      "home": "Arábia Saudita",
-      "away": "Uruguai"
-    },
-    {
-      "id": 16,
-      "date": "2026-06-15",
-      "time": "22h",
-      "group": "G",
-      "home": "Irã",
-      "away": "Nova Zelândia"
-    },
-    {
-      "id": 17,
-      "date": "2026-06-16",
-      "time": "01h",
-      "group": "J",
-      "home": "Áustria",
-      "away": "Jordânia"
-    },
-    {
-      "id": 18,
-      "date": "2026-06-16",
-      "time": "16h",
-      "group": "I",
-      "home": "França",
-      "away": "Senegal"
-    },
-    {
-      "id": 19,
-      "date": "2026-06-16",
-      "time": "19h",
-      "group": "I",
-      "home": "Iraque",
-      "away": "Noruega"
-    },
-    {
-      "id": 20,
-      "date": "2026-06-16",
-      "time": "22h",
-      "group": "J",
-      "home": "Argentina",
-      "away": "Argélia"
-    },
-    {
-      "id": 21,
-      "date": "2026-06-17",
-      "time": "14h",
-      "group": "K",
-      "home": "Portugal",
-      "away": "Repúb. do Congo"
-    },
-    {
-      "id": 22,
-      "date": "2026-06-17",
-      "time": "17h",
-      "group": "L",
-      "home": "Inglaterra",
-      "away": "Croácia"
-    },
-    {
-      "id": 23,
-      "date": "2026-06-17",
-      "time": "20h",
-      "group": "L",
-      "home": "Gana",
-      "away": "Panamá"
-    },
-    {
-      "id": 24,
-      "date": "2026-06-17",
-      "time": "21h",
-      "group": "K",
-      "home": "Uzbequistão",
-      "away": "Colômbia"
-    },
-    {
-      "id": 25,
-      "date": "2026-06-18",
-      "time": "13h",
-      "group": "A",
-      "home": "República Tcheca",
-      "away": "Africa do Sul"
-    },
-    {
-      "id": 26,
-      "date": "2026-06-18",
-      "time": "16h",
-      "group": "B",
-      "home": "Suíça",
-      "away": "Bósnia"
-    },
-    {
-      "id": 27,
-      "date": "2026-06-18",
-      "time": "19h",
-      "group": "B",
-      "home": "Canadá",
-      "away": "Catar"
-    },
-    {
-      "id": 28,
-      "date": "2026-06-18",
-      "time": "22h",
-      "group": "A",
-      "home": "México",
-      "away": "Coreia do Sul"
-    },
-    {
-      "id": 29,
-      "date": "2026-06-19",
-      "time": "00h",
-      "group": "D",
-      "home": "Turquia",
-      "away": "Paraguai"
-    },
-    {
-      "id": 30,
-      "date": "2026-06-19",
-      "time": "16h",
-      "group": "D",
-      "home": "Estados Unidos",
-      "away": "Austrália"
-    },
-    {
-      "id": 31,
-      "date": "2026-06-19",
-      "time": "19h",
-      "group": "C",
-      "home": "Escócia",
-      "away": "Marrocos"
-    },
-    {
-      "id": 32,
-      "date": "2026-06-19",
-      "time": "21h30",
-      "group": "C",
-      "home": "Brasil",
-      "away": "Haiti"
-    },
-    {
-      "id": 33,
-      "date": "2026-06-20",
-      "time": "14h",
-      "group": "F",
-      "home": "Holanda",
-      "away": "Suécia"
-    },
-    {
-      "id": 34,
-      "date": "2026-06-20",
-      "time": "17h",
-      "group": "E",
-      "home": "Alemanha",
-      "away": "Costa do Marfim"
-    },
-    {
-      "id": 35,
-      "date": "2026-06-20",
-      "time": "21h",
-      "group": "E",
-      "home": "Equador",
-      "away": "Curaçau"
-    },
-    {
-      "id": 36,
-      "date": "2026-06-20",
-      "time": "23h",
-      "group": "F",
-      "home": "Tunísia",
-      "away": "Japão"
-    },
-    {
-      "id": 37,
-      "date": "2026-06-21",
-      "time": "13h",
-      "group": "H",
-      "home": "Espanha",
-      "away": "Arábia Saudita"
-    },
-    {
-      "id": 38,
-      "date": "2026-06-21",
-      "time": "16h",
-      "group": "G",
-      "home": "Bélgica",
-      "away": "Irã"
-    },
-    {
-      "id": 39,
-      "date": "2026-06-21",
-      "time": "19h",
-      "group": "H",
-      "home": "Uruguai",
-      "away": "Cabo Verde"
-    },
-    {
-      "id": 40,
-      "date": "2026-06-21",
-      "time": "22h",
-      "group": "G",
-      "home": "Nova Zelândia",
-      "away": "Egito"
-    },
-    {
-      "id": 41,
-      "date": "2026-06-22",
-      "time": "00h",
-      "group": "J",
-      "home": "Jordânia",
-      "away": "Argérlia"
-    },
-    {
-      "id": 42,
-      "date": "2026-06-22",
-      "time": "14h",
-      "group": "J",
-      "home": "Argentina",
-      "away": "Astrália"
-    },
-    {
-      "id": 43,
-      "date": "2026-06-22",
-      "time": "18h",
-      "group": "I",
-      "home": "França",
-      "away": "Iraque"
-    },
-    {
-      "id": 44,
-      "date": "2026-06-22",
-      "time": "21h",
-      "group": "I",
-      "home": "Noruega",
-      "away": "Senegal"
-    },
-    {
-      "id": 45,
-      "date": "2026-06-23",
-      "time": "14h",
-      "group": "K",
-      "home": "Portugal",
-      "away": "Uzbequistão"
-    },
-    {
-      "id": 46,
-      "date": "2026-06-23",
-      "time": "17h",
-      "group": "L",
-      "home": "Inglaterra",
-      "away": "Gana"
-    },
-    {
-      "id": 47,
-      "date": "2026-06-23",
-      "time": "20h",
-      "group": "L",
-      "home": "Panamá",
-      "away": "Croácia"
-    },
-    {
-      "id": 48,
-      "date": "2026-06-23",
-      "time": "23h",
-      "group": "K",
-      "home": "Colômbia",
-      "away": "Repub. do Congo"
-    },
-    {
-      "id": 49,
-      "date": "2026-06-24",
-      "time": "16h",
-      "group": "B",
-      "home": "Bósnia",
-      "away": "Catar"
-    },
-    {
-      "id": 50,
-      "date": "2026-06-24",
-      "time": "16h",
-      "group": "B",
-      "home": "Suíça",
+      "id": 73,
+      "date": "2026-06-28",
+      "time": "",
+      "group": "R32",
+      "phaseLabel": "32 avos de final",
+      "home": "África do Sul",
       "away": "Canadá"
     },
     {
-      "id": 51,
-      "date": "2026-06-24",
-      "time": "19h",
-      "group": "C",
-      "home": "Marrocos",
-      "away": "Haíti"
+      "id": 74,
+      "date": "2026-06-29",
+      "time": "",
+      "group": "R32",
+      "phaseLabel": "32 avos de final",
+      "home": "Alemanha",
+      "away": "Bósnia"
     },
     {
-      "id": 52,
-      "date": "2026-06-24",
-      "time": "19h",
-      "group": "C",
-      "home": "Escócia",
-      "away": "Brasil"
+      "id": 75,
+      "date": "2026-06-29",
+      "time": "",
+      "group": "R32",
+      "phaseLabel": "32 avos de final",
+      "home": "Holanda",
+      "away": "Marrocos"
     },
     {
-      "id": 53,
-      "date": "2026-06-24",
-      "time": "22h",
-      "group": "A",
-      "home": "República Tcheca",
-      "away": "México"
+      "id": 76,
+      "date": "2026-06-29",
+      "time": "",
+      "group": "R32",
+      "phaseLabel": "32 avos de final",
+      "home": "Brasil",
+      "away": "Japão"
     },
     {
-      "id": 54,
-      "date": "2026-06-24",
-      "time": "22h",
-      "group": "A",
-      "home": "África do Sul",
-      "away": "Coreia do Sul"
+      "id": 77,
+      "date": "2026-06-30",
+      "time": "",
+      "group": "R32",
+      "phaseLabel": "32 avos de final",
+      "home": "França",
+      "away": "Paraguai"
     },
     {
-      "id": 55,
-      "date": "2026-06-25",
-      "time": "17h",
-      "group": "E",
-      "home": "Equador",
-      "away": "Alemanha"
+      "id": 78,
+      "date": "2026-06-30",
+      "time": "",
+      "group": "R32",
+      "phaseLabel": "32 avos de final",
+      "home": "Costa do Marfim",
+      "away": "Noruega"
     },
     {
-      "id": 56,
-      "date": "2026-06-25",
-      "time": "17h",
-      "group": "E",
-      "home": "Curaçau",
-      "away": "Costa do Marfim"
+      "id": 79,
+      "date": "2026-06-30",
+      "time": "",
+      "group": "R32",
+      "phaseLabel": "32 avos de final",
+      "home": "México",
+      "away": "Equador"
     },
     {
-      "id": 57,
-      "date": "2026-06-25",
-      "time": "20h",
-      "group": "F",
-      "home": "Tunísia",
-      "away": "Holanda"
+      "id": 80,
+      "date": "2026-07-01",
+      "time": "",
+      "group": "R32",
+      "phaseLabel": "32 avos de final",
+      "home": "Inglaterra",
+      "away": "Rep. Dem. do Congo"
     },
     {
-      "id": 58,
-      "date": "2026-06-25",
-      "time": "20h",
-      "group": "F",
-      "home": "Japão",
+      "id": 81,
+      "date": "2026-07-01",
+      "time": "",
+      "group": "R32",
+      "phaseLabel": "32 avos de final",
+      "home": "Estados Unidos",
       "away": "Suécia"
     },
     {
-      "id": 59,
-      "date": "2026-06-25",
-      "time": "23h",
-      "group": "D",
-      "home": "Turquia",
-      "away": "Estados Unidos"
+      "id": 82,
+      "date": "2026-07-01",
+      "time": "",
+      "group": "R32",
+      "phaseLabel": "32 avos de final",
+      "home": "Bélgica",
+      "away": "Senegal"
     },
     {
-      "id": 60,
-      "date": "2026-06-25",
-      "time": "23h",
-      "group": "D",
-      "home": "Paraguai",
-      "away": "Astrália"
+      "id": 83,
+      "date": "2026-07-02",
+      "time": "",
+      "group": "R32",
+      "phaseLabel": "32 avos de final",
+      "home": "Portugal",
+      "away": "Croácia"
     },
     {
-      "id": 61,
-      "date": "2026-06-26",
-      "time": "00h",
-      "group": "G",
-      "home": "Egito",
-      "away": "Irã"
-    },
-    {
-      "id": 62,
-      "date": "2026-06-26",
-      "time": "00h",
-      "group": "G",
-      "home": "Nova Zelândia",
-      "away": "Bélgica"
-    },
-    {
-      "id": 63,
-      "date": "2026-06-26",
-      "time": "16h",
-      "group": "I",
-      "home": "Senegal",
-      "away": "Iraque"
-    },
-    {
-      "id": 64,
-      "date": "2026-06-26",
-      "time": "16h",
-      "group": "I",
-      "home": "Noruega",
-      "away": "França"
-    },
-    {
-      "id": 65,
-      "date": "2026-06-26",
-      "time": "21h",
-      "group": "H",
-      "home": "Cabo Verde",
-      "away": "Arábia Saudita"
-    },
-    {
-      "id": 66,
-      "date": "2026-06-26",
-      "time": "21h",
-      "group": "H",
-      "home": "Uruguai",
-      "away": "Espanha"
-    },
-    {
-      "id": 67,
-      "date": "2026-06-27",
-      "time": "18h",
-      "group": "L",
-      "home": "Panamá",
-      "away": "Inglaterra"
-    },
-    {
-      "id": 68,
-      "date": "2026-06-27",
-      "time": "18h",
-      "group": "L",
-      "home": "Croácia",
-      "away": "Gana"
-    },
-    {
-      "id": 69,
-      "date": "2026-06-27",
-      "time": "20h30",
-      "group": "K",
-      "home": "Colômbia",
-      "away": "Portugal"
-    },
-    {
-      "id": 70,
-      "date": "2026-06-27",
-      "time": "20h30",
-      "group": "K",
-      "home": "Repub. Congo",
-      "away": "Uzbequistão"
-    },
-    {
-      "id": 71,
-      "date": "2026-06-27",
-      "time": "23h",
-      "group": "J",
-      "home": "Argélia",
+      "id": 84,
+      "date": "2026-07-02",
+      "time": "",
+      "group": "R32",
+      "phaseLabel": "32 avos de final",
+      "home": "Espanha",
       "away": "Áustria"
     },
     {
-      "id": 72,
-      "date": "2026-06-27",
-      "time": "23h",
-      "group": "J",
-      "home": "Jordânia",
-      "away": "Argentina"
+      "id": 85,
+      "date": "2026-07-02",
+      "time": "",
+      "group": "R32",
+      "phaseLabel": "32 avos de final",
+      "home": "Suíça",
+      "away": "Argélia"
+    },
+    {
+      "id": 86,
+      "date": "2026-07-03",
+      "time": "",
+      "group": "R32",
+      "phaseLabel": "32 avos de final",
+      "home": "Argentina",
+      "away": "Cabo Verde"
+    },
+    {
+      "id": 87,
+      "date": "2026-07-03",
+      "time": "",
+      "group": "R32",
+      "phaseLabel": "32 avos de final",
+      "home": "Colômbia",
+      "away": "Gana"
+    },
+    {
+      "id": 88,
+      "date": "2026-07-03",
+      "time": "",
+      "group": "R32",
+      "phaseLabel": "32 avos de final",
+      "home": "Austrália",
+      "away": "Egito"
     }
   ]
 }

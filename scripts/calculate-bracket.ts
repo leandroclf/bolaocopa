@@ -1,4 +1,4 @@
-/** Regenerates data/bracket.json from fixtures + team-map + results. */
+/** Regenerates data/bracket.json from the archived group phase plus current knockout results. */
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import { join } from "node:path";
 import { generateBracket } from "../src/knockout";
@@ -16,23 +16,27 @@ interface TeamMapFile {
 const material = (b: Bracket) => JSON.stringify({ ...b, generatedAt: "" });
 
 export function calculateBracket(): void {
-  const fixtures = read<FixturesFile>("fixtures.json");
+  const fixtures = read<FixturesFile>("history/group-fixtures.json");
   const teamMap = read<TeamMapFile>("team-map.json");
-  const results = read<ResultsFile>("results.json");
+  const groupResults = read<ResultsFile>("history/group-results.json");
+  const currentResults = read<ResultsFile>("results.json");
 
-  const groupResults: EngineInput["groupResults"] = {};
   const knockoutResults: Record<string, KnockoutResult> = {};
-  for (const [key, value] of Object.entries(results.results)) {
-    if (Number(key) <= 72) groupResults[key] = value;
-    else knockoutResults[key] = value as KnockoutResult;
+  for (const [key, value] of Object.entries(currentResults.results)) {
+    knockoutResults[key] = value as KnockoutResult;
+  }
+
+  const normalizedGroupResults: EngineInput["groupResults"] = {};
+  for (const [key, value] of Object.entries(groupResults.results)) {
+    normalizedGroupResults[key] = value;
   }
 
   const bracket = generateBracket({
     fixtures: fixtures.matches.map((m) => ({ id: m.id, group: m.group })),
     fixtureCanon: teamMap.fixtureCanon,
-    groupResults,
+    groupResults: normalizedGroupResults,
     knockoutResults,
-    source: results.source,
+    source: currentResults.source || groupResults.source,
   });
 
   if (!bracket.valid) {

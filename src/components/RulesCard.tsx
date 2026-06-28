@@ -29,7 +29,7 @@ export default function RulesCard() {
           <p className="font-mono text-xs text-slatey">Bolada total</p>
           <p className="font-mono text-2xl font-bold text-lime">R$ 3.800</p>
           <p className="mt-3 rounded-md border border-lime/20 bg-lime/10 px-3 py-2 font-mono text-[10px] uppercase tracking-[0.22em] text-lime">
-            Sem taxa administrativa
+            Taxa de inscrição R$ 50 · sem taxa administrativa
           </p>
           <ul className="mt-3 space-y-1.5 font-mono text-sm text-chalk">
             <li className="flex justify-between"><span className="text-slatey">1º · 70%</span><span>R$ 2.660</span></li>

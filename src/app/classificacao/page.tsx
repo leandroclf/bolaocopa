@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getStandings } from "@/lib/data";
+import { getHistoricalStandings } from "@/lib/data";
 import { withBasePath } from "@/lib/site-path";
 
 function formatStamp(iso: string) {
@@ -13,7 +13,7 @@ function formatStamp(iso: string) {
 }
 
 export default function SimpleClassificationPage() {
-  const data = getStandings();
+  const data = getHistoricalStandings();
 
   return (
     <main className="min-h-screen bg-[#f4dd84] px-2 py-3 text-[#061049] sm:px-4">
@@ -22,10 +22,10 @@ export default function SimpleClassificationPage() {
           <div className="flex items-center justify-between gap-3">
             <div>
               <h1 className="font-mono text-sm font-bold uppercase tracking-wide text-[#061049]">
-                Classificação
+                Histórico da fase de grupos
               </h1>
               <p className="mt-0.5 font-mono text-[10px] text-[#26336b]">
-                {data.countedMatches}/72 jogos · nova fase aberta · atualizado {formatStamp(data.lastUpdated)}
+                Fase congelada · nova fase de 32 avos aberta · atualizado {formatStamp(data.lastUpdated)}
               </p>
             </div>
             <div className="flex shrink-0 flex-wrap justify-end gap-2">
@@ -40,10 +40,16 @@ export default function SimpleClassificationPage() {
                 href="/"
                 className="border border-[#001a78] bg-white px-2 py-1 font-mono text-[10px] font-bold uppercase text-[#001a78]"
               >
-                site completo
+                site principal
               </Link>
             </div>
           </div>
+        </div>
+
+        <div className="border-b border-[#001a78] bg-[#fff6a8] px-3 py-2">
+          <p className="font-mono text-[10px] uppercase tracking-wide text-[#061049]">
+            A classificação da fase nova fica no site principal e começa vazia enquanto os novos apostadores enviam os palpites.
+          </p>
         </div>
 
         <table className="w-full border-collapse font-mono text-[11px] sm:text-xs">

@@ -1,0 +1,366 @@
+{
+  "lastUpdated": "2026-06-28T06:01:34.216Z",
+  "source": "openfootball",
+  "results": {
+    "1": {
+      "home": 2,
+      "away": 0,
+      "status": "finished"
+    },
+    "2": {
+      "home": 2,
+      "away": 1,
+      "status": "finished"
+    },
+    "3": {
+      "home": 1,
+      "away": 1,
+      "status": "finished"
+    },
+    "4": {
+      "home": 4,
+      "away": 1,
+      "status": "finished"
+    },
+    "5": {
+      "home": 2,
+      "away": 0,
+      "status": "finished"
+    },
+    "6": {
+      "home": 1,
+      "away": 1,
+      "status": "finished"
+    },
+    "7": {
+      "home": 1,
+      "away": 1,
+      "status": "finished"
+    },
+    "8": {
+      "home": 0,
+      "away": 1,
+      "status": "finished"
+    },
+    "9": {
+      "home": 7,
+      "away": 1,
+      "status": "finished"
+    },
+    "10": {
+      "home": 2,
+      "away": 2,
+      "status": "finished"
+    },
+    "11": {
+      "home": 1,
+      "away": 0,
+      "status": "finished"
+    },
+    "12": {
+      "home": 5,
+      "away": 1,
+      "status": "finished"
+    },
+    "13": {
+      "home": 0,
+      "away": 0,
+      "status": "finished"
+    },
+    "14": {
+      "home": 1,
+      "away": 1,
+      "status": "finished"
+    },
+    "15": {
+      "home": 1,
+      "away": 1,
+      "status": "finished"
+    },
+    "16": {
+      "home": 2,
+      "away": 2,
+      "status": "finished"
+    },
+    "17": {
+      "home": 3,
+      "away": 1,
+      "status": "finished"
+    },
+    "18": {
+      "home": 3,
+      "away": 1,
+      "status": "finished"
+    },
+    "19": {
+      "home": 1,
+      "away": 4,
+      "status": "finished"
+    },
+    "20": {
+      "home": 3,
+      "away": 0,
+      "status": "finished"
+    },
+    "21": {
+      "home": 1,
+      "away": 1,
+      "status": "finished"
+    },
+    "22": {
+      "home": 4,
+      "away": 2,
+      "status": "finished"
+    },
+    "23": {
+      "home": 1,
+      "away": 0,
+      "status": "finished"
+    },
+    "24": {
+      "home": 1,
+      "away": 3,
+      "status": "finished"
+    },
+    "25": {
+      "home": 1,
+      "away": 1,
+      "status": "finished"
+    },
+    "26": {
+      "home": 4,
+      "away": 1,
+      "status": "finished"
+    },
+    "27": {
+      "home": 6,
+      "away": 0,
+      "status": "finished"
+    },
+    "28": {
+      "home": 1,
+      "away": 0,
+      "status": "finished"
+    },
+    "29": {
+      "home": 0,
+      "away": 1,
+      "status": "finished"
+    },
+    "30": {
+      "home": 2,
+      "away": 0,
+      "status": "finished"
+    },
+    "31": {
+      "home": 0,
+      "away": 1,
+      "status": "finished"
+    },
+    "32": {
+      "home": 3,
+      "away": 0,
+      "status": "finished"
+    },
+    "33": {
+      "home": 5,
+      "away": 1,
+      "status": "finished"
+    },
+    "34": {
+      "home": 2,
+      "away": 1,
+      "status": "finished"
+    },
+    "35": {
+      "home": 0,
+      "away": 0,
+      "status": "finished"
+    },
+    "36": {
+      "home": 0,
+      "away": 4,
+      "status": "finished"
+    },
+    "37": {
+      "home": 4,
+      "away": 0,
+      "status": "finished"
+    },
+    "38": {
+      "home": 0,
+      "away": 0,
+      "status": "finished"
+    },
+    "39": {
+      "home": 2,
+      "away": 2,
+      "status": "finished"
+    },
+    "40": {
+      "home": 1,
+      "away": 3,
+      "status": "finished"
+    },
+    "41": {
+      "home": 1,
+      "away": 2,
+      "status": "finished"
+    },
+    "42": {
+      "home": 2,
+      "away": 0,
+      "status": "finished"
+    },
+    "43": {
+      "home": 3,
+      "away": 0,
+      "status": "finished"
+    },
+    "44": {
+      "home": 3,
+      "away": 2,
+      "status": "finished"
+    },
+    "45": {
+      "home": 5,
+      "away": 0,
+      "status": "finished"
+    },
+    "46": {
+      "home": 0,
+      "away": 0,
+      "status": "finished"
+    },
+    "47": {
+      "home": 0,
+      "away": 1,
+      "status": "finished"
+    },
+    "48": {
+      "home": 1,
+      "away": 0,
+      "status": "finished"
+    },
+    "49": {
+      "home": 3,
+      "away": 1,
+      "status": "finished"
+    },
+    "50": {
+      "home": 2,
+      "away": 1,
+      "status": "finished"
+    },
+    "51": {
+      "home": 4,
+      "away": 2,
+      "status": "finished"
+    },
+    "52": {
+      "home": 0,
+      "away": 3,
+      "status": "finished"
+    },
+    "53": {
+      "home": 0,
+      "away": 3,
+      "status": "finished"
+    },
+    "54": {
+      "home": 1,
+      "away": 0,
+      "status": "finished"
+    },
+    "55": {
+      "home": 2,
+      "away": 1,
+      "status": "finished"
+    },
+    "56": {
+      "home": 0,
+      "away": 2,
+      "status": "finished"
+    },
+    "57": {
+      "home": 1,
+      "away": 3,
+      "status": "finished"
+    },
+    "58": {
+      "home": 1,
+      "away": 1,
+      "status": "finished"
+    },
+    "59": {
+      "home": 3,
+      "away": 2,
+      "status": "finished"
+    },
+    "60": {
+      "home": 0,
+      "away": 0,
+      "status": "finished"
+    },
+    "61": {
+      "home": 1,
+      "away": 1,
+      "status": "finished"
+    },
+    "62": {
+      "home": 1,
+      "away": 5,
+      "status": "finished"
+    },
+    "63": {
+      "home": 5,
+      "away": 0,
+      "status": "finished"
+    },
+    "64": {
+      "home": 1,
+      "away": 4,
+      "status": "finished"
+    },
+    "65": {
+      "home": 0,
+      "away": 0,
+      "status": "finished"
+    },
+    "66": {
+      "home": 0,
+      "away": 1,
+      "status": "finished"
+    },
+    "67": {
+      "home": 0,
+      "away": 2,
+      "status": "finished"
+    },
+    "68": {
+      "home": 2,
+      "away": 1,
+      "status": "finished"
+    },
+    "69": {
+      "home": 0,
+      "away": 0,
+      "status": "finished"
+    },
+    "70": {
+      "home": 3,
+      "away": 1,
+      "status": "finished"
+    },
+    "71": {
+      "home": 3,
+      "away": 3,
+      "status": "finished"
+    },
+    "72": {
+      "home": 1,
+      "away": 3,
+      "status": "finished"
+    }
+  }
+}
