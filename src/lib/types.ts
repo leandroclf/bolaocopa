@@ -29,6 +29,8 @@ export type ResultEntry = {
   home: number; // regular-time score
   away: number; // regular-time score
   status: "finished";
+  extraHome?: number; // optional extra-time score
+  extraAway?: number; // optional extra-time score
   winner?: "home" | "away"; // optional knockout winner for bracket progression
 };
 export type ResultsFile = {

@@ -20,6 +20,13 @@ const scoreKey = (home: number, away: number) => `${home}-${away}`;
 const bySchedule = <T extends { date: string; id: number }>(a: T, b: T) =>
   a.date.localeCompare(b.date) || a.id - b.id;
 
+function finalScore(result: { home: number; away: number; extraHome?: number; extraAway?: number }) {
+  return {
+    home: result.home + (result.extraHome ?? 0),
+    away: result.away + (result.extraAway ?? 0),
+  };
+}
+
 /**
  * Pure standings computation. No I/O — the scripts read/write JSON around it.
  * Tiebreak: alphabetical by display name (the organiser's stated "Desempate
@@ -46,7 +53,8 @@ export function computeStandings(
     for (const idStr of finishedIds) {
       const r = results.results[idStr];
       const pick = p.picks[idStr];
-      const pts = scoreMatch(pick ? { home: pick[0], away: pick[1] } : null, { home: r.home, away: r.away });
+      const actual = finalScore(r);
+      const pts = scoreMatch(pick ? { home: pick[0], away: pick[1] } : null, actual);
       if (pick) played += 1;
       points += pts;
       if (pts === 10) exact += 1;
@@ -54,11 +62,11 @@ export function computeStandings(
         partial += 1;
         if (pts === 3) resultOnly += 1;
         else if (pick) {
-          const homeWon = r.home > r.away;
+          const homeWon = actual.home > actual.away;
           const predictedWinnerGoals = homeWon ? pick[0] : pick[1];
           const predictedLoserGoals = homeWon ? pick[1] : pick[0];
-          const actualWinnerGoals = homeWon ? r.home : r.away;
-          const actualLoserGoals = homeWon ? r.away : r.home;
+          const actualWinnerGoals = homeWon ? actual.home : actual.away;
+          const actualLoserGoals = homeWon ? actual.away : actual.home;
           if (predictedWinnerGoals === actualWinnerGoals) partialWinnerGoal += 1;
           if (predictedLoserGoals === actualLoserGoals) partialLoserGoal += 1;
         }
@@ -81,7 +89,8 @@ export function computeStandings(
     .map((idStr) => {
       const m = matchById.get(Number(idStr))!;
       const r = results.results[idStr];
-      return { id: m.id, date: m.date, group: m.group, home: m.home, away: m.away, homeGoals: r.home, awayGoals: r.away };
+      const actual = finalScore(r);
+      return { id: m.id, date: m.date, group: m.group, home: m.home, away: m.away, homeGoals: actual.home, awayGoals: actual.away };
     })
     .sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : b.id - a.id));
 

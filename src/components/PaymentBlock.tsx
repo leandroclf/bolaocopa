@@ -13,7 +13,8 @@ export default function PaymentBlock() {
               enviado para a chave PIX destacada ao lado.
             </p>
             <p className="mt-3 rounded-md border border-lime/20 bg-lime/10 px-3 py-2 font-mono text-[10px] uppercase tracking-[0.22em] text-lime">
-              Os resultados contam apenas o placar normal da partida, nos 90 minutos, sem prorrogação ou pênaltis.
+              Para a pontuação, conta o placar final da partida após o tempo normal e a prorrogação. Os pênaltis
+              servem apenas para definir o classificado.
             </p>
           </div>
 
@@ -26,7 +27,7 @@ export default function PaymentBlock() {
                 sem taxa administrativa
               </span>
               <span className="rounded-full border border-pitch-line bg-pitch-2 px-3 py-1 font-mono text-[10px] uppercase tracking-[0.18em] text-slatey">
-                90 minutos
+                tempo normal + prorrogação
               </span>
             </div>
           </div>

@@ -39,7 +39,8 @@ export default function RulesCard() {
             Taxa de inscrição R$ 50 · PIX 71994793104 (Leandro Freire) · sem taxa administrativa
           </p>
           <p className="mt-2 font-mono text-[10px] uppercase tracking-[0.2em] text-slatey">
-            Resultados válidos somente nos 90 minutos da partida, sem prorrogação ou pênaltis.
+            Para pontuação, vale o placar final da partida após o tempo normal e a prorrogação; pênaltis servem
+            apenas para definir o classificado.
           </p>
         </div>
       </div>

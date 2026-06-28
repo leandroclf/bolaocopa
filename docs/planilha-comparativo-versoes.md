@@ -33,5 +33,5 @@
 
 ## Observação
 
-- A regra de pontuação continua baseada apenas no placar de 90 minutos.
-- Prorrogação e pênaltis servem somente para definir classificado no mata-mata.
+- A regra de pontuação considera o placar final da partida após o tempo normal e a prorrogação.
+- Pênaltis servem somente para definir classificado no mata-mata.

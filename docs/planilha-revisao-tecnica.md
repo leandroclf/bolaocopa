@@ -23,7 +23,7 @@ Arquivo-alvo: `public/bolao_copa2026_final_envio.xlsx`
   - valor de inscrição
   - status
   - confirmação
-- Aviso explícito de que os resultados válidos consideram apenas os 90 minutos.
+- Aviso explícito de que a pontuação considera o placar final após o tempo normal e a prorrogação.
 - Lista dos confrontos com os nomes corretos das seleções.
 - Validação de placares com inteiros de 0 a 20.
 
@@ -37,7 +37,7 @@ Arquivo-alvo: `public/bolao_copa2026_final_envio.xlsx`
 ### `Regulamento e Pontuação`
 
 - Consolida pontuação, regras operacionais, premiação e responsabilidades.
-- Destaca a regra de 90 minutos.
+- Destaca a regra de tempo normal + prorrogação para pontuação.
 - Explica que a premiação vem da soma das inscrições.
 
 ### `Configurações`
