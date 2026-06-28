@@ -17,10 +17,10 @@ export default function PhaseNotice() {
             <p className="mt-2 text-sm leading-6 text-slatey">
               A planilha oficial já está disponível para download. Apenas os espaços de identificação e as colunas de
               gols seguem editáveis; as demais colunas permanecem bloqueadas. A fase de grupos ficou preservada como
-              histórico e não existe taxa administrativa.
+              histórico.
             </p>
             <p className="mt-2 font-mono text-[10px] uppercase tracking-[0.2em] text-slatey">
-              Taxa de inscrição de R$ 50 e proteção por senha interna ativa.
+              Taxa de inscrição de R$ 50 · PIX 71994793104 (Leandro Freire) · sem taxa administrativa
             </p>
           </div>
 

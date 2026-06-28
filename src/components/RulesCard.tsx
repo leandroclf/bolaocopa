@@ -36,7 +36,7 @@ export default function RulesCard() {
             1º lugar recebe 100% da bolada · em caso de empate na 1ª colocação, divisão igualitária
           </p>
           <p className="mt-3 font-mono text-[10px] uppercase tracking-[0.2em] text-slatey">
-            Taxa de inscrição R$ 50 · sem taxa administrativa
+            Taxa de inscrição R$ 50 · PIX 71994793104 (Leandro Freire) · sem taxa administrativa
           </p>
         </div>
       </div>
