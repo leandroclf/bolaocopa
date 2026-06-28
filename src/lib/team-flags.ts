@@ -1,0 +1,38 @@
+const FLAGS: Record<string, string> = {
+  "África do Sul": "🇿🇦",
+  Alemanha: "🇩🇪",
+  Holanda: "🇳🇱",
+  Brasil: "🇧🇷",
+  França: "🇫🇷",
+  "Costa do Marfim": "🇨🇮",
+  México: "🇲🇽",
+  Inglaterra: "🏴",
+  Bélgica: "🇧🇪",
+  "Estados Unidos": "🇺🇸",
+  Espanha: "🇪🇸",
+  Portugal: "🇵🇹",
+  Suíça: "🇨🇭",
+  Austrália: "🇦🇺",
+  Argentina: "🇦🇷",
+  Colômbia: "🇨🇴",
+  Canadá: "🇨🇦",
+  Paraguai: "🇵🇾",
+  Marrocos: "🇲🇦",
+  Japão: "🇯🇵",
+  Suécia: "🇸🇪",
+  Noruega: "🇳🇴",
+  Equador: "🇪🇨",
+  "RD Congo": "🇨🇩",
+  Senegal: "🇸🇳",
+  Bósnia: "🇧🇦",
+  Áustria: "🇦🇹",
+  Croácia: "🇭🇷",
+  Argélia: "🇩🇿",
+  Egito: "🇪🇬",
+  "Cabo Verde": "🇨🇻",
+  Gana: "🇬🇭",
+};
+
+export function teamFlag(name: string) {
+  return FLAGS[name] ?? "·";
+}

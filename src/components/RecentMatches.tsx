@@ -1,5 +1,6 @@
 import type { RecentResult } from "@/lib/types";
 import { formatMatchLabel } from "@/lib/match-label";
+import { teamFlag } from "@/lib/team-flags";
 
 const fmtDay = (d: string) =>
   new Intl.DateTimeFormat("pt-BR", { day: "2-digit", month: "2-digit" }).format(new Date(`${d}T12:00:00`));
@@ -24,9 +25,9 @@ export default function RecentMatches({ results }: { results: RecentResult[] }) 
               {formatMatchLabel(m.group, m.phaseLabel)}
             </span>
             <div className="grid flex-1 grid-cols-[1fr_auto_1fr] items-center gap-2">
-              <span className="truncate text-right text-sm text-chalk">{m.home}</span>
+              <span className="truncate text-right text-sm text-chalk">{teamFlag(m.home)} {m.home}</span>
               <span className="font-mono text-sm font-bold text-chalk">{m.homeGoals}–{m.awayGoals}</span>
-              <span className="truncate text-sm text-chalk">{m.away}</span>
+              <span className="truncate text-sm text-chalk">{teamFlag(m.away)} {m.away}</span>
             </div>
             <span className="font-mono text-[10px] text-slatey">{fmtDay(m.date)}</span>
           </div>

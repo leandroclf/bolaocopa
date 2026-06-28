@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import type { Bracket, BracketMatch, BracketParticipant, KnockoutPhaseKey, Side } from "@/knockout/types";
+import { teamFlag } from "@/lib/team-flags";
 
 const fmtDay = (d: string) =>
   new Intl.DateTimeFormat("pt-BR", { day: "2-digit", month: "2-digit" }).format(new Date(`${d}T12:00:00`));
@@ -25,7 +26,7 @@ function Participant({ side, match }: { side: Side; match: BracketMatch }) {
         isWinner ? "bg-lime/10" : "bg-pitch"
       }`}
     >
-      <span className="w-6 shrink-0 text-center text-base leading-none">{p.team?.flag ?? "·"}</span>
+      <span className="w-6 shrink-0 text-center text-base leading-none">{p.team?.flag ?? teamFlag(p.label)}</span>
       <span
         className={`min-w-0 flex-1 truncate text-sm ${
           isWinner ? "font-semibold text-lime" : resolved ? "text-chalk" : "italic text-slatey"

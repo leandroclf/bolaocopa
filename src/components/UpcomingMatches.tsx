@@ -1,5 +1,6 @@
 import type { UpcomingMatchInsight } from "@/lib/types";
 import { formatMatchLabel } from "@/lib/match-label";
+import { teamFlag } from "@/lib/team-flags";
 
 const fmtDay = (d: string) =>
   new Intl.DateTimeFormat("pt-BR", { weekday: "short", day: "2-digit", month: "2-digit" })
@@ -23,7 +24,7 @@ function MatchCard({ match }: { match: UpcomingMatchInsight }) {
               {match.time ? ` · ${match.time}` : ""}
             </p>
             <h3 className="mt-1 font-display text-xl uppercase tracking-wide text-chalk">
-              {match.home} x {match.away}
+              {teamFlag(match.home)} {match.home} x {teamFlag(match.away)} {match.away}
             </h3>
           </div>
           <span className="rounded bg-pitch px-2 py-1 font-mono text-xs text-slatey">
