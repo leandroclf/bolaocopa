@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-28T13:47:09.287Z",
+  "generatedAt": "2026-06-28T21:02:14.598Z",
   "competition": "Copa do Mundo FIFA 2026",
-  "source": "openfootball",
+  "source": "manual",
   "groupsComplete": true,
   "complete": false,
   "phases": [
@@ -34,10 +34,10 @@
               "flag": "🇨🇦"
             }
           },
-          "homeGoals": null,
-          "awayGoals": null,
-          "winner": null,
-          "status": "scheduled",
+          "homeGoals": 0,
+          "awayGoals": 1,
+          "winner": "away",
+          "status": "finished",
           "date": "2026-06-28",
           "time": null,
           "stadium": null,
@@ -628,9 +628,13 @@
           "phaseLabel": "Oitavas de final",
           "order": 2,
           "home": {
-            "label": "Vencedor Jogo 73",
+            "label": "Canadá",
             "source": "Vencedor do Jogo 73",
-            "team": null
+            "team": {
+              "canon": "canada",
+              "name": "Canadá",
+              "flag": "🇨🇦"
+            }
           },
           "away": {
             "label": "Vencedor Jogo 75",
