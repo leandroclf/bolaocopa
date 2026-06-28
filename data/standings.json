@@ -1,13 +1,13 @@
 {
   "lastUpdated": "2026-06-28T11:30:55.532Z",
   "source": "openfootball",
-  "totalParticipants": 7,
+  "totalParticipants": 8,
   "countedMatches": 0,
   "standings": [
     {
       "rank": 1,
-      "previousRank": null,
-      "delta": null,
+      "previousRank": 1,
+      "delta": 0,
       "name": "Elcio",
       "points": 0,
       "exact": 0,
@@ -19,8 +19,8 @@
     },
     {
       "rank": 2,
-      "previousRank": 1,
-      "delta": -1,
+      "previousRank": 2,
+      "delta": 0,
       "name": "Ezio",
       "points": 0,
       "exact": 0,
@@ -32,8 +32,8 @@
     },
     {
       "rank": 3,
-      "previousRank": 2,
-      "delta": -1,
+      "previousRank": 3,
+      "delta": 0,
       "name": "Italo",
       "points": 0,
       "exact": 0,
@@ -45,8 +45,8 @@
     },
     {
       "rank": 4,
-      "previousRank": 3,
-      "delta": -1,
+      "previousRank": 4,
+      "delta": 0,
       "name": "Jean",
       "points": 0,
       "exact": 0,
@@ -58,8 +58,8 @@
     },
     {
       "rank": 5,
-      "previousRank": 4,
-      "delta": -1,
+      "previousRank": 5,
+      "delta": 0,
       "name": "Leandro",
       "points": 0,
       "exact": 0,
@@ -71,8 +71,8 @@
     },
     {
       "rank": 6,
-      "previousRank": 5,
-      "delta": -1,
+      "previousRank": 6,
+      "delta": 0,
       "name": "Matheus",
       "points": 0,
       "exact": 0,
@@ -84,7 +84,20 @@
     },
     {
       "rank": 7,
-      "previousRank": 6,
+      "previousRank": null,
+      "delta": null,
+      "name": "Rafael Hive",
+      "points": 0,
+      "exact": 0,
+      "partial": 0,
+      "partialWinnerGoal": 0,
+      "partialLoserGoal": 0,
+      "resultOnly": 0,
+      "played": 0
+    },
+    {
+      "rank": 8,
+      "previousRank": 7,
       "delta": -1,
       "name": "Rodney",
       "points": 0,
@@ -105,7 +118,7 @@
     "phaseLabel": "32 avos de final",
     "home": "África do Sul",
     "away": "Canadá",
-    "totalPicks": 7,
+    "totalPicks": 8,
     "missingPicks": 0,
     "picks": [
       {
@@ -145,6 +158,12 @@
         "outcome": "draw"
       },
       {
+        "name": "Rafael Hive",
+        "homeGoals": 0,
+        "awayGoals": 1,
+        "outcome": "away"
+      },
+      {
         "name": "Rodney",
         "homeGoals": 1,
         "awayGoals": 2,
@@ -154,24 +173,24 @@
     "outcomeBreakdown": {
       "homeWin": 0,
       "draw": 4,
-      "awayWin": 3
+      "awayWin": 4
     },
     "topOutcome": {
-      "outcome": "draw",
-      "label": "Empate",
+      "outcome": "away",
+      "label": "Canadá vence",
       "count": 4,
-      "percentage": 57.1
+      "percentage": 50
     },
-    "averageHomeGoals": 1.1,
-    "averageAwayGoals": 1.6,
-    "averageTotalGoals": 2.7,
+    "averageHomeGoals": 1,
+    "averageAwayGoals": 1.5,
+    "averageTotalGoals": 2.5,
     "mostCommonScores": [
       {
         "homeGoals": 1,
         "awayGoals": 1,
         "score": "1-1",
         "count": 3,
-        "percentage": 42.9,
+        "percentage": 37.5,
         "names": [
           "Elcio",
           "Italo",
@@ -183,7 +202,7 @@
         "awayGoals": 2,
         "score": "1-2",
         "count": 3,
-        "percentage": 42.9,
+        "percentage": 37.5,
         "names": [
           "Jean",
           "Leandro",
@@ -191,13 +210,13 @@
         ]
       },
       {
-        "homeGoals": 2,
-        "awayGoals": 2,
-        "score": "2-2",
+        "homeGoals": 0,
+        "awayGoals": 1,
+        "score": "0-1",
         "count": 1,
-        "percentage": 14.3,
+        "percentage": 12.5,
         "names": [
-          "Ezio"
+          "Rafael Hive"
         ]
       }
     ]
@@ -211,7 +230,7 @@
       "phaseLabel": "32 avos de final",
       "home": "África do Sul",
       "away": "Canadá",
-      "totalPicks": 7,
+      "totalPicks": 8,
       "missingPicks": 0,
       "picks": [
         {
@@ -251,6 +270,12 @@
           "outcome": "draw"
         },
         {
+          "name": "Rafael Hive",
+          "homeGoals": 0,
+          "awayGoals": 1,
+          "outcome": "away"
+        },
+        {
           "name": "Rodney",
           "homeGoals": 1,
           "awayGoals": 2,
@@ -260,24 +285,24 @@
       "outcomeBreakdown": {
         "homeWin": 0,
         "draw": 4,
-        "awayWin": 3
+        "awayWin": 4
       },
       "topOutcome": {
-        "outcome": "draw",
-        "label": "Empate",
+        "outcome": "away",
+        "label": "Canadá vence",
         "count": 4,
-        "percentage": 57.1
+        "percentage": 50
       },
-      "averageHomeGoals": 1.1,
-      "averageAwayGoals": 1.6,
-      "averageTotalGoals": 2.7,
+      "averageHomeGoals": 1,
+      "averageAwayGoals": 1.5,
+      "averageTotalGoals": 2.5,
       "mostCommonScores": [
         {
           "homeGoals": 1,
           "awayGoals": 1,
           "score": "1-1",
           "count": 3,
-          "percentage": 42.9,
+          "percentage": 37.5,
           "names": [
             "Elcio",
             "Italo",
@@ -289,7 +314,7 @@
           "awayGoals": 2,
           "score": "1-2",
           "count": 3,
-          "percentage": 42.9,
+          "percentage": 37.5,
           "names": [
             "Jean",
             "Leandro",
@@ -297,13 +322,13 @@
           ]
         },
         {
-          "homeGoals": 2,
-          "awayGoals": 2,
-          "score": "2-2",
+          "homeGoals": 0,
+          "awayGoals": 1,
+          "score": "0-1",
           "count": 1,
-          "percentage": 14.3,
+          "percentage": 12.5,
           "names": [
-            "Ezio"
+            "Rafael Hive"
           ]
         }
       ]
@@ -316,7 +341,7 @@
       "phaseLabel": "32 avos de final",
       "home": "Alemanha",
       "away": "Paraguai",
-      "totalPicks": 7,
+      "totalPicks": 8,
       "missingPicks": 0,
       "picks": [
         {
@@ -356,6 +381,12 @@
           "outcome": "home"
         },
         {
+          "name": "Rafael Hive",
+          "homeGoals": 2,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
+        {
           "name": "Rodney",
           "homeGoals": 2,
           "awayGoals": 0,
@@ -363,14 +394,14 @@
         }
       ],
       "outcomeBreakdown": {
-        "homeWin": 7,
+        "homeWin": 8,
         "draw": 0,
         "awayWin": 0
       },
       "topOutcome": {
         "outcome": "home",
         "label": "Alemanha vence",
-        "count": 7,
+        "count": 8,
         "percentage": 100
       },
       "averageHomeGoals": 2.1,
@@ -381,12 +412,13 @@
           "homeGoals": 2,
           "awayGoals": 0,
           "score": "2-0",
-          "count": 4,
-          "percentage": 57.1,
+          "count": 5,
+          "percentage": 62.5,
           "names": [
             "Italo",
             "Leandro",
             "Matheus",
+            "Rafael Hive",
             "Rodney"
           ]
         },
@@ -395,7 +427,7 @@
           "awayGoals": 1,
           "score": "2-1",
           "count": 2,
-          "percentage": 28.6,
+          "percentage": 25,
           "names": [
             "Elcio",
             "Ezio"
@@ -406,7 +438,7 @@
           "awayGoals": 0,
           "score": "3-0",
           "count": 1,
-          "percentage": 14.3,
+          "percentage": 12.5,
           "names": [
             "Jean"
           ]
@@ -421,7 +453,7 @@
       "phaseLabel": "32 avos de final",
       "home": "Holanda",
       "away": "Marrocos",
-      "totalPicks": 7,
+      "totalPicks": 8,
       "missingPicks": 0,
       "picks": [
         {
@@ -461,6 +493,12 @@
           "outcome": "home"
         },
         {
+          "name": "Rafael Hive",
+          "homeGoals": 2,
+          "awayGoals": 1,
+          "outcome": "home"
+        },
+        {
           "name": "Rodney",
           "homeGoals": 3,
           "awayGoals": 1,
@@ -468,17 +506,17 @@
         }
       ],
       "outcomeBreakdown": {
-        "homeWin": 5,
+        "homeWin": 6,
         "draw": 1,
         "awayWin": 1
       },
       "topOutcome": {
         "outcome": "home",
         "label": "Holanda vence",
-        "count": 5,
-        "percentage": 71.4
+        "count": 6,
+        "percentage": 75
       },
-      "averageHomeGoals": 1.7,
+      "averageHomeGoals": 1.8,
       "averageAwayGoals": 0.9,
       "averageTotalGoals": 2.6,
       "mostCommonScores": [
@@ -486,11 +524,12 @@
           "homeGoals": 2,
           "awayGoals": 1,
           "score": "2-1",
-          "count": 2,
-          "percentage": 28.6,
+          "count": 3,
+          "percentage": 37.5,
           "names": [
             "Ezio",
-            "Matheus"
+            "Matheus",
+            "Rafael Hive"
           ]
         },
         {
@@ -498,7 +537,7 @@
           "awayGoals": 1,
           "score": "0-1",
           "count": 1,
-          "percentage": 14.3,
+          "percentage": 12.5,
           "names": [
             "Elcio"
           ]
@@ -508,7 +547,7 @@
           "awayGoals": 0,
           "score": "1-0",
           "count": 1,
-          "percentage": 14.3,
+          "percentage": 12.5,
           "names": [
             "Leandro"
           ]
@@ -523,7 +562,7 @@
       "phaseLabel": "32 avos de final",
       "home": "Brasil",
       "away": "Japão",
-      "totalPicks": 7,
+      "totalPicks": 8,
       "missingPicks": 0,
       "picks": [
         {
@@ -563,6 +602,12 @@
           "outcome": "home"
         },
         {
+          "name": "Rafael Hive",
+          "homeGoals": 2,
+          "awayGoals": 1,
+          "outcome": "home"
+        },
+        {
           "name": "Rodney",
           "homeGoals": 3,
           "awayGoals": 1,
@@ -570,30 +615,31 @@
         }
       ],
       "outcomeBreakdown": {
-        "homeWin": 7,
+        "homeWin": 8,
         "draw": 0,
         "awayWin": 0
       },
       "topOutcome": {
         "outcome": "home",
         "label": "Brasil vence",
-        "count": 7,
+        "count": 8,
         "percentage": 100
       },
       "averageHomeGoals": 2.3,
-      "averageAwayGoals": 0.7,
+      "averageAwayGoals": 0.8,
       "averageTotalGoals": 3,
       "mostCommonScores": [
         {
           "homeGoals": 2,
           "awayGoals": 1,
           "score": "2-1",
-          "count": 3,
-          "percentage": 42.9,
+          "count": 4,
+          "percentage": 50,
           "names": [
             "Ezio",
             "Italo",
-            "Matheus"
+            "Matheus",
+            "Rafael Hive"
           ]
         },
         {
@@ -601,7 +647,7 @@
           "awayGoals": 0,
           "score": "2-0",
           "count": 2,
-          "percentage": 28.6,
+          "percentage": 25,
           "names": [
             "Jean",
             "Leandro"
@@ -612,7 +658,7 @@
           "awayGoals": 1,
           "score": "3-1",
           "count": 2,
-          "percentage": 28.6,
+          "percentage": 25,
           "names": [
             "Elcio",
             "Rodney"
@@ -628,7 +674,7 @@
       "phaseLabel": "32 avos de final",
       "home": "França",
       "away": "Suécia",
-      "totalPicks": 7,
+      "totalPicks": 8,
       "missingPicks": 0,
       "picks": [
         {
@@ -668,6 +714,12 @@
           "outcome": "home"
         },
         {
+          "name": "Rafael Hive",
+          "homeGoals": 3,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
+        {
           "name": "Rodney",
           "homeGoals": 2,
           "awayGoals": 0,
@@ -675,17 +727,17 @@
         }
       ],
       "outcomeBreakdown": {
-        "homeWin": 7,
+        "homeWin": 8,
         "draw": 0,
         "awayWin": 0
       },
       "topOutcome": {
         "outcome": "home",
         "label": "França vence",
-        "count": 7,
+        "count": 8,
         "percentage": 100
       },
-      "averageHomeGoals": 2.7,
+      "averageHomeGoals": 2.8,
       "averageAwayGoals": 0.3,
       "averageTotalGoals": 3,
       "mostCommonScores": [
@@ -693,12 +745,13 @@
           "homeGoals": 3,
           "awayGoals": 0,
           "score": "3-0",
-          "count": 3,
-          "percentage": 42.9,
+          "count": 4,
+          "percentage": 50,
           "names": [
             "Italo",
             "Jean",
-            "Matheus"
+            "Matheus",
+            "Rafael Hive"
           ]
         },
         {
@@ -706,7 +759,7 @@
           "awayGoals": 0,
           "score": "2-0",
           "count": 2,
-          "percentage": 28.6,
+          "percentage": 25,
           "names": [
             "Elcio",
             "Rodney"
@@ -717,7 +770,7 @@
           "awayGoals": 1,
           "score": "3-1",
           "count": 2,
-          "percentage": 28.6,
+          "percentage": 25,
           "names": [
             "Ezio",
             "Leandro"
@@ -733,7 +786,7 @@
       "phaseLabel": "32 avos de final",
       "home": "Costa do Marfim",
       "away": "Noruega",
-      "totalPicks": 7,
+      "totalPicks": 8,
       "missingPicks": 0,
       "picks": [
         {
@@ -768,6 +821,12 @@
         },
         {
           "name": "Matheus",
+          "homeGoals": 1,
+          "awayGoals": 2,
+          "outcome": "away"
+        },
+        {
+          "name": "Rafael Hive",
           "homeGoals": 1,
           "awayGoals": 2,
           "outcome": "away"
@@ -782,29 +841,30 @@
       "outcomeBreakdown": {
         "homeWin": 1,
         "draw": 2,
-        "awayWin": 4
+        "awayWin": 5
       },
       "topOutcome": {
         "outcome": "away",
         "label": "Noruega vence",
-        "count": 4,
-        "percentage": 57.1
+        "count": 5,
+        "percentage": 62.5
       },
       "averageHomeGoals": 1.1,
       "averageAwayGoals": 1.6,
-      "averageTotalGoals": 2.7,
+      "averageTotalGoals": 2.8,
       "mostCommonScores": [
         {
           "homeGoals": 1,
           "awayGoals": 2,
           "score": "1-2",
-          "count": 4,
-          "percentage": 57.1,
+          "count": 5,
+          "percentage": 62.5,
           "names": [
             "Ezio",
             "Jean",
             "Leandro",
-            "Matheus"
+            "Matheus",
+            "Rafael Hive"
           ]
         },
         {
@@ -812,7 +872,7 @@
           "awayGoals": 1,
           "score": "1-1",
           "count": 2,
-          "percentage": 28.6,
+          "percentage": 25,
           "names": [
             "Elcio",
             "Italo"
@@ -823,7 +883,7 @@
           "awayGoals": 1,
           "score": "2-1",
           "count": 1,
-          "percentage": 14.3,
+          "percentage": 12.5,
           "names": [
             "Rodney"
           ]
@@ -838,7 +898,7 @@
       "phaseLabel": "32 avos de final",
       "home": "México",
       "away": "Equador",
-      "totalPicks": 7,
+      "totalPicks": 8,
       "missingPicks": 0,
       "picks": [
         {
@@ -878,6 +938,12 @@
           "outcome": "home"
         },
         {
+          "name": "Rafael Hive",
+          "homeGoals": 2,
+          "awayGoals": 1,
+          "outcome": "home"
+        },
+        {
           "name": "Rodney",
           "homeGoals": 2,
           "awayGoals": 1,
@@ -885,15 +951,15 @@
         }
       ],
       "outcomeBreakdown": {
-        "homeWin": 6,
+        "homeWin": 7,
         "draw": 1,
         "awayWin": 0
       },
       "topOutcome": {
         "outcome": "home",
         "label": "México vence",
-        "count": 6,
-        "percentage": 85.7
+        "count": 7,
+        "percentage": 87.5
       },
       "averageHomeGoals": 1.9,
       "averageAwayGoals": 1,
@@ -903,13 +969,14 @@
           "homeGoals": 2,
           "awayGoals": 1,
           "score": "2-1",
-          "count": 5,
-          "percentage": 71.4,
+          "count": 6,
+          "percentage": 75,
           "names": [
             "Elcio",
             "Italo",
             "Jean",
             "Leandro",
+            "Rafael Hive",
             "Rodney"
           ]
         },
@@ -918,7 +985,7 @@
           "awayGoals": 0,
           "score": "1-0",
           "count": 1,
-          "percentage": 14.3,
+          "percentage": 12.5,
           "names": [
             "Matheus"
           ]
@@ -928,7 +995,7 @@
           "awayGoals": 2,
           "score": "2-2",
           "count": 1,
-          "percentage": 14.3,
+          "percentage": 12.5,
           "names": [
             "Ezio"
           ]
@@ -943,7 +1010,7 @@
       "phaseLabel": "32 avos de final",
       "home": "Inglaterra",
       "away": "RD Congo",
-      "totalPicks": 7,
+      "totalPicks": 8,
       "missingPicks": 0,
       "picks": [
         {
@@ -983,6 +1050,12 @@
           "outcome": "home"
         },
         {
+          "name": "Rafael Hive",
+          "homeGoals": 2,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
+        {
           "name": "Rodney",
           "homeGoals": 1,
           "awayGoals": 0,
@@ -990,26 +1063,37 @@
         }
       ],
       "outcomeBreakdown": {
-        "homeWin": 6,
+        "homeWin": 7,
         "draw": 1,
         "awayWin": 0
       },
       "topOutcome": {
         "outcome": "home",
         "label": "Inglaterra vence",
-        "count": 6,
-        "percentage": 85.7
+        "count": 7,
+        "percentage": 87.5
       },
       "averageHomeGoals": 2.4,
       "averageAwayGoals": 0.4,
-      "averageTotalGoals": 2.9,
+      "averageTotalGoals": 2.8,
       "mostCommonScores": [
+        {
+          "homeGoals": 2,
+          "awayGoals": 0,
+          "score": "2-0",
+          "count": 2,
+          "percentage": 25,
+          "names": [
+            "Leandro",
+            "Rafael Hive"
+          ]
+        },
         {
           "homeGoals": 3,
           "awayGoals": 1,
           "score": "3-1",
           "count": 2,
-          "percentage": 28.6,
+          "percentage": 25,
           "names": [
             "Elcio",
             "Italo"
@@ -1020,19 +1104,9 @@
           "awayGoals": 0,
           "score": "1-0",
           "count": 1,
-          "percentage": 14.3,
+          "percentage": 12.5,
           "names": [
             "Rodney"
-          ]
-        },
-        {
-          "homeGoals": 1,
-          "awayGoals": 1,
-          "score": "1-1",
-          "count": 1,
-          "percentage": 14.3,
-          "names": [
-            "Ezio"
           ]
         }
       ]
@@ -1045,7 +1119,7 @@
       "phaseLabel": "32 avos de final",
       "home": "Bélgica",
       "away": "Senegal",
-      "totalPicks": 7,
+      "totalPicks": 8,
       "missingPicks": 0,
       "picks": [
         {
@@ -1085,6 +1159,12 @@
           "outcome": "home"
         },
         {
+          "name": "Rafael Hive",
+          "homeGoals": 2,
+          "awayGoals": 1,
+          "outcome": "home"
+        },
+        {
           "name": "Rodney",
           "homeGoals": 2,
           "awayGoals": 1,
@@ -1092,30 +1172,31 @@
         }
       ],
       "outcomeBreakdown": {
-        "homeWin": 7,
+        "homeWin": 8,
         "draw": 0,
         "awayWin": 0
       },
       "topOutcome": {
         "outcome": "home",
         "label": "Bélgica vence",
-        "count": 7,
+        "count": 8,
         "percentage": 100
       },
-      "averageHomeGoals": 2.7,
-      "averageAwayGoals": 0.7,
+      "averageHomeGoals": 2.6,
+      "averageAwayGoals": 0.8,
       "averageTotalGoals": 3.4,
       "mostCommonScores": [
         {
           "homeGoals": 2,
           "awayGoals": 1,
           "score": "2-1",
-          "count": 4,
-          "percentage": 57.1,
+          "count": 5,
+          "percentage": 62.5,
           "names": [
             "Italo",
             "Leandro",
             "Matheus",
+            "Rafael Hive",
             "Rodney"
           ]
         },
@@ -1124,7 +1205,7 @@
           "awayGoals": 0,
           "score": "2-0",
           "count": 2,
-          "percentage": 28.6,
+          "percentage": 25,
           "names": [
             "Elcio",
             "Jean"
@@ -1135,7 +1216,7 @@
           "awayGoals": 1,
           "score": "7-1",
           "count": 1,
-          "percentage": 14.3,
+          "percentage": 12.5,
           "names": [
             "Ezio"
           ]
@@ -1150,7 +1231,7 @@
       "phaseLabel": "32 avos de final",
       "home": "Estados Unidos",
       "away": "Bósnia",
-      "totalPicks": 7,
+      "totalPicks": 8,
       "missingPicks": 0,
       "picks": [
         {
@@ -1190,6 +1271,12 @@
           "outcome": "home"
         },
         {
+          "name": "Rafael Hive",
+          "homeGoals": 1,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
+        {
           "name": "Rodney",
           "homeGoals": 1,
           "awayGoals": 0,
@@ -1197,26 +1284,26 @@
         }
       ],
       "outcomeBreakdown": {
-        "homeWin": 5,
+        "homeWin": 6,
         "draw": 2,
         "awayWin": 0
       },
       "topOutcome": {
         "outcome": "home",
         "label": "Estados Unidos vence",
-        "count": 5,
-        "percentage": 71.4
+        "count": 6,
+        "percentage": 75
       },
-      "averageHomeGoals": 1.6,
+      "averageHomeGoals": 1.5,
       "averageAwayGoals": 0.4,
-      "averageTotalGoals": 2,
+      "averageTotalGoals": 1.9,
       "mostCommonScores": [
         {
           "homeGoals": 2,
           "awayGoals": 0,
           "score": "2-0",
           "count": 3,
-          "percentage": 42.9,
+          "percentage": 37.5,
           "names": [
             "Italo",
             "Jean",
@@ -1225,23 +1312,24 @@
         },
         {
           "homeGoals": 1,
-          "awayGoals": 1,
-          "score": "1-1",
+          "awayGoals": 0,
+          "score": "1-0",
           "count": 2,
-          "percentage": 28.6,
+          "percentage": 25,
           "names": [
-            "Elcio",
-            "Ezio"
+            "Rafael Hive",
+            "Rodney"
           ]
         },
         {
           "homeGoals": 1,
-          "awayGoals": 0,
-          "score": "1-0",
-          "count": 1,
-          "percentage": 14.3,
+          "awayGoals": 1,
+          "score": "1-1",
+          "count": 2,
+          "percentage": 25,
           "names": [
-            "Rodney"
+            "Elcio",
+            "Ezio"
           ]
         }
       ]
@@ -1254,7 +1342,7 @@
       "phaseLabel": "32 avos de final",
       "home": "Espanha",
       "away": "Áustria",
-      "totalPicks": 7,
+      "totalPicks": 8,
       "missingPicks": 0,
       "picks": [
         {
@@ -1294,6 +1382,12 @@
           "outcome": "home"
         },
         {
+          "name": "Rafael Hive",
+          "homeGoals": 2,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
+        {
           "name": "Rodney",
           "homeGoals": 1,
           "awayGoals": 1,
@@ -1301,29 +1395,30 @@
         }
       ],
       "outcomeBreakdown": {
-        "homeWin": 5,
+        "homeWin": 6,
         "draw": 2,
         "awayWin": 0
       },
       "topOutcome": {
         "outcome": "home",
         "label": "Espanha vence",
-        "count": 5,
-        "percentage": 71.4
+        "count": 6,
+        "percentage": 75
       },
       "averageHomeGoals": 2.1,
-      "averageAwayGoals": 0.6,
-      "averageTotalGoals": 2.7,
+      "averageAwayGoals": 0.5,
+      "averageTotalGoals": 2.6,
       "mostCommonScores": [
         {
           "homeGoals": 2,
           "awayGoals": 0,
           "score": "2-0",
-          "count": 2,
-          "percentage": 28.6,
+          "count": 3,
+          "percentage": 37.5,
           "names": [
             "Italo",
-            "Leandro"
+            "Leandro",
+            "Rafael Hive"
           ]
         },
         {
@@ -1331,7 +1426,7 @@
           "awayGoals": 0,
           "score": "3-0",
           "count": 2,
-          "percentage": 28.6,
+          "percentage": 25,
           "names": [
             "Jean",
             "Matheus"
@@ -1342,7 +1437,7 @@
           "awayGoals": 1,
           "score": "1-1",
           "count": 1,
-          "percentage": 14.3,
+          "percentage": 12.5,
           "names": [
             "Rodney"
           ]
@@ -1357,7 +1452,7 @@
       "phaseLabel": "32 avos de final",
       "home": "Portugal",
       "away": "Croácia",
-      "totalPicks": 7,
+      "totalPicks": 8,
       "missingPicks": 0,
       "picks": [
         {
@@ -1397,6 +1492,12 @@
           "outcome": "draw"
         },
         {
+          "name": "Rafael Hive",
+          "homeGoals": 1,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
+        {
           "name": "Rodney",
           "homeGoals": 2,
           "awayGoals": 0,
@@ -1404,26 +1505,37 @@
         }
       ],
       "outcomeBreakdown": {
-        "homeWin": 4,
+        "homeWin": 5,
         "draw": 2,
         "awayWin": 1
       },
       "topOutcome": {
         "outcome": "home",
         "label": "Portugal vence",
-        "count": 4,
-        "percentage": 57.1
+        "count": 5,
+        "percentage": 62.5
       },
-      "averageHomeGoals": 1.6,
-      "averageAwayGoals": 0.7,
-      "averageTotalGoals": 2.3,
+      "averageHomeGoals": 1.5,
+      "averageAwayGoals": 0.6,
+      "averageTotalGoals": 2.1,
       "mostCommonScores": [
+        {
+          "homeGoals": 1,
+          "awayGoals": 0,
+          "score": "1-0",
+          "count": 2,
+          "percentage": 25,
+          "names": [
+            "Leandro",
+            "Rafael Hive"
+          ]
+        },
         {
           "homeGoals": 1,
           "awayGoals": 1,
           "score": "1-1",
           "count": 2,
-          "percentage": 28.6,
+          "percentage": 25,
           "names": [
             "Italo",
             "Matheus"
@@ -1431,20 +1543,10 @@
         },
         {
           "homeGoals": 1,
-          "awayGoals": 0,
-          "score": "1-0",
-          "count": 1,
-          "percentage": 14.3,
-          "names": [
-            "Leandro"
-          ]
-        },
-        {
-          "homeGoals": 1,
           "awayGoals": 2,
           "score": "1-2",
           "count": 1,
-          "percentage": 14.3,
+          "percentage": 12.5,
           "names": [
             "Elcio"
           ]
@@ -1459,7 +1561,7 @@
       "phaseLabel": "32 avos de final",
       "home": "Suíça",
       "away": "Argélia",
-      "totalPicks": 7,
+      "totalPicks": 8,
       "missingPicks": 0,
       "picks": [
         {
@@ -1499,6 +1601,12 @@
           "outcome": "home"
         },
         {
+          "name": "Rafael Hive",
+          "homeGoals": 2,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
+        {
           "name": "Rodney",
           "homeGoals": 1,
           "awayGoals": 1,
@@ -1506,26 +1614,26 @@
         }
       ],
       "outcomeBreakdown": {
-        "homeWin": 5,
+        "homeWin": 6,
         "draw": 2,
         "awayWin": 0
       },
       "topOutcome": {
         "outcome": "home",
         "label": "Suíça vence",
-        "count": 5,
-        "percentage": 71.4
+        "count": 6,
+        "percentage": 75
       },
-      "averageHomeGoals": 1.3,
+      "averageHomeGoals": 1.4,
       "averageAwayGoals": 0.4,
-      "averageTotalGoals": 1.7,
+      "averageTotalGoals": 1.8,
       "mostCommonScores": [
         {
           "homeGoals": 1,
           "awayGoals": 0,
           "score": "1-0",
           "count": 3,
-          "percentage": 42.9,
+          "percentage": 37.5,
           "names": [
             "Elcio",
             "Jean",
@@ -1537,7 +1645,7 @@
           "awayGoals": 1,
           "score": "1-1",
           "count": 2,
-          "percentage": 28.6,
+          "percentage": 25,
           "names": [
             "Ezio",
             "Rodney"
@@ -1547,10 +1655,11 @@
           "homeGoals": 2,
           "awayGoals": 0,
           "score": "2-0",
-          "count": 1,
-          "percentage": 14.3,
+          "count": 2,
+          "percentage": 25,
           "names": [
-            "Italo"
+            "Italo",
+            "Rafael Hive"
           ]
         }
       ]
@@ -1563,7 +1672,7 @@
       "phaseLabel": "32 avos de final",
       "home": "Austrália",
       "away": "Egito",
-      "totalPicks": 7,
+      "totalPicks": 8,
       "missingPicks": 0,
       "picks": [
         {
@@ -1603,6 +1712,12 @@
           "outcome": "home"
         },
         {
+          "name": "Rafael Hive",
+          "homeGoals": 0,
+          "awayGoals": 1,
+          "outcome": "away"
+        },
+        {
           "name": "Rodney",
           "homeGoals": 3,
           "awayGoals": 0,
@@ -1612,24 +1727,35 @@
       "outcomeBreakdown": {
         "homeWin": 4,
         "draw": 2,
-        "awayWin": 1
+        "awayWin": 2
       },
       "topOutcome": {
         "outcome": "home",
         "label": "Austrália vence",
         "count": 4,
-        "percentage": 57.1
+        "percentage": 50
       },
-      "averageHomeGoals": 1.6,
+      "averageHomeGoals": 1.4,
       "averageAwayGoals": 0.6,
-      "averageTotalGoals": 2.1,
+      "averageTotalGoals": 2,
       "mostCommonScores": [
+        {
+          "homeGoals": 0,
+          "awayGoals": 1,
+          "score": "0-1",
+          "count": 2,
+          "percentage": 25,
+          "names": [
+            "Italo",
+            "Rafael Hive"
+          ]
+        },
         {
           "homeGoals": 1,
           "awayGoals": 1,
           "score": "1-1",
           "count": 2,
-          "percentage": 28.6,
+          "percentage": 25,
           "names": [
             "Elcio",
             "Leandro"
@@ -1640,20 +1766,10 @@
           "awayGoals": 0,
           "score": "3-0",
           "count": 2,
-          "percentage": 28.6,
+          "percentage": 25,
           "names": [
             "Ezio",
             "Rodney"
-          ]
-        },
-        {
-          "homeGoals": 0,
-          "awayGoals": 1,
-          "score": "0-1",
-          "count": 1,
-          "percentage": 14.3,
-          "names": [
-            "Italo"
           ]
         }
       ]
@@ -1666,7 +1782,7 @@
       "phaseLabel": "32 avos de final",
       "home": "Argentina",
       "away": "Cabo Verde",
-      "totalPicks": 7,
+      "totalPicks": 8,
       "missingPicks": 0,
       "picks": [
         {
@@ -1706,6 +1822,12 @@
           "outcome": "home"
         },
         {
+          "name": "Rafael Hive",
+          "homeGoals": 3,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
+        {
           "name": "Rodney",
           "homeGoals": 2,
           "awayGoals": 0,
@@ -1713,14 +1835,14 @@
         }
       ],
       "outcomeBreakdown": {
-        "homeWin": 7,
+        "homeWin": 8,
         "draw": 0,
         "awayWin": 0
       },
       "topOutcome": {
         "outcome": "home",
         "label": "Argentina vence",
-        "count": 7,
+        "count": 8,
         "percentage": 100
       },
       "averageHomeGoals": 2.6,
@@ -1732,7 +1854,7 @@
           "awayGoals": 0,
           "score": "2-0",
           "count": 3,
-          "percentage": 42.9,
+          "percentage": 37.5,
           "names": [
             "Italo",
             "Matheus",
@@ -1740,23 +1862,24 @@
           ]
         },
         {
+          "homeGoals": 3,
+          "awayGoals": 0,
+          "score": "3-0",
+          "count": 2,
+          "percentage": 25,
+          "names": [
+            "Ezio",
+            "Rafael Hive"
+          ]
+        },
+        {
           "homeGoals": 2,
           "awayGoals": 1,
           "score": "2-1",
           "count": 1,
-          "percentage": 14.3,
+          "percentage": 12.5,
           "names": [
             "Elcio"
-          ]
-        },
-        {
-          "homeGoals": 3,
-          "awayGoals": 0,
-          "score": "3-0",
-          "count": 1,
-          "percentage": 14.3,
-          "names": [
-            "Ezio"
           ]
         }
       ]
@@ -1769,7 +1892,7 @@
       "phaseLabel": "32 avos de final",
       "home": "Colômbia",
       "away": "Gana",
-      "totalPicks": 7,
+      "totalPicks": 8,
       "missingPicks": 0,
       "picks": [
         {
@@ -1809,6 +1932,12 @@
           "outcome": "home"
         },
         {
+          "name": "Rafael Hive",
+          "homeGoals": 2,
+          "awayGoals": 1,
+          "outcome": "home"
+        },
+        {
           "name": "Rodney",
           "homeGoals": 1,
           "awayGoals": 1,
@@ -1816,7 +1945,7 @@
         }
       ],
       "outcomeBreakdown": {
-        "homeWin": 2,
+        "homeWin": 3,
         "draw": 4,
         "awayWin": 1
       },
@@ -1824,9 +1953,9 @@
         "outcome": "draw",
         "label": "Empate",
         "count": 4,
-        "percentage": 57.1
+        "percentage": 50
       },
-      "averageHomeGoals": 1.4,
+      "averageHomeGoals": 1.5,
       "averageAwayGoals": 1.1,
       "averageTotalGoals": 2.6,
       "mostCommonScores": [
@@ -1835,7 +1964,7 @@
           "awayGoals": 1,
           "score": "1-1",
           "count": 3,
-          "percentage": 42.9,
+          "percentage": 37.5,
           "names": [
             "Ezio",
             "Italo",
@@ -1843,23 +1972,24 @@
           ]
         },
         {
+          "homeGoals": 2,
+          "awayGoals": 1,
+          "score": "2-1",
+          "count": 2,
+          "percentage": 25,
+          "names": [
+            "Leandro",
+            "Rafael Hive"
+          ]
+        },
+        {
           "homeGoals": 1,
           "awayGoals": 2,
           "score": "1-2",
           "count": 1,
-          "percentage": 14.3,
+          "percentage": 12.5,
           "names": [
             "Jean"
-          ]
-        },
-        {
-          "homeGoals": 2,
-          "awayGoals": 0,
-          "score": "2-0",
-          "count": 1,
-          "percentage": 14.3,
-          "names": [
-            "Matheus"
           ]
         }
       ]
@@ -1869,13 +1999,13 @@
     "totalMatches": 16,
     "finishedMatches": 0,
     "remainingMatches": 16,
-    "totalValidPicks": 112,
+    "totalValidPicks": 128,
     "averageUpcomingGoals": 2.6,
     "completionRate": 0,
     "leaderGap": 0,
     "leaderEfficiency": null,
     "averagePoints": 0,
-    "completeCards": 7,
+    "completeCards": 8,
     "missingPickCards": 0,
     "topExact": {
       "label": "Rei dos exatos",
@@ -1890,7 +2020,7 @@
     "topUpcomingScore": {
       "label": "Placar mais apostado",
       "value": "2-1",
-      "detail": "24 palpites"
+      "detail": "29 palpites"
     },
     "highestConsensus": {
       "id": 74,
@@ -1910,7 +2040,7 @@
       "home": "África do Sul",
       "away": "Canadá",
       "label": "Jogo mais dividido",
-      "value": "Empate · 57.1%"
+      "value": "Canadá vence · 50%"
     },
     "highestExpectedGoals": {
       "id": 81,
@@ -1930,7 +2060,7 @@
       "home": "África do Sul",
       "away": "Canadá",
       "label": "Mais cara de empate",
-      "value": "57.1% em empate"
+      "value": "50% em empate"
     },
     "storyMetrics": [
       {
@@ -1941,7 +2071,7 @@
       {
         "label": "Média do pelotão",
         "value": "0 pts",
-        "detail": "Média atual entre 7 apostadores."
+        "detail": "Média atual entre 8 apostadores."
       },
       {
         "label": "Rei dos exatos",
@@ -1955,13 +2085,13 @@
       },
       {
         "label": "Cartelas completas",
-        "value": "7/7",
+        "value": "8/8",
         "detail": "Todos têm 72 palpites válidos."
       },
       {
         "label": "Placar mais apostado",
         "value": "2-1",
-        "detail": "24 vezes nos jogos pendentes."
+        "detail": "29 vezes nos jogos pendentes."
       }
     ]
   }
