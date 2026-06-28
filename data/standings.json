@@ -1,13 +1,26 @@
 {
   "lastUpdated": "2026-06-28T11:30:55.532Z",
   "source": "openfootball",
-  "totalParticipants": 1,
+  "totalParticipants": 2,
   "countedMatches": 0,
   "standings": [
     {
       "rank": 1,
+      "previousRank": null,
+      "delta": null,
+      "name": "Italo",
+      "points": 0,
+      "exact": 0,
+      "partial": 0,
+      "partialWinnerGoal": 0,
+      "partialLoserGoal": 0,
+      "resultOnly": 0,
+      "played": 0
+    },
+    {
+      "rank": 2,
       "previousRank": 1,
-      "delta": 0,
+      "delta": -1,
       "name": "Rodney (Louva a deus)",
       "points": 0,
       "exact": 0,
@@ -27,9 +40,15 @@
     "phaseLabel": "32 avos de final",
     "home": "2º Grupo A",
     "away": "2º Grupo B",
-    "totalPicks": 1,
+    "totalPicks": 2,
     "missingPicks": 0,
     "picks": [
+      {
+        "name": "Italo",
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "outcome": "draw"
+      },
       {
         "name": "Rodney (Louva a deus)",
         "homeGoals": 1,
@@ -39,25 +58,35 @@
     ],
     "outcomeBreakdown": {
       "homeWin": 0,
-      "draw": 0,
+      "draw": 1,
       "awayWin": 1
     },
     "topOutcome": {
       "outcome": "away",
       "label": "2º Grupo B vence",
       "count": 1,
-      "percentage": 100
+      "percentage": 50
     },
     "averageHomeGoals": 1,
-    "averageAwayGoals": 2,
-    "averageTotalGoals": 3,
+    "averageAwayGoals": 1.5,
+    "averageTotalGoals": 2.5,
     "mostCommonScores": [
+      {
+        "homeGoals": 1,
+        "awayGoals": 1,
+        "score": "1-1",
+        "count": 1,
+        "percentage": 50,
+        "names": [
+          "Italo"
+        ]
+      },
       {
         "homeGoals": 1,
         "awayGoals": 2,
         "score": "1-2",
         "count": 1,
-        "percentage": 100,
+        "percentage": 50,
         "names": [
           "Rodney (Louva a deus)"
         ]
@@ -73,9 +102,15 @@
       "phaseLabel": "32 avos de final",
       "home": "2º Grupo A",
       "away": "2º Grupo B",
-      "totalPicks": 1,
+      "totalPicks": 2,
       "missingPicks": 0,
       "picks": [
+        {
+          "name": "Italo",
+          "homeGoals": 1,
+          "awayGoals": 1,
+          "outcome": "draw"
+        },
         {
           "name": "Rodney (Louva a deus)",
           "homeGoals": 1,
@@ -85,25 +120,35 @@
       ],
       "outcomeBreakdown": {
         "homeWin": 0,
-        "draw": 0,
+        "draw": 1,
         "awayWin": 1
       },
       "topOutcome": {
         "outcome": "away",
         "label": "2º Grupo B vence",
         "count": 1,
-        "percentage": 100
+        "percentage": 50
       },
       "averageHomeGoals": 1,
-      "averageAwayGoals": 2,
-      "averageTotalGoals": 3,
+      "averageAwayGoals": 1.5,
+      "averageTotalGoals": 2.5,
       "mostCommonScores": [
+        {
+          "homeGoals": 1,
+          "awayGoals": 1,
+          "score": "1-1",
+          "count": 1,
+          "percentage": 50,
+          "names": [
+            "Italo"
+          ]
+        },
         {
           "homeGoals": 1,
           "awayGoals": 2,
           "score": "1-2",
           "count": 1,
-          "percentage": 100,
+          "percentage": 50,
           "names": [
             "Rodney (Louva a deus)"
           ]
@@ -118,9 +163,15 @@
       "phaseLabel": "32 avos de final",
       "home": "1º Grupo E",
       "away": "Melhor 3º colocado",
-      "totalPicks": 1,
+      "totalPicks": 2,
       "missingPicks": 0,
       "picks": [
+        {
+          "name": "Italo",
+          "homeGoals": 2,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
         {
           "name": "Rodney (Louva a deus)",
           "homeGoals": 2,
@@ -129,14 +180,14 @@
         }
       ],
       "outcomeBreakdown": {
-        "homeWin": 1,
+        "homeWin": 2,
         "draw": 0,
         "awayWin": 0
       },
       "topOutcome": {
         "outcome": "home",
         "label": "1º Grupo E vence",
-        "count": 1,
+        "count": 2,
         "percentage": 100
       },
       "averageHomeGoals": 2,
@@ -147,9 +198,10 @@
           "homeGoals": 2,
           "awayGoals": 0,
           "score": "2-0",
-          "count": 1,
+          "count": 2,
           "percentage": 100,
           "names": [
+            "Italo",
             "Rodney (Louva a deus)"
           ]
         }
@@ -163,9 +215,15 @@
       "phaseLabel": "32 avos de final",
       "home": "1º Grupo F",
       "away": "2º Grupo C",
-      "totalPicks": 1,
+      "totalPicks": 2,
       "missingPicks": 0,
       "picks": [
+        {
+          "name": "Italo",
+          "homeGoals": 2,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
         {
           "name": "Rodney (Louva a deus)",
           "homeGoals": 3,
@@ -174,26 +232,36 @@
         }
       ],
       "outcomeBreakdown": {
-        "homeWin": 1,
+        "homeWin": 2,
         "draw": 0,
         "awayWin": 0
       },
       "topOutcome": {
         "outcome": "home",
         "label": "1º Grupo F vence",
-        "count": 1,
+        "count": 2,
         "percentage": 100
       },
-      "averageHomeGoals": 3,
-      "averageAwayGoals": 1,
-      "averageTotalGoals": 4,
+      "averageHomeGoals": 2.5,
+      "averageAwayGoals": 0.5,
+      "averageTotalGoals": 3,
       "mostCommonScores": [
+        {
+          "homeGoals": 2,
+          "awayGoals": 0,
+          "score": "2-0",
+          "count": 1,
+          "percentage": 50,
+          "names": [
+            "Italo"
+          ]
+        },
         {
           "homeGoals": 3,
           "awayGoals": 1,
           "score": "3-1",
           "count": 1,
-          "percentage": 100,
+          "percentage": 50,
           "names": [
             "Rodney (Louva a deus)"
           ]
@@ -208,9 +276,15 @@
       "phaseLabel": "32 avos de final",
       "home": "1º Grupo C",
       "away": "2º Grupo F",
-      "totalPicks": 1,
+      "totalPicks": 2,
       "missingPicks": 0,
       "picks": [
+        {
+          "name": "Italo",
+          "homeGoals": 2,
+          "awayGoals": 1,
+          "outcome": "home"
+        },
         {
           "name": "Rodney (Louva a deus)",
           "homeGoals": 3,
@@ -219,26 +293,36 @@
         }
       ],
       "outcomeBreakdown": {
-        "homeWin": 1,
+        "homeWin": 2,
         "draw": 0,
         "awayWin": 0
       },
       "topOutcome": {
         "outcome": "home",
         "label": "1º Grupo C vence",
-        "count": 1,
+        "count": 2,
         "percentage": 100
       },
-      "averageHomeGoals": 3,
+      "averageHomeGoals": 2.5,
       "averageAwayGoals": 1,
-      "averageTotalGoals": 4,
+      "averageTotalGoals": 3.5,
       "mostCommonScores": [
+        {
+          "homeGoals": 2,
+          "awayGoals": 1,
+          "score": "2-1",
+          "count": 1,
+          "percentage": 50,
+          "names": [
+            "Italo"
+          ]
+        },
         {
           "homeGoals": 3,
           "awayGoals": 1,
           "score": "3-1",
           "count": 1,
-          "percentage": 100,
+          "percentage": 50,
           "names": [
             "Rodney (Louva a deus)"
           ]
@@ -253,9 +337,15 @@
       "phaseLabel": "32 avos de final",
       "home": "1º Grupo I",
       "away": "Melhor 3º colocado",
-      "totalPicks": 1,
+      "totalPicks": 2,
       "missingPicks": 0,
       "picks": [
+        {
+          "name": "Italo",
+          "homeGoals": 3,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
         {
           "name": "Rodney (Louva a deus)",
           "homeGoals": 2,
@@ -264,28 +354,38 @@
         }
       ],
       "outcomeBreakdown": {
-        "homeWin": 1,
+        "homeWin": 2,
         "draw": 0,
         "awayWin": 0
       },
       "topOutcome": {
         "outcome": "home",
         "label": "1º Grupo I vence",
-        "count": 1,
+        "count": 2,
         "percentage": 100
       },
-      "averageHomeGoals": 2,
+      "averageHomeGoals": 2.5,
       "averageAwayGoals": 0,
-      "averageTotalGoals": 2,
+      "averageTotalGoals": 2.5,
       "mostCommonScores": [
         {
           "homeGoals": 2,
           "awayGoals": 0,
           "score": "2-0",
           "count": 1,
-          "percentage": 100,
+          "percentage": 50,
           "names": [
             "Rodney (Louva a deus)"
+          ]
+        },
+        {
+          "homeGoals": 3,
+          "awayGoals": 0,
+          "score": "3-0",
+          "count": 1,
+          "percentage": 50,
+          "names": [
+            "Italo"
           ]
         }
       ]
@@ -298,9 +398,15 @@
       "phaseLabel": "32 avos de final",
       "home": "2º Grupo E",
       "away": "2º Grupo I",
-      "totalPicks": 1,
+      "totalPicks": 2,
       "missingPicks": 0,
       "picks": [
+        {
+          "name": "Italo",
+          "homeGoals": 1,
+          "awayGoals": 1,
+          "outcome": "draw"
+        },
         {
           "name": "Rodney (Louva a deus)",
           "homeGoals": 2,
@@ -310,25 +416,35 @@
       ],
       "outcomeBreakdown": {
         "homeWin": 1,
-        "draw": 0,
+        "draw": 1,
         "awayWin": 0
       },
       "topOutcome": {
         "outcome": "home",
         "label": "2º Grupo E vence",
         "count": 1,
-        "percentage": 100
+        "percentage": 50
       },
-      "averageHomeGoals": 2,
+      "averageHomeGoals": 1.5,
       "averageAwayGoals": 1,
-      "averageTotalGoals": 3,
+      "averageTotalGoals": 2.5,
       "mostCommonScores": [
+        {
+          "homeGoals": 1,
+          "awayGoals": 1,
+          "score": "1-1",
+          "count": 1,
+          "percentage": 50,
+          "names": [
+            "Italo"
+          ]
+        },
         {
           "homeGoals": 2,
           "awayGoals": 1,
           "score": "2-1",
           "count": 1,
-          "percentage": 100,
+          "percentage": 50,
           "names": [
             "Rodney (Louva a deus)"
           ]
@@ -343,9 +459,15 @@
       "phaseLabel": "32 avos de final",
       "home": "1º Grupo A",
       "away": "Melhor 3º colocado",
-      "totalPicks": 1,
+      "totalPicks": 2,
       "missingPicks": 0,
       "picks": [
+        {
+          "name": "Italo",
+          "homeGoals": 2,
+          "awayGoals": 1,
+          "outcome": "home"
+        },
         {
           "name": "Rodney (Louva a deus)",
           "homeGoals": 2,
@@ -354,14 +476,14 @@
         }
       ],
       "outcomeBreakdown": {
-        "homeWin": 1,
+        "homeWin": 2,
         "draw": 0,
         "awayWin": 0
       },
       "topOutcome": {
         "outcome": "home",
         "label": "1º Grupo A vence",
-        "count": 1,
+        "count": 2,
         "percentage": 100
       },
       "averageHomeGoals": 2,
@@ -372,9 +494,10 @@
           "homeGoals": 2,
           "awayGoals": 1,
           "score": "2-1",
-          "count": 1,
+          "count": 2,
           "percentage": 100,
           "names": [
+            "Italo",
             "Rodney (Louva a deus)"
           ]
         }
@@ -388,9 +511,15 @@
       "phaseLabel": "32 avos de final",
       "home": "1º Grupo L",
       "away": "Melhor 3º colocado",
-      "totalPicks": 1,
+      "totalPicks": 2,
       "missingPicks": 0,
       "picks": [
+        {
+          "name": "Italo",
+          "homeGoals": 3,
+          "awayGoals": 1,
+          "outcome": "home"
+        },
         {
           "name": "Rodney (Louva a deus)",
           "homeGoals": 1,
@@ -399,28 +528,38 @@
         }
       ],
       "outcomeBreakdown": {
-        "homeWin": 1,
+        "homeWin": 2,
         "draw": 0,
         "awayWin": 0
       },
       "topOutcome": {
         "outcome": "home",
         "label": "1º Grupo L vence",
-        "count": 1,
+        "count": 2,
         "percentage": 100
       },
-      "averageHomeGoals": 1,
-      "averageAwayGoals": 0,
-      "averageTotalGoals": 1,
+      "averageHomeGoals": 2,
+      "averageAwayGoals": 0.5,
+      "averageTotalGoals": 2.5,
       "mostCommonScores": [
         {
           "homeGoals": 1,
           "awayGoals": 0,
           "score": "1-0",
           "count": 1,
-          "percentage": 100,
+          "percentage": 50,
           "names": [
             "Rodney (Louva a deus)"
+          ]
+        },
+        {
+          "homeGoals": 3,
+          "awayGoals": 1,
+          "score": "3-1",
+          "count": 1,
+          "percentage": 50,
+          "names": [
+            "Italo"
           ]
         }
       ]
@@ -433,9 +572,15 @@
       "phaseLabel": "32 avos de final",
       "home": "1º Grupo D",
       "away": "Melhor 3º colocado",
-      "totalPicks": 1,
+      "totalPicks": 2,
       "missingPicks": 0,
       "picks": [
+        {
+          "name": "Italo",
+          "homeGoals": 2,
+          "awayGoals": 1,
+          "outcome": "home"
+        },
         {
           "name": "Rodney (Louva a deus)",
           "homeGoals": 2,
@@ -444,14 +589,14 @@
         }
       ],
       "outcomeBreakdown": {
-        "homeWin": 1,
+        "homeWin": 2,
         "draw": 0,
         "awayWin": 0
       },
       "topOutcome": {
         "outcome": "home",
         "label": "1º Grupo D vence",
-        "count": 1,
+        "count": 2,
         "percentage": 100
       },
       "averageHomeGoals": 2,
@@ -462,9 +607,10 @@
           "homeGoals": 2,
           "awayGoals": 1,
           "score": "2-1",
-          "count": 1,
+          "count": 2,
           "percentage": 100,
           "names": [
+            "Italo",
             "Rodney (Louva a deus)"
           ]
         }
@@ -478,9 +624,15 @@
       "phaseLabel": "32 avos de final",
       "home": "1º Grupo G",
       "away": "Melhor 3º colocado",
-      "totalPicks": 1,
+      "totalPicks": 2,
       "missingPicks": 0,
       "picks": [
+        {
+          "name": "Italo",
+          "homeGoals": 2,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
         {
           "name": "Rodney (Louva a deus)",
           "homeGoals": 1,
@@ -489,28 +641,38 @@
         }
       ],
       "outcomeBreakdown": {
-        "homeWin": 1,
+        "homeWin": 2,
         "draw": 0,
         "awayWin": 0
       },
       "topOutcome": {
         "outcome": "home",
         "label": "1º Grupo G vence",
-        "count": 1,
+        "count": 2,
         "percentage": 100
       },
-      "averageHomeGoals": 1,
+      "averageHomeGoals": 1.5,
       "averageAwayGoals": 0,
-      "averageTotalGoals": 1,
+      "averageTotalGoals": 1.5,
       "mostCommonScores": [
         {
           "homeGoals": 1,
           "awayGoals": 0,
           "score": "1-0",
           "count": 1,
-          "percentage": 100,
+          "percentage": 50,
           "names": [
             "Rodney (Louva a deus)"
+          ]
+        },
+        {
+          "homeGoals": 2,
+          "awayGoals": 0,
+          "score": "2-0",
+          "count": 1,
+          "percentage": 50,
+          "names": [
+            "Italo"
           ]
         }
       ]
@@ -523,9 +685,15 @@
       "phaseLabel": "32 avos de final",
       "home": "2º Grupo K",
       "away": "2º Grupo L",
-      "totalPicks": 1,
+      "totalPicks": 2,
       "missingPicks": 0,
       "picks": [
+        {
+          "name": "Italo",
+          "homeGoals": 2,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
         {
           "name": "Rodney (Louva a deus)",
           "homeGoals": 1,
@@ -534,18 +702,18 @@
         }
       ],
       "outcomeBreakdown": {
-        "homeWin": 0,
+        "homeWin": 1,
         "draw": 1,
         "awayWin": 0
       },
       "topOutcome": {
-        "outcome": "draw",
-        "label": "Empate",
+        "outcome": "home",
+        "label": "2º Grupo K vence",
         "count": 1,
-        "percentage": 100
+        "percentage": 50
       },
-      "averageHomeGoals": 1,
-      "averageAwayGoals": 1,
+      "averageHomeGoals": 1.5,
+      "averageAwayGoals": 0.5,
       "averageTotalGoals": 2,
       "mostCommonScores": [
         {
@@ -553,9 +721,19 @@
           "awayGoals": 1,
           "score": "1-1",
           "count": 1,
-          "percentage": 100,
+          "percentage": 50,
           "names": [
             "Rodney (Louva a deus)"
+          ]
+        },
+        {
+          "homeGoals": 2,
+          "awayGoals": 0,
+          "score": "2-0",
+          "count": 1,
+          "percentage": 50,
+          "names": [
+            "Italo"
           ]
         }
       ]
@@ -568,9 +746,15 @@
       "phaseLabel": "32 avos de final",
       "home": "1º Grupo H",
       "away": "2º Grupo J",
-      "totalPicks": 1,
+      "totalPicks": 2,
       "missingPicks": 0,
       "picks": [
+        {
+          "name": "Italo",
+          "homeGoals": 1,
+          "awayGoals": 1,
+          "outcome": "draw"
+        },
         {
           "name": "Rodney (Louva a deus)",
           "homeGoals": 2,
@@ -580,25 +764,35 @@
       ],
       "outcomeBreakdown": {
         "homeWin": 1,
-        "draw": 0,
+        "draw": 1,
         "awayWin": 0
       },
       "topOutcome": {
         "outcome": "home",
         "label": "1º Grupo H vence",
         "count": 1,
-        "percentage": 100
+        "percentage": 50
       },
-      "averageHomeGoals": 2,
-      "averageAwayGoals": 0,
+      "averageHomeGoals": 1.5,
+      "averageAwayGoals": 0.5,
       "averageTotalGoals": 2,
       "mostCommonScores": [
+        {
+          "homeGoals": 1,
+          "awayGoals": 1,
+          "score": "1-1",
+          "count": 1,
+          "percentage": 50,
+          "names": [
+            "Italo"
+          ]
+        },
         {
           "homeGoals": 2,
           "awayGoals": 0,
           "score": "2-0",
           "count": 1,
-          "percentage": 100,
+          "percentage": 50,
           "names": [
             "Rodney (Louva a deus)"
           ]
@@ -613,9 +807,15 @@
       "phaseLabel": "32 avos de final",
       "home": "1º Grupo B",
       "away": "Melhor 3º colocado",
-      "totalPicks": 1,
+      "totalPicks": 2,
       "missingPicks": 0,
       "picks": [
+        {
+          "name": "Italo",
+          "homeGoals": 2,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
         {
           "name": "Rodney (Louva a deus)",
           "homeGoals": 1,
@@ -624,18 +824,18 @@
         }
       ],
       "outcomeBreakdown": {
-        "homeWin": 0,
+        "homeWin": 1,
         "draw": 1,
         "awayWin": 0
       },
       "topOutcome": {
-        "outcome": "draw",
-        "label": "Empate",
+        "outcome": "home",
+        "label": "1º Grupo B vence",
         "count": 1,
-        "percentage": 100
+        "percentage": 50
       },
-      "averageHomeGoals": 1,
-      "averageAwayGoals": 1,
+      "averageHomeGoals": 1.5,
+      "averageAwayGoals": 0.5,
       "averageTotalGoals": 2,
       "mostCommonScores": [
         {
@@ -643,9 +843,19 @@
           "awayGoals": 1,
           "score": "1-1",
           "count": 1,
-          "percentage": 100,
+          "percentage": 50,
           "names": [
             "Rodney (Louva a deus)"
+          ]
+        },
+        {
+          "homeGoals": 2,
+          "awayGoals": 0,
+          "score": "2-0",
+          "count": 1,
+          "percentage": 50,
+          "names": [
+            "Italo"
           ]
         }
       ]
@@ -658,9 +868,15 @@
       "phaseLabel": "32 avos de final",
       "home": "1º Grupo J",
       "away": "2º Grupo H",
-      "totalPicks": 1,
+      "totalPicks": 2,
       "missingPicks": 0,
       "picks": [
+        {
+          "name": "Italo",
+          "homeGoals": 0,
+          "awayGoals": 1,
+          "outcome": "away"
+        },
         {
           "name": "Rodney (Louva a deus)",
           "homeGoals": 3,
@@ -671,24 +887,34 @@
       "outcomeBreakdown": {
         "homeWin": 1,
         "draw": 0,
-        "awayWin": 0
+        "awayWin": 1
       },
       "topOutcome": {
         "outcome": "home",
         "label": "1º Grupo J vence",
         "count": 1,
-        "percentage": 100
+        "percentage": 50
       },
-      "averageHomeGoals": 3,
-      "averageAwayGoals": 0,
-      "averageTotalGoals": 3,
+      "averageHomeGoals": 1.5,
+      "averageAwayGoals": 0.5,
+      "averageTotalGoals": 2,
       "mostCommonScores": [
+        {
+          "homeGoals": 0,
+          "awayGoals": 1,
+          "score": "0-1",
+          "count": 1,
+          "percentage": 50,
+          "names": [
+            "Italo"
+          ]
+        },
         {
           "homeGoals": 3,
           "awayGoals": 0,
           "score": "3-0",
           "count": 1,
-          "percentage": 100,
+          "percentage": 50,
           "names": [
             "Rodney (Louva a deus)"
           ]
@@ -703,9 +929,15 @@
       "phaseLabel": "32 avos de final",
       "home": "1º Grupo K",
       "away": "Melhor 3º colocado",
-      "totalPicks": 1,
+      "totalPicks": 2,
       "missingPicks": 0,
       "picks": [
+        {
+          "name": "Italo",
+          "homeGoals": 2,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
         {
           "name": "Rodney (Louva a deus)",
           "homeGoals": 2,
@@ -714,14 +946,14 @@
         }
       ],
       "outcomeBreakdown": {
-        "homeWin": 1,
+        "homeWin": 2,
         "draw": 0,
         "awayWin": 0
       },
       "topOutcome": {
         "outcome": "home",
         "label": "1º Grupo K vence",
-        "count": 1,
+        "count": 2,
         "percentage": 100
       },
       "averageHomeGoals": 2,
@@ -732,9 +964,10 @@
           "homeGoals": 2,
           "awayGoals": 0,
           "score": "2-0",
-          "count": 1,
+          "count": 2,
           "percentage": 100,
           "names": [
+            "Italo",
             "Rodney (Louva a deus)"
           ]
         }
@@ -748,9 +981,15 @@
       "phaseLabel": "32 avos de final",
       "home": "2º Grupo D",
       "away": "2º Grupo G",
-      "totalPicks": 1,
+      "totalPicks": 2,
       "missingPicks": 0,
       "picks": [
+        {
+          "name": "Italo",
+          "homeGoals": 1,
+          "awayGoals": 1,
+          "outcome": "draw"
+        },
         {
           "name": "Rodney (Louva a deus)",
           "homeGoals": 1,
@@ -760,13 +999,13 @@
       ],
       "outcomeBreakdown": {
         "homeWin": 0,
-        "draw": 1,
+        "draw": 2,
         "awayWin": 0
       },
       "topOutcome": {
         "outcome": "draw",
         "label": "Empate",
-        "count": 1,
+        "count": 2,
         "percentage": 100
       },
       "averageHomeGoals": 1,
@@ -777,9 +1016,10 @@
           "homeGoals": 1,
           "awayGoals": 1,
           "score": "1-1",
-          "count": 1,
+          "count": 2,
           "percentage": 100,
           "names": [
+            "Italo",
             "Rodney (Louva a deus)"
           ]
         }
@@ -790,38 +1030,38 @@
     "totalMatches": 16,
     "finishedMatches": 0,
     "remainingMatches": 16,
-    "totalValidPicks": 16,
+    "totalValidPicks": 32,
     "averageUpcomingGoals": 2.4,
     "completionRate": 0,
-    "leaderGap": null,
+    "leaderGap": 0,
     "leaderEfficiency": null,
     "averagePoints": 0,
-    "completeCards": 1,
+    "completeCards": 2,
     "missingPickCards": 0,
     "topExact": {
       "label": "Rei dos exatos",
       "value": "0",
-      "detail": "Rodney (Louva a deus)"
+      "detail": "Italo"
     },
     "topPartial": {
       "label": "Mais parciais",
       "value": "0",
-      "detail": "Rodney (Louva a deus)"
+      "detail": "Italo"
     },
     "topUpcomingScore": {
       "label": "Placar mais apostado",
       "value": "2-0",
-      "detail": "4 palpites"
+      "detail": "10 palpites"
     },
     "highestConsensus": {
-      "id": 73,
-      "date": "2026-06-28",
+      "id": 74,
+      "date": "2026-06-29",
       "time": "",
       "group": "R32",
-      "home": "2º Grupo A",
-      "away": "2º Grupo B",
+      "home": "1º Grupo E",
+      "away": "Melhor 3º colocado",
       "label": "Maior consenso",
-      "value": "2º Grupo B vence · 100%"
+      "value": "1º Grupo E vence · 100%"
     },
     "mostDivisive": {
       "id": 73,
@@ -831,53 +1071,58 @@
       "home": "2º Grupo A",
       "away": "2º Grupo B",
       "label": "Jogo mais dividido",
-      "value": "2º Grupo B vence · 100%"
+      "value": "2º Grupo B vence · 50%"
     },
     "highestExpectedGoals": {
-      "id": 75,
+      "id": 76,
       "date": "2026-06-29",
       "time": "",
       "group": "R32",
-      "home": "1º Grupo F",
-      "away": "2º Grupo C",
+      "home": "1º Grupo C",
+      "away": "2º Grupo F",
       "label": "Mais gols previstos",
-      "value": "4 gols em média"
+      "value": "3.5 gols em média"
     },
     "highestDrawShare": {
-      "id": 83,
-      "date": "2026-07-02",
+      "id": 88,
+      "date": "2026-07-03",
       "time": "",
       "group": "R32",
-      "home": "2º Grupo K",
-      "away": "2º Grupo L",
+      "home": "2º Grupo D",
+      "away": "2º Grupo G",
       "label": "Mais cara de empate",
       "value": "100% em empate"
     },
     "storyMetrics": [
       {
+        "label": "Briga pela liderança",
+        "value": "0 pts",
+        "detail": "Italo abre 0 pontos sobre Rodney (Louva a deus)."
+      },
+      {
         "label": "Média do pelotão",
         "value": "0 pts",
-        "detail": "Média atual entre 1 apostadores."
+        "detail": "Média atual entre 2 apostadores."
       },
       {
         "label": "Rei dos exatos",
         "value": "0",
-        "detail": "Rodney (Louva a deus) lidera em placares cravados."
+        "detail": "Italo lidera em placares cravados."
       },
       {
         "label": "Mais parciais",
         "value": "0",
-        "detail": "Rodney (Louva a deus) lidera em acertos de 5 ou 3 pontos."
+        "detail": "Italo lidera em acertos de 5 ou 3 pontos."
       },
       {
         "label": "Cartelas completas",
-        "value": "1/1",
+        "value": "2/2",
         "detail": "Todos têm 72 palpites válidos."
       },
       {
         "label": "Placar mais apostado",
         "value": "2-0",
-        "detail": "4 vezes nos jogos pendentes."
+        "detail": "10 vezes nos jogos pendentes."
       }
     ]
   }
