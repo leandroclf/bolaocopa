@@ -17,6 +17,8 @@ function Participant({ side, match }: { side: Side; match: BracketMatch }) {
   const isWinner = match.winner === side;
   const goals = side === "home" ? match.homeGoals : match.awayGoals;
   const resolved = Boolean(p.team);
+  const showOfficialSlot = match.status !== "finished";
+  const displayLabel = showOfficialSlot ? p.source : p.label;
 
   return (
     <div
@@ -30,7 +32,7 @@ function Participant({ side, match }: { side: Side; match: BracketMatch }) {
           isWinner ? "font-semibold text-lime" : resolved ? "text-chalk" : "italic text-slatey"
         }`}
       >
-        {p.label}
+        {displayLabel}
       </span>
       {goals !== null && (
         <span className={`font-mono text-sm font-bold ${isWinner ? "text-lime" : "text-chalk"}`}>{goals}</span>
@@ -89,7 +91,7 @@ export default function BracketView({ bracket }: { bracket: Bracket | null }) {
       <div className="mb-3 flex items-end justify-between gap-4">
         <h2 className="font-display text-xl uppercase tracking-widest text-chalk">Chaveamento</h2>
         <p className="font-mono text-[10px] uppercase tracking-wider text-slatey">
-          {bracket.groupsComplete ? "mata-mata" : "fase de 32 avos em preparação"}
+          {bracket.groupsComplete ? "slots oficiais FIFA após a 1ª fase" : "fase de 32 avos em preparação"}
         </p>
       </div>
 
