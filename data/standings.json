@@ -201,9 +201,9 @@
     },
     {
       "rank": 16,
-      "previousRank": 16,
-      "delta": 0,
-      "name": "Vinicius",
+      "previousRank": null,
+      "delta": null,
+      "name": "Vinicius Freire",
       "points": 0,
       "exact": 0,
       "partial": 0,
@@ -216,7 +216,7 @@
       "rank": 17,
       "previousRank": null,
       "delta": null,
-      "name": "Vinicius (Roberto)",
+      "name": "Vinicius Teixeira",
       "points": 0,
       "exact": 0,
       "partial": 0,
@@ -329,13 +329,13 @@
         "outcome": "away"
       },
       {
-        "name": "Vinicius",
+        "name": "Vinicius Freire",
         "homeGoals": 1,
         "awayGoals": 2,
         "outcome": "away"
       },
       {
-        "name": "Vinicius (Roberto)",
+        "name": "Vinicius Teixeira",
         "homeGoals": 1,
         "awayGoals": 2,
         "outcome": "away"
@@ -369,8 +369,8 @@
           "Mario",
           "Nando",
           "Rodney",
-          "Vinicius",
-          "Vinicius (Roberto)"
+          "Vinicius Freire",
+          "Vinicius Teixeira"
         ]
       },
       {
@@ -500,13 +500,13 @@
           "outcome": "away"
         },
         {
-          "name": "Vinicius",
+          "name": "Vinicius Freire",
           "homeGoals": 1,
           "awayGoals": 2,
           "outcome": "away"
         },
         {
-          "name": "Vinicius (Roberto)",
+          "name": "Vinicius Teixeira",
           "homeGoals": 1,
           "awayGoals": 2,
           "outcome": "away"
@@ -540,8 +540,8 @@
             "Mario",
             "Nando",
             "Rodney",
-            "Vinicius",
-            "Vinicius (Roberto)"
+            "Vinicius Freire",
+            "Vinicius Teixeira"
           ]
         },
         {
@@ -670,15 +670,15 @@
           "outcome": "home"
         },
         {
-          "name": "Vinicius",
-          "homeGoals": 2,
-          "awayGoals": 0,
+          "name": "Vinicius Freire",
+          "homeGoals": 3,
+          "awayGoals": 1,
           "outcome": "home"
         },
         {
-          "name": "Vinicius (Roberto)",
-          "homeGoals": 3,
-          "awayGoals": 1,
+          "name": "Vinicius Teixeira",
+          "homeGoals": 2,
+          "awayGoals": 0,
           "outcome": "home"
         }
       ],
@@ -712,7 +712,7 @@
             "Rafael Hive",
             "Robson",
             "Rodney",
-            "Vinicius"
+            "Vinicius Teixeira"
           ]
         },
         {
@@ -843,16 +843,16 @@
           "outcome": "home"
         },
         {
-          "name": "Vinicius",
-          "homeGoals": 3,
-          "awayGoals": 2,
-          "outcome": "home"
-        },
-        {
-          "name": "Vinicius (Roberto)",
+          "name": "Vinicius Freire",
           "homeGoals": 2,
           "awayGoals": 2,
           "outcome": "draw"
+        },
+        {
+          "name": "Vinicius Teixeira",
+          "homeGoals": 3,
+          "awayGoals": 2,
+          "outcome": "home"
         }
       ],
       "outcomeBreakdown": {
@@ -905,7 +905,7 @@
           "names": [
             "Gilberto",
             "Jean",
-            "Vinicius (Roberto)"
+            "Vinicius Freire"
           ]
         }
       ]
@@ -1012,15 +1012,15 @@
           "outcome": "home"
         },
         {
-          "name": "Vinicius",
-          "homeGoals": 3,
-          "awayGoals": 0,
+          "name": "Vinicius Freire",
+          "homeGoals": 2,
+          "awayGoals": 1,
           "outcome": "home"
         },
         {
-          "name": "Vinicius (Roberto)",
-          "homeGoals": 2,
-          "awayGoals": 1,
+          "name": "Vinicius Teixeira",
+          "homeGoals": 3,
+          "awayGoals": 0,
           "outcome": "home"
         }
       ],
@@ -1051,7 +1051,7 @@
             "Italo",
             "Matheus",
             "Rafael Hive",
-            "Vinicius (Roberto)"
+            "Vinicius Freire"
           ]
         },
         {
@@ -1183,13 +1183,13 @@
           "outcome": "home"
         },
         {
-          "name": "Vinicius",
+          "name": "Vinicius Freire",
           "homeGoals": 3,
           "awayGoals": 1,
           "outcome": "home"
         },
         {
-          "name": "Vinicius (Roberto)",
+          "name": "Vinicius Teixeira",
           "homeGoals": 3,
           "awayGoals": 1,
           "outcome": "home"
@@ -1222,8 +1222,8 @@
             "Mario",
             "Nando",
             "Sônia",
-            "Vinicius",
-            "Vinicius (Roberto)"
+            "Vinicius Freire",
+            "Vinicius Teixeira"
           ]
         },
         {
@@ -1356,13 +1356,13 @@
           "outcome": "away"
         },
         {
-          "name": "Vinicius",
+          "name": "Vinicius Freire",
           "homeGoals": 1,
           "awayGoals": 2,
           "outcome": "away"
         },
         {
-          "name": "Vinicius (Roberto)",
+          "name": "Vinicius Teixeira",
           "homeGoals": 1,
           "awayGoals": 2,
           "outcome": "away"
@@ -1397,8 +1397,8 @@
             "Nando",
             "Rafael Hive",
             "Sônia",
-            "Vinicius",
-            "Vinicius (Roberto)"
+            "Vinicius Freire",
+            "Vinicius Teixeira"
           ]
         },
         {
@@ -1527,16 +1527,16 @@
           "outcome": "away"
         },
         {
-          "name": "Vinicius",
-          "homeGoals": 1,
-          "awayGoals": 2,
-          "outcome": "away"
-        },
-        {
-          "name": "Vinicius (Roberto)",
+          "name": "Vinicius Freire",
           "homeGoals": 2,
           "awayGoals": 2,
           "outcome": "draw"
+        },
+        {
+          "name": "Vinicius Teixeira",
+          "homeGoals": 1,
+          "awayGoals": 2,
+          "outcome": "away"
         }
       ],
       "outcomeBreakdown": {
@@ -1592,7 +1592,7 @@
           "percentage": 11.8,
           "names": [
             "Ezio",
-            "Vinicius (Roberto)"
+            "Vinicius Freire"
           ]
         }
       ]
@@ -1699,15 +1699,15 @@
           "outcome": "home"
         },
         {
-          "name": "Vinicius",
-          "homeGoals": 2,
-          "awayGoals": 0,
+          "name": "Vinicius Freire",
+          "homeGoals": 3,
+          "awayGoals": 1,
           "outcome": "home"
         },
         {
-          "name": "Vinicius (Roberto)",
-          "homeGoals": 3,
-          "awayGoals": 1,
+          "name": "Vinicius Teixeira",
+          "homeGoals": 2,
+          "awayGoals": 0,
           "outcome": "home"
         }
       ],
@@ -1736,7 +1736,7 @@
             "Leandro",
             "Mario",
             "Rafael Hive",
-            "Vinicius"
+            "Vinicius Teixeira"
           ]
         },
         {
@@ -1749,7 +1749,7 @@
             "Chico",
             "Elcio",
             "Italo",
-            "Vinicius (Roberto)"
+            "Vinicius Freire"
           ]
         },
         {
@@ -1867,16 +1867,16 @@
           "outcome": "home"
         },
         {
-          "name": "Vinicius",
-          "homeGoals": 1,
-          "awayGoals": 2,
-          "outcome": "away"
-        },
-        {
-          "name": "Vinicius (Roberto)",
+          "name": "Vinicius Freire",
           "homeGoals": 2,
           "awayGoals": 2,
           "outcome": "draw"
+        },
+        {
+          "name": "Vinicius Teixeira",
+          "homeGoals": 1,
+          "awayGoals": 2,
+          "outcome": "away"
         }
       ],
       "outcomeBreakdown": {
@@ -2036,15 +2036,15 @@
           "outcome": "home"
         },
         {
-          "name": "Vinicius",
+          "name": "Vinicius Freire",
           "homeGoals": 3,
-          "awayGoals": 0,
+          "awayGoals": 2,
           "outcome": "home"
         },
         {
-          "name": "Vinicius (Roberto)",
+          "name": "Vinicius Teixeira",
           "homeGoals": 3,
-          "awayGoals": 2,
+          "awayGoals": 0,
           "outcome": "home"
         }
       ],
@@ -2206,15 +2206,15 @@
           "outcome": "home"
         },
         {
-          "name": "Vinicius",
-          "homeGoals": 2,
-          "awayGoals": 1,
+          "name": "Vinicius Freire",
+          "homeGoals": 3,
+          "awayGoals": 0,
           "outcome": "home"
         },
         {
-          "name": "Vinicius (Roberto)",
-          "homeGoals": 3,
-          "awayGoals": 0,
+          "name": "Vinicius Teixeira",
+          "homeGoals": 2,
+          "awayGoals": 1,
           "outcome": "home"
         }
       ],
@@ -2257,7 +2257,7 @@
             "Gilberto",
             "Jean",
             "Matheus",
-            "Vinicius (Roberto)"
+            "Vinicius Freire"
           ]
         },
         {
@@ -2376,16 +2376,16 @@
           "outcome": "home"
         },
         {
-          "name": "Vinicius",
-          "homeGoals": 3,
-          "awayGoals": 2,
-          "outcome": "home"
-        },
-        {
-          "name": "Vinicius (Roberto)",
+          "name": "Vinicius Freire",
           "homeGoals": 2,
           "awayGoals": 2,
           "outcome": "draw"
+        },
+        {
+          "name": "Vinicius Teixeira",
+          "homeGoals": 3,
+          "awayGoals": 2,
+          "outcome": "home"
         }
       ],
       "outcomeBreakdown": {
@@ -2545,16 +2545,16 @@
           "outcome": "home"
         },
         {
-          "name": "Vinicius",
-          "homeGoals": 2,
-          "awayGoals": 2,
-          "outcome": "draw"
-        },
-        {
-          "name": "Vinicius (Roberto)",
+          "name": "Vinicius Freire",
           "homeGoals": 2,
           "awayGoals": 1,
           "outcome": "home"
+        },
+        {
+          "name": "Vinicius Teixeira",
+          "homeGoals": 2,
+          "awayGoals": 2,
+          "outcome": "draw"
         }
       ],
       "outcomeBreakdown": {
@@ -2597,7 +2597,7 @@
             "Matheus",
             "Nando",
             "Robson",
-            "Vinicius (Roberto)"
+            "Vinicius Freire"
           ]
         },
         {
@@ -2716,14 +2716,14 @@
           "outcome": "away"
         },
         {
-          "name": "Vinicius",
-          "homeGoals": 1,
+          "name": "Vinicius Freire",
+          "homeGoals": 0,
           "awayGoals": 2,
           "outcome": "away"
         },
         {
-          "name": "Vinicius (Roberto)",
-          "homeGoals": 0,
+          "name": "Vinicius Teixeira",
+          "homeGoals": 1,
           "awayGoals": 2,
           "outcome": "away"
         }
@@ -2753,7 +2753,7 @@
             "Diego (Dinão)",
             "Mario",
             "Nando",
-            "Vinicius"
+            "Vinicius Teixeira"
           ]
         },
         {
@@ -2777,7 +2777,7 @@
           "names": [
             "Gilberto",
             "Sônia",
-            "Vinicius (Roberto)"
+            "Vinicius Freire"
           ]
         }
       ]
@@ -2884,14 +2884,14 @@
           "outcome": "home"
         },
         {
-          "name": "Vinicius",
-          "homeGoals": 4,
+          "name": "Vinicius Freire",
+          "homeGoals": 3,
           "awayGoals": 0,
           "outcome": "home"
         },
         {
-          "name": "Vinicius (Roberto)",
-          "homeGoals": 3,
+          "name": "Vinicius Teixeira",
+          "homeGoals": 4,
           "awayGoals": 0,
           "outcome": "home"
         }
@@ -2923,7 +2923,7 @@
             "Rafael Hive",
             "Robson",
             "Sônia",
-            "Vinicius (Roberto)"
+            "Vinicius Freire"
           ]
         },
         {
@@ -2948,7 +2948,7 @@
           "names": [
             "Diego (Dinão)",
             "Jean",
-            "Vinicius"
+            "Vinicius Teixeira"
           ]
         }
       ]
@@ -3055,16 +3055,16 @@
           "outcome": "home"
         },
         {
-          "name": "Vinicius",
-          "homeGoals": 1,
-          "awayGoals": 1,
-          "outcome": "draw"
-        },
-        {
-          "name": "Vinicius (Roberto)",
+          "name": "Vinicius Freire",
           "homeGoals": 3,
           "awayGoals": 0,
           "outcome": "home"
+        },
+        {
+          "name": "Vinicius Teixeira",
+          "homeGoals": 1,
+          "awayGoals": 1,
+          "outcome": "draw"
         }
       ],
       "outcomeBreakdown": {
@@ -3092,7 +3092,7 @@
             "Ezio",
             "Italo",
             "Rodney",
-            "Vinicius"
+            "Vinicius Teixeira"
           ]
         },
         {
