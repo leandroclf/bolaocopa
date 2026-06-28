@@ -1,7 +1,7 @@
 {
   "lastUpdated": "2026-06-28T11:30:55.532Z",
   "source": "openfootball",
-  "totalParticipants": 29,
+  "totalParticipants": 30,
   "countedMatches": 0,
   "standings": [
     {
@@ -58,8 +58,8 @@
     },
     {
       "rank": 5,
-      "previousRank": null,
-      "delta": null,
+      "previousRank": 5,
+      "delta": 0,
       "name": "Diego (Vera Verão)",
       "points": 0,
       "exact": 0,
@@ -71,8 +71,8 @@
     },
     {
       "rank": 6,
-      "previousRank": null,
-      "delta": null,
+      "previousRank": 6,
+      "delta": 0,
       "name": "Douglas Truta",
       "points": 0,
       "exact": 0,
@@ -84,8 +84,8 @@
     },
     {
       "rank": 7,
-      "previousRank": 6,
-      "delta": -1,
+      "previousRank": 7,
+      "delta": 0,
       "name": "Elcio",
       "points": 0,
       "exact": 0,
@@ -97,8 +97,8 @@
     },
     {
       "rank": 8,
-      "previousRank": 7,
-      "delta": -1,
+      "previousRank": 8,
+      "delta": 0,
       "name": "Elias (Codorninha)",
       "points": 0,
       "exact": 0,
@@ -110,8 +110,8 @@
     },
     {
       "rank": 9,
-      "previousRank": 8,
-      "delta": -1,
+      "previousRank": 9,
+      "delta": 0,
       "name": "Ezio",
       "points": 0,
       "exact": 0,
@@ -123,8 +123,8 @@
     },
     {
       "rank": 10,
-      "previousRank": 9,
-      "delta": -1,
+      "previousRank": 10,
+      "delta": 0,
       "name": "Gilberto",
       "points": 0,
       "exact": 0,
@@ -136,8 +136,8 @@
     },
     {
       "rank": 11,
-      "previousRank": 10,
-      "delta": -1,
+      "previousRank": 11,
+      "delta": 0,
       "name": "GuiGui",
       "points": 0,
       "exact": 0,
@@ -149,8 +149,8 @@
     },
     {
       "rank": 12,
-      "previousRank": 11,
-      "delta": -1,
+      "previousRank": 12,
+      "delta": 0,
       "name": "Italo",
       "points": 0,
       "exact": 0,
@@ -162,8 +162,8 @@
     },
     {
       "rank": 13,
-      "previousRank": 12,
-      "delta": -1,
+      "previousRank": 13,
+      "delta": 0,
       "name": "Jean",
       "points": 0,
       "exact": 0,
@@ -175,8 +175,8 @@
     },
     {
       "rank": 14,
-      "previousRank": 13,
-      "delta": -1,
+      "previousRank": 14,
+      "delta": 0,
       "name": "Jonas",
       "points": 0,
       "exact": 0,
@@ -188,8 +188,8 @@
     },
     {
       "rank": 15,
-      "previousRank": 14,
-      "delta": -1,
+      "previousRank": 15,
+      "delta": 0,
       "name": "Leandro",
       "points": 0,
       "exact": 0,
@@ -201,8 +201,8 @@
     },
     {
       "rank": 16,
-      "previousRank": 15,
-      "delta": -1,
+      "previousRank": 16,
+      "delta": 0,
       "name": "Luiz",
       "points": 0,
       "exact": 0,
@@ -214,8 +214,8 @@
     },
     {
       "rank": 17,
-      "previousRank": 16,
-      "delta": -1,
+      "previousRank": 17,
+      "delta": 0,
       "name": "Mario",
       "points": 0,
       "exact": 0,
@@ -227,8 +227,8 @@
     },
     {
       "rank": 18,
-      "previousRank": 17,
-      "delta": -1,
+      "previousRank": 18,
+      "delta": 0,
       "name": "Matheus",
       "points": 0,
       "exact": 0,
@@ -240,8 +240,8 @@
     },
     {
       "rank": 19,
-      "previousRank": 18,
-      "delta": -1,
+      "previousRank": 19,
+      "delta": 0,
       "name": "Nando",
       "points": 0,
       "exact": 0,
@@ -253,8 +253,8 @@
     },
     {
       "rank": 20,
-      "previousRank": 19,
-      "delta": -1,
+      "previousRank": 20,
+      "delta": 0,
       "name": "Nauzinha",
       "points": 0,
       "exact": 0,
@@ -266,8 +266,8 @@
     },
     {
       "rank": 21,
-      "previousRank": 20,
-      "delta": -1,
+      "previousRank": 21,
+      "delta": 0,
       "name": "Rafael Hive",
       "points": 0,
       "exact": 0,
@@ -279,8 +279,8 @@
     },
     {
       "rank": 22,
-      "previousRank": 21,
-      "delta": -1,
+      "previousRank": 22,
+      "delta": 0,
       "name": "Robson",
       "points": 0,
       "exact": 0,
@@ -292,8 +292,8 @@
     },
     {
       "rank": 23,
-      "previousRank": 22,
-      "delta": -1,
+      "previousRank": 23,
+      "delta": 0,
       "name": "Robson Boró",
       "points": 0,
       "exact": 0,
@@ -305,8 +305,8 @@
     },
     {
       "rank": 24,
-      "previousRank": 23,
-      "delta": -1,
+      "previousRank": 24,
+      "delta": 0,
       "name": "Rodney",
       "points": 0,
       "exact": 0,
@@ -318,8 +318,8 @@
     },
     {
       "rank": 25,
-      "previousRank": 24,
-      "delta": -1,
+      "previousRank": 25,
+      "delta": 0,
       "name": "Sônia",
       "points": 0,
       "exact": 0,
@@ -331,8 +331,8 @@
     },
     {
       "rank": 26,
-      "previousRank": 25,
-      "delta": -1,
+      "previousRank": 26,
+      "delta": 0,
       "name": "Vinicius Freire",
       "points": 0,
       "exact": 0,
@@ -344,8 +344,8 @@
     },
     {
       "rank": 27,
-      "previousRank": 26,
-      "delta": -1,
+      "previousRank": 27,
+      "delta": 0,
       "name": "Vinicius Teixeira",
       "points": 0,
       "exact": 0,
@@ -357,7 +357,20 @@
     },
     {
       "rank": 28,
-      "previousRank": 27,
+      "previousRank": null,
+      "delta": null,
+      "name": "Wambaster",
+      "points": 0,
+      "exact": 0,
+      "partial": 0,
+      "partialWinnerGoal": 0,
+      "partialLoserGoal": 0,
+      "resultOnly": 0,
+      "played": 0
+    },
+    {
+      "rank": 29,
+      "previousRank": 28,
       "delta": -1,
       "name": "WolfGand",
       "points": 0,
@@ -369,9 +382,9 @@
       "played": 0
     },
     {
-      "rank": 29,
-      "previousRank": null,
-      "delta": null,
+      "rank": 30,
+      "previousRank": 29,
+      "delta": -1,
       "name": "Xerox",
       "points": 0,
       "exact": 0,
@@ -391,7 +404,7 @@
     "phaseLabel": "32 avos de final",
     "home": "África do Sul",
     "away": "Canadá",
-    "totalPicks": 29,
+    "totalPicks": 30,
     "missingPicks": 0,
     "picks": [
       {
@@ -557,6 +570,12 @@
         "outcome": "away"
       },
       {
+        "name": "Wambaster",
+        "homeGoals": 0,
+        "awayGoals": 2,
+        "outcome": "away"
+      },
+      {
         "name": "WolfGand",
         "homeGoals": 2,
         "awayGoals": 0,
@@ -572,13 +591,13 @@
     "outcomeBreakdown": {
       "homeWin": 5,
       "draw": 6,
-      "awayWin": 18
+      "awayWin": 19
     },
     "topOutcome": {
       "outcome": "away",
       "label": "Canadá vence",
-      "count": 18,
-      "percentage": 62.1
+      "count": 19,
+      "percentage": 63.3
     },
     "averageHomeGoals": 1.1,
     "averageAwayGoals": 1.6,
@@ -589,7 +608,7 @@
         "awayGoals": 2,
         "score": "1-2",
         "count": 16,
-        "percentage": 55.2,
+        "percentage": 53.3,
         "names": [
           "Antonio Dimitrov",
           "Cristina Bello",
@@ -614,7 +633,7 @@
         "awayGoals": 1,
         "score": "1-1",
         "count": 5,
-        "percentage": 17.2,
+        "percentage": 16.7,
         "names": [
           "Elcio",
           "Italo",
@@ -624,14 +643,14 @@
         ]
       },
       {
-        "homeGoals": 2,
-        "awayGoals": 1,
-        "score": "2-1",
+        "homeGoals": 0,
+        "awayGoals": 2,
+        "score": "0-2",
         "count": 2,
-        "percentage": 6.9,
+        "percentage": 6.7,
         "names": [
-          "Chico",
-          "Diego (Vera Verão)"
+          "Sônia",
+          "Wambaster"
         ]
       }
     ]
@@ -645,7 +664,7 @@
       "phaseLabel": "32 avos de final",
       "home": "África do Sul",
       "away": "Canadá",
-      "totalPicks": 29,
+      "totalPicks": 30,
       "missingPicks": 0,
       "picks": [
         {
@@ -807,6 +826,12 @@
         {
           "name": "Vinicius Teixeira",
           "homeGoals": 1,
+          "awayGoals": 2,
+          "outcome": "away"
+        },
+        {
+          "name": "Wambaster",
+          "homeGoals": 0,
           "awayGoals": 2,
           "outcome": "away"
         },
@@ -826,13 +851,13 @@
       "outcomeBreakdown": {
         "homeWin": 5,
         "draw": 6,
-        "awayWin": 18
+        "awayWin": 19
       },
       "topOutcome": {
         "outcome": "away",
         "label": "Canadá vence",
-        "count": 18,
-        "percentage": 62.1
+        "count": 19,
+        "percentage": 63.3
       },
       "averageHomeGoals": 1.1,
       "averageAwayGoals": 1.6,
@@ -843,7 +868,7 @@
           "awayGoals": 2,
           "score": "1-2",
           "count": 16,
-          "percentage": 55.2,
+          "percentage": 53.3,
           "names": [
             "Antonio Dimitrov",
             "Cristina Bello",
@@ -868,7 +893,7 @@
           "awayGoals": 1,
           "score": "1-1",
           "count": 5,
-          "percentage": 17.2,
+          "percentage": 16.7,
           "names": [
             "Elcio",
             "Italo",
@@ -878,14 +903,14 @@
           ]
         },
         {
-          "homeGoals": 2,
-          "awayGoals": 1,
-          "score": "2-1",
+          "homeGoals": 0,
+          "awayGoals": 2,
+          "score": "0-2",
           "count": 2,
-          "percentage": 6.9,
+          "percentage": 6.7,
           "names": [
-            "Chico",
-            "Diego (Vera Verão)"
+            "Sônia",
+            "Wambaster"
           ]
         }
       ]
@@ -898,7 +923,7 @@
       "phaseLabel": "32 avos de final",
       "home": "Alemanha",
       "away": "Paraguai",
-      "totalPicks": 29,
+      "totalPicks": 30,
       "missingPicks": 0,
       "picks": [
         {
@@ -1064,6 +1089,12 @@
           "outcome": "home"
         },
         {
+          "name": "Wambaster",
+          "homeGoals": 2,
+          "awayGoals": 1,
+          "outcome": "home"
+        },
+        {
           "name": "WolfGand",
           "homeGoals": 2,
           "awayGoals": 1,
@@ -1077,18 +1108,18 @@
         }
       ],
       "outcomeBreakdown": {
-        "homeWin": 27,
+        "homeWin": 28,
         "draw": 1,
         "awayWin": 1
       },
       "topOutcome": {
         "outcome": "home",
         "label": "Alemanha vence",
-        "count": 27,
-        "percentage": 93.1
+        "count": 28,
+        "percentage": 93.3
       },
       "averageHomeGoals": 2.4,
-      "averageAwayGoals": 0.2,
+      "averageAwayGoals": 0.3,
       "averageTotalGoals": 2.7,
       "mostCommonScores": [
         {
@@ -1096,7 +1127,7 @@
           "awayGoals": 0,
           "score": "2-0",
           "count": 12,
-          "percentage": 41.4,
+          "percentage": 40,
           "names": [
             "Antonio Dimitrov",
             "Gilberto",
@@ -1117,7 +1148,7 @@
           "awayGoals": 0,
           "score": "3-0",
           "count": 7,
-          "percentage": 24.1,
+          "percentage": 23.3,
           "names": [
             "Chico",
             "Diego (Dinão)",
@@ -1132,11 +1163,12 @@
           "homeGoals": 2,
           "awayGoals": 1,
           "score": "2-1",
-          "count": 3,
-          "percentage": 10.3,
+          "count": 4,
+          "percentage": 13.3,
           "names": [
             "Elcio",
             "Ezio",
+            "Wambaster",
             "WolfGand"
           ]
         }
@@ -1150,7 +1182,7 @@
       "phaseLabel": "32 avos de final",
       "home": "Holanda",
       "away": "Marrocos",
-      "totalPicks": 29,
+      "totalPicks": 30,
       "missingPicks": 0,
       "picks": [
         {
@@ -1316,6 +1348,12 @@
           "outcome": "home"
         },
         {
+          "name": "Wambaster",
+          "homeGoals": 1,
+          "awayGoals": 2,
+          "outcome": "away"
+        },
+        {
           "name": "WolfGand",
           "homeGoals": 1,
           "awayGoals": 0,
@@ -1331,16 +1369,16 @@
       "outcomeBreakdown": {
         "homeWin": 22,
         "draw": 6,
-        "awayWin": 1
+        "awayWin": 2
       },
       "topOutcome": {
         "outcome": "home",
         "label": "Holanda vence",
         "count": 22,
-        "percentage": 75.9
+        "percentage": 73.3
       },
       "averageHomeGoals": 1.8,
-      "averageAwayGoals": 0.9,
+      "averageAwayGoals": 1,
       "averageTotalGoals": 2.7,
       "mostCommonScores": [
         {
@@ -1348,7 +1386,7 @@
           "awayGoals": 1,
           "score": "2-1",
           "count": 10,
-          "percentage": 34.5,
+          "percentage": 33.3,
           "names": [
             "Antonio Dimitrov",
             "Chico",
@@ -1367,7 +1405,7 @@
           "awayGoals": 0,
           "score": "1-0",
           "count": 6,
-          "percentage": 20.7,
+          "percentage": 20,
           "names": [
             "Diego (Dinão)",
             "Leandro",
@@ -1382,7 +1420,7 @@
           "awayGoals": 2,
           "score": "2-2",
           "count": 4,
-          "percentage": 13.8,
+          "percentage": 13.3,
           "names": [
             "Cristina Bello",
             "Gilberto",
@@ -1400,7 +1438,7 @@
       "phaseLabel": "32 avos de final",
       "home": "Brasil",
       "away": "Japão",
-      "totalPicks": 29,
+      "totalPicks": 30,
       "missingPicks": 0,
       "picks": [
         {
@@ -1566,6 +1604,12 @@
           "outcome": "home"
         },
         {
+          "name": "Wambaster",
+          "homeGoals": 2,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
+        {
           "name": "WolfGand",
           "homeGoals": 2,
           "awayGoals": 0,
@@ -1579,15 +1623,15 @@
         }
       ],
       "outcomeBreakdown": {
-        "homeWin": 28,
+        "homeWin": 29,
         "draw": 1,
         "awayWin": 0
       },
       "topOutcome": {
         "outcome": "home",
         "label": "Brasil vence",
-        "count": 28,
-        "percentage": 96.6
+        "count": 29,
+        "percentage": 96.7
       },
       "averageHomeGoals": 2.3,
       "averageAwayGoals": 0.6,
@@ -1598,7 +1642,7 @@
           "awayGoals": 1,
           "score": "2-1",
           "count": 9,
-          "percentage": 31,
+          "percentage": 30,
           "names": [
             "Chico",
             "Diego (Vera Verão)",
@@ -1616,7 +1660,7 @@
           "awayGoals": 1,
           "score": "3-1",
           "count": 8,
-          "percentage": 27.6,
+          "percentage": 26.7,
           "names": [
             "Antonio Dimitrov",
             "Diego (Dinão)",
@@ -1632,13 +1676,14 @@
           "homeGoals": 2,
           "awayGoals": 0,
           "score": "2-0",
-          "count": 5,
-          "percentage": 17.2,
+          "count": 6,
+          "percentage": 20,
           "names": [
             "Jean",
             "Leandro",
             "Luiz",
             "Mario",
+            "Wambaster",
             "WolfGand"
           ]
         }
@@ -1652,7 +1697,7 @@
       "phaseLabel": "32 avos de final",
       "home": "França",
       "away": "Suécia",
-      "totalPicks": 29,
+      "totalPicks": 30,
       "missingPicks": 0,
       "picks": [
         {
@@ -1818,6 +1863,12 @@
           "outcome": "home"
         },
         {
+          "name": "Wambaster",
+          "homeGoals": 4,
+          "awayGoals": 1,
+          "outcome": "home"
+        },
+        {
           "name": "WolfGand",
           "homeGoals": 2,
           "awayGoals": 0,
@@ -1831,26 +1882,26 @@
         }
       ],
       "outcomeBreakdown": {
-        "homeWin": 27,
+        "homeWin": 28,
         "draw": 2,
         "awayWin": 0
       },
       "topOutcome": {
         "outcome": "home",
         "label": "França vence",
-        "count": 27,
-        "percentage": 93.1
+        "count": 28,
+        "percentage": 93.3
       },
       "averageHomeGoals": 2.7,
       "averageAwayGoals": 0.5,
-      "averageTotalGoals": 3.1,
+      "averageTotalGoals": 3.2,
       "mostCommonScores": [
         {
           "homeGoals": 3,
           "awayGoals": 0,
           "score": "3-0",
           "count": 8,
-          "percentage": 27.6,
+          "percentage": 26.7,
           "names": [
             "Cristina Bello",
             "Diego (Vera Verão)",
@@ -1867,7 +1918,7 @@
           "awayGoals": 1,
           "score": "3-1",
           "count": 7,
-          "percentage": 24.1,
+          "percentage": 23.3,
           "names": [
             "Ezio",
             "Leandro",
@@ -1883,7 +1934,7 @@
           "awayGoals": 0,
           "score": "2-0",
           "count": 6,
-          "percentage": 20.7,
+          "percentage": 20,
           "names": [
             "Antonio Dimitrov",
             "Elcio",
@@ -1903,7 +1954,7 @@
       "phaseLabel": "32 avos de final",
       "home": "Costa do Marfim",
       "away": "Noruega",
-      "totalPicks": 29,
+      "totalPicks": 30,
       "missingPicks": 0,
       "picks": [
         {
@@ -2066,6 +2117,12 @@
           "name": "Vinicius Teixeira",
           "homeGoals": 1,
           "awayGoals": 2,
+          "outcome": "away"
+        },
+        {
+          "name": "Wambaster",
+          "homeGoals": 1,
+          "awayGoals": 4,
           "outcome": "away"
         },
         {
@@ -2084,13 +2141,13 @@
       "outcomeBreakdown": {
         "homeWin": 4,
         "draw": 9,
-        "awayWin": 16
+        "awayWin": 17
       },
       "topOutcome": {
         "outcome": "away",
         "label": "Noruega vence",
-        "count": 16,
-        "percentage": 55.2
+        "count": 17,
+        "percentage": 56.7
       },
       "averageHomeGoals": 1.1,
       "averageAwayGoals": 1.7,
@@ -2101,7 +2158,7 @@
           "awayGoals": 2,
           "score": "1-2",
           "count": 10,
-          "percentage": 34.5,
+          "percentage": 33.3,
           "names": [
             "Ezio",
             "Jean",
@@ -2120,7 +2177,7 @@
           "awayGoals": 1,
           "score": "1-1",
           "count": 5,
-          "percentage": 17.2,
+          "percentage": 16.7,
           "names": [
             "Douglas Truta",
             "Elcio",
@@ -2134,7 +2191,7 @@
           "awayGoals": 2,
           "score": "2-2",
           "count": 4,
-          "percentage": 13.8,
+          "percentage": 13.3,
           "names": [
             "Cristina Bello",
             "Gilberto",
@@ -2152,7 +2209,7 @@
       "phaseLabel": "32 avos de final",
       "home": "México",
       "away": "Equador",
-      "totalPicks": 29,
+      "totalPicks": 30,
       "missingPicks": 0,
       "picks": [
         {
@@ -2318,6 +2375,12 @@
           "outcome": "away"
         },
         {
+          "name": "Wambaster",
+          "homeGoals": 1,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
+        {
           "name": "WolfGand",
           "homeGoals": 0,
           "awayGoals": 1,
@@ -2331,18 +2394,18 @@
         }
       ],
       "outcomeBreakdown": {
-        "homeWin": 16,
+        "homeWin": 17,
         "draw": 5,
         "awayWin": 8
       },
       "topOutcome": {
         "outcome": "home",
         "label": "México vence",
-        "count": 16,
-        "percentage": 55.2
+        "count": 17,
+        "percentage": 56.7
       },
       "averageHomeGoals": 1.3,
-      "averageAwayGoals": 1.1,
+      "averageAwayGoals": 1,
       "averageTotalGoals": 2.4,
       "mostCommonScores": [
         {
@@ -2350,7 +2413,7 @@
           "awayGoals": 1,
           "score": "2-1",
           "count": 10,
-          "percentage": 34.5,
+          "percentage": 33.3,
           "names": [
             "Chico",
             "Elcio",
@@ -2368,13 +2431,14 @@
           "homeGoals": 1,
           "awayGoals": 0,
           "score": "1-0",
-          "count": 4,
-          "percentage": 13.8,
+          "count": 5,
+          "percentage": 16.7,
           "names": [
             "Antonio Dimitrov",
             "Mario",
             "Matheus",
-            "Nando"
+            "Nando",
+            "Wambaster"
           ]
         },
         {
@@ -2382,7 +2446,7 @@
           "awayGoals": 2,
           "score": "1-2",
           "count": 4,
-          "percentage": 13.8,
+          "percentage": 13.3,
           "names": [
             "Diego (Vera Verão)",
             "Elias (Codorninha)",
@@ -2400,7 +2464,7 @@
       "phaseLabel": "32 avos de final",
       "home": "Inglaterra",
       "away": "RD Congo",
-      "totalPicks": 29,
+      "totalPicks": 30,
       "missingPicks": 0,
       "picks": [
         {
@@ -2566,6 +2630,12 @@
           "outcome": "home"
         },
         {
+          "name": "Wambaster",
+          "homeGoals": 3,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
+        {
           "name": "WolfGand",
           "homeGoals": 2,
           "awayGoals": 0,
@@ -2579,15 +2649,15 @@
         }
       ],
       "outcomeBreakdown": {
-        "homeWin": 28,
+        "homeWin": 29,
         "draw": 1,
         "awayWin": 0
       },
       "topOutcome": {
         "outcome": "home",
         "label": "Inglaterra vence",
-        "count": 28,
-        "percentage": 96.6
+        "count": 29,
+        "percentage": 96.7
       },
       "averageHomeGoals": 2.6,
       "averageAwayGoals": 0.3,
@@ -2598,7 +2668,7 @@
           "awayGoals": 0,
           "score": "2-0",
           "count": 9,
-          "percentage": 31,
+          "percentage": 30,
           "names": [
             "Cristina Bello",
             "Diego (Vera Verão)",
@@ -2613,29 +2683,30 @@
         },
         {
           "homeGoals": 3,
+          "awayGoals": 0,
+          "score": "3-0",
+          "count": 5,
+          "percentage": 16.7,
+          "names": [
+            "Antonio Dimitrov",
+            "GuiGui",
+            "Matheus",
+            "Robson",
+            "Wambaster"
+          ]
+        },
+        {
+          "homeGoals": 3,
           "awayGoals": 1,
           "score": "3-1",
           "count": 5,
-          "percentage": 17.2,
+          "percentage": 16.7,
           "names": [
             "Chico",
             "Elcio",
             "Elias (Codorninha)",
             "Italo",
             "Vinicius Freire"
-          ]
-        },
-        {
-          "homeGoals": 3,
-          "awayGoals": 0,
-          "score": "3-0",
-          "count": 4,
-          "percentage": 13.8,
-          "names": [
-            "Antonio Dimitrov",
-            "GuiGui",
-            "Matheus",
-            "Robson"
           ]
         }
       ]
@@ -2648,7 +2719,7 @@
       "phaseLabel": "32 avos de final",
       "home": "Bélgica",
       "away": "Senegal",
-      "totalPicks": 29,
+      "totalPicks": 30,
       "missingPicks": 0,
       "picks": [
         {
@@ -2814,6 +2885,12 @@
           "outcome": "away"
         },
         {
+          "name": "Wambaster",
+          "homeGoals": 2,
+          "awayGoals": 2,
+          "outcome": "draw"
+        },
+        {
           "name": "WolfGand",
           "homeGoals": 1,
           "awayGoals": 0,
@@ -2828,14 +2905,14 @@
       ],
       "outcomeBreakdown": {
         "homeWin": 20,
-        "draw": 4,
+        "draw": 5,
         "awayWin": 5
       },
       "topOutcome": {
         "outcome": "home",
         "label": "Bélgica vence",
         "count": 20,
-        "percentage": 69
+        "percentage": 66.7
       },
       "averageHomeGoals": 1.9,
       "averageAwayGoals": 1,
@@ -2846,7 +2923,7 @@
           "awayGoals": 1,
           "score": "2-1",
           "count": 9,
-          "percentage": 31,
+          "percentage": 30,
           "names": [
             "Chico",
             "Diego (Vera Verão)",
@@ -2864,7 +2941,7 @@
           "awayGoals": 0,
           "score": "1-0",
           "count": 4,
-          "percentage": 13.8,
+          "percentage": 13.3,
           "names": [
             "Robson",
             "Sônia",
@@ -2877,7 +2954,7 @@
           "awayGoals": 2,
           "score": "1-2",
           "count": 3,
-          "percentage": 10.3,
+          "percentage": 10,
           "names": [
             "Antonio Dimitrov",
             "Gilberto",
@@ -2894,7 +2971,7 @@
       "phaseLabel": "32 avos de final",
       "home": "Estados Unidos",
       "away": "Bósnia",
-      "totalPicks": 29,
+      "totalPicks": 30,
       "missingPicks": 0,
       "picks": [
         {
@@ -3060,6 +3137,12 @@
           "outcome": "home"
         },
         {
+          "name": "Wambaster",
+          "homeGoals": 2,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
+        {
           "name": "WolfGand",
           "homeGoals": 2,
           "awayGoals": 0,
@@ -3073,15 +3156,15 @@
         }
       ],
       "outcomeBreakdown": {
-        "homeWin": 27,
+        "homeWin": 28,
         "draw": 2,
         "awayWin": 0
       },
       "topOutcome": {
         "outcome": "home",
         "label": "Estados Unidos vence",
-        "count": 27,
-        "percentage": 93.1
+        "count": 28,
+        "percentage": 93.3
       },
       "averageHomeGoals": 2.1,
       "averageAwayGoals": 0.5,
@@ -3091,8 +3174,8 @@
           "homeGoals": 2,
           "awayGoals": 0,
           "score": "2-0",
-          "count": 9,
-          "percentage": 31,
+          "count": 10,
+          "percentage": 33.3,
           "names": [
             "Antonio Dimitrov",
             "Douglas Truta",
@@ -3102,6 +3185,7 @@
             "Robson",
             "Robson Boró",
             "Sônia",
+            "Wambaster",
             "WolfGand"
           ]
         },
@@ -3110,7 +3194,7 @@
           "awayGoals": 1,
           "score": "2-1",
           "count": 8,
-          "percentage": 27.6,
+          "percentage": 26.7,
           "names": [
             "Diego (Vera Verão)",
             "Gilberto",
@@ -3127,7 +3211,7 @@
           "awayGoals": 0,
           "score": "1-0",
           "count": 3,
-          "percentage": 10.3,
+          "percentage": 10,
           "names": [
             "Diego (Dinão)",
             "Rafael Hive",
@@ -3144,7 +3228,7 @@
       "phaseLabel": "32 avos de final",
       "home": "Espanha",
       "away": "Áustria",
-      "totalPicks": 29,
+      "totalPicks": 30,
       "missingPicks": 0,
       "picks": [
         {
@@ -3310,6 +3394,12 @@
           "outcome": "home"
         },
         {
+          "name": "Wambaster",
+          "homeGoals": 3,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
+        {
           "name": "WolfGand",
           "homeGoals": 3,
           "awayGoals": 0,
@@ -3323,15 +3413,15 @@
         }
       ],
       "outcomeBreakdown": {
-        "homeWin": 26,
+        "homeWin": 27,
         "draw": 3,
         "awayWin": 0
       },
       "topOutcome": {
         "outcome": "home",
         "label": "Espanha vence",
-        "count": 26,
-        "percentage": 89.7
+        "count": 27,
+        "percentage": 90
       },
       "averageHomeGoals": 2.2,
       "averageAwayGoals": 0.4,
@@ -3342,7 +3432,7 @@
           "awayGoals": 0,
           "score": "2-0",
           "count": 9,
-          "percentage": 31,
+          "percentage": 30,
           "names": [
             "Diego (Dinão)",
             "Diego (Vera Verão)",
@@ -3359,13 +3449,14 @@
           "homeGoals": 3,
           "awayGoals": 0,
           "score": "3-0",
-          "count": 5,
-          "percentage": 17.2,
+          "count": 6,
+          "percentage": 20,
           "names": [
             "Gilberto",
             "Jean",
             "Matheus",
             "Vinicius Freire",
+            "Wambaster",
             "WolfGand"
           ]
         },
@@ -3374,7 +3465,7 @@
           "awayGoals": 0,
           "score": "1-0",
           "count": 4,
-          "percentage": 13.8,
+          "percentage": 13.3,
           "names": [
             "Antonio Dimitrov",
             "Chico",
@@ -3392,7 +3483,7 @@
       "phaseLabel": "32 avos de final",
       "home": "Portugal",
       "away": "Croácia",
-      "totalPicks": 29,
+      "totalPicks": 30,
       "missingPicks": 0,
       "picks": [
         {
@@ -3558,6 +3649,12 @@
           "outcome": "home"
         },
         {
+          "name": "Wambaster",
+          "homeGoals": 1,
+          "awayGoals": 1,
+          "outcome": "draw"
+        },
+        {
           "name": "WolfGand",
           "homeGoals": 1,
           "awayGoals": 1,
@@ -3572,25 +3669,25 @@
       ],
       "outcomeBreakdown": {
         "homeWin": 21,
-        "draw": 5,
+        "draw": 6,
         "awayWin": 3
       },
       "topOutcome": {
         "outcome": "home",
         "label": "Portugal vence",
         "count": 21,
-        "percentage": 72.4
+        "percentage": 70
       },
       "averageHomeGoals": 1.9,
       "averageAwayGoals": 1.1,
-      "averageTotalGoals": 3,
+      "averageTotalGoals": 2.9,
       "mostCommonScores": [
         {
           "homeGoals": 2,
           "awayGoals": 1,
           "score": "2-1",
           "count": 10,
-          "percentage": 34.5,
+          "percentage": 33.3,
           "names": [
             "Chico",
             "Diego (Dinão)",
@@ -3608,12 +3705,13 @@
           "homeGoals": 1,
           "awayGoals": 1,
           "score": "1-1",
-          "count": 4,
-          "percentage": 13.8,
+          "count": 5,
+          "percentage": 16.7,
           "names": [
             "Italo",
             "Luiz",
             "Matheus",
+            "Wambaster",
             "WolfGand"
           ]
         },
@@ -3622,7 +3720,7 @@
           "awayGoals": 0,
           "score": "2-0",
           "count": 3,
-          "percentage": 10.3,
+          "percentage": 10,
           "names": [
             "Diego (Vera Verão)",
             "Rodney",
@@ -3639,7 +3737,7 @@
       "phaseLabel": "32 avos de final",
       "home": "Suíça",
       "away": "Argélia",
-      "totalPicks": 29,
+      "totalPicks": 30,
       "missingPicks": 0,
       "picks": [
         {
@@ -3805,6 +3903,12 @@
           "outcome": "draw"
         },
         {
+          "name": "Wambaster",
+          "homeGoals": 2,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
+        {
           "name": "WolfGand",
           "homeGoals": 1,
           "awayGoals": 1,
@@ -3818,15 +3922,15 @@
         }
       ],
       "outcomeBreakdown": {
-        "homeWin": 22,
+        "homeWin": 23,
         "draw": 6,
         "awayWin": 1
       },
       "topOutcome": {
         "outcome": "home",
         "label": "Suíça vence",
-        "count": 22,
-        "percentage": 75.9
+        "count": 23,
+        "percentage": 76.7
       },
       "averageHomeGoals": 1.5,
       "averageAwayGoals": 0.6,
@@ -3837,7 +3941,7 @@
           "awayGoals": 0,
           "score": "1-0",
           "count": 9,
-          "percentage": 31,
+          "percentage": 30,
           "names": [
             "Antonio Dimitrov",
             "Diego (Dinão)",
@@ -3855,7 +3959,7 @@
           "awayGoals": 1,
           "score": "2-1",
           "count": 8,
-          "percentage": 27.6,
+          "percentage": 26.7,
           "names": [
             "Diego (Vera Verão)",
             "Gilberto",
@@ -3868,16 +3972,17 @@
           ]
         },
         {
-          "homeGoals": 1,
-          "awayGoals": 1,
-          "score": "1-1",
-          "count": 4,
-          "percentage": 13.8,
+          "homeGoals": 2,
+          "awayGoals": 0,
+          "score": "2-0",
+          "count": 5,
+          "percentage": 16.7,
           "names": [
-            "Chico",
-            "Ezio",
-            "Rodney",
-            "WolfGand"
+            "Douglas Truta",
+            "Italo",
+            "Mario",
+            "Rafael Hive",
+            "Wambaster"
           ]
         }
       ]
@@ -3890,7 +3995,7 @@
       "phaseLabel": "32 avos de final",
       "home": "Austrália",
       "away": "Egito",
-      "totalPicks": 29,
+      "totalPicks": 30,
       "missingPicks": 0,
       "picks": [
         {
@@ -4051,6 +4156,12 @@
         },
         {
           "name": "Vinicius Teixeira",
+          "homeGoals": 1,
+          "awayGoals": 2,
+          "outcome": "away"
+        },
+        {
+          "name": "Wambaster",
           "homeGoals": 1,
           "awayGoals": 2,
           "outcome": "away"
@@ -4071,24 +4182,40 @@
       "outcomeBreakdown": {
         "homeWin": 6,
         "draw": 6,
-        "awayWin": 17
+        "awayWin": 18
       },
       "topOutcome": {
         "outcome": "away",
         "label": "Egito vence",
-        "count": 17,
-        "percentage": 58.6
+        "count": 18,
+        "percentage": 60
       },
       "averageHomeGoals": 0.8,
       "averageAwayGoals": 1.3,
       "averageTotalGoals": 2.1,
       "mostCommonScores": [
         {
+          "homeGoals": 1,
+          "awayGoals": 2,
+          "score": "1-2",
+          "count": 7,
+          "percentage": 23.3,
+          "names": [
+            "Diego (Dinão)",
+            "Elias (Codorninha)",
+            "GuiGui",
+            "Mario",
+            "Nando",
+            "Vinicius Teixeira",
+            "Wambaster"
+          ]
+        },
+        {
           "homeGoals": 0,
           "awayGoals": 2,
           "score": "0-2",
           "count": 6,
-          "percentage": 20.7,
+          "percentage": 20,
           "names": [
             "Cristina Bello",
             "Gilberto",
@@ -4103,7 +4230,7 @@
           "awayGoals": 1,
           "score": "1-1",
           "count": 6,
-          "percentage": 20.7,
+          "percentage": 20,
           "names": [
             "Douglas Truta",
             "Elcio",
@@ -4111,21 +4238,6 @@
             "Luiz",
             "Robson Boró",
             "Xerox"
-          ]
-        },
-        {
-          "homeGoals": 1,
-          "awayGoals": 2,
-          "score": "1-2",
-          "count": 6,
-          "percentage": 20.7,
-          "names": [
-            "Diego (Dinão)",
-            "Elias (Codorninha)",
-            "GuiGui",
-            "Mario",
-            "Nando",
-            "Vinicius Teixeira"
           ]
         }
       ]
@@ -4138,7 +4250,7 @@
       "phaseLabel": "32 avos de final",
       "home": "Argentina",
       "away": "Cabo Verde",
-      "totalPicks": 29,
+      "totalPicks": 30,
       "missingPicks": 0,
       "picks": [
         {
@@ -4304,6 +4416,12 @@
           "outcome": "home"
         },
         {
+          "name": "Wambaster",
+          "homeGoals": 3,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
+        {
           "name": "WolfGand",
           "homeGoals": 3,
           "awayGoals": 0,
@@ -4317,15 +4435,15 @@
         }
       ],
       "outcomeBreakdown": {
-        "homeWin": 28,
+        "homeWin": 29,
         "draw": 1,
         "awayWin": 0
       },
       "topOutcome": {
         "outcome": "home",
         "label": "Argentina vence",
-        "count": 28,
-        "percentage": 96.6
+        "count": 29,
+        "percentage": 96.7
       },
       "averageHomeGoals": 2.9,
       "averageAwayGoals": 0.2,
@@ -4335,8 +4453,8 @@
           "homeGoals": 3,
           "awayGoals": 0,
           "score": "3-0",
-          "count": 8,
-          "percentage": 27.6,
+          "count": 9,
+          "percentage": 30,
           "names": [
             "Cristina Bello",
             "Ezio",
@@ -4345,6 +4463,7 @@
             "Robson",
             "Sônia",
             "Vinicius Freire",
+            "Wambaster",
             "WolfGand"
           ]
         },
@@ -4353,7 +4472,7 @@
           "awayGoals": 0,
           "score": "4-0",
           "count": 7,
-          "percentage": 24.1,
+          "percentage": 23.3,
           "names": [
             "Antonio Dimitrov",
             "Diego (Dinão)",
@@ -4369,7 +4488,7 @@
           "awayGoals": 0,
           "score": "2-0",
           "count": 6,
-          "percentage": 20.7,
+          "percentage": 20,
           "names": [
             "Italo",
             "Jonas",
@@ -4389,7 +4508,7 @@
       "phaseLabel": "32 avos de final",
       "home": "Colômbia",
       "away": "Gana",
-      "totalPicks": 29,
+      "totalPicks": 30,
       "missingPicks": 0,
       "picks": [
         {
@@ -4555,6 +4674,12 @@
           "outcome": "draw"
         },
         {
+          "name": "Wambaster",
+          "homeGoals": 2,
+          "awayGoals": 1,
+          "outcome": "home"
+        },
+        {
           "name": "WolfGand",
           "homeGoals": 1,
           "awayGoals": 2,
@@ -4568,15 +4693,15 @@
         }
       ],
       "outcomeBreakdown": {
-        "homeWin": 18,
+        "homeWin": 19,
         "draw": 8,
         "awayWin": 3
       },
       "topOutcome": {
         "outcome": "home",
         "label": "Colômbia vence",
-        "count": 18,
-        "percentage": 62.1
+        "count": 19,
+        "percentage": 63.3
       },
       "averageHomeGoals": 1.8,
       "averageAwayGoals": 1.1,
@@ -4587,7 +4712,7 @@
           "awayGoals": 1,
           "score": "1-1",
           "count": 6,
-          "percentage": 20.7,
+          "percentage": 20,
           "names": [
             "Antonio Dimitrov",
             "Douglas Truta",
@@ -4602,7 +4727,7 @@
           "awayGoals": 0,
           "score": "2-0",
           "count": 6,
-          "percentage": 20.7,
+          "percentage": 20,
           "names": [
             "Diego (Dinão)",
             "Diego (Vera Verão)",
@@ -4616,14 +4741,15 @@
           "homeGoals": 2,
           "awayGoals": 1,
           "score": "2-1",
-          "count": 5,
-          "percentage": 17.2,
+          "count": 6,
+          "percentage": 20,
           "names": [
             "Jonas",
             "Leandro",
             "Rafael Hive",
             "Robson",
-            "Sônia"
+            "Sônia",
+            "Wambaster"
           ]
         }
       ]
@@ -4633,13 +4759,13 @@
     "totalMatches": 16,
     "finishedMatches": 0,
     "remainingMatches": 16,
-    "totalValidPicks": 464,
+    "totalValidPicks": 480,
     "averageUpcomingGoals": 2.7,
     "completionRate": 0,
     "leaderGap": 0,
     "leaderEfficiency": null,
     "averagePoints": 0,
-    "completeCards": 29,
+    "completeCards": 30,
     "missingPickCards": 0,
     "topExact": {
       "label": "Rei dos exatos",
@@ -4654,7 +4780,7 @@
     "topUpcomingScore": {
       "label": "Placar mais apostado",
       "value": "2-1",
-      "detail": "90 palpites"
+      "detail": "92 palpites"
     },
     "highestConsensus": {
       "id": 76,
@@ -4664,7 +4790,7 @@
       "home": "Brasil",
       "away": "Japão",
       "label": "Maior consenso",
-      "value": "Brasil vence · 96.6%"
+      "value": "Brasil vence · 96.7%"
     },
     "mostDivisive": {
       "id": 78,
@@ -4674,7 +4800,7 @@
       "home": "Costa do Marfim",
       "away": "Noruega",
       "label": "Jogo mais dividido",
-      "value": "Noruega vence · 55.2%"
+      "value": "Noruega vence · 56.7%"
     },
     "highestExpectedGoals": {
       "id": 77,
@@ -4684,7 +4810,7 @@
       "home": "França",
       "away": "Suécia",
       "label": "Mais gols previstos",
-      "value": "3.1 gols em média"
+      "value": "3.2 gols em média"
     },
     "highestDrawShare": {
       "id": 78,
@@ -4694,7 +4820,7 @@
       "home": "Costa do Marfim",
       "away": "Noruega",
       "label": "Mais cara de empate",
-      "value": "31% em empate"
+      "value": "30% em empate"
     },
     "storyMetrics": [
       {
@@ -4705,7 +4831,7 @@
       {
         "label": "Média do pelotão",
         "value": "0 pts",
-        "detail": "Média atual entre 29 apostadores."
+        "detail": "Média atual entre 30 apostadores."
       },
       {
         "label": "Rei dos exatos",
@@ -4719,13 +4845,13 @@
       },
       {
         "label": "Cartelas completas",
-        "value": "29/29",
+        "value": "30/30",
         "detail": "Todos têm 72 palpites válidos."
       },
       {
         "label": "Placar mais apostado",
         "value": "2-1",
-        "detail": "90 vezes nos jogos pendentes."
+        "detail": "92 vezes nos jogos pendentes."
       }
     ]
   }
