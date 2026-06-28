@@ -1,4 +1,6 @@
-const downloadHref = "/bolao_copa2026_final_envio.xlsx";
+import { withBasePath } from "@/lib/site-path";
+
+const downloadHref = withBasePath("/bolao_copa2026_final_envio.xlsx");
 
 export default function PhaseNotice() {
   return (

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { getStandings } from "@/lib/data";
+import { withBasePath } from "@/lib/site-path";
 
 function formatStamp(iso: string) {
   return new Intl.DateTimeFormat("pt-BR", {
@@ -29,7 +30,7 @@ export default function SimpleClassificationPage() {
             </div>
             <div className="flex shrink-0 flex-wrap justify-end gap-2">
               <a
-                href="/bolao_copa2026_final_envio.xlsx"
+                href={withBasePath("/bolao_copa2026_final_envio.xlsx")}
                 download
                 className="border border-[#001a78] bg-[#fff6a8] px-2 py-1 font-mono text-[10px] font-bold uppercase text-[#001a78]"
               >
