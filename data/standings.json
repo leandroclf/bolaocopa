@@ -84,8 +84,8 @@
     },
     {
       "rank": 7,
-      "previousRank": null,
-      "delta": null,
+      "previousRank": 7,
+      "delta": 0,
       "name": "GuiGui Roludo",
       "points": 0,
       "exact": 0,
@@ -97,8 +97,8 @@
     },
     {
       "rank": 8,
-      "previousRank": 7,
-      "delta": -1,
+      "previousRank": 8,
+      "delta": 0,
       "name": "Italo",
       "points": 0,
       "exact": 0,
@@ -110,8 +110,8 @@
     },
     {
       "rank": 9,
-      "previousRank": 8,
-      "delta": -1,
+      "previousRank": 9,
+      "delta": 0,
       "name": "Jean",
       "points": 0,
       "exact": 0,
@@ -123,8 +123,8 @@
     },
     {
       "rank": 10,
-      "previousRank": 9,
-      "delta": -1,
+      "previousRank": 10,
+      "delta": 0,
       "name": "Leandro",
       "points": 0,
       "exact": 0,
@@ -136,8 +136,8 @@
     },
     {
       "rank": 11,
-      "previousRank": 10,
-      "delta": -1,
+      "previousRank": 11,
+      "delta": 0,
       "name": "Mario",
       "points": 0,
       "exact": 0,
@@ -149,8 +149,8 @@
     },
     {
       "rank": 12,
-      "previousRank": 11,
-      "delta": -1,
+      "previousRank": 12,
+      "delta": 0,
       "name": "Matheus",
       "points": 0,
       "exact": 0,
@@ -162,8 +162,8 @@
     },
     {
       "rank": 13,
-      "previousRank": 12,
-      "delta": -1,
+      "previousRank": 13,
+      "delta": 0,
       "name": "Nando",
       "points": 0,
       "exact": 0,
@@ -175,8 +175,8 @@
     },
     {
       "rank": 14,
-      "previousRank": 13,
-      "delta": -1,
+      "previousRank": 14,
+      "delta": 0,
       "name": "Rafael Hive",
       "points": 0,
       "exact": 0,
@@ -188,8 +188,8 @@
     },
     {
       "rank": 15,
-      "previousRank": 14,
-      "delta": -1,
+      "previousRank": 15,
+      "delta": 0,
       "name": "Robson",
       "points": 0,
       "exact": 0,
@@ -201,8 +201,8 @@
     },
     {
       "rank": 16,
-      "previousRank": 15,
-      "delta": -1,
+      "previousRank": 16,
+      "delta": 0,
       "name": "Rodney",
       "points": 0,
       "exact": 0,
@@ -214,8 +214,8 @@
     },
     {
       "rank": 17,
-      "previousRank": 16,
-      "delta": -1,
+      "previousRank": 17,
+      "delta": 0,
       "name": "Sônia",
       "points": 0,
       "exact": 0,
@@ -227,8 +227,8 @@
     },
     {
       "rank": 18,
-      "previousRank": 17,
-      "delta": -1,
+      "previousRank": 18,
+      "delta": 0,
       "name": "Vinicius Freire",
       "points": 0,
       "exact": 0,
@@ -240,8 +240,8 @@
     },
     {
       "rank": 19,
-      "previousRank": 18,
-      "delta": -1,
+      "previousRank": 19,
+      "delta": 0,
       "name": "Vinicius Teixeira",
       "points": 0,
       "exact": 0,
@@ -253,9 +253,9 @@
     },
     {
       "rank": 20,
-      "previousRank": 19,
-      "delta": -1,
-      "name": "WOLFGAND VINICIUS",
+      "previousRank": null,
+      "delta": null,
+      "name": "WolfGand",
       "points": 0,
       "exact": 0,
       "partial": 0,
@@ -392,7 +392,7 @@
         "outcome": "away"
       },
       {
-        "name": "WOLFGAND VINICIUS",
+        "name": "WolfGand",
         "homeGoals": 2,
         "awayGoals": 0,
         "outcome": "home"
@@ -583,7 +583,7 @@
           "outcome": "away"
         },
         {
-          "name": "WOLFGAND VINICIUS",
+          "name": "WolfGand",
           "homeGoals": 2,
           "awayGoals": 0,
           "outcome": "home"
@@ -773,7 +773,7 @@
           "outcome": "home"
         },
         {
-          "name": "WOLFGAND VINICIUS",
+          "name": "WolfGand",
           "homeGoals": 2,
           "awayGoals": 1,
           "outcome": "home"
@@ -835,7 +835,7 @@
           "names": [
             "Elcio",
             "Ezio",
-            "WOLFGAND VINICIUS"
+            "WolfGand"
           ]
         }
       ]
@@ -966,7 +966,7 @@
           "outcome": "home"
         },
         {
-          "name": "WOLFGAND VINICIUS",
+          "name": "WolfGand",
           "homeGoals": 1,
           "awayGoals": 0,
           "outcome": "home"
@@ -1013,7 +1013,7 @@
             "Diego (Dinão)",
             "Leandro",
             "Mario",
-            "WOLFGAND VINICIUS"
+            "WolfGand"
           ]
         },
         {
@@ -1156,7 +1156,7 @@
           "outcome": "home"
         },
         {
-          "name": "WOLFGAND VINICIUS",
+          "name": "WolfGand",
           "homeGoals": 2,
           "awayGoals": 0,
           "outcome": "home"
@@ -1217,7 +1217,7 @@
             "Jean",
             "Leandro",
             "Mario",
-            "WOLFGAND VINICIUS"
+            "WolfGand"
           ]
         }
       ]
@@ -1348,7 +1348,7 @@
           "outcome": "home"
         },
         {
-          "name": "WOLFGAND VINICIUS",
+          "name": "WolfGand",
           "homeGoals": 2,
           "awayGoals": 0,
           "outcome": "home"
@@ -1409,7 +1409,7 @@
             "Elcio",
             "Robson",
             "Rodney",
-            "WOLFGAND VINICIUS"
+            "WolfGand"
           ]
         }
       ]
@@ -1540,7 +1540,7 @@
           "outcome": "away"
         },
         {
-          "name": "WOLFGAND VINICIUS",
+          "name": "WolfGand",
           "homeGoals": 1,
           "awayGoals": 1,
           "outcome": "draw"
@@ -1588,7 +1588,7 @@
           "names": [
             "Elcio",
             "Italo",
-            "WOLFGAND VINICIUS"
+            "WolfGand"
           ]
         },
         {
@@ -1730,7 +1730,7 @@
           "outcome": "away"
         },
         {
-          "name": "WOLFGAND VINICIUS",
+          "name": "WolfGand",
           "homeGoals": 0,
           "awayGoals": 1,
           "outcome": "away"
@@ -1789,7 +1789,7 @@
           "percentage": 10,
           "names": [
             "Diego (Dinão)",
-            "WOLFGAND VINICIUS"
+            "WolfGand"
           ]
         }
       ]
@@ -1920,7 +1920,7 @@
           "outcome": "home"
         },
         {
-          "name": "WOLFGAND VINICIUS",
+          "name": "WolfGand",
           "homeGoals": 2,
           "awayGoals": 0,
           "outcome": "home"
@@ -1952,7 +1952,7 @@
             "Mario",
             "Rafael Hive",
             "Vinicius Teixeira",
-            "WOLFGAND VINICIUS"
+            "WolfGand"
           ]
         },
         {
@@ -2109,7 +2109,7 @@
           "outcome": "away"
         },
         {
-          "name": "WOLFGAND VINICIUS",
+          "name": "WolfGand",
           "homeGoals": 1,
           "awayGoals": 0,
           "outcome": "home"
@@ -2155,7 +2155,7 @@
           "names": [
             "Robson",
             "Sônia",
-            "WOLFGAND VINICIUS"
+            "WolfGand"
           ]
         },
         {
@@ -2298,7 +2298,7 @@
           "outcome": "home"
         },
         {
-          "name": "WOLFGAND VINICIUS",
+          "name": "WolfGand",
           "homeGoals": 2,
           "awayGoals": 0,
           "outcome": "home"
@@ -2331,7 +2331,7 @@
             "Leandro",
             "Robson",
             "Sônia",
-            "WOLFGAND VINICIUS"
+            "WolfGand"
           ]
         },
         {
@@ -2487,7 +2487,7 @@
           "outcome": "home"
         },
         {
-          "name": "WOLFGAND VINICIUS",
+          "name": "WolfGand",
           "homeGoals": 3,
           "awayGoals": 0,
           "outcome": "home"
@@ -2534,7 +2534,7 @@
             "Jean",
             "Matheus",
             "Vinicius Freire",
-            "WOLFGAND VINICIUS"
+            "WolfGand"
           ]
         },
         {
@@ -2677,7 +2677,7 @@
           "outcome": "home"
         },
         {
-          "name": "WOLFGAND VINICIUS",
+          "name": "WolfGand",
           "homeGoals": 1,
           "awayGoals": 1,
           "outcome": "draw"
@@ -2724,7 +2724,7 @@
           "names": [
             "Italo",
             "Matheus",
-            "WOLFGAND VINICIUS"
+            "WolfGand"
           ]
         },
         {
@@ -2866,7 +2866,7 @@
           "outcome": "draw"
         },
         {
-          "name": "WOLFGAND VINICIUS",
+          "name": "WolfGand",
           "homeGoals": 1,
           "awayGoals": 1,
           "outcome": "draw"
@@ -2926,7 +2926,7 @@
             "Chico",
             "Ezio",
             "Rodney",
-            "WOLFGAND VINICIUS"
+            "WolfGand"
           ]
         }
       ]
@@ -3057,7 +3057,7 @@
           "outcome": "away"
         },
         {
-          "name": "WOLFGAND VINICIUS",
+          "name": "WolfGand",
           "homeGoals": 0,
           "awayGoals": 2,
           "outcome": "away"
@@ -3103,7 +3103,7 @@
             "Gilberto",
             "Sônia",
             "Vinicius Freire",
-            "WOLFGAND VINICIUS"
+            "WolfGand"
           ]
         },
         {
@@ -3246,7 +3246,7 @@
           "outcome": "home"
         },
         {
-          "name": "WOLFGAND VINICIUS",
+          "name": "WolfGand",
           "homeGoals": 3,
           "awayGoals": 0,
           "outcome": "home"
@@ -3280,7 +3280,7 @@
             "Robson",
             "Sônia",
             "Vinicius Freire",
-            "WOLFGAND VINICIUS"
+            "WolfGand"
           ]
         },
         {
@@ -3437,7 +3437,7 @@
           "outcome": "draw"
         },
         {
-          "name": "WOLFGAND VINICIUS",
+          "name": "WolfGand",
           "homeGoals": 1,
           "awayGoals": 2,
           "outcome": "away"
