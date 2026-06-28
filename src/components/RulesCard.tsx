@@ -27,15 +27,17 @@ export default function RulesCard() {
         <div className="rounded-lg border border-pitch-line bg-pitch-2 p-5">
           <h3 className="mb-3 font-display text-base uppercase tracking-widest text-chalk">Premiação</h3>
           <p className="font-mono text-xs text-slatey">Bolada total</p>
-          <p className="font-mono text-2xl font-bold text-lime">R$ 3.800</p>
+          <p className="font-mono text-2xl font-bold text-lime">Soma das inscrições</p>
+          <p className="mt-2 text-sm leading-6 text-slatey">
+            A premiação será formada pela soma do valor captado de todos os apostadores. O valor final ainda não está
+            fechado.
+          </p>
           <p className="mt-3 rounded-md border border-lime/20 bg-lime/10 px-3 py-2 font-mono text-[10px] uppercase tracking-[0.22em] text-lime">
+            1º lugar recebe 100% da bolada · em caso de empate na 1ª colocação, divisão igualitária
+          </p>
+          <p className="mt-3 font-mono text-[10px] uppercase tracking-[0.2em] text-slatey">
             Taxa de inscrição R$ 50 · sem taxa administrativa
           </p>
-          <ul className="mt-3 space-y-1.5 font-mono text-sm text-chalk">
-            <li className="flex justify-between"><span className="text-slatey">1º · 70%</span><span>R$ 2.660</span></li>
-            <li className="flex justify-between"><span className="text-slatey">2º · 20%</span><span>R$ 760</span></li>
-            <li className="flex justify-between"><span className="text-slatey">3º · 10%</span><span>R$ 380</span></li>
-          </ul>
         </div>
       </div>
     </section>
