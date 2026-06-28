@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-06-28T10:22:22.269Z",
+  "lastUpdated": "2026-06-28T11:30:55.532Z",
   "source": "openfootball",
   "totalParticipants": 1,
   "countedMatches": 0,
   "standings": [
     {
       "rank": 1,
-      "previousRank": null,
-      "delta": null,
+      "previousRank": 1,
+      "delta": 0,
       "name": "Rodney (Louva a deus)",
       "points": 0,
       "exact": 0,
@@ -25,8 +25,8 @@
     "time": "",
     "group": "R32",
     "phaseLabel": "32 avos de final",
-    "home": "África do Sul",
-    "away": "Canadá",
+    "home": "2º Grupo A",
+    "away": "2º Grupo B",
     "totalPicks": 1,
     "missingPicks": 0,
     "picks": [
@@ -44,7 +44,7 @@
     },
     "topOutcome": {
       "outcome": "away",
-      "label": "Canadá vence",
+      "label": "2º Grupo B vence",
       "count": 1,
       "percentage": 100
     },
@@ -71,8 +71,8 @@
       "time": "",
       "group": "R32",
       "phaseLabel": "32 avos de final",
-      "home": "África do Sul",
-      "away": "Canadá",
+      "home": "2º Grupo A",
+      "away": "2º Grupo B",
       "totalPicks": 1,
       "missingPicks": 0,
       "picks": [
@@ -90,7 +90,7 @@
       },
       "topOutcome": {
         "outcome": "away",
-        "label": "Canadá vence",
+        "label": "2º Grupo B vence",
         "count": 1,
         "percentage": 100
       },
@@ -116,8 +116,8 @@
       "time": "",
       "group": "R32",
       "phaseLabel": "32 avos de final",
-      "home": "Alemanha",
-      "away": "Bósnia",
+      "home": "1º Grupo E",
+      "away": "Melhor 3º colocado",
       "totalPicks": 1,
       "missingPicks": 0,
       "picks": [
@@ -135,7 +135,7 @@
       },
       "topOutcome": {
         "outcome": "home",
-        "label": "Alemanha vence",
+        "label": "1º Grupo E vence",
         "count": 1,
         "percentage": 100
       },
@@ -161,8 +161,8 @@
       "time": "",
       "group": "R32",
       "phaseLabel": "32 avos de final",
-      "home": "Holanda",
-      "away": "Marrocos",
+      "home": "1º Grupo F",
+      "away": "2º Grupo C",
       "totalPicks": 1,
       "missingPicks": 0,
       "picks": [
@@ -180,7 +180,7 @@
       },
       "topOutcome": {
         "outcome": "home",
-        "label": "Holanda vence",
+        "label": "1º Grupo F vence",
         "count": 1,
         "percentage": 100
       },
@@ -206,8 +206,8 @@
       "time": "",
       "group": "R32",
       "phaseLabel": "32 avos de final",
-      "home": "Brasil",
-      "away": "Japão",
+      "home": "1º Grupo C",
+      "away": "2º Grupo F",
       "totalPicks": 1,
       "missingPicks": 0,
       "picks": [
@@ -225,7 +225,7 @@
       },
       "topOutcome": {
         "outcome": "home",
-        "label": "Brasil vence",
+        "label": "1º Grupo C vence",
         "count": 1,
         "percentage": 100
       },
@@ -251,8 +251,8 @@
       "time": "",
       "group": "R32",
       "phaseLabel": "32 avos de final",
-      "home": "França",
-      "away": "Paraguai",
+      "home": "1º Grupo I",
+      "away": "Melhor 3º colocado",
       "totalPicks": 1,
       "missingPicks": 0,
       "picks": [
@@ -270,7 +270,7 @@
       },
       "topOutcome": {
         "outcome": "home",
-        "label": "França vence",
+        "label": "1º Grupo I vence",
         "count": 1,
         "percentage": 100
       },
@@ -296,8 +296,8 @@
       "time": "",
       "group": "R32",
       "phaseLabel": "32 avos de final",
-      "home": "Costa do Marfim",
-      "away": "Noruega",
+      "home": "2º Grupo E",
+      "away": "2º Grupo I",
       "totalPicks": 1,
       "missingPicks": 0,
       "picks": [
@@ -315,7 +315,7 @@
       },
       "topOutcome": {
         "outcome": "home",
-        "label": "Costa do Marfim vence",
+        "label": "2º Grupo E vence",
         "count": 1,
         "percentage": 100
       },
@@ -341,8 +341,8 @@
       "time": "",
       "group": "R32",
       "phaseLabel": "32 avos de final",
-      "home": "México",
-      "away": "Equador",
+      "home": "1º Grupo A",
+      "away": "Melhor 3º colocado",
       "totalPicks": 1,
       "missingPicks": 0,
       "picks": [
@@ -360,7 +360,7 @@
       },
       "topOutcome": {
         "outcome": "home",
-        "label": "México vence",
+        "label": "1º Grupo A vence",
         "count": 1,
         "percentage": 100
       },
@@ -386,8 +386,8 @@
       "time": "",
       "group": "R32",
       "phaseLabel": "32 avos de final",
-      "home": "Inglaterra",
-      "away": "Rep. Dem. do Congo",
+      "home": "1º Grupo L",
+      "away": "Melhor 3º colocado",
       "totalPicks": 1,
       "missingPicks": 0,
       "picks": [
@@ -405,7 +405,7 @@
       },
       "topOutcome": {
         "outcome": "home",
-        "label": "Inglaterra vence",
+        "label": "1º Grupo L vence",
         "count": 1,
         "percentage": 100
       },
@@ -431,8 +431,8 @@
       "time": "",
       "group": "R32",
       "phaseLabel": "32 avos de final",
-      "home": "Estados Unidos",
-      "away": "Suécia",
+      "home": "1º Grupo D",
+      "away": "Melhor 3º colocado",
       "totalPicks": 1,
       "missingPicks": 0,
       "picks": [
@@ -450,7 +450,7 @@
       },
       "topOutcome": {
         "outcome": "home",
-        "label": "Estados Unidos vence",
+        "label": "1º Grupo D vence",
         "count": 1,
         "percentage": 100
       },
@@ -476,8 +476,8 @@
       "time": "",
       "group": "R32",
       "phaseLabel": "32 avos de final",
-      "home": "Bélgica",
-      "away": "Senegal",
+      "home": "1º Grupo G",
+      "away": "Melhor 3º colocado",
       "totalPicks": 1,
       "missingPicks": 0,
       "picks": [
@@ -495,7 +495,7 @@
       },
       "topOutcome": {
         "outcome": "home",
-        "label": "Bélgica vence",
+        "label": "1º Grupo G vence",
         "count": 1,
         "percentage": 100
       },
@@ -521,8 +521,8 @@
       "time": "",
       "group": "R32",
       "phaseLabel": "32 avos de final",
-      "home": "Portugal",
-      "away": "Croácia",
+      "home": "2º Grupo K",
+      "away": "2º Grupo L",
       "totalPicks": 1,
       "missingPicks": 0,
       "picks": [
@@ -566,8 +566,8 @@
       "time": "",
       "group": "R32",
       "phaseLabel": "32 avos de final",
-      "home": "Espanha",
-      "away": "Áustria",
+      "home": "1º Grupo H",
+      "away": "2º Grupo J",
       "totalPicks": 1,
       "missingPicks": 0,
       "picks": [
@@ -585,7 +585,7 @@
       },
       "topOutcome": {
         "outcome": "home",
-        "label": "Espanha vence",
+        "label": "1º Grupo H vence",
         "count": 1,
         "percentage": 100
       },
@@ -611,8 +611,8 @@
       "time": "",
       "group": "R32",
       "phaseLabel": "32 avos de final",
-      "home": "Suíça",
-      "away": "Argélia",
+      "home": "1º Grupo B",
+      "away": "Melhor 3º colocado",
       "totalPicks": 1,
       "missingPicks": 0,
       "picks": [
@@ -656,8 +656,8 @@
       "time": "",
       "group": "R32",
       "phaseLabel": "32 avos de final",
-      "home": "Argentina",
-      "away": "Cabo Verde",
+      "home": "1º Grupo J",
+      "away": "2º Grupo H",
       "totalPicks": 1,
       "missingPicks": 0,
       "picks": [
@@ -675,7 +675,7 @@
       },
       "topOutcome": {
         "outcome": "home",
-        "label": "Argentina vence",
+        "label": "1º Grupo J vence",
         "count": 1,
         "percentage": 100
       },
@@ -701,8 +701,8 @@
       "time": "",
       "group": "R32",
       "phaseLabel": "32 avos de final",
-      "home": "Colômbia",
-      "away": "Gana",
+      "home": "1º Grupo K",
+      "away": "Melhor 3º colocado",
       "totalPicks": 1,
       "missingPicks": 0,
       "picks": [
@@ -720,7 +720,7 @@
       },
       "topOutcome": {
         "outcome": "home",
-        "label": "Colômbia vence",
+        "label": "1º Grupo K vence",
         "count": 1,
         "percentage": 100
       },
@@ -746,8 +746,8 @@
       "time": "",
       "group": "R32",
       "phaseLabel": "32 avos de final",
-      "home": "Austrália",
-      "away": "Egito",
+      "home": "2º Grupo D",
+      "away": "2º Grupo G",
       "totalPicks": 1,
       "missingPicks": 0,
       "picks": [
@@ -818,28 +818,28 @@
       "date": "2026-06-28",
       "time": "",
       "group": "R32",
-      "home": "África do Sul",
-      "away": "Canadá",
+      "home": "2º Grupo A",
+      "away": "2º Grupo B",
       "label": "Maior consenso",
-      "value": "Canadá vence · 100%"
+      "value": "2º Grupo B vence · 100%"
     },
     "mostDivisive": {
       "id": 73,
       "date": "2026-06-28",
       "time": "",
       "group": "R32",
-      "home": "África do Sul",
-      "away": "Canadá",
+      "home": "2º Grupo A",
+      "away": "2º Grupo B",
       "label": "Jogo mais dividido",
-      "value": "Canadá vence · 100%"
+      "value": "2º Grupo B vence · 100%"
     },
     "highestExpectedGoals": {
       "id": 75,
       "date": "2026-06-29",
       "time": "",
       "group": "R32",
-      "home": "Holanda",
-      "away": "Marrocos",
+      "home": "1º Grupo F",
+      "away": "2º Grupo C",
       "label": "Mais gols previstos",
       "value": "4 gols em média"
     },
@@ -848,8 +848,8 @@
       "date": "2026-07-02",
       "time": "",
       "group": "R32",
-      "home": "Portugal",
-      "away": "Croácia",
+      "home": "2º Grupo K",
+      "away": "2º Grupo L",
       "label": "Mais cara de empate",
       "value": "100% em empate"
     },
