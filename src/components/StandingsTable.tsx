@@ -8,8 +8,8 @@ const normalize = (s: string) =>
 export default function StandingsTable({
   standings,
   metrics,
-  emptyTitle = "CAPTURA ENCERRADA",
-  emptyBody = "O prazo de envio terminou. A classificação desta fase segue apenas para conferência e apuração dos palpites já recebidos.",
+  emptyTitle = "Classificação em preparação",
+  emptyBody = "A classificação aparecerá aqui assim que houver pontuação apurada para esta fase.",
 }: {
   standings: StandingEntry[];
   metrics: StandingsMetrics;

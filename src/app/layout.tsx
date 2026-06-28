@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Bolão Copa 2026 — 32 avos de final",
-  description: "Bolão da Copa 2026 na fase de 32 avos, com histórico da fase de grupos, chaveamento em andamento e download da planilha oficial.",
+  description: "Bolão da Copa 2026 na fase de 32 avos, com classificação, resultados apurados e projeção da disputa.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

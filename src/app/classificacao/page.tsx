@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { getStandings } from "@/lib/data";
-import { withBasePath } from "@/lib/site-path";
 
 function formatStamp(iso: string) {
   return new Intl.DateTimeFormat("pt-BR", {
@@ -28,21 +27,12 @@ export default function SimpleClassificationPage() {
                 Classificação atual da fase de 32 avos · atualizado {formatStamp(data.lastUpdated)}
               </p>
             </div>
-            <div className="flex shrink-0 flex-wrap justify-end gap-2">
-              <a
-                href={withBasePath("/bolao_copa2026_final_envio.xlsx")}
-                download
-                className="border border-[#001a78] bg-[#fff6a8] px-2 py-1 font-mono text-[10px] font-bold uppercase text-[#001a78]"
-              >
-                baixar planilha
-              </a>
-              <Link
-                href="/"
-                className="border border-[#001a78] bg-white px-2 py-1 font-mono text-[10px] font-bold uppercase text-[#001a78]"
-              >
-                site principal
-              </Link>
-            </div>
+            <Link
+              href="/"
+              className="shrink-0 border border-[#001a78] bg-white px-2 py-1 font-mono text-[10px] font-bold uppercase text-[#001a78]"
+            >
+              site principal
+            </Link>
           </div>
         </div>
 
