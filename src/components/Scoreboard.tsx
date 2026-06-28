@@ -18,7 +18,7 @@ export default function Scoreboard({
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div>
             <p className="font-mono text-[10px] uppercase tracking-[0.24em] text-lime sm:text-xs">
-              6ª edição · fase de grupos
+              6ª edição · nova fase aberta
             </p>
             <h1 className="mt-1 font-display text-4xl leading-[0.9] tracking-wide text-chalk sm:text-6xl">
               BOLÃO<br />COPA 2026
@@ -34,7 +34,7 @@ export default function Scoreboard({
           <div className="grid grid-cols-3 gap-1.5 font-mono text-[10px] text-slatey sm:min-w-[24rem] sm:text-xs">
             <div className="rounded-lg border border-pitch-line bg-pitch-2 px-2.5 py-2">
               <span className="block text-chalk">{countedMatches}/72</span>
-              <span>jogos</span>
+              <span>jogos apurados</span>
             </div>
             <div className="rounded-lg border border-pitch-line bg-pitch-2 px-2.5 py-2">
               <span className="block text-chalk">{totalParticipants}</span>
@@ -49,7 +49,7 @@ export default function Scoreboard({
 
         {countedMatches === 0 || !leader ? (
           <div className="mt-4 rounded-lg border border-dashed border-pitch-line bg-pitch-2 px-4 py-4">
-            <p className="font-display text-xl tracking-wide text-gold">AGUARDANDO RESULTADOS</p>
+            <p className="font-display text-xl tracking-wide text-gold">APURAÇÃO EM ANDAMENTO</p>
             <p className="mt-1 text-sm text-slatey">
               Os palpites estão registrados. A classificação aparece assim que o primeiro jogo for apurado.
             </p>

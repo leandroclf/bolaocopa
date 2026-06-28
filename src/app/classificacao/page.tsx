@@ -24,15 +24,24 @@ export default function SimpleClassificationPage() {
                 Classificação
               </h1>
               <p className="mt-0.5 font-mono text-[10px] text-[#26336b]">
-                {data.countedMatches}/72 jogos · atualizado {formatStamp(data.lastUpdated)}
+                {data.countedMatches}/72 jogos · nova fase aberta · atualizado {formatStamp(data.lastUpdated)}
               </p>
             </div>
-            <Link
-              href="/"
-              className="shrink-0 border border-[#001a78] bg-white px-2 py-1 font-mono text-[10px] font-bold uppercase text-[#001a78]"
-            >
-              site completo
-            </Link>
+            <div className="flex shrink-0 flex-wrap justify-end gap-2">
+              <a
+                href="/bolao_copa2026_final_envio.xlsx"
+                download
+                className="border border-[#001a78] bg-[#fff6a8] px-2 py-1 font-mono text-[10px] font-bold uppercase text-[#001a78]"
+              >
+                baixar planilha
+              </a>
+              <Link
+                href="/"
+                className="border border-[#001a78] bg-white px-2 py-1 font-mono text-[10px] font-bold uppercase text-[#001a78]"
+              >
+                site completo
+              </Link>
+            </div>
           </div>
         </div>
 

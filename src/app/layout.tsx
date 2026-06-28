@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Bolão Copa 2026 — Classificação",
-  description: "Classificação ao vivo do Bolão da Copa do Mundo 2026 (fase de grupos).",
+  title: "Bolão Copa 2026 — 32 avos de final",
+  description: "Classificação e chaveamento do Bolão da Copa do Mundo 2026, com palpites da próxima fase e download da planilha oficial.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

@@ -1,5 +1,6 @@
 import Scoreboard from "@/components/Scoreboard";
 import DashboardTabs from "@/components/DashboardTabs";
+import PhaseNotice from "@/components/PhaseNotice";
 import { getBracket, getLiveStandings, getStandings } from "@/lib/data";
 
 const fmt = (iso: string, opts: Intl.DateTimeFormatOptions) =>
@@ -18,6 +19,7 @@ export default function Page() {
         countedMatches={s.countedMatches}
         leader={leader}
       />
+      <PhaseNotice />
       <DashboardTabs standings={s} liveStandings={live} bracket={bracket} />
       <footer className="mx-auto max-w-5xl px-5 pt-6 text-center">
         <p className="font-mono text-[10px] uppercase tracking-[0.24em] text-slatey">Última atualização</p>

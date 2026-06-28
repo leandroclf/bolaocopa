@@ -78,7 +78,7 @@ export default function BracketView({ bracket }: { bracket: Bracket | null }) {
     return (
       <section className="mx-auto max-w-5xl px-5 py-8">
         <p className="rounded-lg border border-dashed border-pitch-line bg-pitch-2 px-4 py-6 text-center text-sm text-slatey">
-          O chaveamento aparece assim que a fase de grupos avançar.
+          O chaveamento da fase de 32 avos aparece assim que os confrontos forem consolidados.
         </p>
       </section>
     );
@@ -89,7 +89,7 @@ export default function BracketView({ bracket }: { bracket: Bracket | null }) {
       <div className="mb-3 flex items-end justify-between gap-4">
         <h2 className="font-display text-xl uppercase tracking-widest text-chalk">Chaveamento</h2>
         <p className="font-mono text-[10px] uppercase tracking-wider text-slatey">
-          {bracket.groupsComplete ? "mata-mata" : "fase de grupos em andamento"}
+          {bracket.groupsComplete ? "mata-mata" : "fase de 32 avos em preparação"}
         </p>
       </div>
 
