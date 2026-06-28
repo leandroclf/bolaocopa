@@ -64,7 +64,7 @@ export default function DashboardTabs({
             <StandingsTable
               standings={standings.standings}
               metrics={standings.metrics}
-              emptyBody="O prazo de envio terminou. A classificação desta etapa segue apenas para conferência e apuração dos palpites já recebidos."
+              emptyBody="A classificação aparecerá aqui assim que houver pontuação apurada para esta fase."
             />
             <RulesCard />
           </>

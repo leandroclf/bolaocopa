@@ -26,17 +26,13 @@ export default function RulesCard() {
         </div>
         <div className="rounded-lg border border-pitch-line bg-pitch-2 p-5">
           <h3 className="mb-3 font-display text-base uppercase tracking-widest text-chalk">Premiação</h3>
-          <p className="font-mono text-xs text-slatey">Bolada total</p>
-          <p className="font-mono text-2xl font-bold text-lime">Soma das inscrições</p>
+          <p className="font-mono text-xs text-slatey">Bolada final</p>
+          <p className="font-mono text-2xl font-bold text-lime">100% para o campeão</p>
           <p className="mt-2 text-sm leading-6 text-slatey">
-            A premiação será formada pela soma do valor captado de todos os apostadores. O valor final ainda não está
-            fechado.
+            A premiação está definida com os participantes já confirmados e os pagamentos recebidos.
           </p>
           <p className="mt-3 rounded-md border border-lime/20 bg-lime/10 px-3 py-2 font-mono text-[10px] uppercase tracking-[0.22em] text-lime">
             1º lugar recebe 100% da bolada · em caso de empate na 1ª colocação, divisão igualitária
-          </p>
-          <p className="mt-3 font-mono text-[10px] uppercase tracking-[0.2em] text-slatey">
-            Taxa de inscrição R$ 50 · PIX 71994793104 (Leandro Freire) · sem taxa administrativa
           </p>
           <p className="mt-2 font-mono text-[10px] uppercase tracking-[0.2em] text-slatey">
             Para pontuação, vale o placar final da partida após o tempo normal e a prorrogação; pênaltis servem
