@@ -19,9 +19,6 @@ export default function PhaseNotice() {
               gols seguem editáveis; as demais colunas permanecem bloqueadas. A fase de grupos ficou preservada como
               histórico.
             </p>
-            <p className="mt-2 font-mono text-[10px] uppercase tracking-[0.2em] text-slatey">
-              Taxa de inscrição de R$ 50 · PIX 71994793104 (Leandro Freire) · sem taxa administrativa
-            </p>
           </div>
 
           <a

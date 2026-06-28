@@ -1,4 +1,5 @@
 import Scoreboard from "@/components/Scoreboard";
+import PaymentBlock from "@/components/PaymentBlock";
 import DashboardTabs from "@/components/DashboardTabs";
 import PhaseNotice from "@/components/PhaseNotice";
 import { getBracket, getLiveStandings, getStandings } from "@/lib/data";
@@ -20,6 +21,7 @@ export default function Page() {
         totalMatches={s.metrics.totalMatches}
         leader={leader}
       />
+      <PaymentBlock />
       <PhaseNotice />
       <DashboardTabs standings={s} liveStandings={live} bracket={bracket} />
       <footer className="mx-auto max-w-5xl px-5 pt-6 text-center">

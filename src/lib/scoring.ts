@@ -11,7 +11,9 @@ import type { Score } from "./types";
  *   0  wrong outcome, or no prediction, or match not finished
  *
  * The 5-point tier is unreachable for draws by construction — intentional,
- * matching the organiser's rules.
+ * matching the organiser's rules. For knockout matches, the score compared
+ * here is always the stored 90-minute result; the advancing winner is tracked
+ * separately for the bracket.
  */
 export function scoreMatch(pred: Score | null | undefined, actual: Score | null | undefined): number {
   if (!pred || !actual) return 0;

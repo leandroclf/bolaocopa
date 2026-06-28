@@ -38,6 +38,9 @@ export default function RulesCard() {
           <p className="mt-3 font-mono text-[10px] uppercase tracking-[0.2em] text-slatey">
             Taxa de inscrição R$ 50 · PIX 71994793104 (Leandro Freire) · sem taxa administrativa
           </p>
+          <p className="mt-2 font-mono text-[10px] uppercase tracking-[0.2em] text-slatey">
+            Resultados válidos somente nos 90 minutos da partida, sem prorrogação ou pênaltis.
+          </p>
         </div>
       </div>
     </section>

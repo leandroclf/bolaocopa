@@ -25,7 +25,12 @@ export type Participant = {
 
 export type PredictionsFile = { participants: Participant[] };
 
-export type ResultEntry = { home: number; away: number; status: "finished" };
+export type ResultEntry = {
+  home: number; // regular-time score
+  away: number; // regular-time score
+  status: "finished";
+  winner?: "home" | "away"; // optional knockout winner for bracket progression
+};
 export type ResultsFile = {
   lastUpdated: string;
   source: string;

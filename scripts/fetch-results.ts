@@ -1,5 +1,8 @@
 /**
  * Fetches official results and writes data/results.json (index-keyed: 1..72).
+ * Regular-time scores are stored for scoring; knockout winners are stored too
+ * when the source exposes them so the bracket can still advance.
+ *
  * Sources (RESULTS_SOURCE env):
  *   openfootball (default) — public-domain JSON, no key, ~daily updates
  *   fast                  — API-Football when configured + openfootball fallback
@@ -25,8 +28,13 @@ const norm = (s: unknown) =>
   String(s).normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase()
     .replace(/&/g, "and").replace(/[^a-z0-9]+/g, " ").trim();
 const isGoal = (n: unknown): n is number => typeof n === "number" && Number.isInteger(n) && n >= 0;
+type Side = "home" | "away";
 
-type TeamMap = { enToCanon: Record<string, string>; fixtureCanon: Record<string, [string, string]> };
+type TeamMap = {
+  ptToCanon?: Record<string, string>;
+  enToCanon?: Record<string, string>;
+  fixtureCanon?: Record<string, [string, string]>;
+};
 const OPENFOOTBALL_URL =
   "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json";
 const API_FOOTBALL_URL = "https://v3.football.api-sports.io/fixtures?league=1&season=2026";
@@ -53,7 +61,7 @@ const stableLiveResults = (results: Record<string, LiveResultEntry>) =>
 function buildIndex(fixtures: FixturesFile, tm: TeamMap) {
   const byKey = new Map<string, { id: number; homeCanon: string }>();
   for (const m of fixtures.matches) {
-    const [hc, ac] = tm.fixtureCanon[String(m.id)];
+    const [hc, ac] = tm.fixtureCanon?.[String(m.id)] ?? [canonName(tm, m.home), canonName(tm, m.away)];
     byKey.set(`${m.group}|${[hc, ac].sort().join("~")}`, { id: m.id, homeCanon: hc });
   }
   return byKey;
@@ -62,7 +70,7 @@ function buildIndex(fixtures: FixturesFile, tm: TeamMap) {
 function buildPairIndex(fixtures: FixturesFile, tm: TeamMap) {
   const byKey = new Map<string, Array<{ id: number; homeCanon: string }>>();
   for (const m of fixtures.matches) {
-    const [hc, ac] = tm.fixtureCanon[String(m.id)];
+    const [hc, ac] = tm.fixtureCanon?.[String(m.id)] ?? [canonName(tm, m.home), canonName(tm, m.away)];
     const key = [hc, ac].sort().join("~");
     const matches = byKey.get(key) ?? [];
     matches.push({ id: m.id, homeCanon: hc });
@@ -70,6 +78,36 @@ function buildPairIndex(fixtures: FixturesFile, tm: TeamMap) {
   }
   return byKey;
 }
+
+const canonName = (tm: TeamMap, name: string) =>
+  tm.enToCanon?.[norm(name)] ?? tm.ptToCanon?.[norm(name)] ?? norm(name);
+
+const winnerFromTuple = (score: unknown): boolean | null => {
+  if (!Array.isArray(score) || !isGoal(score[0]) || !isGoal(score[1])) return null;
+  if (score[0] > score[1]) return true;
+  if (score[1] > score[0]) return false;
+  return null;
+};
+
+const orientWinner = (team1Wins: boolean | null, homeIsTeam1: boolean): Side | undefined => {
+  if (team1Wins == null) return undefined;
+  return team1Wins === homeIsTeam1 ? "home" : "away";
+};
+
+const footballDataScore = (match: any): [number, number] | null => {
+  const regular = match.score?.regularTime;
+  const regularHome = regular?.homeTeam ?? regular?.home;
+  const regularAway = regular?.awayTeam ?? regular?.away;
+  if (isGoal(regularHome) && isGoal(regularAway)) return [regularHome, regularAway];
+
+  const duration = String(match.score?.duration ?? "").toUpperCase();
+  const fullTime = match.score?.fullTime ?? match.score?.fulltime;
+  const fullHome = fullTime?.homeTeam ?? fullTime?.home;
+  const fullAway = fullTime?.awayTeam ?? fullTime?.away;
+  if (duration === "REGULAR" && isGoal(fullHome) && isGoal(fullAway)) return [fullHome, fullAway];
+
+  return null;
+};
 
 function kickoffAtSaoPaulo(date: string, time: string) {
   const hour = Number(String(time).replace(/\D/g, ""));
@@ -134,7 +172,7 @@ async function fromOpenfootball(fixtures: FixturesFile, tm: TeamMap): Promise<Re
   if (!res.ok) throw new Error(`openfootball HTTP ${res.status}`);
   const data = (await res.json()) as { matches: any[] };
   const idx = buildIndex(fixtures, tm);
-  const canon = (n: string) => tm.enToCanon[norm(n)] ?? norm(n);
+  const canon = (n: string) => canonName(tm, n);
   const out: Record<string, ResultEntry> = {};
   for (const m of data.matches) {
     const g = String(m.group ?? "").replace(/group/i, "").trim().toUpperCase();
@@ -145,7 +183,12 @@ async function fromOpenfootball(fixtures: FixturesFile, tm: TeamMap): Promise<Re
     const hit = idx.get(`${g}|${[c1, c2].sort().join("~")}`);
     if (!hit) continue;
     const [hg, ag] = c1 === hit.homeCanon ? [ft[0], ft[1]] : [ft[1], ft[0]];
-    out[String(hit.id)] = { home: hg, away: ag, status: "finished" };
+    const homeIsTeam1 = c1 === hit.homeCanon;
+    const winner = orientWinner(
+      winnerFromTuple(m.score?.p ?? m.score?.pen) ?? winnerFromTuple(m.score?.et) ?? winnerFromTuple(m.score?.ft),
+      homeIsTeam1
+    );
+    out[String(hit.id)] = winner ? { home: hg, away: ag, status: "finished", winner } : { home: hg, away: ag, status: "finished" };
   }
   return out;
 }
@@ -170,7 +213,7 @@ function finalResultsFromApiFootball(
   response: any[]
 ): Record<string, ResultEntry> {
   const idx = buildPairIndex(fixtures, tm);
-  const canon = (n: string) => tm.enToCanon[norm(n)] ?? norm(n);
+  const canon = (n: string) => canonName(tm, n);
   const out: Record<string, ResultEntry> = {};
   for (const m of response) {
     const status = String(m.fixture?.status?.short ?? "").toUpperCase();
@@ -184,7 +227,12 @@ function finalResultsFromApiFootball(
     if (!isGoal(fh) || !isGoal(fa)) continue;
     const hit = hits[0];
     const [hg, ag] = c1 === hit.homeCanon ? [fh, fa] : [fa, fh];
-    out[String(hit.id)] = { home: hg, away: ag, status: "finished" };
+    const winner = m.teams?.home?.winner === true
+      ? "home"
+      : m.teams?.away?.winner === true
+        ? "away"
+        : undefined;
+    out[String(hit.id)] = winner ? { home: hg, away: ag, status: "finished", winner } : { home: hg, away: ag, status: "finished" };
   }
   return out;
 }
@@ -196,7 +244,7 @@ function liveResultsFromApiFootball(
   official: ResultsFile
 ): Record<string, LiveResultEntry> {
   const idx = buildPairIndex(fixtures, tm);
-  const canon = (n: string) => tm.enToCanon[norm(n)] ?? norm(n);
+  const canon = (n: string) => canonName(tm, n);
   const out: Record<string, LiveResultEntry> = {};
   for (const m of response) {
     const status = String(m.fixture?.status?.short ?? "").toUpperCase();
@@ -245,7 +293,7 @@ async function fromFootballData(fixtures: FixturesFile, tm: TeamMap): Promise<Re
   if (!res.ok) throw new Error(`football-data HTTP ${res.status}`);
   const data = (await res.json()) as { matches: any[] };
   const idx = buildIndex(fixtures, tm);
-  const canon = (n: string) => tm.enToCanon[norm(n)] ?? norm(n);
+  const canon = (n: string) => canonName(tm, n);
   const out: Record<string, ResultEntry> = {};
   for (const m of data.matches) {
     if (m.status !== "FINISHED") continue;
@@ -254,10 +302,15 @@ async function fromFootballData(fixtures: FixturesFile, tm: TeamMap): Promise<Re
     const c1 = canon(m.homeTeam?.name), c2 = canon(m.awayTeam?.name);
     const hit = idx.get(`${g}|${[c1, c2].sort().join("~")}`);
     if (!hit) continue;
-    const fh = m.score?.fullTime?.home, fa = m.score?.fullTime?.away;
-    if (!isGoal(fh) || !isGoal(fa)) continue;
-    const [hg, ag] = c1 === hit.homeCanon ? [fh, fa] : [fa, fh];
-    out[String(hit.id)] = { home: hg, away: ag, status: "finished" };
+    const regular = footballDataScore(m);
+    if (!regular) continue;
+    const [hg, ag] = c1 === hit.homeCanon ? regular : [regular[1], regular[0]];
+    const winner = m.score?.winner === "HOME_TEAM"
+      ? (c1 === hit.homeCanon ? "home" : "away")
+      : m.score?.winner === "AWAY_TEAM"
+        ? (c1 === hit.homeCanon ? "away" : "home")
+        : undefined;
+    out[String(hit.id)] = winner ? { home: hg, away: ag, status: "finished", winner } : { home: hg, away: ag, status: "finished" };
   }
   return out;
 }
@@ -295,11 +348,14 @@ export async function fetchResults(): Promise<void> {
     } else if (source === "fast") {
       writeLiveResults("api-football", {});
     }
+    const allowedIds = new Set(fixtures.matches.map((match) => String(match.id)));
     const fetched = source === "football-data"
       ? await fromFootballData(fixtures, tm)
       : { ...openfootball, ...apiFootball };
     const overrides = readOptional<Record<string, ResultEntry>>("result-overrides.json", {});
-    const results = { ...fetched, ...overrides };
+    const results = Object.fromEntries(
+      Object.entries({ ...fetched, ...overrides }).filter(([id]) => allowedIds.has(id))
+    ) as Record<string, ResultEntry>;
     const sourceLabel = source === "fast" && Object.keys(apiFootball).length > 0
       ? "api-football+openfootball"
       : source === "fast"
