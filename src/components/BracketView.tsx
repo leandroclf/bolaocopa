@@ -17,8 +17,7 @@ function Participant({ side, match }: { side: Side; match: BracketMatch }) {
   const isWinner = match.winner === side;
   const goals = side === "home" ? match.homeGoals : match.awayGoals;
   const resolved = Boolean(p.team);
-  const showOfficialSlot = match.status !== "finished";
-  const displayLabel = showOfficialSlot ? p.source : p.label;
+  const displayLabel = p.label || p.source;
 
   return (
     <div

@@ -9,7 +9,7 @@ export default function RecentMatches({ results }: { results: RecentResult[] }) 
     return (
       <section className="mx-auto max-w-3xl px-5 py-5">
         <div className="rounded-lg border border-dashed border-pitch-line bg-pitch-2 px-4 py-6 text-center text-sm text-slatey">
-          Ainda sem resultados na fase de 32 avos.
+          Ainda sem resultados publicados na fase de 32 avos.
         </div>
       </section>
     );

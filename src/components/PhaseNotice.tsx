@@ -9,15 +9,15 @@ export default function PhaseNotice() {
         <div className="flex flex-col gap-4 p-5 lg:flex-row lg:items-center lg:justify-between">
           <div className="max-w-3xl">
             <p className="font-mono text-[10px] uppercase tracking-[0.24em] text-info">
-              nova fase · 32 avos de final
+              chaveamento oficial FIFA · 32 avos de final
             </p>
             <h2 className="mt-1 font-display text-2xl uppercase tracking-wide text-chalk sm:text-3xl">
-              Recebendo palpites da fase mata-mata
+              Confrontos oficiais da fase de 32 avos
             </h2>
             <p className="mt-2 text-sm leading-6 text-slatey">
-              A planilha oficial já está disponível para download. Apenas os espaços de identificação e as colunas de
-              gols seguem editáveis; as demais colunas permanecem bloqueadas. A fase de grupos ficou preservada como
-              histórico.
+              A planilha oficial já está disponível para download com os confrontos corrigidos da fase de 32 avos.
+              Apenas os espaços de identificação e as colunas de gols seguem editáveis; as demais colunas permanecem
+              bloqueadas. A fase de grupos ficou preservada como histórico.
             </p>
           </div>
 

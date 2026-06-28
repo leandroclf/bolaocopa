@@ -83,11 +83,15 @@ function MatchCard({ match }: { match: UpcomingMatchInsight }) {
 export default function UpcomingMatches({ matches }: { matches: UpcomingMatchInsight[] }) {
   if (matches.length === 0) return null;
 
+  const firstDay = matches[0];
+
   return (
     <section className="mx-auto max-w-5xl px-5 py-5">
       <div className="mb-4 flex items-end justify-between gap-4">
         <h2 className="font-display text-xl uppercase tracking-widest text-chalk">Palpites da fase de 32 avos</h2>
-        <p className="font-mono text-xs text-slatey">{matches.length} jogos pendentes</p>
+        <p className="font-mono text-xs text-slatey">
+          {matches.length} jogos oficiais · {fmtDay(firstDay.date)}
+        </p>
       </div>
       <div className="grid gap-2">
         {matches.map((match) => (

@@ -18,7 +18,7 @@ export default function Scoreboard({
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div>
             <p className="font-mono text-[10px] uppercase tracking-[0.24em] text-lime sm:text-xs">
-              6ª edição · 32 avos de final
+              6ª edição · fase de 32 avos consolidada
             </p>
             <h1 className="mt-1 font-display text-4xl leading-[0.9] tracking-wide text-chalk sm:text-6xl">
               BOLÃO<br />COPA 2026
@@ -51,7 +51,8 @@ export default function Scoreboard({
           <div className="mt-4 rounded-lg border border-dashed border-pitch-line bg-pitch-2 px-4 py-4">
             <p className="font-display text-xl tracking-wide text-gold">CAPTURA DE PALPITES ABERTA</p>
             <p className="mt-1 text-sm text-slatey">
-              A fase de 32 avos está aberta. A classificação aparece aqui quando os novos palpites forem enviados.
+              A fase de 32 avos está aberta. Os confrontos oficiais aparecem abaixo e a classificação surge à medida
+              que os novos palpites forem enviados.
             </p>
           </div>
         ) : (
