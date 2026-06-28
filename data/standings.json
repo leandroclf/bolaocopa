@@ -1,7 +1,7 @@
 {
   "lastUpdated": "2026-06-28T11:30:55.532Z",
   "source": "openfootball",
-  "totalParticipants": 17,
+  "totalParticipants": 19,
   "countedMatches": 0,
   "standings": [
     {
@@ -47,7 +47,7 @@
       "rank": 4,
       "previousRank": 4,
       "delta": 0,
-      "name": "Ezio",
+      "name": "Elias (Codorninha)",
       "points": 0,
       "exact": 0,
       "partial": 0,
@@ -60,7 +60,7 @@
       "rank": 5,
       "previousRank": 5,
       "delta": 0,
-      "name": "Gilberto",
+      "name": "Ezio",
       "points": 0,
       "exact": 0,
       "partial": 0,
@@ -73,7 +73,7 @@
       "rank": 6,
       "previousRank": 6,
       "delta": 0,
-      "name": "Italo",
+      "name": "Gilberto",
       "points": 0,
       "exact": 0,
       "partial": 0,
@@ -86,7 +86,7 @@
       "rank": 7,
       "previousRank": 7,
       "delta": 0,
-      "name": "Jean",
+      "name": "Italo",
       "points": 0,
       "exact": 0,
       "partial": 0,
@@ -99,7 +99,7 @@
       "rank": 8,
       "previousRank": 8,
       "delta": 0,
-      "name": "Leandro",
+      "name": "Jean",
       "points": 0,
       "exact": 0,
       "partial": 0,
@@ -112,7 +112,7 @@
       "rank": 9,
       "previousRank": 9,
       "delta": 0,
-      "name": "Mario",
+      "name": "Leandro",
       "points": 0,
       "exact": 0,
       "partial": 0,
@@ -125,7 +125,7 @@
       "rank": 10,
       "previousRank": 10,
       "delta": 0,
-      "name": "Matheus",
+      "name": "Mario",
       "points": 0,
       "exact": 0,
       "partial": 0,
@@ -138,7 +138,7 @@
       "rank": 11,
       "previousRank": 11,
       "delta": 0,
-      "name": "Nando",
+      "name": "Matheus",
       "points": 0,
       "exact": 0,
       "partial": 0,
@@ -151,7 +151,7 @@
       "rank": 12,
       "previousRank": 12,
       "delta": 0,
-      "name": "Rafael Hive",
+      "name": "Nando",
       "points": 0,
       "exact": 0,
       "partial": 0,
@@ -164,7 +164,7 @@
       "rank": 13,
       "previousRank": 13,
       "delta": 0,
-      "name": "Robson",
+      "name": "Rafael Hive",
       "points": 0,
       "exact": 0,
       "partial": 0,
@@ -177,7 +177,7 @@
       "rank": 14,
       "previousRank": 14,
       "delta": 0,
-      "name": "Rodney",
+      "name": "Robson",
       "points": 0,
       "exact": 0,
       "partial": 0,
@@ -190,7 +190,7 @@
       "rank": 15,
       "previousRank": 15,
       "delta": 0,
-      "name": "Sônia",
+      "name": "Rodney",
       "points": 0,
       "exact": 0,
       "partial": 0,
@@ -201,9 +201,9 @@
     },
     {
       "rank": 16,
-      "previousRank": null,
-      "delta": null,
-      "name": "Vinicius Freire",
+      "previousRank": 16,
+      "delta": 0,
+      "name": "Sônia",
       "points": 0,
       "exact": 0,
       "partial": 0,
@@ -214,9 +214,35 @@
     },
     {
       "rank": 17,
+      "previousRank": 17,
+      "delta": 0,
+      "name": "Vinicius Freire",
+      "points": 0,
+      "exact": 0,
+      "partial": 0,
+      "partialWinnerGoal": 0,
+      "partialLoserGoal": 0,
+      "resultOnly": 0,
+      "played": 0
+    },
+    {
+      "rank": 18,
+      "previousRank": 18,
+      "delta": 0,
+      "name": "Vinicius Teixeira",
+      "points": 0,
+      "exact": 0,
+      "partial": 0,
+      "partialWinnerGoal": 0,
+      "partialLoserGoal": 0,
+      "resultOnly": 0,
+      "played": 0
+    },
+    {
+      "rank": 19,
       "previousRank": null,
       "delta": null,
-      "name": "Vinicius Teixeira",
+      "name": "WOLFGAND VINICIUS",
       "points": 0,
       "exact": 0,
       "partial": 0,
@@ -235,7 +261,7 @@
     "phaseLabel": "32 avos de final",
     "home": "África do Sul",
     "away": "Canadá",
-    "totalPicks": 17,
+    "totalPicks": 19,
     "missingPicks": 0,
     "picks": [
       {
@@ -255,6 +281,12 @@
         "homeGoals": 1,
         "awayGoals": 1,
         "outcome": "draw"
+      },
+      {
+        "name": "Elias (Codorninha)",
+        "homeGoals": 1,
+        "awayGoals": 2,
+        "outcome": "away"
       },
       {
         "name": "Ezio",
@@ -339,20 +371,26 @@
         "homeGoals": 1,
         "awayGoals": 2,
         "outcome": "away"
+      },
+      {
+        "name": "WOLFGAND VINICIUS",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "outcome": "home"
       }
     ],
     "outcomeBreakdown": {
-      "homeWin": 3,
+      "homeWin": 4,
       "draw": 4,
-      "awayWin": 10
+      "awayWin": 11
     },
     "topOutcome": {
       "outcome": "away",
       "label": "Canadá vence",
-      "count": 10,
-      "percentage": 58.8
+      "count": 11,
+      "percentage": 57.9
     },
-    "averageHomeGoals": 1.1,
+    "averageHomeGoals": 1.2,
     "averageAwayGoals": 1.5,
     "averageTotalGoals": 2.6,
     "mostCommonScores": [
@@ -360,10 +398,11 @@
         "homeGoals": 1,
         "awayGoals": 2,
         "score": "1-2",
-        "count": 8,
-        "percentage": 47.1,
+        "count": 9,
+        "percentage": 47.4,
         "names": [
           "Diego (Dinão)",
+          "Elias (Codorninha)",
           "Jean",
           "Leandro",
           "Mario",
@@ -378,7 +417,7 @@
         "awayGoals": 1,
         "score": "1-1",
         "count": 3,
-        "percentage": 17.6,
+        "percentage": 15.8,
         "names": [
           "Elcio",
           "Italo",
@@ -390,7 +429,7 @@
         "awayGoals": 1,
         "score": "0-1",
         "count": 1,
-        "percentage": 5.9,
+        "percentage": 5.3,
         "names": [
           "Rafael Hive"
         ]
@@ -406,7 +445,7 @@
       "phaseLabel": "32 avos de final",
       "home": "África do Sul",
       "away": "Canadá",
-      "totalPicks": 17,
+      "totalPicks": 19,
       "missingPicks": 0,
       "picks": [
         {
@@ -426,6 +465,12 @@
           "homeGoals": 1,
           "awayGoals": 1,
           "outcome": "draw"
+        },
+        {
+          "name": "Elias (Codorninha)",
+          "homeGoals": 1,
+          "awayGoals": 2,
+          "outcome": "away"
         },
         {
           "name": "Ezio",
@@ -510,20 +555,26 @@
           "homeGoals": 1,
           "awayGoals": 2,
           "outcome": "away"
+        },
+        {
+          "name": "WOLFGAND VINICIUS",
+          "homeGoals": 2,
+          "awayGoals": 0,
+          "outcome": "home"
         }
       ],
       "outcomeBreakdown": {
-        "homeWin": 3,
+        "homeWin": 4,
         "draw": 4,
-        "awayWin": 10
+        "awayWin": 11
       },
       "topOutcome": {
         "outcome": "away",
         "label": "Canadá vence",
-        "count": 10,
-        "percentage": 58.8
+        "count": 11,
+        "percentage": 57.9
       },
-      "averageHomeGoals": 1.1,
+      "averageHomeGoals": 1.2,
       "averageAwayGoals": 1.5,
       "averageTotalGoals": 2.6,
       "mostCommonScores": [
@@ -531,10 +582,11 @@
           "homeGoals": 1,
           "awayGoals": 2,
           "score": "1-2",
-          "count": 8,
-          "percentage": 47.1,
+          "count": 9,
+          "percentage": 47.4,
           "names": [
             "Diego (Dinão)",
+            "Elias (Codorninha)",
             "Jean",
             "Leandro",
             "Mario",
@@ -549,7 +601,7 @@
           "awayGoals": 1,
           "score": "1-1",
           "count": 3,
-          "percentage": 17.6,
+          "percentage": 15.8,
           "names": [
             "Elcio",
             "Italo",
@@ -561,7 +613,7 @@
           "awayGoals": 1,
           "score": "0-1",
           "count": 1,
-          "percentage": 5.9,
+          "percentage": 5.3,
           "names": [
             "Rafael Hive"
           ]
@@ -576,7 +628,7 @@
       "phaseLabel": "32 avos de final",
       "home": "Alemanha",
       "away": "Paraguai",
-      "totalPicks": 17,
+      "totalPicks": 19,
       "missingPicks": 0,
       "picks": [
         {
@@ -595,6 +647,12 @@
           "name": "Elcio",
           "homeGoals": 2,
           "awayGoals": 1,
+          "outcome": "home"
+        },
+        {
+          "name": "Elias (Codorninha)",
+          "homeGoals": 3,
+          "awayGoals": 0,
           "outcome": "home"
         },
         {
@@ -680,17 +738,23 @@
           "homeGoals": 2,
           "awayGoals": 0,
           "outcome": "home"
+        },
+        {
+          "name": "WOLFGAND VINICIUS",
+          "homeGoals": 2,
+          "awayGoals": 1,
+          "outcome": "home"
         }
       ],
       "outcomeBreakdown": {
-        "homeWin": 17,
+        "homeWin": 19,
         "draw": 0,
         "awayWin": 0
       },
       "topOutcome": {
         "outcome": "home",
         "label": "Alemanha vence",
-        "count": 17,
+        "count": 19,
         "percentage": 100
       },
       "averageHomeGoals": 2.4,
@@ -702,7 +766,7 @@
           "awayGoals": 0,
           "score": "2-0",
           "count": 9,
-          "percentage": 52.9,
+          "percentage": 47.4,
           "names": [
             "Gilberto",
             "Italo",
@@ -719,11 +783,12 @@
           "homeGoals": 3,
           "awayGoals": 0,
           "score": "3-0",
-          "count": 4,
-          "percentage": 23.5,
+          "count": 5,
+          "percentage": 26.3,
           "names": [
             "Chico",
             "Diego (Dinão)",
+            "Elias (Codorninha)",
             "Jean",
             "Sônia"
           ]
@@ -732,11 +797,12 @@
           "homeGoals": 2,
           "awayGoals": 1,
           "score": "2-1",
-          "count": 2,
-          "percentage": 11.8,
+          "count": 3,
+          "percentage": 15.8,
           "names": [
             "Elcio",
-            "Ezio"
+            "Ezio",
+            "WOLFGAND VINICIUS"
           ]
         }
       ]
@@ -749,7 +815,7 @@
       "phaseLabel": "32 avos de final",
       "home": "Holanda",
       "away": "Marrocos",
-      "totalPicks": 17,
+      "totalPicks": 19,
       "missingPicks": 0,
       "picks": [
         {
@@ -769,6 +835,12 @@
           "homeGoals": 0,
           "awayGoals": 1,
           "outcome": "away"
+        },
+        {
+          "name": "Elias (Codorninha)",
+          "homeGoals": 2,
+          "awayGoals": 1,
+          "outcome": "home"
         },
         {
           "name": "Ezio",
@@ -853,31 +925,38 @@
           "homeGoals": 3,
           "awayGoals": 2,
           "outcome": "home"
+        },
+        {
+          "name": "WOLFGAND VINICIUS",
+          "homeGoals": 1,
+          "awayGoals": 0,
+          "outcome": "home"
         }
       ],
       "outcomeBreakdown": {
-        "homeWin": 12,
+        "homeWin": 14,
         "draw": 4,
         "awayWin": 1
       },
       "topOutcome": {
         "outcome": "home",
         "label": "Holanda vence",
-        "count": 12,
-        "percentage": 70.6
+        "count": 14,
+        "percentage": 73.7
       },
       "averageHomeGoals": 1.8,
-      "averageAwayGoals": 1.1,
-      "averageTotalGoals": 2.9,
+      "averageAwayGoals": 1,
+      "averageTotalGoals": 2.8,
       "mostCommonScores": [
         {
           "homeGoals": 2,
           "awayGoals": 1,
           "score": "2-1",
-          "count": 5,
-          "percentage": 29.4,
+          "count": 6,
+          "percentage": 31.6,
           "names": [
             "Chico",
+            "Elias (Codorninha)",
             "Ezio",
             "Matheus",
             "Nando",
@@ -888,12 +967,13 @@
           "homeGoals": 1,
           "awayGoals": 0,
           "score": "1-0",
-          "count": 3,
-          "percentage": 17.6,
+          "count": 4,
+          "percentage": 21.1,
           "names": [
             "Diego (Dinão)",
             "Leandro",
-            "Mario"
+            "Mario",
+            "WOLFGAND VINICIUS"
           ]
         },
         {
@@ -901,7 +981,7 @@
           "awayGoals": 2,
           "score": "2-2",
           "count": 3,
-          "percentage": 17.6,
+          "percentage": 15.8,
           "names": [
             "Gilberto",
             "Jean",
@@ -918,7 +998,7 @@
       "phaseLabel": "32 avos de final",
       "home": "Brasil",
       "away": "Japão",
-      "totalPicks": 17,
+      "totalPicks": 19,
       "missingPicks": 0,
       "picks": [
         {
@@ -935,6 +1015,12 @@
         },
         {
           "name": "Elcio",
+          "homeGoals": 3,
+          "awayGoals": 1,
+          "outcome": "home"
+        },
+        {
+          "name": "Elias (Codorninha)",
           "homeGoals": 3,
           "awayGoals": 1,
           "outcome": "home"
@@ -1022,17 +1108,23 @@
           "homeGoals": 3,
           "awayGoals": 0,
           "outcome": "home"
+        },
+        {
+          "name": "WOLFGAND VINICIUS",
+          "homeGoals": 2,
+          "awayGoals": 0,
+          "outcome": "home"
         }
       ],
       "outcomeBreakdown": {
-        "homeWin": 17,
+        "homeWin": 19,
         "draw": 0,
         "awayWin": 0
       },
       "topOutcome": {
         "outcome": "home",
         "label": "Brasil vence",
-        "count": 17,
+        "count": 19,
         "percentage": 100
       },
       "averageHomeGoals": 2.4,
@@ -1044,7 +1136,7 @@
           "awayGoals": 1,
           "score": "2-1",
           "count": 6,
-          "percentage": 35.3,
+          "percentage": 31.6,
           "names": [
             "Chico",
             "Ezio",
@@ -1058,11 +1150,12 @@
           "homeGoals": 3,
           "awayGoals": 1,
           "score": "3-1",
-          "count": 4,
-          "percentage": 23.5,
+          "count": 5,
+          "percentage": 26.3,
           "names": [
             "Diego (Dinão)",
             "Elcio",
+            "Elias (Codorninha)",
             "Nando",
             "Rodney"
           ]
@@ -1071,12 +1164,13 @@
           "homeGoals": 2,
           "awayGoals": 0,
           "score": "2-0",
-          "count": 3,
-          "percentage": 17.6,
+          "count": 4,
+          "percentage": 21.1,
           "names": [
             "Jean",
             "Leandro",
-            "Mario"
+            "Mario",
+            "WOLFGAND VINICIUS"
           ]
         }
       ]
@@ -1089,7 +1183,7 @@
       "phaseLabel": "32 avos de final",
       "home": "França",
       "away": "Suécia",
-      "totalPicks": 17,
+      "totalPicks": 19,
       "missingPicks": 0,
       "picks": [
         {
@@ -1111,6 +1205,12 @@
           "outcome": "home"
         },
         {
+          "name": "Elias (Codorninha)",
+          "homeGoals": 4,
+          "awayGoals": 1,
+          "outcome": "home"
+        },
+        {
           "name": "Ezio",
           "homeGoals": 3,
           "awayGoals": 1,
@@ -1193,17 +1293,23 @@
           "homeGoals": 3,
           "awayGoals": 1,
           "outcome": "home"
+        },
+        {
+          "name": "WOLFGAND VINICIUS",
+          "homeGoals": 2,
+          "awayGoals": 0,
+          "outcome": "home"
         }
       ],
       "outcomeBreakdown": {
-        "homeWin": 17,
+        "homeWin": 19,
         "draw": 0,
         "awayWin": 0
       },
       "topOutcome": {
         "outcome": "home",
         "label": "França vence",
-        "count": 17,
+        "count": 19,
         "percentage": 100
       },
       "averageHomeGoals": 2.8,
@@ -1215,7 +1321,7 @@
           "awayGoals": 1,
           "score": "3-1",
           "count": 7,
-          "percentage": 41.2,
+          "percentage": 36.8,
           "names": [
             "Ezio",
             "Leandro",
@@ -1231,7 +1337,7 @@
           "awayGoals": 0,
           "score": "3-0",
           "count": 5,
-          "percentage": 29.4,
+          "percentage": 26.3,
           "names": [
             "Gilberto",
             "Italo",
@@ -1244,12 +1350,13 @@
           "homeGoals": 2,
           "awayGoals": 0,
           "score": "2-0",
-          "count": 3,
-          "percentage": 17.6,
+          "count": 4,
+          "percentage": 21.1,
           "names": [
             "Elcio",
             "Robson",
-            "Rodney"
+            "Rodney",
+            "WOLFGAND VINICIUS"
           ]
         }
       ]
@@ -1262,7 +1369,7 @@
       "phaseLabel": "32 avos de final",
       "home": "Costa do Marfim",
       "away": "Noruega",
-      "totalPicks": 17,
+      "totalPicks": 19,
       "missingPicks": 0,
       "picks": [
         {
@@ -1284,6 +1391,12 @@
           "outcome": "draw"
         },
         {
+          "name": "Elias (Codorninha)",
+          "homeGoals": 1,
+          "awayGoals": 3,
+          "outcome": "away"
+        },
+        {
           "name": "Ezio",
           "homeGoals": 1,
           "awayGoals": 2,
@@ -1366,18 +1479,24 @@
           "homeGoals": 1,
           "awayGoals": 2,
           "outcome": "away"
+        },
+        {
+          "name": "WOLFGAND VINICIUS",
+          "homeGoals": 1,
+          "awayGoals": 1,
+          "outcome": "draw"
         }
       ],
       "outcomeBreakdown": {
         "homeWin": 2,
-        "draw": 4,
-        "awayWin": 11
+        "draw": 5,
+        "awayWin": 12
       },
       "topOutcome": {
         "outcome": "away",
         "label": "Noruega vence",
-        "count": 11,
-        "percentage": 64.7
+        "count": 12,
+        "percentage": 63.2
       },
       "averageHomeGoals": 1.1,
       "averageAwayGoals": 1.7,
@@ -1388,7 +1507,7 @@
           "awayGoals": 2,
           "score": "1-2",
           "count": 9,
-          "percentage": 52.9,
+          "percentage": 47.4,
           "names": [
             "Ezio",
             "Jean",
@@ -1405,11 +1524,12 @@
           "homeGoals": 1,
           "awayGoals": 1,
           "score": "1-1",
-          "count": 2,
-          "percentage": 11.8,
+          "count": 3,
+          "percentage": 15.8,
           "names": [
             "Elcio",
-            "Italo"
+            "Italo",
+            "WOLFGAND VINICIUS"
           ]
         },
         {
@@ -1417,7 +1537,7 @@
           "awayGoals": 1,
           "score": "2-1",
           "count": 2,
-          "percentage": 11.8,
+          "percentage": 10.5,
           "names": [
             "Chico",
             "Rodney"
@@ -1433,7 +1553,7 @@
       "phaseLabel": "32 avos de final",
       "home": "México",
       "away": "Equador",
-      "totalPicks": 17,
+      "totalPicks": 19,
       "missingPicks": 0,
       "picks": [
         {
@@ -1453,6 +1573,12 @@
           "homeGoals": 2,
           "awayGoals": 1,
           "outcome": "home"
+        },
+        {
+          "name": "Elias (Codorninha)",
+          "homeGoals": 1,
+          "awayGoals": 2,
+          "outcome": "away"
         },
         {
           "name": "Ezio",
@@ -1537,29 +1663,35 @@
           "homeGoals": 1,
           "awayGoals": 2,
           "outcome": "away"
+        },
+        {
+          "name": "WOLFGAND VINICIUS",
+          "homeGoals": 0,
+          "awayGoals": 1,
+          "outcome": "away"
         }
       ],
       "outcomeBreakdown": {
         "homeWin": 12,
         "draw": 2,
-        "awayWin": 3
+        "awayWin": 5
       },
       "topOutcome": {
         "outcome": "home",
         "label": "México vence",
         "count": 12,
-        "percentage": 70.6
+        "percentage": 63.2
       },
-      "averageHomeGoals": 1.6,
-      "averageAwayGoals": 1.1,
-      "averageTotalGoals": 2.7,
+      "averageHomeGoals": 1.5,
+      "averageAwayGoals": 1.2,
+      "averageTotalGoals": 2.6,
       "mostCommonScores": [
         {
           "homeGoals": 2,
           "awayGoals": 1,
           "score": "2-1",
           "count": 9,
-          "percentage": 52.9,
+          "percentage": 47.4,
           "names": [
             "Chico",
             "Elcio",
@@ -1577,7 +1709,7 @@
           "awayGoals": 0,
           "score": "1-0",
           "count": 3,
-          "percentage": 17.6,
+          "percentage": 15.8,
           "names": [
             "Mario",
             "Matheus",
@@ -1585,14 +1717,14 @@
           ]
         },
         {
-          "homeGoals": 2,
-          "awayGoals": 2,
-          "score": "2-2",
+          "homeGoals": 0,
+          "awayGoals": 1,
+          "score": "0-1",
           "count": 2,
-          "percentage": 11.8,
+          "percentage": 10.5,
           "names": [
-            "Ezio",
-            "Vinicius Freire"
+            "Diego (Dinão)",
+            "WOLFGAND VINICIUS"
           ]
         }
       ]
@@ -1605,7 +1737,7 @@
       "phaseLabel": "32 avos de final",
       "home": "Inglaterra",
       "away": "RD Congo",
-      "totalPicks": 17,
+      "totalPicks": 19,
       "missingPicks": 0,
       "picks": [
         {
@@ -1622,6 +1754,12 @@
         },
         {
           "name": "Elcio",
+          "homeGoals": 3,
+          "awayGoals": 1,
+          "outcome": "home"
+        },
+        {
+          "name": "Elias (Codorninha)",
           "homeGoals": 3,
           "awayGoals": 1,
           "outcome": "home"
@@ -1709,18 +1847,24 @@
           "homeGoals": 2,
           "awayGoals": 0,
           "outcome": "home"
+        },
+        {
+          "name": "WOLFGAND VINICIUS",
+          "homeGoals": 2,
+          "awayGoals": 0,
+          "outcome": "home"
         }
       ],
       "outcomeBreakdown": {
-        "homeWin": 16,
+        "homeWin": 18,
         "draw": 1,
         "awayWin": 0
       },
       "topOutcome": {
         "outcome": "home",
         "label": "Inglaterra vence",
-        "count": 16,
-        "percentage": 94.1
+        "count": 18,
+        "percentage": 94.7
       },
       "averageHomeGoals": 2.4,
       "averageAwayGoals": 0.4,
@@ -1730,24 +1874,26 @@
           "homeGoals": 2,
           "awayGoals": 0,
           "score": "2-0",
-          "count": 4,
-          "percentage": 23.5,
+          "count": 5,
+          "percentage": 26.3,
           "names": [
             "Leandro",
             "Mario",
             "Rafael Hive",
-            "Vinicius Teixeira"
+            "Vinicius Teixeira",
+            "WOLFGAND VINICIUS"
           ]
         },
         {
           "homeGoals": 3,
           "awayGoals": 1,
           "score": "3-1",
-          "count": 4,
-          "percentage": 23.5,
+          "count": 5,
+          "percentage": 26.3,
           "names": [
             "Chico",
             "Elcio",
+            "Elias (Codorninha)",
             "Italo",
             "Vinicius Freire"
           ]
@@ -1757,7 +1903,7 @@
           "awayGoals": 0,
           "score": "1-0",
           "count": 2,
-          "percentage": 11.8,
+          "percentage": 10.5,
           "names": [
             "Nando",
             "Rodney"
@@ -1773,7 +1919,7 @@
       "phaseLabel": "32 avos de final",
       "home": "Bélgica",
       "away": "Senegal",
-      "totalPicks": 17,
+      "totalPicks": 19,
       "missingPicks": 0,
       "picks": [
         {
@@ -1792,6 +1938,12 @@
           "name": "Elcio",
           "homeGoals": 2,
           "awayGoals": 0,
+          "outcome": "home"
+        },
+        {
+          "name": "Elias (Codorninha)",
+          "homeGoals": 2,
+          "awayGoals": 1,
           "outcome": "home"
         },
         {
@@ -1877,31 +2029,38 @@
           "homeGoals": 1,
           "awayGoals": 2,
           "outcome": "away"
+        },
+        {
+          "name": "WOLFGAND VINICIUS",
+          "homeGoals": 1,
+          "awayGoals": 0,
+          "outcome": "home"
         }
       ],
       "outcomeBreakdown": {
-        "homeWin": 13,
+        "homeWin": 15,
         "draw": 2,
         "awayWin": 2
       },
       "topOutcome": {
         "outcome": "home",
         "label": "Bélgica vence",
-        "count": 13,
-        "percentage": 76.5
+        "count": 15,
+        "percentage": 78.9
       },
-      "averageHomeGoals": 2.1,
-      "averageAwayGoals": 0.9,
-      "averageTotalGoals": 2.9,
+      "averageHomeGoals": 2,
+      "averageAwayGoals": 0.8,
+      "averageTotalGoals": 2.8,
       "mostCommonScores": [
         {
           "homeGoals": 2,
           "awayGoals": 1,
           "score": "2-1",
-          "count": 6,
-          "percentage": 35.3,
+          "count": 7,
+          "percentage": 36.8,
           "names": [
             "Chico",
+            "Elias (Codorninha)",
             "Italo",
             "Leandro",
             "Matheus",
@@ -1910,26 +2069,27 @@
           ]
         },
         {
+          "homeGoals": 1,
+          "awayGoals": 0,
+          "score": "1-0",
+          "count": 3,
+          "percentage": 15.8,
+          "names": [
+            "Robson",
+            "Sônia",
+            "WOLFGAND VINICIUS"
+          ]
+        },
+        {
           "homeGoals": 2,
           "awayGoals": 0,
           "score": "2-0",
           "count": 3,
-          "percentage": 17.6,
+          "percentage": 15.8,
           "names": [
             "Diego (Dinão)",
             "Elcio",
             "Jean"
-          ]
-        },
-        {
-          "homeGoals": 1,
-          "awayGoals": 0,
-          "score": "1-0",
-          "count": 2,
-          "percentage": 11.8,
-          "names": [
-            "Robson",
-            "Sônia"
           ]
         }
       ]
@@ -1942,7 +2102,7 @@
       "phaseLabel": "32 avos de final",
       "home": "Estados Unidos",
       "away": "Bósnia",
-      "totalPicks": 17,
+      "totalPicks": 19,
       "missingPicks": 0,
       "picks": [
         {
@@ -1962,6 +2122,12 @@
           "homeGoals": 1,
           "awayGoals": 1,
           "outcome": "draw"
+        },
+        {
+          "name": "Elias (Codorninha)",
+          "homeGoals": 3,
+          "awayGoals": 1,
+          "outcome": "home"
         },
         {
           "name": "Ezio",
@@ -2046,18 +2212,24 @@
           "homeGoals": 3,
           "awayGoals": 0,
           "outcome": "home"
+        },
+        {
+          "name": "WOLFGAND VINICIUS",
+          "homeGoals": 2,
+          "awayGoals": 0,
+          "outcome": "home"
         }
       ],
       "outcomeBreakdown": {
-        "homeWin": 15,
+        "homeWin": 17,
         "draw": 2,
         "awayWin": 0
       },
       "topOutcome": {
         "outcome": "home",
         "label": "Estados Unidos vence",
-        "count": 15,
-        "percentage": 88.2
+        "count": 17,
+        "percentage": 89.5
       },
       "averageHomeGoals": 1.9,
       "averageAwayGoals": 0.5,
@@ -2067,14 +2239,15 @@
           "homeGoals": 2,
           "awayGoals": 0,
           "score": "2-0",
-          "count": 5,
-          "percentage": 29.4,
+          "count": 6,
+          "percentage": 31.6,
           "names": [
             "Italo",
             "Jean",
             "Leandro",
             "Robson",
-            "Sônia"
+            "Sônia",
+            "WOLFGAND VINICIUS"
           ]
         },
         {
@@ -2082,7 +2255,7 @@
           "awayGoals": 1,
           "score": "2-1",
           "count": 4,
-          "percentage": 23.5,
+          "percentage": 21.1,
           "names": [
             "Gilberto",
             "Mario",
@@ -2095,7 +2268,7 @@
           "awayGoals": 0,
           "score": "1-0",
           "count": 3,
-          "percentage": 17.6,
+          "percentage": 15.8,
           "names": [
             "Diego (Dinão)",
             "Rafael Hive",
@@ -2112,7 +2285,7 @@
       "phaseLabel": "32 avos de final",
       "home": "Espanha",
       "away": "Áustria",
-      "totalPicks": 17,
+      "totalPicks": 19,
       "missingPicks": 0,
       "picks": [
         {
@@ -2132,6 +2305,12 @@
           "homeGoals": 2,
           "awayGoals": 2,
           "outcome": "draw"
+        },
+        {
+          "name": "Elias (Codorninha)",
+          "homeGoals": 3,
+          "awayGoals": 1,
+          "outcome": "home"
         },
         {
           "name": "Ezio",
@@ -2216,29 +2395,35 @@
           "homeGoals": 2,
           "awayGoals": 1,
           "outcome": "home"
+        },
+        {
+          "name": "WOLFGAND VINICIUS",
+          "homeGoals": 3,
+          "awayGoals": 0,
+          "outcome": "home"
         }
       ],
       "outcomeBreakdown": {
-        "homeWin": 15,
+        "homeWin": 17,
         "draw": 2,
         "awayWin": 0
       },
       "topOutcome": {
         "outcome": "home",
         "label": "Espanha vence",
-        "count": 15,
-        "percentage": 88.2
+        "count": 17,
+        "percentage": 89.5
       },
-      "averageHomeGoals": 2.1,
+      "averageHomeGoals": 2.2,
       "averageAwayGoals": 0.3,
-      "averageTotalGoals": 2.4,
+      "averageTotalGoals": 2.5,
       "mostCommonScores": [
         {
           "homeGoals": 2,
           "awayGoals": 0,
           "score": "2-0",
           "count": 5,
-          "percentage": 29.4,
+          "percentage": 26.3,
           "names": [
             "Diego (Dinão)",
             "Italo",
@@ -2251,13 +2436,14 @@
           "homeGoals": 3,
           "awayGoals": 0,
           "score": "3-0",
-          "count": 4,
-          "percentage": 23.5,
+          "count": 5,
+          "percentage": 26.3,
           "names": [
             "Gilberto",
             "Jean",
             "Matheus",
-            "Vinicius Freire"
+            "Vinicius Freire",
+            "WOLFGAND VINICIUS"
           ]
         },
         {
@@ -2265,7 +2451,7 @@
           "awayGoals": 0,
           "score": "1-0",
           "count": 3,
-          "percentage": 17.6,
+          "percentage": 15.8,
           "names": [
             "Chico",
             "Mario",
@@ -2282,7 +2468,7 @@
       "phaseLabel": "32 avos de final",
       "home": "Portugal",
       "away": "Croácia",
-      "totalPicks": 17,
+      "totalPicks": 19,
       "missingPicks": 0,
       "picks": [
         {
@@ -2301,6 +2487,12 @@
           "name": "Elcio",
           "homeGoals": 1,
           "awayGoals": 2,
+          "outcome": "away"
+        },
+        {
+          "name": "Elias (Codorninha)",
+          "homeGoals": 1,
+          "awayGoals": 3,
           "outcome": "away"
         },
         {
@@ -2386,21 +2578,27 @@
           "homeGoals": 3,
           "awayGoals": 2,
           "outcome": "home"
+        },
+        {
+          "name": "WOLFGAND VINICIUS",
+          "homeGoals": 1,
+          "awayGoals": 1,
+          "outcome": "draw"
         }
       ],
       "outcomeBreakdown": {
         "homeWin": 13,
-        "draw": 3,
-        "awayWin": 1
+        "draw": 4,
+        "awayWin": 2
       },
       "topOutcome": {
         "outcome": "home",
         "label": "Portugal vence",
         "count": 13,
-        "percentage": 76.5
+        "percentage": 68.4
       },
-      "averageHomeGoals": 1.9,
-      "averageAwayGoals": 1,
+      "averageHomeGoals": 1.8,
+      "averageAwayGoals": 1.1,
       "averageTotalGoals": 2.9,
       "mostCommonScores": [
         {
@@ -2408,7 +2606,7 @@
           "awayGoals": 1,
           "score": "2-1",
           "count": 7,
-          "percentage": 41.2,
+          "percentage": 36.8,
           "names": [
             "Chico",
             "Diego (Dinão)",
@@ -2421,24 +2619,25 @@
         },
         {
           "homeGoals": 1,
-          "awayGoals": 0,
-          "score": "1-0",
-          "count": 2,
-          "percentage": 11.8,
+          "awayGoals": 1,
+          "score": "1-1",
+          "count": 3,
+          "percentage": 15.8,
           "names": [
-            "Leandro",
-            "Rafael Hive"
+            "Italo",
+            "Matheus",
+            "WOLFGAND VINICIUS"
           ]
         },
         {
           "homeGoals": 1,
-          "awayGoals": 1,
-          "score": "1-1",
+          "awayGoals": 0,
+          "score": "1-0",
           "count": 2,
-          "percentage": 11.8,
+          "percentage": 10.5,
           "names": [
-            "Italo",
-            "Matheus"
+            "Leandro",
+            "Rafael Hive"
           ]
         }
       ]
@@ -2451,7 +2650,7 @@
       "phaseLabel": "32 avos de final",
       "home": "Suíça",
       "away": "Argélia",
-      "totalPicks": 17,
+      "totalPicks": 19,
       "missingPicks": 0,
       "picks": [
         {
@@ -2470,6 +2669,12 @@
           "name": "Elcio",
           "homeGoals": 1,
           "awayGoals": 0,
+          "outcome": "home"
+        },
+        {
+          "name": "Elias (Codorninha)",
+          "homeGoals": 3,
+          "awayGoals": 1,
           "outcome": "home"
         },
         {
@@ -2555,29 +2760,35 @@
           "homeGoals": 2,
           "awayGoals": 2,
           "outcome": "draw"
+        },
+        {
+          "name": "WOLFGAND VINICIUS",
+          "homeGoals": 1,
+          "awayGoals": 1,
+          "outcome": "draw"
         }
       ],
       "outcomeBreakdown": {
-        "homeWin": 13,
-        "draw": 4,
+        "homeWin": 14,
+        "draw": 5,
         "awayWin": 0
       },
       "topOutcome": {
         "outcome": "home",
         "label": "Suíça vence",
-        "count": 13,
-        "percentage": 76.5
+        "count": 14,
+        "percentage": 73.7
       },
-      "averageHomeGoals": 1.5,
+      "averageHomeGoals": 1.6,
       "averageAwayGoals": 0.6,
-      "averageTotalGoals": 2.1,
+      "averageTotalGoals": 2.2,
       "mostCommonScores": [
         {
           "homeGoals": 1,
           "awayGoals": 0,
           "score": "1-0",
           "count": 5,
-          "percentage": 29.4,
+          "percentage": 26.3,
           "names": [
             "Diego (Dinão)",
             "Elcio",
@@ -2591,7 +2802,7 @@
           "awayGoals": 1,
           "score": "2-1",
           "count": 5,
-          "percentage": 29.4,
+          "percentage": 26.3,
           "names": [
             "Gilberto",
             "Matheus",
@@ -2604,12 +2815,13 @@
           "homeGoals": 1,
           "awayGoals": 1,
           "score": "1-1",
-          "count": 3,
-          "percentage": 17.6,
+          "count": 4,
+          "percentage": 21.1,
           "names": [
             "Chico",
             "Ezio",
-            "Rodney"
+            "Rodney",
+            "WOLFGAND VINICIUS"
           ]
         }
       ]
@@ -2622,7 +2834,7 @@
       "phaseLabel": "32 avos de final",
       "home": "Austrália",
       "away": "Egito",
-      "totalPicks": 17,
+      "totalPicks": 19,
       "missingPicks": 0,
       "picks": [
         {
@@ -2642,6 +2854,12 @@
           "homeGoals": 1,
           "awayGoals": 1,
           "outcome": "draw"
+        },
+        {
+          "name": "Elias (Codorninha)",
+          "homeGoals": 1,
+          "awayGoals": 2,
+          "outcome": "away"
         },
         {
           "name": "Ezio",
@@ -2726,31 +2944,38 @@
           "homeGoals": 1,
           "awayGoals": 2,
           "outcome": "away"
+        },
+        {
+          "name": "WOLFGAND VINICIUS",
+          "homeGoals": 0,
+          "awayGoals": 2,
+          "outcome": "away"
         }
       ],
       "outcomeBreakdown": {
         "homeWin": 5,
         "draw": 2,
-        "awayWin": 10
+        "awayWin": 12
       },
       "topOutcome": {
         "outcome": "away",
         "label": "Egito vence",
-        "count": 10,
-        "percentage": 58.8
+        "count": 12,
+        "percentage": 63.2
       },
-      "averageHomeGoals": 1,
-      "averageAwayGoals": 1.2,
-      "averageTotalGoals": 2.2,
+      "averageHomeGoals": 0.9,
+      "averageAwayGoals": 1.3,
+      "averageTotalGoals": 2.3,
       "mostCommonScores": [
         {
           "homeGoals": 1,
           "awayGoals": 2,
           "score": "1-2",
-          "count": 4,
-          "percentage": 23.5,
+          "count": 5,
+          "percentage": 26.3,
           "names": [
             "Diego (Dinão)",
+            "Elias (Codorninha)",
             "Mario",
             "Nando",
             "Vinicius Teixeira"
@@ -2758,26 +2983,27 @@
         },
         {
           "homeGoals": 0,
-          "awayGoals": 1,
-          "score": "0-1",
-          "count": 3,
-          "percentage": 17.6,
+          "awayGoals": 2,
+          "score": "0-2",
+          "count": 4,
+          "percentage": 21.1,
           "names": [
-            "Italo",
-            "Rafael Hive",
-            "Robson"
+            "Gilberto",
+            "Sônia",
+            "Vinicius Freire",
+            "WOLFGAND VINICIUS"
           ]
         },
         {
           "homeGoals": 0,
-          "awayGoals": 2,
-          "score": "0-2",
+          "awayGoals": 1,
+          "score": "0-1",
           "count": 3,
-          "percentage": 17.6,
+          "percentage": 15.8,
           "names": [
-            "Gilberto",
-            "Sônia",
-            "Vinicius Freire"
+            "Italo",
+            "Rafael Hive",
+            "Robson"
           ]
         }
       ]
@@ -2790,7 +3016,7 @@
       "phaseLabel": "32 avos de final",
       "home": "Argentina",
       "away": "Cabo Verde",
-      "totalPicks": 17,
+      "totalPicks": 19,
       "missingPicks": 0,
       "picks": [
         {
@@ -2808,6 +3034,12 @@
         {
           "name": "Elcio",
           "homeGoals": 2,
+          "awayGoals": 1,
+          "outcome": "home"
+        },
+        {
+          "name": "Elias (Codorninha)",
+          "homeGoals": 3,
           "awayGoals": 1,
           "outcome": "home"
         },
@@ -2894,36 +3126,43 @@
           "homeGoals": 4,
           "awayGoals": 0,
           "outcome": "home"
+        },
+        {
+          "name": "WOLFGAND VINICIUS",
+          "homeGoals": 3,
+          "awayGoals": 0,
+          "outcome": "home"
         }
       ],
       "outcomeBreakdown": {
-        "homeWin": 17,
+        "homeWin": 19,
         "draw": 0,
         "awayWin": 0
       },
       "topOutcome": {
         "outcome": "home",
         "label": "Argentina vence",
-        "count": 17,
+        "count": 19,
         "percentage": 100
       },
       "averageHomeGoals": 2.8,
-      "averageAwayGoals": 0.2,
+      "averageAwayGoals": 0.3,
       "averageTotalGoals": 3.1,
       "mostCommonScores": [
         {
           "homeGoals": 3,
           "awayGoals": 0,
           "score": "3-0",
-          "count": 6,
-          "percentage": 35.3,
+          "count": 7,
+          "percentage": 36.8,
           "names": [
             "Ezio",
             "Nando",
             "Rafael Hive",
             "Robson",
             "Sônia",
-            "Vinicius Freire"
+            "Vinicius Freire",
+            "WOLFGAND VINICIUS"
           ]
         },
         {
@@ -2931,7 +3170,7 @@
           "awayGoals": 0,
           "score": "2-0",
           "count": 4,
-          "percentage": 23.5,
+          "percentage": 21.1,
           "names": [
             "Italo",
             "Mario",
@@ -2940,15 +3179,15 @@
           ]
         },
         {
-          "homeGoals": 4,
-          "awayGoals": 0,
-          "score": "4-0",
+          "homeGoals": 3,
+          "awayGoals": 1,
+          "score": "3-1",
           "count": 3,
-          "percentage": 17.6,
+          "percentage": 15.8,
           "names": [
-            "Diego (Dinão)",
-            "Jean",
-            "Vinicius Teixeira"
+            "Chico",
+            "Elias (Codorninha)",
+            "Leandro"
           ]
         }
       ]
@@ -2961,7 +3200,7 @@
       "phaseLabel": "32 avos de final",
       "home": "Colômbia",
       "away": "Gana",
-      "totalPicks": 17,
+      "totalPicks": 19,
       "missingPicks": 0,
       "picks": [
         {
@@ -2981,6 +3220,12 @@
           "homeGoals": 2,
           "awayGoals": 2,
           "outcome": "draw"
+        },
+        {
+          "name": "Elias (Codorninha)",
+          "homeGoals": 3,
+          "awayGoals": 1,
+          "outcome": "home"
         },
         {
           "name": "Ezio",
@@ -3065,21 +3310,27 @@
           "homeGoals": 1,
           "awayGoals": 1,
           "outcome": "draw"
+        },
+        {
+          "name": "WOLFGAND VINICIUS",
+          "homeGoals": 1,
+          "awayGoals": 2,
+          "outcome": "away"
         }
       ],
       "outcomeBreakdown": {
-        "homeWin": 11,
+        "homeWin": 12,
         "draw": 5,
-        "awayWin": 1
+        "awayWin": 2
       },
       "topOutcome": {
         "outcome": "home",
         "label": "Colômbia vence",
-        "count": 11,
-        "percentage": 64.7
+        "count": 12,
+        "percentage": 63.2
       },
       "averageHomeGoals": 1.8,
-      "averageAwayGoals": 0.9,
+      "averageAwayGoals": 1,
       "averageTotalGoals": 2.8,
       "mostCommonScores": [
         {
@@ -3087,7 +3338,7 @@
           "awayGoals": 1,
           "score": "1-1",
           "count": 4,
-          "percentage": 23.5,
+          "percentage": 21.1,
           "names": [
             "Ezio",
             "Italo",
@@ -3100,7 +3351,7 @@
           "awayGoals": 1,
           "score": "2-1",
           "count": 4,
-          "percentage": 23.5,
+          "percentage": 21.1,
           "names": [
             "Leandro",
             "Rafael Hive",
@@ -3113,7 +3364,7 @@
           "awayGoals": 0,
           "score": "2-0",
           "count": 3,
-          "percentage": 17.6,
+          "percentage": 15.8,
           "names": [
             "Diego (Dinão)",
             "Matheus",
@@ -3127,13 +3378,13 @@
     "totalMatches": 16,
     "finishedMatches": 0,
     "remainingMatches": 16,
-    "totalValidPicks": 272,
+    "totalValidPicks": 304,
     "averageUpcomingGoals": 2.7,
     "completionRate": 0,
     "leaderGap": 0,
     "leaderEfficiency": null,
     "averagePoints": 0,
-    "completeCards": 17,
+    "completeCards": 19,
     "missingPickCards": 0,
     "topExact": {
       "label": "Rei dos exatos",
@@ -3148,7 +3399,7 @@
     "topUpcomingScore": {
       "label": "Placar mais apostado",
       "value": "2-1",
-      "detail": "60 palpites"
+      "detail": "63 palpites"
     },
     "highestConsensus": {
       "id": 74,
@@ -3168,7 +3419,7 @@
       "home": "África do Sul",
       "away": "Canadá",
       "label": "Jogo mais dividido",
-      "value": "Canadá vence · 58.8%"
+      "value": "Canadá vence · 57.9%"
     },
     "highestExpectedGoals": {
       "id": 77,
@@ -3181,14 +3432,14 @@
       "value": "3.4 gols em média"
     },
     "highestDrawShare": {
-      "id": 88,
-      "date": "2026-07-03",
-      "time": "22:30",
+      "id": 78,
+      "date": "2026-06-30",
+      "time": "14:00",
       "group": "R32",
-      "home": "Colômbia",
-      "away": "Gana",
+      "home": "Costa do Marfim",
+      "away": "Noruega",
       "label": "Mais cara de empate",
-      "value": "29.4% em empate"
+      "value": "26.3% em empate"
     },
     "storyMetrics": [
       {
@@ -3199,7 +3450,7 @@
       {
         "label": "Média do pelotão",
         "value": "0 pts",
-        "detail": "Média atual entre 17 apostadores."
+        "detail": "Média atual entre 19 apostadores."
       },
       {
         "label": "Rei dos exatos",
@@ -3213,13 +3464,13 @@
       },
       {
         "label": "Cartelas completas",
-        "value": "17/17",
+        "value": "19/19",
         "detail": "Todos têm 72 palpites válidos."
       },
       {
         "label": "Placar mais apostado",
         "value": "2-1",
-        "detail": "60 vezes nos jogos pendentes."
+        "detail": "63 vezes nos jogos pendentes."
       }
     ]
   }
