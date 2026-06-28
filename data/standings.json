@@ -19,9 +19,9 @@
     },
     {
       "rank": 2,
-      "previousRank": 2,
-      "delta": 0,
-      "name": "Rodney (Louva a deus)",
+      "previousRank": null,
+      "delta": null,
+      "name": "Rodney",
       "points": 0,
       "exact": 0,
       "partial": 0,
@@ -50,7 +50,7 @@
         "outcome": "draw"
       },
       {
-        "name": "Rodney (Louva a deus)",
+        "name": "Rodney",
         "homeGoals": 1,
         "awayGoals": 2,
         "outcome": "away"
@@ -88,7 +88,7 @@
         "count": 1,
         "percentage": 50,
         "names": [
-          "Rodney (Louva a deus)"
+          "Rodney"
         ]
       }
     ]
@@ -112,7 +112,7 @@
           "outcome": "draw"
         },
         {
-          "name": "Rodney (Louva a deus)",
+          "name": "Rodney",
           "homeGoals": 1,
           "awayGoals": 2,
           "outcome": "away"
@@ -150,7 +150,7 @@
           "count": 1,
           "percentage": 50,
           "names": [
-            "Rodney (Louva a deus)"
+            "Rodney"
           ]
         }
       ]
@@ -173,7 +173,7 @@
           "outcome": "home"
         },
         {
-          "name": "Rodney (Louva a deus)",
+          "name": "Rodney",
           "homeGoals": 2,
           "awayGoals": 0,
           "outcome": "home"
@@ -202,7 +202,7 @@
           "percentage": 100,
           "names": [
             "Italo",
-            "Rodney (Louva a deus)"
+            "Rodney"
           ]
         }
       ]
@@ -225,7 +225,7 @@
           "outcome": "home"
         },
         {
-          "name": "Rodney (Louva a deus)",
+          "name": "Rodney",
           "homeGoals": 3,
           "awayGoals": 1,
           "outcome": "home"
@@ -263,7 +263,7 @@
           "count": 1,
           "percentage": 50,
           "names": [
-            "Rodney (Louva a deus)"
+            "Rodney"
           ]
         }
       ]
@@ -286,7 +286,7 @@
           "outcome": "home"
         },
         {
-          "name": "Rodney (Louva a deus)",
+          "name": "Rodney",
           "homeGoals": 3,
           "awayGoals": 1,
           "outcome": "home"
@@ -324,7 +324,7 @@
           "count": 1,
           "percentage": 50,
           "names": [
-            "Rodney (Louva a deus)"
+            "Rodney"
           ]
         }
       ]
@@ -347,7 +347,7 @@
           "outcome": "home"
         },
         {
-          "name": "Rodney (Louva a deus)",
+          "name": "Rodney",
           "homeGoals": 2,
           "awayGoals": 0,
           "outcome": "home"
@@ -375,7 +375,7 @@
           "count": 1,
           "percentage": 50,
           "names": [
-            "Rodney (Louva a deus)"
+            "Rodney"
           ]
         },
         {
@@ -408,7 +408,7 @@
           "outcome": "draw"
         },
         {
-          "name": "Rodney (Louva a deus)",
+          "name": "Rodney",
           "homeGoals": 2,
           "awayGoals": 1,
           "outcome": "home"
@@ -446,7 +446,7 @@
           "count": 1,
           "percentage": 50,
           "names": [
-            "Rodney (Louva a deus)"
+            "Rodney"
           ]
         }
       ]
@@ -469,7 +469,7 @@
           "outcome": "home"
         },
         {
-          "name": "Rodney (Louva a deus)",
+          "name": "Rodney",
           "homeGoals": 2,
           "awayGoals": 1,
           "outcome": "home"
@@ -498,7 +498,7 @@
           "percentage": 100,
           "names": [
             "Italo",
-            "Rodney (Louva a deus)"
+            "Rodney"
           ]
         }
       ]
@@ -521,7 +521,7 @@
           "outcome": "home"
         },
         {
-          "name": "Rodney (Louva a deus)",
+          "name": "Rodney",
           "homeGoals": 1,
           "awayGoals": 0,
           "outcome": "home"
@@ -549,7 +549,7 @@
           "count": 1,
           "percentage": 50,
           "names": [
-            "Rodney (Louva a deus)"
+            "Rodney"
           ]
         },
         {
@@ -582,7 +582,7 @@
           "outcome": "home"
         },
         {
-          "name": "Rodney (Louva a deus)",
+          "name": "Rodney",
           "homeGoals": 2,
           "awayGoals": 1,
           "outcome": "home"
@@ -611,7 +611,7 @@
           "percentage": 100,
           "names": [
             "Italo",
-            "Rodney (Louva a deus)"
+            "Rodney"
           ]
         }
       ]
@@ -634,7 +634,7 @@
           "outcome": "home"
         },
         {
-          "name": "Rodney (Louva a deus)",
+          "name": "Rodney",
           "homeGoals": 1,
           "awayGoals": 0,
           "outcome": "home"
@@ -662,7 +662,7 @@
           "count": 1,
           "percentage": 50,
           "names": [
-            "Rodney (Louva a deus)"
+            "Rodney"
           ]
         },
         {
@@ -695,7 +695,7 @@
           "outcome": "home"
         },
         {
-          "name": "Rodney (Louva a deus)",
+          "name": "Rodney",
           "homeGoals": 1,
           "awayGoals": 1,
           "outcome": "draw"
@@ -723,7 +723,7 @@
           "count": 1,
           "percentage": 50,
           "names": [
-            "Rodney (Louva a deus)"
+            "Rodney"
           ]
         },
         {
@@ -756,7 +756,7 @@
           "outcome": "draw"
         },
         {
-          "name": "Rodney (Louva a deus)",
+          "name": "Rodney",
           "homeGoals": 2,
           "awayGoals": 0,
           "outcome": "home"
@@ -794,7 +794,7 @@
           "count": 1,
           "percentage": 50,
           "names": [
-            "Rodney (Louva a deus)"
+            "Rodney"
           ]
         }
       ]
@@ -817,7 +817,7 @@
           "outcome": "home"
         },
         {
-          "name": "Rodney (Louva a deus)",
+          "name": "Rodney",
           "homeGoals": 1,
           "awayGoals": 1,
           "outcome": "draw"
@@ -845,7 +845,7 @@
           "count": 1,
           "percentage": 50,
           "names": [
-            "Rodney (Louva a deus)"
+            "Rodney"
           ]
         },
         {
@@ -878,7 +878,7 @@
           "outcome": "away"
         },
         {
-          "name": "Rodney (Louva a deus)",
+          "name": "Rodney",
           "homeGoals": 3,
           "awayGoals": 0,
           "outcome": "home"
@@ -916,7 +916,7 @@
           "count": 1,
           "percentage": 50,
           "names": [
-            "Rodney (Louva a deus)"
+            "Rodney"
           ]
         }
       ]
@@ -939,7 +939,7 @@
           "outcome": "home"
         },
         {
-          "name": "Rodney (Louva a deus)",
+          "name": "Rodney",
           "homeGoals": 2,
           "awayGoals": 0,
           "outcome": "home"
@@ -968,7 +968,7 @@
           "percentage": 100,
           "names": [
             "Italo",
-            "Rodney (Louva a deus)"
+            "Rodney"
           ]
         }
       ]
@@ -991,7 +991,7 @@
           "outcome": "draw"
         },
         {
-          "name": "Rodney (Louva a deus)",
+          "name": "Rodney",
           "homeGoals": 1,
           "awayGoals": 1,
           "outcome": "draw"
@@ -1020,7 +1020,7 @@
           "percentage": 100,
           "names": [
             "Italo",
-            "Rodney (Louva a deus)"
+            "Rodney"
           ]
         }
       ]
@@ -1097,7 +1097,7 @@
       {
         "label": "Briga pela liderança",
         "value": "0 pts",
-        "detail": "Italo abre 0 pontos sobre Rodney (Louva a deus)."
+        "detail": "Italo abre 0 pontos sobre Rodney."
       },
       {
         "label": "Média do pelotão",
