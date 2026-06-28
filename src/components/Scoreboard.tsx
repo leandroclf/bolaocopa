@@ -29,7 +29,7 @@ export default function Scoreboard({
               href="/classificacao/"
               className="mt-3 inline-flex h-9 items-center rounded-md border border-lime/40 bg-lime/10 px-3 font-mono text-[10px] font-bold uppercase tracking-wider text-lime"
             >
-              Ver histórico
+              Classificação simples
             </Link>
           </div>
 
