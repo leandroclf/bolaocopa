@@ -36,12 +36,6 @@ export default function SimpleClassificationPage() {
           </div>
         </div>
 
-        <div className="border-b border-[#001a78] bg-[#fff6a8] px-3 py-2">
-          <p className="font-mono text-[10px] uppercase tracking-wide text-[#061049]">
-            Classificação sucinta da fase atual, com os pontos consolidados dos apostadores desta etapa.
-          </p>
-        </div>
-
         <table className="w-full border-collapse font-mono text-[11px] sm:text-xs">
           <thead>
             <tr className="bg-[#b9c8e7]">
