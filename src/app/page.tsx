@@ -9,7 +9,6 @@ const fmt = (iso: string, opts: Intl.DateTimeFormatOptions) =>
 export default function Page() {
   const s = getStandings();
   const live = getLiveStandings();
-  const leader = s.standings[0] ?? null;
   return (
     <main className="min-h-screen pb-10">
       <Scoreboard
@@ -17,7 +16,6 @@ export default function Page() {
         totalParticipants={s.totalParticipants}
         countedMatches={s.countedMatches}
         totalMatches={s.metrics.totalMatches}
-        leader={leader}
       />
       <PaymentBlock totalParticipants={s.totalParticipants} entryFee={50} />
       <DashboardTabs standings={s} liveStandings={live} />

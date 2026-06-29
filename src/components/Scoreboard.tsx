@@ -1,5 +1,4 @@
 import Link from "next/link";
-import type { StandingEntry } from "@/lib/types";
 
 function formatStamp(iso: string) {
   return new Intl.DateTimeFormat("pt-BR", {
@@ -8,9 +7,9 @@ function formatStamp(iso: string) {
 }
 
 export default function Scoreboard({
-  lastUpdated, totalParticipants, countedMatches, totalMatches, leader,
+  lastUpdated, totalParticipants, countedMatches, totalMatches,
 }: {
-  lastUpdated: string; totalParticipants: number; countedMatches: number; totalMatches: number; leader: StandingEntry | null;
+  lastUpdated: string; totalParticipants: number; countedMatches: number; totalMatches: number;
 }) {
   return (
     <header className="border-b border-pitch-line">
@@ -46,32 +45,6 @@ export default function Scoreboard({
             </div>
           </div>
         </div>
-
-        {countedMatches === 0 || !leader ? (
-          <div className="mt-4 rounded-lg border border-dashed border-pitch-line bg-pitch-2 px-4 py-4">
-            <p className="font-display text-xl tracking-wide text-gold">Aguardando primeiros resultados</p>
-            <p className="mt-1 text-sm text-slatey">
-              Assim que os jogos forem apurados, a liderança e a pontuação aparecerão aqui.
-            </p>
-          </div>
-        ) : (
-          <div className="mt-4 overflow-hidden rounded-lg border border-gold/40 bg-gradient-to-r from-gold/15 to-transparent">
-            <div className="flex items-center gap-3 px-4 py-3 sm:gap-4 sm:px-5 sm:py-4">
-              <div className="font-display text-3xl leading-none text-gold sm:text-4xl">1º</div>
-              <div className="min-w-0 flex-1">
-                <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-gold/80">líder</p>
-                <p className="truncate font-display text-xl tracking-wide text-chalk sm:text-2xl">{leader.name}</p>
-                <p className="mt-0.5 font-mono text-xs text-slatey">
-                  {leader.exact} exatos · {leader.partial} parciais
-                </p>
-              </div>
-              <div className="text-right">
-                <div className="font-mono text-3xl font-bold leading-none text-gold sm:text-4xl">{leader.points}</div>
-                <div className="font-mono text-[10px] uppercase tracking-widest text-slatey">pontos</div>
-              </div>
-            </div>
-          </div>
-        )}
       </div>
     </header>
   );
