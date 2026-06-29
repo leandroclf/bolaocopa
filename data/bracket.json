@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-29T19:09:35.715Z",
+  "generatedAt": "2026-06-29T23:51:47.054Z",
   "competition": "Copa do Mundo FIFA 2026",
   "source": "openfootball",
   "groupsComplete": true,
@@ -70,10 +70,10 @@
               "flag": "🇧🇦"
             }
           },
-          "homeGoals": null,
-          "awayGoals": null,
-          "winner": null,
-          "status": "scheduled",
+          "homeGoals": 1,
+          "awayGoals": 1,
+          "winner": "home",
+          "status": "finished",
           "date": "2026-06-29",
           "time": null,
           "stadium": null,
@@ -600,9 +600,13 @@
           "phaseLabel": "Oitavas de final",
           "order": 1,
           "home": {
-            "label": "Vencedor Jogo 74",
+            "label": "Alemanha",
             "source": "Vencedor do Jogo 74",
-            "team": null
+            "team": {
+              "canon": "germany",
+              "name": "Alemanha",
+              "flag": "🇩🇪"
+            }
           },
           "away": {
             "label": "Vencedor Jogo 77",
