@@ -17,8 +17,8 @@ export default function Page() {
         countedMatches={s.countedMatches}
         totalMatches={s.metrics.totalMatches}
       />
-      <PaymentBlock totalParticipants={s.totalParticipants} entryFee={50} />
       <DashboardTabs standings={s} liveStandings={live} />
+      <PaymentBlock totalParticipants={s.totalParticipants} entryFee={50} />
       <footer className="mx-auto max-w-5xl px-5 pt-6 text-center">
         <p className="font-mono text-[10px] uppercase tracking-[0.24em] text-slatey">Última atualização</p>
         <p className="mt-1 font-mono text-sm text-chalk">{fmt(s.lastUpdated, { day: "2-digit", month: "2-digit", year: "numeric" })}</p>
