@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-28T21:07:57.715Z",
+  "generatedAt": "2026-06-29T19:06:20.547Z",
   "competition": "Copa do Mundo FIFA 2026",
-  "source": "openfootball",
+  "source": "manual",
   "groupsComplete": true,
   "complete": false,
   "phases": [
@@ -142,10 +142,10 @@
               "flag": "🇯🇵"
             }
           },
-          "homeGoals": null,
-          "awayGoals": null,
-          "winner": null,
-          "status": "scheduled",
+          "homeGoals": 2,
+          "awayGoals": 1,
+          "winner": "home",
+          "status": "finished",
           "date": "2026-06-29",
           "time": null,
           "stadium": null,
@@ -660,9 +660,13 @@
           "phaseLabel": "Oitavas de final",
           "order": 3,
           "home": {
-            "label": "Vencedor Jogo 76",
+            "label": "Brasil",
             "source": "Vencedor do Jogo 76",
-            "team": null
+            "team": {
+              "canon": "brazil",
+              "name": "Brasil",
+              "flag": "🇧🇷"
+            }
           },
           "away": {
             "label": "Vencedor Jogo 78",
