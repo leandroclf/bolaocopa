@@ -14,7 +14,7 @@ type TabKey = "classification" | "next" | "map" | "recent";
 const tabs: Array<{ key: TabKey; label: string; short: string }> = [
   { key: "classification", label: "Classificação", short: "Tabela" },
   { key: "next", label: "Próximos jogos", short: "Próximos" },
-  { key: "map", label: "Palpites 32 avos", short: "32avos" },
+  { key: "map", label: "Chaveamento", short: "Chave" },
   { key: "recent", label: "Resultados", short: "Resultados" },
 ];
 

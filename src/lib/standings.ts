@@ -20,6 +20,23 @@ const scoreKey = (home: number, away: number) => `${home}-${away}`;
 const bySchedule = <T extends { date: string; id: number }>(a: T, b: T) =>
   a.date.localeCompare(b.date) || a.id - b.id;
 
+function collectPicks(matchId: number, predictions: PredictionsFile): MatchPick[] {
+  return predictions.participants
+    .map((participant) => {
+      const pick = participant.picks[String(matchId)];
+      if (!pick) return null;
+      const [homeGoals, awayGoals] = pick;
+      return {
+        name: participant.name,
+        homeGoals,
+        awayGoals,
+        outcome: outcomeOf(homeGoals, awayGoals),
+      };
+    })
+    .filter((pick): pick is MatchPick => pick !== null)
+    .sort((a, b) => a.name.localeCompare(b.name, "pt-BR"));
+}
+
 function finalScore(result: { home: number; away: number; extraHome?: number; extraAway?: number }) {
   return {
     home: result.home + (result.extraHome ?? 0),
@@ -90,7 +107,19 @@ export function computeStandings(
       const m = matchById.get(Number(idStr))!;
       const r = results.results[idStr];
       const actual = finalScore(r);
-      return { id: m.id, date: m.date, group: m.group, home: m.home, away: m.away, homeGoals: actual.home, awayGoals: actual.away };
+      const picks = collectPicks(m.id, predictions);
+      return {
+        id: m.id,
+        date: m.date,
+        group: m.group,
+        phaseLabel: m.phaseLabel,
+        home: m.home,
+        away: m.away,
+        homeGoals: actual.home,
+        awayGoals: actual.away,
+        totalPicks: picks.length,
+        picks,
+      };
     })
     .sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : b.id - a.id));
 
@@ -119,20 +148,7 @@ function computeUpcomingMatches(
     .filter((match) => !results.results[String(match.id)])
     .sort(bySchedule)
     .map((match) => {
-      const picks: MatchPick[] = predictions.participants
-        .map((participant) => {
-          const pick = participant.picks[String(match.id)];
-          if (!pick) return null;
-          const [homeGoals, awayGoals] = pick;
-          return {
-            name: participant.name,
-            homeGoals,
-            awayGoals,
-            outcome: outcomeOf(homeGoals, awayGoals),
-          };
-        })
-        .filter((pick): pick is MatchPick => pick !== null)
-        .sort((a, b) => a.name.localeCompare(b.name, "pt-BR"));
+      const picks = collectPicks(match.id, predictions);
 
       const outcomeBreakdown = picks.reduce(
         (acc, pick) => {

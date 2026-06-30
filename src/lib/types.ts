@@ -75,6 +75,8 @@ export type RecentResult = {
   away: string;
   homeGoals: number;
   awayGoals: number;
+  totalPicks: number;
+  picks: MatchPick[];
 };
 
 export type PickOutcome = "home" | "draw" | "away";

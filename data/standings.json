@@ -400,46 +400,966 @@
       "id": 78,
       "date": "2026-06-30",
       "group": "R32",
+      "phaseLabel": "32 avos de final",
       "home": "Costa do Marfim",
       "away": "Noruega",
       "homeGoals": 1,
-      "awayGoals": 2
+      "awayGoals": 2,
+      "totalPicks": 30,
+      "picks": [
+        {
+          "name": "Antonio Dimitrov",
+          "homeGoals": 2,
+          "awayGoals": 1,
+          "outcome": "home"
+        },
+        {
+          "name": "Chico",
+          "homeGoals": 2,
+          "awayGoals": 1,
+          "outcome": "home"
+        },
+        {
+          "name": "Cristina Bello",
+          "homeGoals": 2,
+          "awayGoals": 2,
+          "outcome": "draw"
+        },
+        {
+          "name": "Diego (Dinão)",
+          "homeGoals": 0,
+          "awayGoals": 2,
+          "outcome": "away"
+        },
+        {
+          "name": "Diego (Vera Verão)",
+          "homeGoals": 0,
+          "awayGoals": 2,
+          "outcome": "away"
+        },
+        {
+          "name": "Douglas Truta",
+          "homeGoals": 1,
+          "awayGoals": 1,
+          "outcome": "draw"
+        },
+        {
+          "name": "Elcio",
+          "homeGoals": 1,
+          "awayGoals": 1,
+          "outcome": "draw"
+        },
+        {
+          "name": "Elias (Codorninha)",
+          "homeGoals": 1,
+          "awayGoals": 3,
+          "outcome": "away"
+        },
+        {
+          "name": "Ezio",
+          "homeGoals": 1,
+          "awayGoals": 2,
+          "outcome": "away"
+        },
+        {
+          "name": "Gilberto",
+          "homeGoals": 2,
+          "awayGoals": 2,
+          "outcome": "draw"
+        },
+        {
+          "name": "GuiGui",
+          "homeGoals": 1,
+          "awayGoals": 3,
+          "outcome": "away"
+        },
+        {
+          "name": "Italo",
+          "homeGoals": 1,
+          "awayGoals": 1,
+          "outcome": "draw"
+        },
+        {
+          "name": "Jean",
+          "homeGoals": 1,
+          "awayGoals": 2,
+          "outcome": "away"
+        },
+        {
+          "name": "Jonas",
+          "homeGoals": 2,
+          "awayGoals": 2,
+          "outcome": "draw"
+        },
+        {
+          "name": "Leandro",
+          "homeGoals": 1,
+          "awayGoals": 2,
+          "outcome": "away"
+        },
+        {
+          "name": "Luiz",
+          "homeGoals": 1,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
+        {
+          "name": "Mario",
+          "homeGoals": 2,
+          "awayGoals": 2,
+          "outcome": "draw"
+        },
+        {
+          "name": "Matheus",
+          "homeGoals": 1,
+          "awayGoals": 2,
+          "outcome": "away"
+        },
+        {
+          "name": "Nando",
+          "homeGoals": 1,
+          "awayGoals": 2,
+          "outcome": "away"
+        },
+        {
+          "name": "Nauzinha",
+          "homeGoals": 0,
+          "awayGoals": 1,
+          "outcome": "away"
+        },
+        {
+          "name": "Rafael Hive",
+          "homeGoals": 1,
+          "awayGoals": 2,
+          "outcome": "away"
+        },
+        {
+          "name": "Robson",
+          "homeGoals": 0,
+          "awayGoals": 1,
+          "outcome": "away"
+        },
+        {
+          "name": "Robson Boró",
+          "homeGoals": 1,
+          "awayGoals": 2,
+          "outcome": "away"
+        },
+        {
+          "name": "Rodney",
+          "homeGoals": 2,
+          "awayGoals": 1,
+          "outcome": "home"
+        },
+        {
+          "name": "Sônia",
+          "homeGoals": 1,
+          "awayGoals": 2,
+          "outcome": "away"
+        },
+        {
+          "name": "Vinicius Freire",
+          "homeGoals": 1,
+          "awayGoals": 2,
+          "outcome": "away"
+        },
+        {
+          "name": "Vinicius Teixeira",
+          "homeGoals": 1,
+          "awayGoals": 2,
+          "outcome": "away"
+        },
+        {
+          "name": "Wambaster",
+          "homeGoals": 1,
+          "awayGoals": 4,
+          "outcome": "away"
+        },
+        {
+          "name": "WolfGand",
+          "homeGoals": 1,
+          "awayGoals": 1,
+          "outcome": "draw"
+        },
+        {
+          "name": "Xerox",
+          "homeGoals": 1,
+          "awayGoals": 1,
+          "outcome": "draw"
+        }
+      ]
     },
     {
       "id": 76,
       "date": "2026-06-29",
       "group": "R32",
+      "phaseLabel": "32 avos de final",
       "home": "Brasil",
       "away": "Japão",
       "homeGoals": 2,
-      "awayGoals": 1
+      "awayGoals": 1,
+      "totalPicks": 30,
+      "picks": [
+        {
+          "name": "Antonio Dimitrov",
+          "homeGoals": 3,
+          "awayGoals": 1,
+          "outcome": "home"
+        },
+        {
+          "name": "Chico",
+          "homeGoals": 2,
+          "awayGoals": 1,
+          "outcome": "home"
+        },
+        {
+          "name": "Cristina Bello",
+          "homeGoals": 3,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
+        {
+          "name": "Diego (Dinão)",
+          "homeGoals": 3,
+          "awayGoals": 1,
+          "outcome": "home"
+        },
+        {
+          "name": "Diego (Vera Verão)",
+          "homeGoals": 2,
+          "awayGoals": 1,
+          "outcome": "home"
+        },
+        {
+          "name": "Douglas Truta",
+          "homeGoals": 1,
+          "awayGoals": 1,
+          "outcome": "draw"
+        },
+        {
+          "name": "Elcio",
+          "homeGoals": 3,
+          "awayGoals": 1,
+          "outcome": "home"
+        },
+        {
+          "name": "Elias (Codorninha)",
+          "homeGoals": 3,
+          "awayGoals": 1,
+          "outcome": "home"
+        },
+        {
+          "name": "Ezio",
+          "homeGoals": 2,
+          "awayGoals": 1,
+          "outcome": "home"
+        },
+        {
+          "name": "Gilberto",
+          "homeGoals": 3,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
+        {
+          "name": "GuiGui",
+          "homeGoals": 2,
+          "awayGoals": 1,
+          "outcome": "home"
+        },
+        {
+          "name": "Italo",
+          "homeGoals": 2,
+          "awayGoals": 1,
+          "outcome": "home"
+        },
+        {
+          "name": "Jean",
+          "homeGoals": 2,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
+        {
+          "name": "Jonas",
+          "homeGoals": 3,
+          "awayGoals": 1,
+          "outcome": "home"
+        },
+        {
+          "name": "Leandro",
+          "homeGoals": 2,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
+        {
+          "name": "Luiz",
+          "homeGoals": 2,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
+        {
+          "name": "Mario",
+          "homeGoals": 2,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
+        {
+          "name": "Matheus",
+          "homeGoals": 2,
+          "awayGoals": 1,
+          "outcome": "home"
+        },
+        {
+          "name": "Nando",
+          "homeGoals": 3,
+          "awayGoals": 1,
+          "outcome": "home"
+        },
+        {
+          "name": "Nauzinha",
+          "homeGoals": 1,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
+        {
+          "name": "Rafael Hive",
+          "homeGoals": 2,
+          "awayGoals": 1,
+          "outcome": "home"
+        },
+        {
+          "name": "Robson",
+          "homeGoals": 1,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
+        {
+          "name": "Robson Boró",
+          "homeGoals": 3,
+          "awayGoals": 1,
+          "outcome": "home"
+        },
+        {
+          "name": "Rodney",
+          "homeGoals": 3,
+          "awayGoals": 1,
+          "outcome": "home"
+        },
+        {
+          "name": "Sônia",
+          "homeGoals": 3,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
+        {
+          "name": "Vinicius Freire",
+          "homeGoals": 2,
+          "awayGoals": 1,
+          "outcome": "home"
+        },
+        {
+          "name": "Vinicius Teixeira",
+          "homeGoals": 3,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
+        {
+          "name": "Wambaster",
+          "homeGoals": 2,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
+        {
+          "name": "WolfGand",
+          "homeGoals": 2,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
+        {
+          "name": "Xerox",
+          "homeGoals": 2,
+          "awayGoals": 1,
+          "outcome": "home"
+        }
+      ]
     },
     {
       "id": 75,
       "date": "2026-06-29",
       "group": "R32",
+      "phaseLabel": "32 avos de final",
       "home": "Holanda",
       "away": "Marrocos",
       "homeGoals": 1,
-      "awayGoals": 1
+      "awayGoals": 1,
+      "totalPicks": 30,
+      "picks": [
+        {
+          "name": "Antonio Dimitrov",
+          "homeGoals": 2,
+          "awayGoals": 1,
+          "outcome": "home"
+        },
+        {
+          "name": "Chico",
+          "homeGoals": 2,
+          "awayGoals": 1,
+          "outcome": "home"
+        },
+        {
+          "name": "Cristina Bello",
+          "homeGoals": 2,
+          "awayGoals": 2,
+          "outcome": "draw"
+        },
+        {
+          "name": "Diego (Dinão)",
+          "homeGoals": 1,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
+        {
+          "name": "Diego (Vera Verão)",
+          "homeGoals": 3,
+          "awayGoals": 1,
+          "outcome": "home"
+        },
+        {
+          "name": "Douglas Truta",
+          "homeGoals": 3,
+          "awayGoals": 1,
+          "outcome": "home"
+        },
+        {
+          "name": "Elcio",
+          "homeGoals": 0,
+          "awayGoals": 1,
+          "outcome": "away"
+        },
+        {
+          "name": "Elias (Codorninha)",
+          "homeGoals": 2,
+          "awayGoals": 1,
+          "outcome": "home"
+        },
+        {
+          "name": "Ezio",
+          "homeGoals": 2,
+          "awayGoals": 1,
+          "outcome": "home"
+        },
+        {
+          "name": "Gilberto",
+          "homeGoals": 2,
+          "awayGoals": 2,
+          "outcome": "draw"
+        },
+        {
+          "name": "GuiGui",
+          "homeGoals": 2,
+          "awayGoals": 1,
+          "outcome": "home"
+        },
+        {
+          "name": "Italo",
+          "homeGoals": 2,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
+        {
+          "name": "Jean",
+          "homeGoals": 2,
+          "awayGoals": 2,
+          "outcome": "draw"
+        },
+        {
+          "name": "Jonas",
+          "homeGoals": 2,
+          "awayGoals": 1,
+          "outcome": "home"
+        },
+        {
+          "name": "Leandro",
+          "homeGoals": 1,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
+        {
+          "name": "Luiz",
+          "homeGoals": 0,
+          "awayGoals": 0,
+          "outcome": "draw"
+        },
+        {
+          "name": "Mario",
+          "homeGoals": 1,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
+        {
+          "name": "Matheus",
+          "homeGoals": 2,
+          "awayGoals": 1,
+          "outcome": "home"
+        },
+        {
+          "name": "Nando",
+          "homeGoals": 2,
+          "awayGoals": 1,
+          "outcome": "home"
+        },
+        {
+          "name": "Nauzinha",
+          "homeGoals": 1,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
+        {
+          "name": "Rafael Hive",
+          "homeGoals": 2,
+          "awayGoals": 1,
+          "outcome": "home"
+        },
+        {
+          "name": "Robson",
+          "homeGoals": 1,
+          "awayGoals": 1,
+          "outcome": "draw"
+        },
+        {
+          "name": "Robson Boró",
+          "homeGoals": 2,
+          "awayGoals": 1,
+          "outcome": "home"
+        },
+        {
+          "name": "Rodney",
+          "homeGoals": 3,
+          "awayGoals": 1,
+          "outcome": "home"
+        },
+        {
+          "name": "Sônia",
+          "homeGoals": 3,
+          "awayGoals": 2,
+          "outcome": "home"
+        },
+        {
+          "name": "Vinicius Freire",
+          "homeGoals": 2,
+          "awayGoals": 2,
+          "outcome": "draw"
+        },
+        {
+          "name": "Vinicius Teixeira",
+          "homeGoals": 3,
+          "awayGoals": 2,
+          "outcome": "home"
+        },
+        {
+          "name": "Wambaster",
+          "homeGoals": 1,
+          "awayGoals": 2,
+          "outcome": "away"
+        },
+        {
+          "name": "WolfGand",
+          "homeGoals": 1,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
+        {
+          "name": "Xerox",
+          "homeGoals": 1,
+          "awayGoals": 0,
+          "outcome": "home"
+        }
+      ]
     },
     {
       "id": 74,
       "date": "2026-06-29",
       "group": "R32",
+      "phaseLabel": "32 avos de final",
       "home": "Alemanha",
       "away": "Paraguai",
       "homeGoals": 1,
-      "awayGoals": 1
+      "awayGoals": 1,
+      "totalPicks": 30,
+      "picks": [
+        {
+          "name": "Antonio Dimitrov",
+          "homeGoals": 2,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
+        {
+          "name": "Chico",
+          "homeGoals": 3,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
+        {
+          "name": "Cristina Bello",
+          "homeGoals": 4,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
+        {
+          "name": "Diego (Dinão)",
+          "homeGoals": 3,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
+        {
+          "name": "Diego (Vera Verão)",
+          "homeGoals": 4,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
+        {
+          "name": "Douglas Truta",
+          "homeGoals": 3,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
+        {
+          "name": "Elcio",
+          "homeGoals": 2,
+          "awayGoals": 1,
+          "outcome": "home"
+        },
+        {
+          "name": "Elias (Codorninha)",
+          "homeGoals": 3,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
+        {
+          "name": "Ezio",
+          "homeGoals": 2,
+          "awayGoals": 1,
+          "outcome": "home"
+        },
+        {
+          "name": "Gilberto",
+          "homeGoals": 2,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
+        {
+          "name": "GuiGui",
+          "homeGoals": 3,
+          "awayGoals": 1,
+          "outcome": "home"
+        },
+        {
+          "name": "Italo",
+          "homeGoals": 2,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
+        {
+          "name": "Jean",
+          "homeGoals": 3,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
+        {
+          "name": "Jonas",
+          "homeGoals": 2,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
+        {
+          "name": "Leandro",
+          "homeGoals": 2,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
+        {
+          "name": "Luiz",
+          "homeGoals": 0,
+          "awayGoals": 0,
+          "outcome": "draw"
+        },
+        {
+          "name": "Mario",
+          "homeGoals": 2,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
+        {
+          "name": "Matheus",
+          "homeGoals": 2,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
+        {
+          "name": "Nando",
+          "homeGoals": 4,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
+        {
+          "name": "Nauzinha",
+          "homeGoals": 1,
+          "awayGoals": 2,
+          "outcome": "away"
+        },
+        {
+          "name": "Rafael Hive",
+          "homeGoals": 2,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
+        {
+          "name": "Robson",
+          "homeGoals": 2,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
+        {
+          "name": "Robson Boró",
+          "homeGoals": 2,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
+        {
+          "name": "Rodney",
+          "homeGoals": 2,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
+        {
+          "name": "Sônia",
+          "homeGoals": 3,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
+        {
+          "name": "Vinicius Freire",
+          "homeGoals": 3,
+          "awayGoals": 1,
+          "outcome": "home"
+        },
+        {
+          "name": "Vinicius Teixeira",
+          "homeGoals": 2,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
+        {
+          "name": "Wambaster",
+          "homeGoals": 2,
+          "awayGoals": 1,
+          "outcome": "home"
+        },
+        {
+          "name": "WolfGand",
+          "homeGoals": 2,
+          "awayGoals": 1,
+          "outcome": "home"
+        },
+        {
+          "name": "Xerox",
+          "homeGoals": 3,
+          "awayGoals": 0,
+          "outcome": "home"
+        }
+      ]
     },
     {
       "id": 73,
       "date": "2026-06-28",
       "group": "R32",
+      "phaseLabel": "32 avos de final",
       "home": "África do Sul",
       "away": "Canadá",
       "homeGoals": 0,
-      "awayGoals": 1
+      "awayGoals": 1,
+      "totalPicks": 30,
+      "picks": [
+        {
+          "name": "Antonio Dimitrov",
+          "homeGoals": 1,
+          "awayGoals": 2,
+          "outcome": "away"
+        },
+        {
+          "name": "Chico",
+          "homeGoals": 2,
+          "awayGoals": 1,
+          "outcome": "home"
+        },
+        {
+          "name": "Cristina Bello",
+          "homeGoals": 1,
+          "awayGoals": 2,
+          "outcome": "away"
+        },
+        {
+          "name": "Diego (Dinão)",
+          "homeGoals": 1,
+          "awayGoals": 2,
+          "outcome": "away"
+        },
+        {
+          "name": "Diego (Vera Verão)",
+          "homeGoals": 2,
+          "awayGoals": 1,
+          "outcome": "home"
+        },
+        {
+          "name": "Douglas Truta",
+          "homeGoals": 1,
+          "awayGoals": 2,
+          "outcome": "away"
+        },
+        {
+          "name": "Elcio",
+          "homeGoals": 1,
+          "awayGoals": 1,
+          "outcome": "draw"
+        },
+        {
+          "name": "Elias (Codorninha)",
+          "homeGoals": 1,
+          "awayGoals": 2,
+          "outcome": "away"
+        },
+        {
+          "name": "Ezio",
+          "homeGoals": 2,
+          "awayGoals": 2,
+          "outcome": "draw"
+        },
+        {
+          "name": "Gilberto",
+          "homeGoals": 3,
+          "awayGoals": 1,
+          "outcome": "home"
+        },
+        {
+          "name": "GuiGui",
+          "homeGoals": 1,
+          "awayGoals": 2,
+          "outcome": "away"
+        },
+        {
+          "name": "Italo",
+          "homeGoals": 1,
+          "awayGoals": 1,
+          "outcome": "draw"
+        },
+        {
+          "name": "Jean",
+          "homeGoals": 1,
+          "awayGoals": 2,
+          "outcome": "away"
+        },
+        {
+          "name": "Jonas",
+          "homeGoals": 1,
+          "awayGoals": 1,
+          "outcome": "draw"
+        },
+        {
+          "name": "Leandro",
+          "homeGoals": 1,
+          "awayGoals": 2,
+          "outcome": "away"
+        },
+        {
+          "name": "Luiz",
+          "homeGoals": 1,
+          "awayGoals": 1,
+          "outcome": "draw"
+        },
+        {
+          "name": "Mario",
+          "homeGoals": 1,
+          "awayGoals": 2,
+          "outcome": "away"
+        },
+        {
+          "name": "Matheus",
+          "homeGoals": 1,
+          "awayGoals": 1,
+          "outcome": "draw"
+        },
+        {
+          "name": "Nando",
+          "homeGoals": 1,
+          "awayGoals": 2,
+          "outcome": "away"
+        },
+        {
+          "name": "Nauzinha",
+          "homeGoals": 1,
+          "awayGoals": 2,
+          "outcome": "away"
+        },
+        {
+          "name": "Rafael Hive",
+          "homeGoals": 0,
+          "awayGoals": 1,
+          "outcome": "away"
+        },
+        {
+          "name": "Robson",
+          "homeGoals": 1,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
+        {
+          "name": "Robson Boró",
+          "homeGoals": 1,
+          "awayGoals": 2,
+          "outcome": "away"
+        },
+        {
+          "name": "Rodney",
+          "homeGoals": 1,
+          "awayGoals": 2,
+          "outcome": "away"
+        },
+        {
+          "name": "Sônia",
+          "homeGoals": 0,
+          "awayGoals": 2,
+          "outcome": "away"
+        },
+        {
+          "name": "Vinicius Freire",
+          "homeGoals": 1,
+          "awayGoals": 2,
+          "outcome": "away"
+        },
+        {
+          "name": "Vinicius Teixeira",
+          "homeGoals": 1,
+          "awayGoals": 2,
+          "outcome": "away"
+        },
+        {
+          "name": "Wambaster",
+          "homeGoals": 0,
+          "awayGoals": 2,
+          "outcome": "away"
+        },
+        {
+          "name": "WolfGand",
+          "homeGoals": 2,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
+        {
+          "name": "Xerox",
+          "homeGoals": 1,
+          "awayGoals": 2,
+          "outcome": "away"
+        }
+      ]
     }
   ],
   "nextMatch": {
