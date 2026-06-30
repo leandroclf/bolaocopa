@@ -1,5 +1,5 @@
 /**
- * Fetches official results and writes data/results.json (index-keyed: 1..72).
+ * Fetches official results and writes data/results.json (fixture-id-keyed).
  * Regular-time scores are stored for scoring; knockout winners are stored too
  * when the source exposes them so the bracket can still advance.
  *
@@ -14,6 +14,7 @@
  * kept untouched so the site never breaks or loses standings.
  */
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
+import { setTimeout as sleep } from "node:timers/promises";
 import { join } from "node:path";
 import type { FixturesFile, LiveResultEntry, LiveResultsFile, ResultsFile, ResultEntry } from "../src/lib/types";
 
@@ -35,8 +36,10 @@ type TeamMap = {
   enToCanon?: Record<string, string>;
   fixtureCanon?: Record<string, [string, string]>;
 };
-const OPENFOOTBALL_URL =
-  "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json";
+const OPENFOOTBALL_URLS = [
+  "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+  "https://raw.githubusercontent.com/openfootball/worldcup.json/refs/heads/master/2026/worldcup.json",
+] as const;
 const API_FOOTBALL_URL = "https://v3.football.api-sports.io/fixtures?league=1&season=2026";
 const FINAL_STATUS = new Set(["FT", "AET", "PEN"]);
 const LIVE_STATUS = new Set(["1H", "HT", "2H", "ET", "BT", "P", "SUSP", "INT", "LIVE"]);
@@ -44,6 +47,46 @@ const API_FOOTBALL_WINDOW_START_MIN = 95;
 const API_FOOTBALL_WINDOW_END_MIN = 135;
 const API_FOOTBALL_LIVE_WINDOW_START_MIN = 45;
 const API_FOOTBALL_LIVE_WINDOW_END_MIN = 135;
+
+const FETCH_RETRIES = 2;
+
+function describeFetchError(err: unknown) {
+  if (err instanceof Error) {
+    const cause = (err as Error & { cause?: unknown }).cause;
+    const causeMessage = cause instanceof Error ? `; cause: ${cause.message}` : "";
+    return `${err.message}${causeMessage}`;
+  }
+  return String(err);
+}
+
+async function fetchJson<T>(url: string, init?: RequestInit): Promise<T> {
+  let lastError: unknown;
+  for (let attempt = 1; attempt <= FETCH_RETRIES + 1; attempt += 1) {
+    try {
+      const res = await fetch(url, init);
+      if (!res.ok) throw new Error(`HTTP ${res.status} ${res.statusText}`);
+      return (await res.json()) as T;
+    } catch (err) {
+      lastError = err;
+      if (attempt <= FETCH_RETRIES) {
+        await sleep(250 * attempt);
+      }
+    }
+  }
+  throw new Error(`${url} failed after ${FETCH_RETRIES + 1} attempt(s): ${describeFetchError(lastError)}`);
+}
+
+async function fetchFirstJson<T>(sourceName: string, urls: readonly string[]): Promise<T> {
+  const failures: string[] = [];
+  for (const url of urls) {
+    try {
+      return await fetchJson<T>(url);
+    } catch (err) {
+      failures.push(describeFetchError(err));
+    }
+  }
+  throw new Error(`${sourceName} unavailable: ${failures.join(" | ")}`);
+}
 
 const stableResults = (results: Record<string, ResultEntry>) =>
   JSON.stringify(
@@ -168,9 +211,7 @@ function shouldUseApiFootballLive(fixtures: FixturesFile, current: ResultsFile) 
 }
 
 async function fromOpenfootball(fixtures: FixturesFile, tm: TeamMap): Promise<Record<string, ResultEntry>> {
-  const res = await fetch(OPENFOOTBALL_URL);
-  if (!res.ok) throw new Error(`openfootball HTTP ${res.status}`);
-  const data = (await res.json()) as { matches: any[] };
+  const data = await fetchFirstJson<{ matches: any[] }>("openfootball", OPENFOOTBALL_URLS);
   const idx = buildIndex(fixtures, tm);
   const canon = (n: string) => canonName(tm, n);
   const out: Record<string, ResultEntry> = {};
@@ -196,11 +237,9 @@ async function fromOpenfootball(fixtures: FixturesFile, tm: TeamMap): Promise<Re
 async function fetchApiFootballFixtures(): Promise<any[]> {
   const token = process.env.API_FOOTBALL_KEY;
   if (!token) throw new Error("API_FOOTBALL_KEY not set");
-  const res = await fetch(API_FOOTBALL_URL, {
+  const data = await fetchJson<{ response?: any[]; errors?: unknown }>(API_FOOTBALL_URL, {
     headers: { "x-apisports-key": token },
-  });
-  if (!res.ok) throw new Error(`api-football HTTP ${res.status}`);
-  const data = (await res.json()) as { response?: any[]; errors?: unknown };
+  } as RequestInit);
   if (data.errors && JSON.stringify(data.errors) !== "[]") {
     throw new Error(`api-football errors: ${JSON.stringify(data.errors)}`);
   }
@@ -287,11 +326,9 @@ function writeLiveResults(source: string, results: Record<string, LiveResultEntr
 async function fromFootballData(fixtures: FixturesFile, tm: TeamMap): Promise<Record<string, ResultEntry>> {
   const token = process.env.FOOTBALL_DATA_TOKEN;
   if (!token) throw new Error("FOOTBALL_DATA_TOKEN not set");
-  const res = await fetch("https://api.football-data.org/v4/competitions/WC/matches", {
+  const data = await fetchJson<{ matches: any[] }>("https://api.football-data.org/v4/competitions/WC/matches", {
     headers: { "X-Auth-Token": token },
-  });
-  if (!res.ok) throw new Error(`football-data HTTP ${res.status}`);
-  const data = (await res.json()) as { matches: any[] };
+  } as RequestInit);
   const idx = buildIndex(fixtures, tm);
   const canon = (n: string) => canonName(tm, n);
   const out: Record<string, ResultEntry> = {};
@@ -342,7 +379,7 @@ export async function fetchResults(): Promise<void> {
         );
       } catch (err) {
         if (source === "api-football") throw err;
-        console.warn(`api-football skipped (${(err as Error).message}); using openfootball fallback`);
+        console.warn(`api-football skipped (${describeFetchError(err)}); using openfootball fallback`);
         writeLiveResults("api-football", {});
       }
     } else if (source === "fast") {
@@ -369,7 +406,7 @@ export async function fetchResults(): Promise<void> {
     writeFileSync(join(DATA, "results.json"), JSON.stringify(out, null, 2));
     console.log(`fetched ${Object.keys(results).length} finished matches from ${sourceLabel}`);
   } catch (err) {
-    console.warn(`fetch failed (${(err as Error).message}); keeping last valid results (${Object.keys(current.results).length} matches)`);
+    console.warn(`fetch failed (${describeFetchError(err)}); keeping last valid results (${Object.keys(current.results).length} matches)`);
   }
 }
 
