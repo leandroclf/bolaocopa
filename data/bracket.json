@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-29T23:51:47.054Z",
+  "generatedAt": "2026-06-30T09:41:47.287Z",
   "competition": "Copa do Mundo FIFA 2026",
   "source": "openfootball",
   "groupsComplete": true,
@@ -106,10 +106,10 @@
               "flag": "🇲🇦"
             }
           },
-          "homeGoals": null,
-          "awayGoals": null,
-          "winner": null,
-          "status": "scheduled",
+          "homeGoals": 1,
+          "awayGoals": 1,
+          "winner": "away",
+          "status": "finished",
           "date": "2026-06-29",
           "time": null,
           "stadium": null,
@@ -641,14 +641,18 @@
             }
           },
           "away": {
-            "label": "Vencedor Jogo 75",
+            "label": "Marrocos",
             "source": "Vencedor do Jogo 75",
-            "team": null
+            "team": {
+              "canon": "morocco",
+              "name": "Marrocos",
+              "flag": "🇲🇦"
+            }
           },
           "homeGoals": null,
           "awayGoals": null,
           "winner": null,
-          "status": "pending",
+          "status": "scheduled",
           "date": "2026-07-04",
           "time": null,
           "stadium": null,
