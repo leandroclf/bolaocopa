@@ -32,5 +32,11 @@
     "away": 1,
     "status": "finished",
     "winner": "home"
+  },
+  "78": {
+    "home": 1,
+    "away": 2,
+    "status": "finished",
+    "winner": "away"
   }
 }

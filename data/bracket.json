@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-30T09:41:47.287Z",
+  "generatedAt": "2026-06-30T21:43:07.606Z",
   "competition": "Copa do Mundo FIFA 2026",
   "source": "openfootball",
   "groupsComplete": true,
@@ -214,10 +214,10 @@
               "flag": "🇳🇴"
             }
           },
-          "homeGoals": null,
-          "awayGoals": null,
-          "winner": null,
-          "status": "scheduled",
+          "homeGoals": 1,
+          "awayGoals": 2,
+          "winner": "away",
+          "status": "finished",
           "date": "2026-06-30",
           "time": null,
           "stadium": null,
@@ -677,14 +677,18 @@
             }
           },
           "away": {
-            "label": "Vencedor Jogo 78",
+            "label": "Noruega",
             "source": "Vencedor do Jogo 78",
-            "team": null
+            "team": {
+              "canon": "norway",
+              "name": "Noruega",
+              "flag": "🇳🇴"
+            }
           },
           "homeGoals": null,
           "awayGoals": null,
           "winner": null,
-          "status": "pending",
+          "status": "scheduled",
           "date": "2026-07-05",
           "time": null,
           "stadium": null,
