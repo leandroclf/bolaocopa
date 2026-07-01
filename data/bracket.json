@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-01T05:58:33.041Z",
+  "generatedAt": "2026-07-01T20:50:05.703Z",
   "competition": "Copa do Mundo FIFA 2026",
   "source": "openfootball",
   "groupsComplete": true,
@@ -286,10 +286,10 @@
               "flag": "🇨🇩"
             }
           },
-          "homeGoals": null,
-          "awayGoals": null,
-          "winner": null,
-          "status": "scheduled",
+          "homeGoals": 2,
+          "awayGoals": 1,
+          "winner": "home",
+          "status": "finished",
           "date": "2026-07-01",
           "time": null,
           "stadium": null,
@@ -717,14 +717,18 @@
             }
           },
           "away": {
-            "label": "Vencedor Jogo 80",
+            "label": "Inglaterra",
             "source": "Vencedor do Jogo 80",
-            "team": null
+            "team": {
+              "canon": "england",
+              "name": "Inglaterra",
+              "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿"
+            }
           },
           "homeGoals": null,
           "awayGoals": null,
           "winner": null,
-          "status": "pending",
+          "status": "scheduled",
           "date": "2026-07-05",
           "time": null,
           "stadium": null,
