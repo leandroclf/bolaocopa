@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-01T20:50:05.703Z",
+  "generatedAt": "2026-07-01T23:43:09.417Z",
   "competition": "Copa do Mundo FIFA 2026",
   "source": "openfootball",
   "groupsComplete": true,
@@ -322,10 +322,10 @@
               "flag": "🇸🇪"
             }
           },
-          "homeGoals": null,
-          "awayGoals": null,
-          "winner": null,
-          "status": "scheduled",
+          "homeGoals": 3,
+          "awayGoals": 2,
+          "winner": "home",
+          "status": "finished",
           "date": "2026-07-01",
           "time": null,
           "stadium": null,
@@ -772,9 +772,13 @@
           "phaseLabel": "Oitavas de final",
           "order": 6,
           "home": {
-            "label": "Vencedor Jogo 81",
+            "label": "Estados Unidos",
             "source": "Vencedor do Jogo 81",
-            "team": null
+            "team": {
+              "canon": "usa",
+              "name": "Estados Unidos",
+              "flag": "🇺🇸"
+            }
           },
           "away": {
             "label": "Vencedor Jogo 82",
