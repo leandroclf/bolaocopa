@@ -1,39 +1,65 @@
 {
-  "lastUpdated": "2026-06-30T22:56:59Z",
+  "lastUpdated": "2026-07-01T00:57:00Z",
   "source": "openfootball",
   "totalParticipants": 30,
-  "countedMatches": 6,
+  "countedMatches": 7,
   "standings": [
     {
       "rank": 1,
       "previousRank": 1,
       "delta": 0,
       "name": "Rafael Hive",
-      "points": 40,
+      "points": 45,
       "exact": 4,
-      "partial": 0,
-      "partialWinnerGoal": 0,
+      "partial": 1,
+      "partialWinnerGoal": 1,
       "partialLoserGoal": 0,
       "resultOnly": 0,
-      "played": 6
+      "played": 7
     },
     {
       "rank": 2,
-      "previousRank": 3,
-      "delta": 1,
-      "name": "Jean",
-      "points": 31,
-      "exact": 2,
-      "partial": 3,
-      "partialWinnerGoal": 1,
-      "partialLoserGoal": 0,
-      "resultOnly": 2,
-      "played": 6
+      "previousRank": 5,
+      "delta": 3,
+      "name": "Robson Boró",
+      "points": 38,
+      "exact": 3,
+      "partial": 2,
+      "partialWinnerGoal": 0,
+      "partialLoserGoal": 1,
+      "resultOnly": 1,
+      "played": 7
     },
     {
       "rank": 3,
       "previousRank": 2,
       "delta": -1,
+      "name": "Jean",
+      "points": 36,
+      "exact": 2,
+      "partial": 4,
+      "partialWinnerGoal": 2,
+      "partialLoserGoal": 0,
+      "resultOnly": 2,
+      "played": 7
+    },
+    {
+      "rank": 4,
+      "previousRank": 4,
+      "delta": 0,
+      "name": "Matheus",
+      "points": 35,
+      "exact": 3,
+      "partial": 1,
+      "partialWinnerGoal": 0,
+      "partialLoserGoal": 1,
+      "resultOnly": 0,
+      "played": 7
+    },
+    {
+      "rank": 5,
+      "previousRank": 3,
+      "delta": -2,
       "name": "Vinicius Freire",
       "points": 31,
       "exact": 2,
@@ -41,38 +67,51 @@
       "partialWinnerGoal": 1,
       "partialLoserGoal": 0,
       "resultOnly": 2,
-      "played": 6
-    },
-    {
-      "rank": 4,
-      "previousRank": 5,
-      "delta": 1,
-      "name": "Matheus",
-      "points": 30,
-      "exact": 3,
-      "partial": 0,
-      "partialWinnerGoal": 0,
-      "partialLoserGoal": 0,
-      "resultOnly": 0,
-      "played": 6
-    },
-    {
-      "rank": 5,
-      "previousRank": 9,
-      "delta": 4,
-      "name": "Robson Boró",
-      "points": 28,
-      "exact": 2,
-      "partial": 2,
-      "partialWinnerGoal": 0,
-      "partialLoserGoal": 1,
-      "resultOnly": 1,
-      "played": 6
+      "played": 7
     },
     {
       "rank": 6,
-      "previousRank": 13,
-      "delta": 7,
+      "previousRank": 9,
+      "delta": 3,
+      "name": "Leandro",
+      "points": 28,
+      "exact": 1,
+      "partial": 4,
+      "partialWinnerGoal": 3,
+      "partialLoserGoal": 0,
+      "resultOnly": 1,
+      "played": 7
+    },
+    {
+      "rank": 7,
+      "previousRank": 10,
+      "delta": 3,
+      "name": "Nando",
+      "points": 28,
+      "exact": 1,
+      "partial": 4,
+      "partialWinnerGoal": 1,
+      "partialLoserGoal": 2,
+      "resultOnly": 1,
+      "played": 7
+    },
+    {
+      "rank": 8,
+      "previousRank": 12,
+      "delta": 4,
+      "name": "Robson",
+      "points": 26,
+      "exact": 1,
+      "partial": 4,
+      "partialWinnerGoal": 1,
+      "partialLoserGoal": 1,
+      "resultOnly": 2,
+      "played": 7
+    },
+    {
+      "rank": 9,
+      "previousRank": 6,
+      "delta": -3,
       "name": "Diego (Vera Verão)",
       "points": 25,
       "exact": 2,
@@ -80,11 +119,11 @@
       "partialWinnerGoal": 1,
       "partialLoserGoal": 0,
       "resultOnly": 0,
-      "played": 6
+      "played": 7
     },
     {
-      "rank": 7,
-      "previousRank": 4,
+      "rank": 10,
+      "previousRank": 7,
       "delta": -3,
       "name": "Ezio",
       "points": 25,
@@ -93,12 +132,25 @@
       "partialWinnerGoal": 1,
       "partialLoserGoal": 0,
       "resultOnly": 0,
-      "played": 6
+      "played": 7
     },
     {
-      "rank": 8,
-      "previousRank": 6,
-      "delta": -2,
+      "rank": 11,
+      "previousRank": 14,
+      "delta": 3,
+      "name": "Italo",
+      "points": 25,
+      "exact": 2,
+      "partial": 1,
+      "partialWinnerGoal": 1,
+      "partialLoserGoal": 0,
+      "resultOnly": 0,
+      "played": 7
+    },
+    {
+      "rank": 12,
+      "previousRank": 8,
+      "delta": -4,
       "name": "GuiGui",
       "points": 23,
       "exact": 1,
@@ -106,38 +158,12 @@
       "partialWinnerGoal": 0,
       "partialLoserGoal": 2,
       "resultOnly": 1,
-      "played": 6
+      "played": 7
     },
     {
-      "rank": 9,
-      "previousRank": 7,
+      "rank": 13,
+      "previousRank": 11,
       "delta": -2,
-      "name": "Leandro",
-      "points": 23,
-      "exact": 1,
-      "partial": 3,
-      "partialWinnerGoal": 2,
-      "partialLoserGoal": 0,
-      "resultOnly": 1,
-      "played": 6
-    },
-    {
-      "rank": 10,
-      "previousRank": 8,
-      "delta": -2,
-      "name": "Nando",
-      "points": 23,
-      "exact": 1,
-      "partial": 3,
-      "partialWinnerGoal": 1,
-      "partialLoserGoal": 1,
-      "resultOnly": 1,
-      "played": 6
-    },
-    {
-      "rank": 11,
-      "previousRank": 10,
-      "delta": -1,
       "name": "Sônia",
       "points": 23,
       "exact": 1,
@@ -145,25 +171,51 @@
       "partialWinnerGoal": 1,
       "partialLoserGoal": 1,
       "resultOnly": 1,
-      "played": 6
+      "played": 7
     },
     {
-      "rank": 12,
-      "previousRank": 11,
-      "delta": -1,
-      "name": "Robson",
+      "rank": 14,
+      "previousRank": 16,
+      "delta": 2,
+      "name": "Wambaster",
+      "points": 23,
+      "exact": 0,
+      "partial": 5,
+      "partialWinnerGoal": 1,
+      "partialLoserGoal": 3,
+      "resultOnly": 1,
+      "played": 7
+    },
+    {
+      "rank": 15,
+      "previousRank": 15,
+      "delta": 0,
+      "name": "Cristina Bello",
+      "points": 22,
+      "exact": 1,
+      "partial": 4,
+      "partialWinnerGoal": 0,
+      "partialLoserGoal": 0,
+      "resultOnly": 4,
+      "played": 7
+    },
+    {
+      "rank": 16,
+      "previousRank": 19,
+      "delta": 3,
+      "name": "Gilberto",
       "points": 21,
       "exact": 1,
       "partial": 3,
-      "partialWinnerGoal": 0,
-      "partialLoserGoal": 1,
+      "partialWinnerGoal": 1,
+      "partialLoserGoal": 0,
       "resultOnly": 2,
-      "played": 6
+      "played": 7
     },
     {
-      "rank": 13,
-      "previousRank": 12,
-      "delta": -1,
+      "rank": 17,
+      "previousRank": 13,
+      "delta": -4,
       "name": "Vinicius Teixeira",
       "points": 21,
       "exact": 1,
@@ -171,51 +223,64 @@
       "partialWinnerGoal": 1,
       "partialLoserGoal": 0,
       "resultOnly": 2,
-      "played": 6
+      "played": 7
     },
     {
-      "rank": 14,
-      "previousRank": 20,
-      "delta": 6,
-      "name": "Italo",
-      "points": 20,
-      "exact": 2,
-      "partial": 0,
-      "partialWinnerGoal": 0,
-      "partialLoserGoal": 0,
-      "resultOnly": 0,
-      "played": 6
-    },
-    {
-      "rank": 15,
+      "rank": 18,
       "previousRank": 21,
-      "delta": 6,
-      "name": "Cristina Bello",
-      "points": 19,
-      "exact": 1,
-      "partial": 3,
+      "delta": 3,
+      "name": "Antonio Dimitrov",
+      "points": 18,
+      "exact": 0,
+      "partial": 4,
       "partialWinnerGoal": 0,
-      "partialLoserGoal": 0,
-      "resultOnly": 3,
-      "played": 6
+      "partialLoserGoal": 3,
+      "resultOnly": 1,
+      "played": 7
     },
     {
-      "rank": 16,
-      "previousRank": 14,
-      "delta": -2,
-      "name": "Wambaster",
+      "rank": 19,
+      "previousRank": 22,
+      "delta": 3,
+      "name": "Chico",
+      "points": 18,
+      "exact": 1,
+      "partial": 2,
+      "partialWinnerGoal": 1,
+      "partialLoserGoal": 0,
+      "resultOnly": 1,
+      "played": 7
+    },
+    {
+      "rank": 20,
+      "previousRank": 23,
+      "delta": 3,
+      "name": "Mario",
+      "points": 18,
+      "exact": 0,
+      "partial": 4,
+      "partialWinnerGoal": 2,
+      "partialLoserGoal": 1,
+      "resultOnly": 1,
+      "played": 7
+    },
+    {
+      "rank": 21,
+      "previousRank": 24,
+      "delta": 3,
+      "name": "Rodney",
       "points": 18,
       "exact": 0,
       "partial": 4,
       "partialWinnerGoal": 1,
       "partialLoserGoal": 2,
       "resultOnly": 1,
-      "played": 6
+      "played": 7
     },
     {
-      "rank": 17,
-      "previousRank": 15,
-      "delta": -2,
+      "rank": 22,
+      "previousRank": 17,
+      "delta": -5,
       "name": "Diego (Dinão)",
       "points": 16,
       "exact": 0,
@@ -223,12 +288,12 @@
       "partialWinnerGoal": 1,
       "partialLoserGoal": 1,
       "resultOnly": 2,
-      "played": 6
+      "played": 7
     },
     {
-      "rank": 18,
-      "previousRank": 16,
-      "delta": -2,
+      "rank": 23,
+      "previousRank": 18,
+      "delta": -5,
       "name": "Elias (Codorninha)",
       "points": 16,
       "exact": 0,
@@ -236,25 +301,12 @@
       "partialWinnerGoal": 0,
       "partialLoserGoal": 2,
       "resultOnly": 2,
-      "played": 6
+      "played": 7
     },
     {
-      "rank": 19,
-      "previousRank": 26,
-      "delta": 7,
-      "name": "Gilberto",
-      "points": 16,
-      "exact": 1,
-      "partial": 2,
-      "partialWinnerGoal": 0,
-      "partialLoserGoal": 0,
-      "resultOnly": 2,
-      "played": 6
-    },
-    {
-      "rank": 20,
-      "previousRank": 17,
-      "delta": -3,
+      "rank": 24,
+      "previousRank": 20,
+      "delta": -4,
       "name": "Xerox",
       "points": 16,
       "exact": 1,
@@ -262,64 +314,38 @@
       "partialWinnerGoal": 0,
       "partialLoserGoal": 0,
       "resultOnly": 2,
-      "played": 6
-    },
-    {
-      "rank": 21,
-      "previousRank": 23,
-      "delta": 2,
-      "name": "Antonio Dimitrov",
-      "points": 13,
-      "exact": 0,
-      "partial": 3,
-      "partialWinnerGoal": 0,
-      "partialLoserGoal": 2,
-      "resultOnly": 1,
-      "played": 6
-    },
-    {
-      "rank": 22,
-      "previousRank": 19,
-      "delta": -3,
-      "name": "Chico",
-      "points": 13,
-      "exact": 1,
-      "partial": 1,
-      "partialWinnerGoal": 0,
-      "partialLoserGoal": 0,
-      "resultOnly": 1,
-      "played": 6
-    },
-    {
-      "rank": 23,
-      "previousRank": 24,
-      "delta": 1,
-      "name": "Mario",
-      "points": 13,
-      "exact": 0,
-      "partial": 3,
-      "partialWinnerGoal": 2,
-      "partialLoserGoal": 0,
-      "resultOnly": 1,
-      "played": 6
-    },
-    {
-      "rank": 24,
-      "previousRank": 25,
-      "delta": 1,
-      "name": "Rodney",
-      "points": 13,
-      "exact": 0,
-      "partial": 3,
-      "partialWinnerGoal": 0,
-      "partialLoserGoal": 2,
-      "resultOnly": 1,
-      "played": 6
+      "played": 7
     },
     {
       "rank": 25,
-      "previousRank": 18,
-      "delta": -7,
+      "previousRank": 26,
+      "delta": 1,
+      "name": "Elcio",
+      "points": 15,
+      "exact": 0,
+      "partial": 3,
+      "partialWinnerGoal": 1,
+      "partialLoserGoal": 2,
+      "resultOnly": 0,
+      "played": 7
+    },
+    {
+      "rank": 26,
+      "previousRank": 29,
+      "delta": 3,
+      "name": "Nauzinha",
+      "points": 14,
+      "exact": 0,
+      "partial": 4,
+      "partialWinnerGoal": 1,
+      "partialLoserGoal": 0,
+      "resultOnly": 3,
+      "played": 7
+    },
+    {
+      "rank": 27,
+      "previousRank": 25,
+      "delta": -2,
       "name": "Luiz",
       "points": 11,
       "exact": 0,
@@ -327,25 +353,12 @@
       "partialWinnerGoal": 1,
       "partialLoserGoal": 0,
       "resultOnly": 2,
-      "played": 6
+      "played": 7
     },
     {
-      "rank": 26,
+      "rank": 28,
       "previousRank": 27,
-      "delta": 1,
-      "name": "Elcio",
-      "points": 10,
-      "exact": 0,
-      "partial": 2,
-      "partialWinnerGoal": 0,
-      "partialLoserGoal": 2,
-      "resultOnly": 0,
-      "played": 6
-    },
-    {
-      "rank": 27,
-      "previousRank": 28,
-      "delta": 1,
+      "delta": -1,
       "name": "Jonas",
       "points": 10,
       "exact": 0,
@@ -353,12 +366,12 @@
       "partialWinnerGoal": 0,
       "partialLoserGoal": 2,
       "resultOnly": 0,
-      "played": 6
+      "played": 7
     },
     {
-      "rank": 28,
-      "previousRank": 29,
-      "delta": 1,
+      "rank": 29,
+      "previousRank": 28,
+      "delta": -1,
       "name": "WolfGand",
       "points": 10,
       "exact": 0,
@@ -366,20 +379,7 @@
       "partialWinnerGoal": 1,
       "partialLoserGoal": 1,
       "resultOnly": 0,
-      "played": 6
-    },
-    {
-      "rank": 29,
-      "previousRank": 22,
-      "delta": -7,
-      "name": "Nauzinha",
-      "points": 9,
-      "exact": 0,
-      "partial": 3,
-      "partialWinnerGoal": 0,
-      "partialLoserGoal": 0,
-      "resultOnly": 3,
-      "played": 6
+      "played": 7
     },
     {
       "rank": 30,
@@ -392,10 +392,203 @@
       "partialWinnerGoal": 0,
       "partialLoserGoal": 0,
       "resultOnly": 2,
-      "played": 6
+      "played": 7
     }
   ],
   "recentResults": [
+    {
+      "id": 79,
+      "date": "2026-06-30",
+      "group": "R32",
+      "phaseLabel": "32 avos de final",
+      "home": "México",
+      "away": "Equador",
+      "homeGoals": 2,
+      "awayGoals": 0,
+      "totalPicks": 30,
+      "picks": [
+        {
+          "name": "Antonio Dimitrov",
+          "homeGoals": 1,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
+        {
+          "name": "Chico",
+          "homeGoals": 2,
+          "awayGoals": 1,
+          "outcome": "home"
+        },
+        {
+          "name": "Cristina Bello",
+          "homeGoals": 3,
+          "awayGoals": 1,
+          "outcome": "home"
+        },
+        {
+          "name": "Diego (Dinão)",
+          "homeGoals": 0,
+          "awayGoals": 1,
+          "outcome": "away"
+        },
+        {
+          "name": "Diego (Vera Verão)",
+          "homeGoals": 1,
+          "awayGoals": 2,
+          "outcome": "away"
+        },
+        {
+          "name": "Douglas Truta",
+          "homeGoals": 0,
+          "awayGoals": 0,
+          "outcome": "draw"
+        },
+        {
+          "name": "Elcio",
+          "homeGoals": 2,
+          "awayGoals": 1,
+          "outcome": "home"
+        },
+        {
+          "name": "Elias (Codorninha)",
+          "homeGoals": 1,
+          "awayGoals": 2,
+          "outcome": "away"
+        },
+        {
+          "name": "Ezio",
+          "homeGoals": 2,
+          "awayGoals": 2,
+          "outcome": "draw"
+        },
+        {
+          "name": "Gilberto",
+          "homeGoals": 2,
+          "awayGoals": 1,
+          "outcome": "home"
+        },
+        {
+          "name": "GuiGui",
+          "homeGoals": 0,
+          "awayGoals": 2,
+          "outcome": "away"
+        },
+        {
+          "name": "Italo",
+          "homeGoals": 2,
+          "awayGoals": 1,
+          "outcome": "home"
+        },
+        {
+          "name": "Jean",
+          "homeGoals": 2,
+          "awayGoals": 1,
+          "outcome": "home"
+        },
+        {
+          "name": "Jonas",
+          "homeGoals": 1,
+          "awayGoals": 2,
+          "outcome": "away"
+        },
+        {
+          "name": "Leandro",
+          "homeGoals": 2,
+          "awayGoals": 1,
+          "outcome": "home"
+        },
+        {
+          "name": "Luiz",
+          "homeGoals": 0,
+          "awayGoals": 0,
+          "outcome": "draw"
+        },
+        {
+          "name": "Mario",
+          "homeGoals": 1,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
+        {
+          "name": "Matheus",
+          "homeGoals": 1,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
+        {
+          "name": "Nando",
+          "homeGoals": 1,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
+        {
+          "name": "Nauzinha",
+          "homeGoals": 2,
+          "awayGoals": 1,
+          "outcome": "home"
+        },
+        {
+          "name": "Rafael Hive",
+          "homeGoals": 2,
+          "awayGoals": 1,
+          "outcome": "home"
+        },
+        {
+          "name": "Robson",
+          "homeGoals": 2,
+          "awayGoals": 1,
+          "outcome": "home"
+        },
+        {
+          "name": "Robson Boró",
+          "homeGoals": 2,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
+        {
+          "name": "Rodney",
+          "homeGoals": 2,
+          "awayGoals": 1,
+          "outcome": "home"
+        },
+        {
+          "name": "Sônia",
+          "homeGoals": 1,
+          "awayGoals": 3,
+          "outcome": "away"
+        },
+        {
+          "name": "Vinicius Freire",
+          "homeGoals": 2,
+          "awayGoals": 2,
+          "outcome": "draw"
+        },
+        {
+          "name": "Vinicius Teixeira",
+          "homeGoals": 1,
+          "awayGoals": 2,
+          "outcome": "away"
+        },
+        {
+          "name": "Wambaster",
+          "homeGoals": 1,
+          "awayGoals": 0,
+          "outcome": "home"
+        },
+        {
+          "name": "WolfGand",
+          "homeGoals": 0,
+          "awayGoals": 1,
+          "outcome": "away"
+        },
+        {
+          "name": "Xerox",
+          "homeGoals": 1,
+          "awayGoals": 1,
+          "outcome": "draw"
+        }
+      ]
+    },
     {
       "id": 78,
       "date": "2026-06-30",
@@ -1556,68 +1749,68 @@
     }
   ],
   "nextMatch": {
-    "id": 79,
-    "date": "2026-06-30",
-    "time": "22:00",
+    "id": 80,
+    "date": "2026-07-01",
+    "time": "13:00",
     "group": "R32",
     "phaseLabel": "32 avos de final",
-    "home": "México",
-    "away": "Equador",
+    "home": "Inglaterra",
+    "away": "RD Congo",
     "totalPicks": 30,
     "missingPicks": 0,
     "picks": [
       {
         "name": "Antonio Dimitrov",
-        "homeGoals": 1,
+        "homeGoals": 3,
         "awayGoals": 0,
         "outcome": "home"
       },
       {
         "name": "Chico",
-        "homeGoals": 2,
-        "awayGoals": 1,
-        "outcome": "home"
-      },
-      {
-        "name": "Cristina Bello",
         "homeGoals": 3,
         "awayGoals": 1,
         "outcome": "home"
       },
       {
-        "name": "Diego (Dinão)",
-        "homeGoals": 0,
-        "awayGoals": 1,
-        "outcome": "away"
-      },
-      {
-        "name": "Diego (Vera Verão)",
-        "homeGoals": 1,
-        "awayGoals": 2,
-        "outcome": "away"
-      },
-      {
-        "name": "Douglas Truta",
-        "homeGoals": 0,
+        "name": "Cristina Bello",
+        "homeGoals": 2,
         "awayGoals": 0,
-        "outcome": "draw"
+        "outcome": "home"
       },
       {
-        "name": "Elcio",
+        "name": "Diego (Dinão)",
         "homeGoals": 2,
         "awayGoals": 1,
         "outcome": "home"
       },
       {
+        "name": "Diego (Vera Verão)",
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "outcome": "home"
+      },
+      {
+        "name": "Douglas Truta",
+        "homeGoals": 4,
+        "awayGoals": 0,
+        "outcome": "home"
+      },
+      {
+        "name": "Elcio",
+        "homeGoals": 3,
+        "awayGoals": 1,
+        "outcome": "home"
+      },
+      {
         "name": "Elias (Codorninha)",
-        "homeGoals": 1,
-        "awayGoals": 2,
-        "outcome": "away"
+        "homeGoals": 3,
+        "awayGoals": 1,
+        "outcome": "home"
       },
       {
         "name": "Ezio",
-        "homeGoals": 2,
-        "awayGoals": 2,
+        "homeGoals": 1,
+        "awayGoals": 1,
         "outcome": "draw"
       },
       {
@@ -1628,49 +1821,49 @@
       },
       {
         "name": "GuiGui",
-        "homeGoals": 0,
-        "awayGoals": 2,
-        "outcome": "away"
+        "homeGoals": 3,
+        "awayGoals": 0,
+        "outcome": "home"
       },
       {
         "name": "Italo",
-        "homeGoals": 2,
+        "homeGoals": 3,
         "awayGoals": 1,
         "outcome": "home"
       },
       {
         "name": "Jean",
-        "homeGoals": 2,
-        "awayGoals": 1,
+        "homeGoals": 4,
+        "awayGoals": 0,
         "outcome": "home"
       },
       {
         "name": "Jonas",
-        "homeGoals": 1,
-        "awayGoals": 2,
-        "outcome": "away"
-      },
-      {
-        "name": "Leandro",
         "homeGoals": 2,
         "awayGoals": 1,
         "outcome": "home"
       },
       {
-        "name": "Luiz",
-        "homeGoals": 0,
+        "name": "Leandro",
+        "homeGoals": 2,
         "awayGoals": 0,
-        "outcome": "draw"
+        "outcome": "home"
+      },
+      {
+        "name": "Luiz",
+        "homeGoals": 4,
+        "awayGoals": 0,
+        "outcome": "home"
       },
       {
         "name": "Mario",
-        "homeGoals": 1,
+        "homeGoals": 2,
         "awayGoals": 0,
         "outcome": "home"
       },
       {
         "name": "Matheus",
-        "homeGoals": 1,
+        "homeGoals": 3,
         "awayGoals": 0,
         "outcome": "home"
       },
@@ -1683,19 +1876,19 @@
       {
         "name": "Nauzinha",
         "homeGoals": 2,
-        "awayGoals": 1,
+        "awayGoals": 0,
         "outcome": "home"
       },
       {
         "name": "Rafael Hive",
         "homeGoals": 2,
-        "awayGoals": 1,
+        "awayGoals": 0,
         "outcome": "home"
       },
       {
         "name": "Robson",
-        "homeGoals": 2,
-        "awayGoals": 1,
+        "homeGoals": 3,
+        "awayGoals": 0,
         "outcome": "home"
       },
       {
@@ -1706,366 +1899,111 @@
       },
       {
         "name": "Rodney",
-        "homeGoals": 2,
-        "awayGoals": 1,
+        "homeGoals": 1,
+        "awayGoals": 0,
         "outcome": "home"
       },
       {
         "name": "Sônia",
-        "homeGoals": 1,
-        "awayGoals": 3,
-        "outcome": "away"
+        "homeGoals": 4,
+        "awayGoals": 0,
+        "outcome": "home"
       },
       {
         "name": "Vinicius Freire",
-        "homeGoals": 2,
-        "awayGoals": 2,
-        "outcome": "draw"
+        "homeGoals": 3,
+        "awayGoals": 1,
+        "outcome": "home"
       },
       {
         "name": "Vinicius Teixeira",
-        "homeGoals": 1,
-        "awayGoals": 2,
-        "outcome": "away"
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "outcome": "home"
       },
       {
         "name": "Wambaster",
-        "homeGoals": 1,
+        "homeGoals": 3,
         "awayGoals": 0,
         "outcome": "home"
       },
       {
         "name": "WolfGand",
-        "homeGoals": 0,
-        "awayGoals": 1,
-        "outcome": "away"
+        "homeGoals": 2,
+        "awayGoals": 0,
+        "outcome": "home"
       },
       {
         "name": "Xerox",
-        "homeGoals": 1,
-        "awayGoals": 1,
-        "outcome": "draw"
+        "homeGoals": 5,
+        "awayGoals": 0,
+        "outcome": "home"
       }
     ],
     "outcomeBreakdown": {
-      "homeWin": 17,
-      "draw": 5,
-      "awayWin": 8
+      "homeWin": 29,
+      "draw": 1,
+      "awayWin": 0
     },
     "topOutcome": {
       "outcome": "home",
-      "label": "México vence",
-      "count": 17,
-      "percentage": 56.7
+      "label": "Inglaterra vence",
+      "count": 29,
+      "percentage": 96.7
     },
-    "averageHomeGoals": 1.3,
-    "averageAwayGoals": 1,
-    "averageTotalGoals": 2.4,
+    "averageHomeGoals": 2.6,
+    "averageAwayGoals": 0.3,
+    "averageTotalGoals": 2.9,
     "mostCommonScores": [
       {
         "homeGoals": 2,
-        "awayGoals": 1,
-        "score": "2-1",
-        "count": 10,
-        "percentage": 33.3,
+        "awayGoals": 0,
+        "score": "2-0",
+        "count": 9,
+        "percentage": 30,
         "names": [
-          "Chico",
-          "Elcio",
-          "Gilberto",
-          "Italo",
-          "Jean",
+          "Cristina Bello",
+          "Diego (Vera Verão)",
           "Leandro",
+          "Mario",
           "Nauzinha",
           "Rafael Hive",
-          "Robson",
-          "Rodney"
+          "Robson Boró",
+          "Vinicius Teixeira",
+          "WolfGand"
         ]
       },
       {
-        "homeGoals": 1,
+        "homeGoals": 3,
         "awayGoals": 0,
-        "score": "1-0",
+        "score": "3-0",
         "count": 5,
         "percentage": 16.7,
         "names": [
           "Antonio Dimitrov",
-          "Mario",
+          "GuiGui",
           "Matheus",
-          "Nando",
+          "Robson",
           "Wambaster"
         ]
       },
       {
-        "homeGoals": 1,
-        "awayGoals": 2,
-        "score": "1-2",
-        "count": 4,
-        "percentage": 13.3,
+        "homeGoals": 3,
+        "awayGoals": 1,
+        "score": "3-1",
+        "count": 5,
+        "percentage": 16.7,
         "names": [
-          "Diego (Vera Verão)",
+          "Chico",
+          "Elcio",
           "Elias (Codorninha)",
-          "Jonas",
-          "Vinicius Teixeira"
+          "Italo",
+          "Vinicius Freire"
         ]
       }
     ]
   },
   "upcomingMatches": [
-    {
-      "id": 79,
-      "date": "2026-06-30",
-      "time": "22:00",
-      "group": "R32",
-      "phaseLabel": "32 avos de final",
-      "home": "México",
-      "away": "Equador",
-      "totalPicks": 30,
-      "missingPicks": 0,
-      "picks": [
-        {
-          "name": "Antonio Dimitrov",
-          "homeGoals": 1,
-          "awayGoals": 0,
-          "outcome": "home"
-        },
-        {
-          "name": "Chico",
-          "homeGoals": 2,
-          "awayGoals": 1,
-          "outcome": "home"
-        },
-        {
-          "name": "Cristina Bello",
-          "homeGoals": 3,
-          "awayGoals": 1,
-          "outcome": "home"
-        },
-        {
-          "name": "Diego (Dinão)",
-          "homeGoals": 0,
-          "awayGoals": 1,
-          "outcome": "away"
-        },
-        {
-          "name": "Diego (Vera Verão)",
-          "homeGoals": 1,
-          "awayGoals": 2,
-          "outcome": "away"
-        },
-        {
-          "name": "Douglas Truta",
-          "homeGoals": 0,
-          "awayGoals": 0,
-          "outcome": "draw"
-        },
-        {
-          "name": "Elcio",
-          "homeGoals": 2,
-          "awayGoals": 1,
-          "outcome": "home"
-        },
-        {
-          "name": "Elias (Codorninha)",
-          "homeGoals": 1,
-          "awayGoals": 2,
-          "outcome": "away"
-        },
-        {
-          "name": "Ezio",
-          "homeGoals": 2,
-          "awayGoals": 2,
-          "outcome": "draw"
-        },
-        {
-          "name": "Gilberto",
-          "homeGoals": 2,
-          "awayGoals": 1,
-          "outcome": "home"
-        },
-        {
-          "name": "GuiGui",
-          "homeGoals": 0,
-          "awayGoals": 2,
-          "outcome": "away"
-        },
-        {
-          "name": "Italo",
-          "homeGoals": 2,
-          "awayGoals": 1,
-          "outcome": "home"
-        },
-        {
-          "name": "Jean",
-          "homeGoals": 2,
-          "awayGoals": 1,
-          "outcome": "home"
-        },
-        {
-          "name": "Jonas",
-          "homeGoals": 1,
-          "awayGoals": 2,
-          "outcome": "away"
-        },
-        {
-          "name": "Leandro",
-          "homeGoals": 2,
-          "awayGoals": 1,
-          "outcome": "home"
-        },
-        {
-          "name": "Luiz",
-          "homeGoals": 0,
-          "awayGoals": 0,
-          "outcome": "draw"
-        },
-        {
-          "name": "Mario",
-          "homeGoals": 1,
-          "awayGoals": 0,
-          "outcome": "home"
-        },
-        {
-          "name": "Matheus",
-          "homeGoals": 1,
-          "awayGoals": 0,
-          "outcome": "home"
-        },
-        {
-          "name": "Nando",
-          "homeGoals": 1,
-          "awayGoals": 0,
-          "outcome": "home"
-        },
-        {
-          "name": "Nauzinha",
-          "homeGoals": 2,
-          "awayGoals": 1,
-          "outcome": "home"
-        },
-        {
-          "name": "Rafael Hive",
-          "homeGoals": 2,
-          "awayGoals": 1,
-          "outcome": "home"
-        },
-        {
-          "name": "Robson",
-          "homeGoals": 2,
-          "awayGoals": 1,
-          "outcome": "home"
-        },
-        {
-          "name": "Robson Boró",
-          "homeGoals": 2,
-          "awayGoals": 0,
-          "outcome": "home"
-        },
-        {
-          "name": "Rodney",
-          "homeGoals": 2,
-          "awayGoals": 1,
-          "outcome": "home"
-        },
-        {
-          "name": "Sônia",
-          "homeGoals": 1,
-          "awayGoals": 3,
-          "outcome": "away"
-        },
-        {
-          "name": "Vinicius Freire",
-          "homeGoals": 2,
-          "awayGoals": 2,
-          "outcome": "draw"
-        },
-        {
-          "name": "Vinicius Teixeira",
-          "homeGoals": 1,
-          "awayGoals": 2,
-          "outcome": "away"
-        },
-        {
-          "name": "Wambaster",
-          "homeGoals": 1,
-          "awayGoals": 0,
-          "outcome": "home"
-        },
-        {
-          "name": "WolfGand",
-          "homeGoals": 0,
-          "awayGoals": 1,
-          "outcome": "away"
-        },
-        {
-          "name": "Xerox",
-          "homeGoals": 1,
-          "awayGoals": 1,
-          "outcome": "draw"
-        }
-      ],
-      "outcomeBreakdown": {
-        "homeWin": 17,
-        "draw": 5,
-        "awayWin": 8
-      },
-      "topOutcome": {
-        "outcome": "home",
-        "label": "México vence",
-        "count": 17,
-        "percentage": 56.7
-      },
-      "averageHomeGoals": 1.3,
-      "averageAwayGoals": 1,
-      "averageTotalGoals": 2.4,
-      "mostCommonScores": [
-        {
-          "homeGoals": 2,
-          "awayGoals": 1,
-          "score": "2-1",
-          "count": 10,
-          "percentage": 33.3,
-          "names": [
-            "Chico",
-            "Elcio",
-            "Gilberto",
-            "Italo",
-            "Jean",
-            "Leandro",
-            "Nauzinha",
-            "Rafael Hive",
-            "Robson",
-            "Rodney"
-          ]
-        },
-        {
-          "homeGoals": 1,
-          "awayGoals": 0,
-          "score": "1-0",
-          "count": 5,
-          "percentage": 16.7,
-          "names": [
-            "Antonio Dimitrov",
-            "Mario",
-            "Matheus",
-            "Nando",
-            "Wambaster"
-          ]
-        },
-        {
-          "homeGoals": 1,
-          "awayGoals": 2,
-          "score": "1-2",
-          "count": 4,
-          "percentage": 13.3,
-          "names": [
-            "Diego (Vera Verão)",
-            "Elias (Codorninha)",
-            "Jonas",
-            "Vinicius Teixeira"
-          ]
-        }
-      ]
-    },
     {
       "id": 80,
       "date": "2026-07-01",
@@ -4367,14 +4305,14 @@
   ],
   "metrics": {
     "totalMatches": 16,
-    "finishedMatches": 6,
-    "remainingMatches": 10,
+    "finishedMatches": 7,
+    "remainingMatches": 9,
     "totalValidPicks": 480,
     "averageUpcomingGoals": 2.7,
-    "completionRate": 37.5,
-    "leaderGap": 9,
-    "leaderEfficiency": 66.7,
-    "averagePoints": 19.1,
+    "completionRate": 43.8,
+    "leaderGap": 7,
+    "leaderEfficiency": 64.3,
+    "averagePoints": 22,
     "completeCards": 30,
     "missingPickCards": 0,
     "topExact": {
@@ -4384,13 +4322,13 @@
     },
     "topPartial": {
       "label": "Mais parciais",
-      "value": "4",
+      "value": "5",
       "detail": "Wambaster"
     },
     "topUpcomingScore": {
       "label": "Placar mais apostado",
-      "value": "2-1",
-      "detail": "61 palpites"
+      "value": "2-0",
+      "detail": "51 palpites"
     },
     "highestConsensus": {
       "id": 80,
@@ -4403,14 +4341,14 @@
       "value": "Inglaterra vence · 96.7%"
     },
     "mostDivisive": {
-      "id": 79,
-      "date": "2026-06-30",
-      "time": "22:00",
+      "id": 86,
+      "date": "2026-07-03",
+      "time": "15:00",
       "group": "R32",
-      "home": "México",
-      "away": "Equador",
+      "home": "Austrália",
+      "away": "Egito",
       "label": "Jogo mais dividido",
-      "value": "México vence · 56.7%"
+      "value": "Egito vence · 60%"
     },
     "highestExpectedGoals": {
       "id": 87,
@@ -4435,17 +4373,17 @@
     "storyMetrics": [
       {
         "label": "Briga pela liderança",
-        "value": "9 pts",
-        "detail": "Rafael Hive abre 9 pontos sobre Jean."
+        "value": "7 pts",
+        "detail": "Rafael Hive abre 7 pontos sobre Robson Boró."
       },
       {
         "label": "Aproveitamento do líder",
-        "value": "66.7%",
-        "detail": "40 pontos em 6 jogos apurados."
+        "value": "64.3%",
+        "detail": "45 pontos em 7 jogos apurados."
       },
       {
         "label": "Média do pelotão",
-        "value": "19.1 pts",
+        "value": "22 pts",
         "detail": "Média atual entre 30 apostadores."
       },
       {
@@ -4455,7 +4393,7 @@
       },
       {
         "label": "Mais parciais",
-        "value": "4",
+        "value": "5",
         "detail": "Wambaster lidera em acertos de 5 ou 3 pontos."
       },
       {
@@ -4465,8 +4403,8 @@
       },
       {
         "label": "Placar mais apostado",
-        "value": "2-1",
-        "detail": "61 vezes nos jogos pendentes."
+        "value": "2-0",
+        "detail": "51 vezes nos jogos pendentes."
       }
     ]
   }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-30T22:57:02.731Z",
+  "generatedAt": "2026-07-01T05:58:33.041Z",
   "competition": "Copa do Mundo FIFA 2026",
   "source": "openfootball",
   "groupsComplete": true,
@@ -250,10 +250,10 @@
               "flag": "🇪🇨"
             }
           },
-          "homeGoals": null,
-          "awayGoals": null,
-          "winner": null,
-          "status": "scheduled",
+          "homeGoals": 2,
+          "awayGoals": 0,
+          "winner": "home",
+          "status": "finished",
           "date": "2026-06-30",
           "time": null,
           "stadium": null,
@@ -708,9 +708,13 @@
           "phaseLabel": "Oitavas de final",
           "order": 4,
           "home": {
-            "label": "Vencedor Jogo 79",
+            "label": "México",
             "source": "Vencedor do Jogo 79",
-            "team": null
+            "team": {
+              "canon": "mexico",
+              "name": "México",
+              "flag": "🇲🇽"
+            }
           },
           "away": {
             "label": "Vencedor Jogo 80",
