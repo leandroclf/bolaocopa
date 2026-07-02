@@ -1,6 +1,11 @@
 export default function PaymentBlock({ totalParticipants, entryFee }: { totalParticipants: number; entryFee: number }) {
   const finalPrize = totalParticipants * entryFee;
   const formattedPrize = finalPrize.toFixed(2).replace(".00", ",00");
+  const prizeBreakdown = [
+    ["🥇", "1º lugar", "70%"],
+    ["🥈", "2º lugar", "20%"],
+    ["🥉", "3º lugar", "10%"],
+  ] as const;
 
   return (
     <section className="mx-auto max-w-5xl px-5 pt-4">
@@ -19,9 +24,20 @@ export default function PaymentBlock({ totalParticipants, entryFee }: { totalPar
 
           <div className="rounded-xl border border-pitch-line bg-pitch-3/80 p-4 shadow-[0_18px_45px_rgba(0,0,0,0.18)]">
             <p className="font-mono text-[10px] uppercase tracking-[0.24em] text-slatey">regras da premiação</p>
-            <p className="mt-1 font-display text-2xl leading-tight text-chalk">1º lugar leva 100%</p>
+            <div className="mt-2 space-y-2">
+              {prizeBreakdown.map(([icon, place, share]) => (
+                <div key={place} className="flex items-center justify-between gap-4 rounded-lg border border-pitch-line/70 bg-pitch-2/60 px-3 py-2">
+                  <span className="text-sm font-semibold text-chalk">{icon} {place}</span>
+                  <span className="font-mono text-sm text-gold">{share}</span>
+                </div>
+              ))}
+            </div>
+            <p className="mt-3 text-sm leading-6 text-slatey">
+              Como não existe critério de desempate, em caso de empate os prêmios das posições envolvidas são
+              somados e divididos igualmente entre os empatados.
+            </p>
             <p className="mt-2 text-sm leading-6 text-slatey">
-              Em caso de empate na primeira colocação, o prêmio será dividido igualmente entre os líderes.
+              Para que essa alteração tenha validade, é necessário que todos estejam de acordo.
             </p>
             <div className="mt-4 flex flex-wrap gap-2">
               <span className="rounded-full border border-gold/30 bg-gold/10 px-3 py-1 font-mono text-[10px] uppercase tracking-[0.18em] text-gold">
