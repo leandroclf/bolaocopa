@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-01T23:43:09.402Z",
+  "lastUpdated": "2026-07-02T02:11:33.013Z",
   "source": "openfootball",
   "results": {
     "73": {
@@ -53,6 +53,12 @@
     "81": {
       "home": 3,
       "away": 2,
+      "status": "finished",
+      "winner": "home"
+    },
+    "82": {
+      "home": 2,
+      "away": 0,
       "status": "finished",
       "winner": "home"
     }
