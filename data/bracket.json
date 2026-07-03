@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-02T21:01:39.229Z",
+  "generatedAt": "2026-07-03T01:13:12.976Z",
   "competition": "Copa do Mundo FIFA 2026",
   "source": "openfootball",
   "groupsComplete": true,
@@ -377,21 +377,21 @@
           "phaseLabel": "32 avos de final",
           "order": 11,
           "home": {
-            "label": "Portugal",
-            "source": "Vice do Grupo K",
+            "label": "Espanha",
+            "source": "Vencedor do Grupo H",
             "team": {
-              "canon": "portugal",
-              "name": "Portugal",
-              "flag": "🇵🇹"
+              "canon": "spain",
+              "name": "Espanha",
+              "flag": "🇪🇸"
             }
           },
           "away": {
-            "label": "Croácia",
-            "source": "Vice do Grupo L",
+            "label": "Áustria",
+            "source": "Vice do Grupo J",
             "team": {
-              "canon": "croatia",
-              "name": "Croácia",
-              "flag": "🇭🇷"
+              "canon": "austria",
+              "name": "Áustria",
+              "flag": "🇦🇹"
             }
           },
           "homeGoals": 3,
@@ -413,27 +413,27 @@
           "phaseLabel": "32 avos de final",
           "order": 12,
           "home": {
-            "label": "Espanha",
-            "source": "Vencedor do Grupo H",
+            "label": "Portugal",
+            "source": "Vice do Grupo K",
             "team": {
-              "canon": "spain",
-              "name": "Espanha",
-              "flag": "🇪🇸"
+              "canon": "portugal",
+              "name": "Portugal",
+              "flag": "🇵🇹"
             }
           },
           "away": {
-            "label": "Áustria",
-            "source": "Vice do Grupo J",
+            "label": "Croácia",
+            "source": "Vice do Grupo L",
             "team": {
-              "canon": "austria",
-              "name": "Áustria",
-              "flag": "🇦🇹"
+              "canon": "croatia",
+              "name": "Croácia",
+              "flag": "🇭🇷"
             }
           },
-          "homeGoals": null,
-          "awayGoals": null,
-          "winner": null,
-          "status": "scheduled",
+          "homeGoals": 2,
+          "awayGoals": 1,
+          "winner": "home",
+          "status": "finished",
           "date": "2026-07-02",
           "time": null,
           "stadium": null,
@@ -744,23 +744,27 @@
           "phaseLabel": "Oitavas de final",
           "order": 5,
           "home": {
-            "label": "Portugal",
+            "label": "Espanha",
             "source": "Vencedor do Jogo 83",
+            "team": {
+              "canon": "spain",
+              "name": "Espanha",
+              "flag": "🇪🇸"
+            }
+          },
+          "away": {
+            "label": "Portugal",
+            "source": "Vencedor do Jogo 84",
             "team": {
               "canon": "portugal",
               "name": "Portugal",
               "flag": "🇵🇹"
             }
           },
-          "away": {
-            "label": "Vencedor Jogo 84",
-            "source": "Vencedor do Jogo 84",
-            "team": null
-          },
           "homeGoals": null,
           "awayGoals": null,
           "winner": null,
-          "status": "pending",
+          "status": "scheduled",
           "date": "2026-07-06",
           "time": null,
           "stadium": null,
